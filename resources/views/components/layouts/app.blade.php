@@ -18,15 +18,18 @@
 
 
     <!--FontAwesome CSS-->
-    <link rel="stylesheet" href="icons/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6d07745da9.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="assets/icons/font-awesome.min.css"> -->
 </head>
 
 <body>
+    <x-section.header />
     {{ $slot }}
 
+    <x-section.footer />
     <!--Bacl-to-top Button start-->
     <div id="back-to-top">
-        <a href="#" class="bg-pink position-relative align-items-center rounded-circle d-block"></a>
+        <a href="#" class="bg-kuning position-relative align-items-center rounded-circle d-block"></a>
     </div>
     <!--Bacl-to-top Button end-->
 

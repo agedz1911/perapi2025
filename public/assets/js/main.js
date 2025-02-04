@@ -1,11 +1,3 @@
-/*------------------------------------------------------------------
-* Project:        Eventen - Event Conference HTML Templates
-* Author:         HtmlDesignTemplates
-* URL:            https://themeforest.net/user/htmldesigntemplates
-* Created:        05/10/2024
--------------------------------------------------------------------
-*/
-
 /*
  TABLE OF CONTENT
   
@@ -42,7 +34,7 @@
     const currentTime = new Date();
 
     // Set new date 30 days from now
-    const targetTime = new Date(currentTime.getTime() + (30 * 24 * 60 * 60 * 1000));
+    const targetTime = new Date(2025, 8, 24, 8, 0, 0);
 
     // Update countdown time
     function updateCountdown() {
