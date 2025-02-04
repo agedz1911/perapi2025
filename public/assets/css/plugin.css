@@ -82,9 +82,11 @@ Slicknav - a Mobile Menu
 }
 /* IE6/7 support */
 
-.slicknav_menu {
+/* .slicknav_menu {
     *zoom: 1
-}
+} */
+
+
 /* 
 User Default Style
 Change the following styles to modify the appearance of the menu.
