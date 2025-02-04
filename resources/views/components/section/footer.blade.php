@@ -38,12 +38,12 @@
             </div>
             <div class="footer-menu pb-9">
                 <ul class="p-0 m-0">
-                    <li class="d-inline mx-2"><a href="about.html"><small>About Event</small></a></li>
-                    <li class="d-inline mx-2"><a href=""><small>Services</small></a></li>
-                    <li class="d-inline mx-2"><a href="speaker_list.html"><small>Speakers</small></a></li>
-                    <li class="d-inline mx-2"><a href="event_list.html"><small>Schedule</small></a></li>
-                    <li class="d-inline mx-2"><a href="pricing.html"><small>Ticket Pricing</small></a></li>
-                    <li class="d-inline mx-2"><a href="contact.html"><small>Contact Us</small></a></li>
+                    <li class="d-inline mx-2"><a href="#"><small>Submission</small></a></li>
+                    <li class="d-inline mx-2"><a href="#"><small>Committee</small></a></li>
+                    <li class="d-inline mx-2"><a href="#"><small>Faculties</small></a></li>
+                    <li class="d-inline mx-2"><a href="#"><small>Schedule</small></a></li>
+                    <li class="d-inline mx-2"><a href="#"><small>Registration</small></a></li>
+                    <li class="d-inline mx-2"><a href="#"><small>Visiting</small></a></li>
                 </ul>
             </div>
         </div>

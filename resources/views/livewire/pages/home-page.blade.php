@@ -38,7 +38,7 @@
                     <div class="col-lg-6 order-1 order-lg-2">
                         <div class="banner-right  ms-2 text-center text-lg-start pb-8">
                             <div class="banner-title pb-3">
-                                <h4 class="text-white pb-3"><span class="kuning">48<sup>th</sup></span> Annual Scientific Meeting   of</h4>
+                                <h4 class="text-white pb-3"><span class="kuning">48<sup>th</sup></span> Annual Scientific Meeting of</h4>
                                 <h1 class="text-white">Indonesian <span class="kuning">Urological</span> Association</h1>
                             </div>
                             <div class="banner-event-info pb-3">
@@ -47,18 +47,16 @@
                                         <i class="fa  fa-calendar-o pe-1"></i> 24-27 SEPTEMBER 2025
                                     </li>
                                     <li class="ps-2">
-                                        <i class="fa  fa-map-marker pe-1"></i> Santika Premiere Dyandra Hotel & Convention
-                                        Medan, North Sumatra
+                                        <i class="fa  fa-map-marker pe-1"></i> Medan, North Sumatra
                                     </li>
                                 </ul>
                             </div>
                             <div class="event-discription">
-                                <!-- <p class="pb-4 m-0">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.</p> -->
+                                <p class="pb-4 m-0 fst-italic">" "</p>
                                 <div class="banner-button">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6">
-                                            <a class="btn me-3 my-1 w-100 text-uppercase" href="#">join now</a>
+                                            <a class="btn me-3 my-1 w-100 text-uppercase" href="#">REGISTER</a>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <a class="btn btn2 my-1 w-100 text-uppercase" href="#">read more</a>
@@ -88,13 +86,13 @@
                     <div class="col-lg-6">
                         <div class="overview-left text-center text-lg-start">
                             <div class="overview-title pb-4">
-                                <p class="mb-1 kuning">OVERVIEW</p>
-                                <h2 class="mb-2">GET THE LATEST INFO ABOUT <span class="kuning">EVENTEN</span></h2>
-                                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat.</P>
-                                <p class="mb-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.</p>
+                                <!-- <p class="mb-1 kuning">OVERVIEW</p> -->
+                                <img src="assets/images/logo/2.png" alt="Logo" class="w-50 mb-3">
+                                <p>48<sup>th</sup> Annual Scientific Meeting of Indonesian Urological Association</p>
+                                <p class="mb-2 fst-italic">" "</p>
+
+                                <p class="mb-0">Organized by</p>
+                                <p>Indonesian Urological Association (InaUA)</p>
                             </div>
                             <div class="overview-event-info pb-6 g-4 text-start position-absolute">
                                 <div class="row justify-content-around ">
@@ -105,8 +103,8 @@
                                                     <i class="fa fa-map-marker  text-white bg-kuning rounded-circle me-3"></i>
                                                 </div>
                                                 <div class="location-info">
-                                                    <h5 class="mb-1">WHERE</h5>
-                                                    <small>Birmingham City Park Hall, London, UK</small>
+                                                    <!-- <h5 class="mb-1">WHERE</h5> -->
+                                                    <small>Santika Premiere Dyandra Hotel & Convention, Medan, North Sumatra</small>
                                                 </div>
                                             </div>
                                         </a>
@@ -118,8 +116,8 @@
                                                     <i class="fa fa-calendar-o  text-white bg-kuning rounded-circle me-3"></i>
                                                 </div>
                                                 <div class="time-info">
-                                                    <h5 class="mb-1">WHEN</h5>
-                                                    <small>Wednesday To Thursday <br> Apr, 21-25, 2024</small>
+                                                    <!-- <h5 class="mb-1">WHEN</h5> -->
+                                                    <small>Wednesday To Saturday <br> Sept, 24-27, 2025</small>
                                                 </div>
                                             </div>
                                         </a>
@@ -158,68 +156,94 @@
         <div class="container">
             <div class="partner-inner">
                 <div class="partner-title text-center pb-6 w-lg-60 m-auto">
-                    <p class="mb-1 pink">OUR PARTNERS</p>
-                    <h2 class="mb-1">SPONSERS AND <span class="pink">PARTNERS</span></h2>
-                    <p class="m-0">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                        id est laborum.</p>
+                    <p class="mb-1 kuning">48<sup>th</sup> ASMIUA</p>
+                    <h2 class="mb-1">important <span class="text-blue">Dates</span></h2>
                 </div>
-                <div class="partner-img pb-6">
-                    <div class="row row-cols-1 row-cols-lg-5 row-cols-md-5 ">
-                        <div class="col p-0 border-end border-sm-0">
-                            <div class="p-2 partner-img-box text-center">
-                                <img src="images/icon/1.png" alt="partner-img" class="opacity-75 w-lg-75 w-md-100 w-40">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="table-responsive">
+                        <table class="table">
+
+                            <tbody>
+                                <tr>
+                                    <th style="width: 50%;">early bird</th>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                                </tr>
+                                <tr>
+                                    <th style="width: 50%;">early bird</th>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature text-white position-relative z-0 start-0">
+        <div class="overlay z-n1">
+        </div>
+        <div class="container">
+            <div class="feature-inner">
+                <div class="counter text-center border-bottom border-white border-opacity-25">
+                    <div class="inner-counter mb-7">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 p-2 ">
+                                <div class="counter-box p-2 border-end border-white border-opacity-25">
+                                    <h1 class="text-white m-0"><span class="num" data-val="50"></span><span>+</span></h1>
+                                    <p>Speakers</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 p-2">
+                                <div class="counter-box p-2 border-end border-white border-opacity-25">
+                                    <h1 class="text-white m-0"><span class="num" data-val="100"></span><span>+</span></h1>
+                                    <p>Symposium</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 p-2">
+                                <div class="counter-box p-2 border-end border-white border-opacity-25">
+                                    <h1 class="text-white m-0"><span class="num" data-val="10"></span><span>+</span></h1>
+                                    <p>Workshops</p>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-3 col-md-3 p-2">
+                                <div class="p-2">
+                                    <h1 class="text-white m-0"><span class="num" data-val="300"></span><span>+</span></h1>
+                                    <p class="mb-0">Journalist</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="general-ques mt-5">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 p-2">
+                            <div class="general-ques-left text-white">
+                                <div class="general-ques-image text-center">
+                                    <img src="assets/images/team/4.png" alt="faq-general-image" class="w-50"><br>
+                                </div>
+                                <div class="speaker-statement-box p-4 rounded bg-blue w-lg-80 mb-mi">
+                                    <div class="speaker-statement ps-4 border-start border-white border-7">
+                                        <!-- <p><small>" Congress Chairman "</small></p> -->
+                                        <h6 class="text-white">Name</h6>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col p-0 border-end border-sm-0">
-                            <div class="p-2 partner-img-box text-center ">
-                                <img src="images/icon/2.png" alt="partner-img" class="opacity-75 w-lg-75 w-md-100 w-40">
-                            </div>
-                        </div>
-                        <div class="col p-0 border-end border-sm-0">
-                            <div class="p-2 partner-img-box text-center">
-                                <img src="images/icon/3.png" alt="partner-img" class="opacity-75 w-lg-75 w-md-100 w-40">
-                            </div>
-                        </div>
-                        <div class="col p-0 border-end border-sm-0">
-                            <div class="p-2 partner-img-box text-center">
-                                <img src="images/icon/4.png" alt="partner-img" class="opacity-75 w-lg-75 w-md-100 w-40">
-                            </div>
-                        </div>
-                        <div class="col p-0 border-sm-0">
-                            <div class="p-2 partner-img-box text-center">
-                                <img src="images/icon/5.png" alt="partner-img" class="opacity-75 w-lg-75 w-md-100 w-40">
-                            </div>
-                        </div>
-                        <div class="col p-0 border-end border-top border-sm-0">
-                            <div class="p-2 partner-img-box text-center">
-                                <img src="images/icon/3.png" alt="partner-img" class="opacity-75 w-lg-75 w-md-100 w-40">
-                            </div>
-                        </div>
-                        <div class="col p-0 border-end border-top border-sm-0">
-                            <div class="p-2 partner-img-box text-center">
-                                <img src="images/icon/4.png" alt="partner-img" class="opacity-75 w-lg-75 w-md-100 w-40">
-                            </div>
-                        </div>
-                        <div class="col p-0 border-end border-top border-sm-0">
-                            <div class="p-2 partner-img-box text-center ">
-                                <img src="images/icon/5.png" alt="partner-img" class="opacity-75 w-lg-75 w-md-100 w-40">
-                            </div>
-                        </div>
-                        <div class="col p-0 border-end border-top border-sm-0">
-                            <div class="p-2 partner-img-box text-center ">
-                                <img src="images/icon/1.png" alt="partner-img" class="opacity-75 w-lg-75 w-md-100 w-40">
-                            </div>
-                        </div>
-                        <div class="col p-0 border-top border-0 border-sm-0">
-                            <div class="p-2 partner-img-box text-center border-sm-0">
-                                <img src="images/icon/2.png" alt="partner-img" class="opacity-75 w-lg-75 w-md-100 w-40">
+                        <div class="col-lg-6 order-1 order-lg-2 p-2">
+                            <div class="general-ques-right">
+                                <div class="section-title pb-4 text-center text-lg-start">
+                                    <!-- <p class="mb-1 kuning">GENERAL QUESTIONS</p> -->
+                                    <h2 class="mb-2 text-white">Welcome <span class="kuning">message </span></h2>
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="partner-button text-center">
-                    <a class="btn" href="sponsers.html">VIEW MORE SPONSERS</a>
-                </div>
+                
             </div>
         </div>
     </section>

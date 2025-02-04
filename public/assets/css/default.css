@@ -7,6 +7,9 @@
 .kuning {
     color: #FFCE3D;
 }
+.hijau {
+    color: #00474f;
+}
 .black {
     color: #223645;
 }
@@ -14,7 +17,7 @@
     color: #707070;
 }
 .text-blue {
-    color: #3a4cb4;
+    color: #002965;
 }
 .text-light-grey {
     color: #adadad;
@@ -28,7 +31,7 @@
     background-color: #f7f7f7;
 }
 .bg-blue {
-    background-color: #3a4cb4;
+    background-color: #002965;
 }
 .bg-grey {
     background-color: #70707057;

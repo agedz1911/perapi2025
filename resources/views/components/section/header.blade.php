@@ -26,7 +26,7 @@
                                         <i class="fa fa-instagram border-social rounded-circle text-center"></i>
                                     </a>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
@@ -54,113 +54,92 @@
     </div>
 
     <!-- Navigation Bar -->
-    <div class="header_menu " id="header_menu">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg py-2">
-                <div class="row">
-                    <div class="col-lg-2 col-md-6">
-                        <div class="navbar-brand m-0">
-                            <img src="assets/images/logo/1.png" alt="Logo" class="w-100">
-                        </div>
+    <div class="header_menu" id="header_menu">
+
+        <nav class="navbar navbar-expand-lg container py-2">
+            <div class="row">
+                <div class="col-lg-2 col-md-6">
+                    <div class="navbar-brand m-0">
+                        <img src="assets/images/logo/1.png" alt="Logo" class="w-100">
                     </div>
-                    <div class="col-lg-7 col-md-6 ">
-                        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-                            <ul class="navbar-nav align-items-center" id="responsive-menu">
-                                <li class="nav-item ">
-                                    <a class="nav-link px-2 my-4 py-0 text-white" aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-2 my-4 py-0 text-white" href="about.html">About</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle px-2 my-4 py-0 text-white" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Speaker
-                                    </a>
-                                    <ul class="dropdown-menu bg-lightgrey p-0 rounded">
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="speaker_list.html">Speakers List</a></li>
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="speaker_detail.html">Speakers Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle px-2 my-4 py-0 text-white" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Schedule
-                                    </a>
-                                    <ul class="dropdown-menu bg-lightgrey p-0 rounded">
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="event_list.html">Event List</a></li>
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="event-detail.html">Event Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle px-2 my-4 py-0 text-white" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Pages
-                                    </a>
-                                    <ul class="dropdown-menu bg-lightgrey p-0 rounded">
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="sponsers.html">Sponsors</a></li>
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="gallery.html">Gallery</a></li>
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="pricing.html">Pricing</a></li>
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0" href="faq.html">Faq</a>
-                                        </li>
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="testimonial.html">Testimonials</a></li>
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="product-list.html">Product List</a></li>
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="product-single.html">Product Single</a></li>
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0" href="error.html">404
-                                                Error</a></li>
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="search-result.html">Search Result</a></li>
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="coming-soon.html">Coming Soon</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link dropdown-toggle px-2 my-4 py-0 text-white" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        News
-                                    </a>
-                                    <ul class="dropdown-menu bg-lightgrey p-0 rounded">
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="news-list.html">News List</a></li>
-                                        <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                                href="news-single.html">News Single</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-2 my-4 py-0 text-white" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="menu-search">
-                            <a href="#search1" class="mt_search">
-                                <i class="fa fa-search fa-lg me-5 text-white"></i>
-                            </a>
-                            <a class="btn btn3" href="book-now.html">Buy Ticket<i class="fa fa-long-arrow-right ms-4"></i></a>
-                        </div>
-                    </div>
-                    <div id="slicknav-mobile"></div>
                 </div>
-            </nav>
-        </div>
-        <div id="search1">
+                <div class="col-lg-10 col-md-6">
+                    <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                        <ul class="navbar-nav align-items-center" id="responsive-menu">
+                            <li class="nav-item ">
+                                <a class="nav-link px-2 my-4 py-0 text-white" aria-current="page" href="/">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle px-2 my-4 py-0 text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Congress Information
+                                </a>
+                                <ul class="dropdown-menu bg-lightgrey p-0 rounded">
+                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
+                                            href="#">Welcome Message</a></li>
+                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
+                                            href="#">Organizing Committee</a></li>
+                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
+                                            href="#">Faculties</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle px-2 my-4 py-0 text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Scientific Program
+                                </a>
+                                <ul class="dropdown-menu bg-lightgrey p-0 rounded">
+                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
+                                            href="#">Program at Glance</a></li>
+                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
+                                            href="#">Scientific Schedule </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 my-4 py-0 text-white" href="#">Registration</a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle px-2 my-4 py-0 text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Submission
+                                </a>
+                                <ul class="dropdown-menu bg-lightgrey p-0 rounded">
+                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
+                                            href="#">Guideline for Abstract</a></li>
+                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
+                                            href="#">Abstract Submission</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle px-2 my-4 py-0 text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Visiting
+                                </a>
+                                <ul class="dropdown-menu bg-lightgrey p-0 rounded">
+                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
+                                            href="#">Medan, North Sumatra</a></li>
+                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
+                                            href="#">Venue</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <!-- <a class="btn" href="#search1">Contact us</a> -->
+                    </div>
+                </div>
+                
+                <div id="slicknav-mobile"></div>
+            </div>
+        </nav>
+
+        <!-- <div id="search1">
             <button type="button" class="close">×</button>
             <form>
                 <input class="form-control form-control-lg rounded text-white" placeholder="Search...">
             </form>
             <button type="button" class="btn"><i class="fa fa-search text-white" aria-hidden="true"></i></button>
-        </div>
+        </div> -->
 
     </div>
     <!-- Navigation Bar Ends -->

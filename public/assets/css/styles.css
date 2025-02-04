@@ -37,7 +37,7 @@
 
 
 .dropdown-menu li:hover  a{
-  background-color: #e91e63 ;
+  background-color: #00474f ;
   color: #fff !important;
   transition: none;
 }
@@ -53,7 +53,7 @@
 }
 
 .fixed-top {
-  background-color: #002965;
+  background-color: #00474f;
 }
 
 @media (min-width: 992px) {
@@ -110,7 +110,7 @@
   } 
 
   .slicknav_nav a:hover, .slicknav_nav .slicknav_row:hover{
-    background-color: #E91E63;
+    background-color: #00474f;
   }
 
   .nav-link{
@@ -132,7 +132,7 @@
  
   a.nav-link.dropdown-toggle:focus{
     color: #fff !important;
-    background-color: #E91E63;
+    background-color: #00474f;
   }
 
   .dropdown-menu li:first-child:hover  a, .dropdown-menu li,   .dropdown-menu li:last-child:hover  a{
@@ -153,7 +153,7 @@
   }
 
   li.nav-item.dropdown.slicknav_parent.slicknav_open > a > a {
-    background: #e91e63;
+    background: #00474f;
     color : #fff !important;
   }
 
@@ -162,7 +162,7 @@
   } 
 
  .slicknav_btn.slicknav_open:before:hover{
-  color: #E91E63;
+  color: #00474f;
   }
 }
 
@@ -302,7 +302,7 @@
 }
 
 .overview-event-info a:hover i{
-  background-color: #3A4CB4;
+  background-color: #002965;
   transition: all .5s ease-in-out;
 }
 
@@ -352,7 +352,7 @@
 }
 
 .feature .overlay{
-  background-image: linear-gradient(180deg, #E91E63 0%, #3A4CB4 100%);
+  background-image: linear-gradient(0deg, #002965 0%, #00474f 100%);
 }
 
 .feature-box i{
