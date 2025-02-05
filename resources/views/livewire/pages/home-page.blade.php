@@ -7,7 +7,7 @@
                     <div class="col-lg-6 order-2 order-lg-1">
                         <div class="banner-left text-center pb-lg-5 p-md-0">
                             <div class="banner-image">
-                                <img src="assets/images/banner.png" alt="banner-image" class="w-50"><br>
+                                <img src="assets/images/banner.png" alt="banner-image" class="w-75"><br>
                             </div>
                             <div class="countdown">
                                 <div id="countdown"
@@ -38,6 +38,7 @@
                     <div class="col-lg-6 order-1 order-lg-2">
                         <div class="banner-right  ms-2 text-center text-lg-start pb-8">
                             <div class="banner-title pb-3">
+                                <img src="assets/images/logo/3.png" class="w-75 mb-3" alt="Logo-asosiasi">
                                 <h4 class="text-white pb-3"><span class="kuning">48<sup>th</sup></span> Annual Scientific Meeting of</h4>
                                 <h1 class="text-white">Indonesian <span class="kuning">Urological</span> Association</h1>
                             </div>
@@ -86,29 +87,16 @@
                     <div class="col-lg-6">
                         <div class="overview-left text-center text-lg-start">
                             <div class="overview-title pb-4">
-                                <!-- <p class="mb-1 kuning">OVERVIEW</p> -->
+                                <img src="assets/images/logo/3.png" class="w-100 mb-3" alt="Logo-asosiasi">
                                 <img src="assets/images/logo/2.png" alt="Logo" class="w-50 mb-3">
                                 <p>48<sup>th</sup> Annual Scientific Meeting of Indonesian Urological Association</p>
                                 <p class="mb-2 fst-italic">" "</p>
 
-                                <p class="mb-0">Organized by</p>
-                                <p>Indonesian Urological Association (InaUA)</p>
+                                <p class="mb-0 opacity-70"><small>Organized by</small></p>
+                                <p><small>Indonesian Urological Association (InaUA)</small></p>
                             </div>
                             <div class="overview-event-info pb-6 g-4 text-start position-absolute">
                                 <div class="row justify-content-around ">
-                                    <div class="col-lg-6 col-md-6">
-                                        <a>
-                                            <div class="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
-                                                <div class="event-info-icon text-center ">
-                                                    <i class="fa fa-map-marker  text-white bg-kuning rounded-circle me-3"></i>
-                                                </div>
-                                                <div class="location-info">
-                                                    <!-- <h5 class="mb-1">WHERE</h5> -->
-                                                    <small>Santika Premiere Dyandra Hotel & Convention, Medan, North Sumatra</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
                                     <div class="col-lg-6 col-md-6">
                                         <a>
                                             <div class="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
@@ -122,6 +110,20 @@
                                             </div>
                                         </a>
                                     </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <a>
+                                            <div class="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                                                <div class="event-info-icon text-center ">
+                                                    <i class="fa fa-map-marker  text-white bg-kuning rounded-circle me-3"></i>
+                                                </div>
+                                                <div class="location-info">
+                                                    <!-- <h5 class="mb-1">WHERE</h5> -->
+                                                    <small>Santika Premiere Dyandra Hotel & Convention, Medan, North Sumatra</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -157,21 +159,46 @@
             <div class="partner-inner">
                 <div class="partner-title text-center pb-6 w-lg-60 m-auto">
                     <p class="mb-1 kuning">48<sup>th</sup> ASMIUA</p>
-                    <h2 class="mb-1">important <span class="text-blue">Dates</span></h2>
+                    <h2 class="mb-1">important <span class="kuning">Dates</span></h2>
                 </div>
                 <div class="col-lg-10 offset-lg-1">
                     <div class="table-responsive">
-                        <table class="table">
+                        <table class="table text-primary">
 
                             <tbody>
                                 <tr>
-                                    <th style="width: 50%;">early bird</th>
-                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                                    <td style="width: 50%;">Deadline for Early Bird Registration</td>
+                                    <td>10<sup>th</sup> June 2025 </td>
                                 </tr>
                                 <tr>
-                                    <th style="width: 50%;">early bird</th>
-                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                                    <td>Deadline for Abstracts Submission</td>
+                                    <td>30<sup>th</sup> June 2025 </td>
                                 </tr>
+                                <tr>
+                                    <td>Masterclass/Workshops</td>
+                                    <td>24<sup>th</sup> September 2025 </td>
+                                </tr>
+                                <tr>
+                                    <td>Opening Ceremony</td>
+                                    <td>25<sup>th</sup> September 2025 </td>
+                                </tr>
+                                <tr>
+                                    <td>Symposium</td>
+                                    <td>25<sup>th</sup> - 27<sup>th</sup> September 2025 </td>
+                                </tr>
+                                <tr>
+                                    <td>Exhibition Show Days</td>
+                                    <td>25<sup>th</sup> - 27<sup>th</sup> September 2025 </td>
+                                </tr>
+                                <tr>
+                                    <td>IAUI Night</td>
+                                    <td>25<sup>th</sup> - 27<sup>th</sup> September 2025 </td>
+                                </tr>
+                                <tr>
+                                    <td>Urocare 2025</td>
+                                    <td>28<sup>th</sup> September 2025 </td>
+                                </tr>
+
 
                             </tbody>
                         </table>
@@ -238,12 +265,59 @@
                                     <h2 class="mb-2 text-white">Welcome <span class="kuning">message </span></h2>
                                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
+            </div>
+        </div>
+    </section>
+
+    <section class="direction pb-0">
+        <div class="container">
+            <div class="section-title text-center pb-2 w-lg-60 m-auto">
+                <p class="mb-1  kuning">Visiting</p>
+                <h2 class="mb-1">GET DIRECTION TO THE <span class="kuning">Venue</span></h2>
+                <!-- <p class="mb-0">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.
+                </p> -->
+            </div>
+            <div class="direction-content">
+                <div class="direction-info">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 px-1">
+                            <div class="p-6 d-flex text-white w-100 h-100 rounded bg-blue ">
+                                <div class="justify-content-center align-self-center ms-6">
+                                    <h5 class="text-white pb-2">EVENT VENUE:</h5>
+                                    <p class="pb-5 m-0">Santika Premiere Dyandra Hotel & Convention</p>
+                                    <h5 class="text-white pb-2">ADDRESS:</h5>
+                                    <p class="pb-5 m-0">Kapten Maulana Lubis No.7, Petisah Tengah, Kec. Medan Petisah, Medan City, North Sumatra</p>
+                                    <!-- <h5 class="text-white pb-2">RECEPTION INFO:</h5>
+                                    <p class="pb-5 m-0">Booking: (+62) 1919-2020</p> -->
+                                    <a>Get Directions</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-7 px-1 py-2">
+                            <iframe height="400" class="rounded w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.993011784665!2d98.6676701954653!3d3.589077314075902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131cfb9769189%3A0xc73602d265aeceb4!2sHotel%20Santika%20Premiere%20Dyandra%20Hotel%20%26%20Convention!5e0!3m2!1sen!2sid!4v1738729066520!5m2!1sen!2sid"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-gallery">
+                    <div id="selector" class="row pt-1 justify-content-center">
+                        <div class="item col-lg-4 col-md-6 p-1" data-src="assets/images/group/4.jpg">
+                            <a><img src="assets/images/thumbnail/4.jpg" class="w-100 rounded" alt="Santika Premiere Dyandra Hotel & Convention"></a>
+                        </div>
+                        <div class="item col-lg-4 col-md-6 p-1" data-src="assets/images/group/5.jpg">
+                            <a><img src="assets/images/thumbnail/5.jpg" class="w-100 rounded" alt="Santika Premiere Dyandra Hotel & Convention"></a>
+                        </div>
+                        <div class="item col-lg-4 col-md-6 p-1" data-src="assets/images/group/6.jpg">
+                            <a><img src="assets/images/thumbnail/6.jpg" class="w-100 rounded" alt="Santika Premiere Dyandra Hotel & Convention"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

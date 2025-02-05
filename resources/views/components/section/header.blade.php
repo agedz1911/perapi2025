@@ -63,29 +63,30 @@
                         <img src="assets/images/logo/1.png" alt="Logo" class="w-100">
                     </div>
                 </div>
-                <div class="col-lg-10 col-md-6">
+                <div class="col-lg-9 offset-lg-1 col-md-6">
                     <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
                         <ul class="navbar-nav align-items-center" id="responsive-menu">
                             <li class="nav-item ">
-                                <a class="nav-link px-2 my-4 py-0 text-white" aria-current="page" href="/">Home</a>
+                                <a class="nav-link px-2 my-4 py-0  {{ request()->is('/') ? 'active' : '' }}"
+                                    aria-current="page" href="/">Home</a>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle px-2 my-4 py-0 text-white" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle px-2 my-4 py-0 {{ request()->is('organizing-committee') || request()->is('/welcome-message') || request()->is('/faculties') ? 'active' : '' }}"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Congress Information
                                 </a>
                                 <ul class="dropdown-menu bg-lightgrey p-0 rounded">
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
                                             href="#">Welcome Message</a></li>
-                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                            href="#">Organizing Committee</a></li>
+                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0 {{ request()->is('organizing-committee') ? 'text-warning' : '' }}"
+                                            href="/organizing-committee" wire:navigate>Organizing Committee</a></li>
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
                                             href="#">Faculties</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle px-2 my-4 py-0 text-white" href="#" role="button"
+                                <a class="nav-link dropdown-toggle px-2 my-4 py-0" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Scientific Program
                                 </a>
@@ -97,22 +98,26 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-2 my-4 py-0 text-white" href="#">Registration</a>
+                                <a class="nav-link px-2 my-4 py-0" href="#">Registration</a>
                             </li>
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle px-2 my-4 py-0 text-white" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                            <li class="nav-item">
+                                <a class="nav-link px-2 my-4 py-0 {{ request()->is('submission') ? 'active' : '' }}"
+                                    href="/submission">Submission</a>
+                            </li>
+                            {{-- <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle px-2 my-4 py-0 {{ request()->is('guideline-abstract') ? 'active' : '' }}"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Submission
                                 </a>
                                 <ul class="dropdown-menu bg-lightgrey p-0 rounded">
-                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                            href="#">Guideline for Abstract</a></li>
+                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0 {{ request()->is('guideline-abstract') ? 'text-warning' : '' }}"
+                                            href="/guideline-abstract" wire:navigate>Guideline for Abstract</a></li>
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
                                             href="#">Abstract Submission</a></li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle px-2 my-4 py-0 text-white" href="#" role="button"
+                                <a class="nav-link dropdown-toggle px-2 my-4 py-0" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Visiting
                                 </a>
@@ -128,7 +133,7 @@
                         <!-- <a class="btn" href="#search1">Contact us</a> -->
                     </div>
                 </div>
-                
+
                 <div id="slicknav-mobile"></div>
             </div>
         </nav>
@@ -136,9 +141,9 @@
         <!-- <div id="search1">
             <button type="button" class="close">×</button>
             <form>
-                <input class="form-control form-control-lg rounded text-white" placeholder="Search...">
+                <input class="form-control form-control-lg rounded" placeholder="Search...">
             </form>
-            <button type="button" class="btn"><i class="fa fa-search text-white" aria-hidden="true"></i></button>
+            <button type="button" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
         </div> -->
 
     </div>
