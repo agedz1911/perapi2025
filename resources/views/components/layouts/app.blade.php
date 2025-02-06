@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{{ $title ?? 'Page Title' }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="48 Annual Scientific Meeting of Indonesian Urological Association" />
+    <meta name="keywords" content="urology, urology education, urological, indonesia urologi, iaui, incontinence urology, pan pasific urology, ppcs, PPCS, continence care" />
+    <meta name="author" content="AV-PRO" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -15,6 +19,9 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <!--Custom CSS-->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
 
 
     <!--FontAwesome CSS-->

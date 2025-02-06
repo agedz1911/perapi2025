@@ -6,23 +6,23 @@
                     <div class="col-lg-6">
                         <div class="social-links ">
                             <ul class="m-0 p-0">
-                                <li class="d-inline">
-                                    <a href="#">
-                                        <i class="fa fa-envelope-open border-social rounded-circle text-center"></i>
+                                <li class="d-inline" >
+                                    <a href="mailto:asmiua2025@pharma-pro.com">
+                                        <i class="fa fa-envelope-open border-social rounded-circle text-center" ></i>
                                     </a>
                                 </li>
                                 <li class="d-inline">
-                                    <a href="#">
+                                    <a href="tel:+622163869502 ">
                                         <i class="fa fa-mobile-screen border-social rounded-circle text-center"></i>
                                     </a>
                                 </li>
                                 <li class="d-inline">
-                                    <a href="#">
+                                    <a href="https://wa.me/+628111018517">
                                         <i class="fa fa-whatsapp border-social rounded-circle text-center"></i>
                                     </a>
                                 </li>
                                 <li class="d-inline">
-                                    <a href="#">
+                                    <a href="javascript:void(0)">
                                         <i class="fa fa-instagram border-social rounded-circle text-center"></i>
                                     </a>
                                 </li>
@@ -35,15 +35,21 @@
                             <ul class="m-0 p-0">
                                 <li class="px-2 border-end border-lightgrey border-opacity-50 d-inline">
                                     <i class="fa fa-phone pe-1"></i>
-                                    <small>+62 21 6386 9502 </small>
+                                    <a href="tel:+622163869502">
+                                        <small>+62 21 6386 9502 </small>
+                                    </a>
                                 </li>
                                 <li class=" px-2 border-end d-inline border-lightgrey border-opacity-50">
                                     <i class="fa fa-envelope-o pe-1"></i>
-                                    <small>asmiua2025@pharma-pro.com</small>
+                                    <a href="mailto:asmiua2025@pharma-pro.com">    
+                                        <small>asmiua2025@pharma-pro.com</small>
+                                    </a>
                                 </li>
                                 <li class=" px-2 d-inline ">
                                     <i class="fa fa-whatsapp pe-1"></i>
-                                    <small>+62 811 1018 517</small>
+                                    <a href="https://wa.me/+628111018517">
+                                        <small>+62 811 1018 517</small>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -92,13 +98,13 @@
                                 </a>
                                 <ul class="dropdown-menu bg-lightgrey p-0 rounded">
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                            href="#">Program at Glance</a></li>
+                                            href="javascript:void(0)">Program at Glance</a></li>
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                            href="#">Scientific Schedule </a></li>
+                                            href="javascript:void(0)">Scientific Schedule </a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-2 my-4 py-0" href="#">Registration</a>
+                                <a class="nav-link px-2 my-4 py-0" href="javascript:void(0)">Registration</a>
                             </li>
                             <li class="nav-item">
                                 <a wire:navigate class="nav-link px-2 my-4 py-0 {{ request()->is('submission') ? 'active' : '' }}"
@@ -106,15 +112,15 @@
                             </li>
                             {{-- <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle px-2 my-4 py-0 {{ request()->is('guideline-abstract') ? 'active' : '' }}"
-                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Submission
-                                </a>
-                                <ul class="dropdown-menu bg-lightgrey p-0 rounded">
-                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0 {{ request()->is('guideline-abstract') ? 'text-warning' : '' }}"
-                                            href="/guideline-abstract" wire:navigate>Guideline for Abstract</a></li>
-                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                            href="#">Abstract Submission</a></li>
-                                </ul>
+                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Submission
+                            </a>
+                            <ul class="dropdown-menu bg-lightgrey p-0 rounded">
+                                <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0 {{ request()->is('guideline-abstract') ? 'text-warning' : '' }}"
+                                        href="/guideline-abstract" wire:navigate>Guideline for Abstract</a></li>
+                                <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
+                                        href="#">Abstract Submission</a></li>
+                            </ul>
                             </li> --}}
                             <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle px-2 my-4 py-0" href="#" role="button"
@@ -123,9 +129,9 @@
                                 </a>
                                 <ul class="dropdown-menu bg-lightgrey p-0 rounded">
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                            href="#">Medan, North Sumatra</a></li>
+                                            href="javascript:void(0)">Medan, North Sumatra</a></li>
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                            href="#">Venue</a></li>
+                                            href="javascript:void(0)">Venue</a></li>
                                 </ul>
                             </li>
 
