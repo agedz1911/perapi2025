@@ -101,7 +101,7 @@
                                 <a class="nav-link px-2 my-4 py-0" href="#">Registration</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-2 my-4 py-0 {{ request()->is('submission') ? 'active' : '' }}"
+                                <a wire:navigate class="nav-link px-2 my-4 py-0 {{ request()->is('submission') ? 'active' : '' }}"
                                     href="/submission">Submission</a>
                             </li>
                             {{-- <li class="nav-item dropdown ">

@@ -2,50 +2,35 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\WelcomeMessageResource\Pages;
-use App\Filament\Resources\WelcomeMessageResource\RelationManagers;
-use App\Models\WelcomeMessage;
+use App\Filament\Resources\GuidelineAbstractResource\Pages;
+use App\Filament\Resources\GuidelineAbstractResource\RelationManagers;
+use App\Models\GuidelineAbstract;
 use Filament\Forms;
-use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
-use Filament\Tables\Columns\IconColumn;
-use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class WelcomeMessageResource extends Resource
+class GuidelineAbstractResource extends Resource
 {
-    protected static ?string $model = WelcomeMessage::class;
+    protected static ?string $model = GuidelineAbstract::class;
     protected static ?string $navigationGroup = 'Front End Page';
-    protected static ?string $navigationIcon = 'heroicon-o-pencil-square';
+    protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                TextInput::make('name'),
                 TextInput::make('title'),
+                TextInput::make('category'),
                 MarkdownEditor::make('description'),
-                FileUpload::make('image')
-                    ->maxSize(3072)
-                    ->downloadable()
-                    ->reorderable()
-                    ->panelLayout('grid')
-                    ->image()
-                    ->imageEditor()
-                    ->directory('welcomeMessage'),
                 TextInput::make('no_urut')
-                    ->numeric(),
-                Toggle::make('is_active')
-                    ->inline()
-                    ->default(true),
+                    ->numeric()
             ]);
     }
 
@@ -53,15 +38,13 @@ class WelcomeMessageResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('no_urut'),
-                ImageColumn::make('image'),
-                TextColumn::make('name'),
                 TextColumn::make('title'),
+                TextColumn::make('category')
+                    ->sortable(),
                 TextColumn::make('description')
                     ->markdown()
-                    ->limit(80),
-                IconColumn::make('is_active')
-                    ->boolean()
+                    ->limit(70),
+                TextColumn::make('no_urut')
             ])
             ->filters([
                 //
@@ -87,9 +70,9 @@ class WelcomeMessageResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListWelcomeMessages::route('/'),
-            'create' => Pages\CreateWelcomeMessage::route('/create'),
-            'edit' => Pages\EditWelcomeMessage::route('/{record}/edit'),
+            'index' => Pages\ListGuidelineAbstracts::route('/'),
+            'create' => Pages\CreateGuidelineAbstract::route('/create'),
+            'edit' => Pages\EditGuidelineAbstract::route('/{record}/edit'),
         ];
     }
 }

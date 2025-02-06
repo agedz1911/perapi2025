@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Pages;
 
+use App\Models\GuidelineAbstract as ModelsGuidelineAbstract;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
@@ -11,6 +12,8 @@ class GuidelineAbstract extends Component
 {
     public function render()
     {
-        return view('livewire.pages.guideline-abstract');
+        $guidelineAbstracts = ModelsGuidelineAbstract::where('category', 'Abstract Free Paper')->orderBy('no_urut', 'asc')->get();
+        $guidelineVideos = ModelsGuidelineAbstract::where('category', 'Abstract Video')->orderBy('no_urut', 'asc')->get();
+        return view('livewire.pages.guideline-abstract', ['guidelineAbstracts' => $guidelineAbstracts, 'guidelineVideos' => $guidelineVideos]);
     }
 }

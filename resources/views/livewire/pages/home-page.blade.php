@@ -104,7 +104,6 @@
                                                     <i class="fa fa-calendar-o  text-white bg-kuning rounded-circle me-3"></i>
                                                 </div>
                                                 <div class="time-info">
-                                                    <!-- <h5 class="mb-1">WHEN</h5> -->
                                                     <small>Wednesday To Saturday <br> Sept, 24-27, 2025</small>
                                                 </div>
                                             </div>
@@ -117,7 +116,6 @@
                                                     <i class="fa fa-map-marker  text-white bg-kuning rounded-circle me-3"></i>
                                                 </div>
                                                 <div class="location-info">
-                                                    <!-- <h5 class="mb-1">WHERE</h5> -->
                                                     <small>Santika Premiere Dyandra Hotel & Convention, Medan, North Sumatra</small>
                                                 </div>
                                             </div>
@@ -161,47 +159,9 @@
                     <p class="mb-1 kuning">48<sup>th</sup> ASMIUA</p>
                     <h2 class="mb-1">important <span class="kuning">Dates</span></h2>
                 </div>
-                <div class="col-lg-10 offset-lg-1">
-                    <div class="table-responsive">
-                        <table class="table text-primary">
-
-                            <tbody>
-                                <tr>
-                                    <td style="width: 50%;">Deadline for Early Bird Registration</td>
-                                    <td>10<sup>th</sup> June 2025 </td>
-                                </tr>
-                                <tr>
-                                    <td>Deadline for Abstracts Submission</td>
-                                    <td>30<sup>th</sup> June 2025 </td>
-                                </tr>
-                                <tr>
-                                    <td>Masterclass/Workshops</td>
-                                    <td>24<sup>th</sup> September 2025 </td>
-                                </tr>
-                                <tr>
-                                    <td>Opening Ceremony</td>
-                                    <td>25<sup>th</sup> September 2025 </td>
-                                </tr>
-                                <tr>
-                                    <td>Symposium</td>
-                                    <td>25<sup>th</sup> - 27<sup>th</sup> September 2025 </td>
-                                </tr>
-                                <tr>
-                                    <td>Exhibition Show Days</td>
-                                    <td>25<sup>th</sup> - 27<sup>th</sup> September 2025 </td>
-                                </tr>
-                                <tr>
-                                    <td>IAUI Night</td>
-                                    <td>25<sup>th</sup> - 27<sup>th</sup> September 2025 </td>
-                                </tr>
-                                <tr>
-                                    <td>Urocare 2025</td>
-                                    <td>28<sup>th</sup> September 2025 </td>
-                                </tr>
-
-
-                            </tbody>
-                        </table>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 offset-lg-1">
+                        <livewire:section.important-date />
                     </div>
                 </div>
             </div>
@@ -218,13 +178,13 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-4 p-2 ">
                                 <div class="counter-box p-2 border-end border-white border-opacity-25">
-                                    <h1 class="text-white m-0"><span class="num" data-val="50"></span><span>+</span></h1>
+                                    <h1 class="text-white m-0"><span class="num" data-val="100"></span><span>+</span></h1>
                                     <p>Speakers</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 p-2">
                                 <div class="counter-box p-2 border-end border-white border-opacity-25">
-                                    <h1 class="text-white m-0"><span class="num" data-val="100"></span><span>+</span></h1>
+                                    <h1 class="text-white m-0"><span class="num" data-val="50"></span><span>+</span></h1>
                                     <p>Symposium</p>
                                 </div>
                             </div>
@@ -243,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="general-ques mt-5">
+                <!-- <div class="general-ques mt-5">
                     <div class="row">
                         <div class="col-lg-6 order-2 order-lg-1 p-2">
                             <div class="general-ques-left text-white">
@@ -252,7 +212,7 @@
                                 </div>
                                 <div class="speaker-statement-box p-4 rounded bg-blue w-lg-80 mb-mi">
                                     <div class="speaker-statement ps-4 border-start border-white border-7">
-                                        <!-- <p><small>" Congress Chairman "</small></p> -->
+                                        <p><small>" Congress Chairman "</small></p>
                                         <h6 class="text-white">Name</h6>
                                     </div>
                                 </div>
@@ -261,7 +221,7 @@
                         <div class="col-lg-6 order-1 order-lg-2 p-2">
                             <div class="general-ques-right">
                                 <div class="section-title pb-4 text-center text-lg-start">
-                                    <!-- <p class="mb-1 kuning">GENERAL QUESTIONS</p> -->
+                                    <p class="mb-1 kuning">GENERAL QUESTIONS</p>
                                     <h2 class="mb-2 text-white">Welcome <span class="kuning">message </span></h2>
                                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 </div>
@@ -269,7 +229,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -280,9 +240,6 @@
             <div class="section-title text-center pb-2 w-lg-60 m-auto">
                 <p class="mb-1  kuning">Visiting</p>
                 <h2 class="mb-1">GET DIRECTION TO THE <span class="kuning">Venue</span></h2>
-                <!-- <p class="mb-0">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                    id est laborum.
-                </p> -->
             </div>
             <div class="direction-content">
                 <div class="direction-info">

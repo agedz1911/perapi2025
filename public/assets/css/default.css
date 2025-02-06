@@ -39,6 +39,9 @@
 .bg-kuning {
     background-color: #FFCE3D;
 }
+.bg-hijau {
+    background-color: #00474f;
+}
 
 /*Border color */
 .border-lightgrey {
@@ -71,8 +74,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
     font-weight: 700;
     font-family: "Poppins", serif;
     text-transform: uppercase;
@@ -836,10 +838,20 @@ textarea::placeholder {
     border: solid;
     border-width: 1px;
 }
+.btn3 {
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 15px 25px;
+    transition: all 0.5s ease-in-out;
+    background-color: #00474f;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
 .btn3:hover {
-    background-color: #fff;
-    color: #2b3990;
+    background-color: #f7ad00;
+    color: #fff;
     transition: all 0.5s ease-in-out;
 }
 

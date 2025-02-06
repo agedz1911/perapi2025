@@ -12,153 +12,27 @@
     <section class="speakers">
         <div class="container">
             <div class="speaker-inner">
-                <div class="sepaker-list text-center text-white">
-                    <div class="row">
-                        <h4 class="mb-5"><span class="badge bg-kuning px-6 py-3 rounded">Scientific</span></h4>
-                        <div class=" col-lg-3 col-md-6 p-2">
+                <div class="sepaker-list">
+                    <div class="row justify-content-center text-center">
+                        @foreach ($uniqueCategories as $category)
+                        <h4 class="mb-1 mt-3"><span class="badge bg-kuning px-6 py-3 rounded">{{$category}}</span></h4>
+                        @foreach ($committees as $committee)
+                        @if ($committee->category == $category)
+                        <div class="col-lg-3 col-md-4 col-12 p-2 ">
                             <div class="speaker-box  position-relative overflow-hidden text-white">
-                                <img class="speaker-image rounded w-100" src="assets/images/speakers/1.jpg" alt="speaker-image">
-                                <div class="box-content position-absolute bottom-0 z-1">
-                                    <h6 class="speaker-title d-block text-white pb-1"><a href="speaker_detail.html">GERARDO AMBROSE</a>
+                                <img class="speaker-image rounded w-100"
+                                    src="{{$committee->image ? asset('storage/' . $committee->image) : "
+                                    assets/images/speakers/2.JPG"}}" alt="speaker-image">
+                                <div class="card shadow-sm border-top-0 mt-1">
+                                    <h6><a class="text-blue" href="javascript:void(0)">{{$committee->name}}</a>
                                     </h6>
-                                    <span class="speaker-post d-block pb-2">Marketing Expert</span>
-                                    <ul class="social-link pb-2 ps-0">
-                                        <li class="d-inline-block"><a href="#" class="rounded d-block me-1"><i
-                                                    class="fa fa-facebook"></i></a></li>
-                                        <li class="d-inline-block"><a href="#" class="rounded d-block me-1"><i
-                                                    class="fa fa-twitter"></i></a></li>
-                                        <li class="d-inline-block"><a href="#" class="rounded d-block me-1"><i
-                                                    class="fa fa-pinterest-p"></i></a></li>
-                                    </ul>
+                                    <span class="speaker-post d-block pb-2">{{$committee->title}}</span>
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-lg-3 col-md-6 p-2">
-                            <div class="speaker-box position-relative overflow-hidden">
-                                <img class="speaker-image rounded w-100" src="assets/images/speakers/2.jpg" alt="speaker-image">
-                                <div class="box-content position-absolute bottom-0 z-1">
-                                    <h6 class="speaker-title d-block text-white pb-1"><a href="speaker_detail.html">GERARDO AMBROSE</a>
-                                    </h6>
-                                    <span class="speaker-post d-block pb-2">Marketing Expert</span>
-                                    <ul class="social-link pb-2 ps-0 position-relative">
-                                        <li class="d-inline-block"><a href="#" class="rounded d-block me-1"><i
-                                                    class="fa fa-facebook"></i></a></li>
-                                        <li class="d-inline-block"><a href="#" class="rounded d-block me-1"><i
-                                                    class="fa fa-twitter"></i></a></li>
-                                        <li class="d-inline-block"><a href="#" class="rounded d-block me-1"><i
-                                                    class="fa fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 p-2">
-                            <div class="speaker-box position-relative overflow-hidden">
-                                <img class="speaker-image rounded w-100" src="assets/images/speakers/3.jpg" alt="speaker-image">
-                                <div class="box-content position-absolute bottom-0 z-1">
-                                    <h6 class="speaker-title d-block text-white pb-1"><a href="speaker_detail.html">GERARDO AMBROSE</a>
-                                    </h6>
-                                    <span class="speaker-post d-block pb-2">Marketing Expert</span>
-                                    <ul class="social-link pb-2 ps-0">
-                                        <li class="d-inline-block"><a href=" " class="rounded  d-block me-1"><i
-                                                    class="fa fa-facebook"></i></a></li>
-                                        <li class="d-inline-block"><a href=" " class="rounded  d-block me-1"><i
-                                                    class="fa fa-twitter"></i></a></li>
-                                        <li class="d-inline-block"><a href=" " class="rounded  d-block me-1"><i
-                                                    class="fa fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 p-2">
-                            <div class="speaker-box position-relative overflow-hidden">
-                                <img class="speaker-image rounded w-100" src="assets/images/speakers/4.jpg" alt="speaker-image">
-                                <div class="box-content position-absolute bottom-0 z-1">
-                                    <h6 class="speaker-title d-block text-white pb-1"><a href="speaker_detail.html">GERARDO AMBROSE</a>
-                                    </h6>
-                                    <span class="speaker-post d-block pb-2">Marketing Expert</span>
-                                    <ul class="social-link pb-2 ps-0">
-                                        <li class="d-inline-block"><a href="#" class="rounded  d-block me-1"><i
-                                                    class="fa fa-facebook"></i></a></li>
-                                        <li class="d-inline-block"><a href="#" class="rounded  d-block me-1"><i
-                                                    class="fa fa-twitter"></i></a></li>
-                                        <li class="d-inline-block"><a href="#" class="rounded  d-block me-1"><i
-                                                    class="fa fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-lg-3 col-md-6 p-2">
-                            <div class="speaker-box position-relative overflow-hidden">
-                                <img class="speaker-image rounded w-100" src="assets/images/speakers/2.JPG" alt="speaker-image">
-                                <div class="box-content position-absolute bottom-0 z-1">
-                                    <h6 class="speaker-title d-block text-white pb-1"><a href="speaker_detail.html">GERARDO AMBROSE</a>
-                                    </h6>
-                                    <span class="speaker-post d-block pb-2">Marketing Expert</span>
-                                    <ul class="social-link pb-2 ps-0 position-relative">
-                                        <li class="d-inline-block"><a href="#" class="rounded d-block me-1"><i
-                                                    class="fa fa-facebook"></i></a></li>
-                                        <li class="d-inline-block"><a href="#" class="rounded d-block me-1"><i
-                                                    class="fa fa-twitter"></i></a></li>
-                                        <li class="d-inline-block"><a href="#" class="rounded d-block me-1"><i
-                                                    class="fa fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 p-2">
-                            <div class="speaker-box position-relative overflow-hidden">
-                                <img class="speaker-image rounded w-100" src="assets/images/speakers/3.jpg" alt="speaker-image">
-                                <div class="box-content position-absolute bottom-0 z-1">
-                                    <h6 class="speaker-title d-block text-white pb-1"><a href="speaker_detail.html">GERARDO AMBROSE</a>
-                                    </h6>
-                                    <span class="speaker-post d-block pb-2">Marketing Expert</span>
-                                    <ul class="social-link pb-2 ps-0">
-                                        <li class="d-inline-block"><a href=" " class="rounded  d-block me-1"><i
-                                                    class="fa fa-facebook"></i></a></li>
-                                        <li class="d-inline-block"><a href=" " class="rounded  d-block me-1"><i
-                                                    class="fa fa-twitter"></i></a></li>
-                                        <li class="d-inline-block"><a href=" " class="rounded  d-block me-1"><i
-                                                    class="fa fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-lg-3 col-md-6 p-2">
-                            <div class="speaker-box  position-relative overflow-hidden text-white">
-                                <img class="speaker-image rounded w-100" src="assets/images/speakers/1.jpg" alt="speaker-image">
-                                <div class="box-content position-absolute bottom-0 z-1">
-                                    <h6 class="speaker-title d-block text-white pb-1"><a href="speaker_detail.html">GERARDO AMBROSE</a>
-                                    </h6>
-                                    <span class="speaker-post d-block pb-2">Marketing Expert</span>
-                                    <ul class="social-link pb-2 ps-0">
-                                        <li class="d-inline-block"><a href="#" class="rounded d-block me-1"><i
-                                                    class="fa fa-facebook"></i></a></li>
-                                        <li class="d-inline-block"><a href="#" class="rounded d-block me-1"><i
-                                                    class="fa fa-twitter"></i></a></li>
-                                        <li class="d-inline-block"><a href="#" class="rounded d-block me-1"><i
-                                                    class="fa fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 p-2">
-                            <div class="speaker-box position-relative overflow-hidden">
-                                <img class="speaker-image rounded w-100" src="assets/images/speakers/4.jpg" alt="speaker-image">
-                                <div class="box-content position-absolute bottom-0 z-1">
-                                    <h6 class="speaker-title d-block text-white pb-1"><a href="speaker_detail.html">GERARDO AMBROSE</a>
-                                    </h6>
-                                    <span class="speaker-post d-block pb-2">Marketing Expert</span>
-                                    <ul class="social-link pb-2 ps-0">
-                                        <li class="d-inline-block"><a href="#" class="rounded  d-block me-1"><i
-                                                    class="fa fa-facebook"></i></a></li>
-                                        <li class="d-inline-block"><a href="#" class="rounded  d-block me-1"><i
-                                                    class="fa fa-twitter"></i></a></li>
-                                        <li class="d-inline-block"><a href="#" class="rounded  d-block me-1"><i
-                                                    class="fa fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        @endif
+                        @endforeach
+                        @endforeach
                     </div>
                 </div>
             </div>

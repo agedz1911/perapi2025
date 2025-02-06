@@ -22,7 +22,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class CommitteeResource extends Resource
 {
     protected static ?string $model = Committee::class;
-    protected static ?string $navigationGroup = 'Frond End';
+    protected static ?string $navigationGroup = 'Front End Page';
     protected static ?string $navigationIcon = 'heroicon-o-user-group';
     protected static ?string $label = 'Organizing Committee';
     public static function form(Form $form): Form
