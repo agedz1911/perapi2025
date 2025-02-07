@@ -22,7 +22,7 @@
                             <div class="speaker-box  position-relative overflow-hidden text-white">
                                 <img class="speaker-image rounded w-100"
                                     src="{{$committee->image ? asset('storage/' . $committee->image) : "
-                                    assets/images/speakers/2.JPG"}}" alt="speaker-image">
+                                    assets/images/speaker.jpg"}}" alt="{{$committee->name}}">
                                 <div class="card shadow-sm border-top-0 mt-1">
                                     <h6><a class="text-blue" href="javascript:void(0)">{{$committee->name}}</a>
                                     </h6>
