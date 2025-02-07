@@ -20,7 +20,7 @@
                         @if ($committee->category == $category)
                         <div class="col-lg-3 col-md-4 col-12 p-2 ">
                             <div class="speaker-box  position-relative overflow-hidden text-white">
-                                <img class="speaker-image rounded w-100"
+                                <img class="speaker-image rounded img-fluid"
                                     src="{{$committee->image ? asset('storage/' . $committee->image) : "
                                     assets/images/speaker.jpg"}}" alt="{{$committee->name}}">
                                 <div class="card shadow-sm border-top-0 mt-1">
