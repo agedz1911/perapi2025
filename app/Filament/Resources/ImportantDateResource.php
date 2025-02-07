@@ -31,6 +31,8 @@ class ImportantDateResource extends Resource
                 TextInput::make('title'),
                 DatePicker::make('date')
                     ->native(false),
+                DatePicker::make('date_end')
+                    ->native(false),
                 TextInput::make('no_urut')
                     ->numeric(),
                 Toggle::make('is_active')
@@ -44,6 +46,8 @@ class ImportantDateResource extends Resource
             ->columns([
                 TextColumn::make('title'),
                 TextColumn::make('date')
+                    ->date(),
+                TextColumn::make('date_end')
                     ->date(),
                 TextColumn::make('no_urut'),
                 IconColumn::make('is_active')

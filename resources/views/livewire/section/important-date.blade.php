@@ -9,7 +9,12 @@
                         <p class="text-grey">{{$date->title}}</p>
                     </td>
                     <td>
-                        <p class="text-grey"> {{\Carbon\Carbon::parse($date->date)->format('d F, Y')}}</p>
+                        <p class="text-grey"> {{
+                            $date->date_end
+                            ? \Carbon\Carbon::parse($date->date)->format('d') . ' - ' .
+                            \Carbon\Carbon::parse($date->date_end)->format('d F, Y')
+                            : \Carbon\Carbon::parse($date->date)->format('d F, Y')
+                            }}</p>
                     </td>
                 </tr>
                 @endforeach

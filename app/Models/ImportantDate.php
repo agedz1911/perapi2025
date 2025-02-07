@@ -10,6 +10,7 @@ class ImportantDate extends Model
     protected $fillable = [
         'title',
         'date',
+        'date_end',
         'no_urut',
         'is_active'
     ];
