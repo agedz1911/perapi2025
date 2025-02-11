@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>{{ $title ?? 'Page Title' }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="48 Annual Scientific Meeting of Indonesian Urological Association" />
     <meta name="keywords" content="urology, urology education, urological, indonesia urologi, iaui, incontinence urology, pan pasific urology, ppcs, PPCS, continence care" />
     <meta name="author" content="AV-PRO" />
@@ -23,23 +22,24 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-
     <!--FontAwesome CSS-->
     <script src="https://kit.fontawesome.com/6d07745da9.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="assets/icons/font-awesome.min.css"> -->
+
+    <!-- fullcalendar -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+    
 </head>
 
 <body>
     <x-section.header />
     {{ $slot }}
-
     <x-section.footer />
-    <!--Bacl-to-top Button start-->
+
+    <!-- Back-to-top Button start -->
     <div id="back-to-top">
         <a href="#" class="bg-kuning position-relative align-items-center rounded-circle d-block"></a>
     </div>
-    <!--Bacl-to-top Button end-->
-
+    <!-- Back-to-top Button end -->
 
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

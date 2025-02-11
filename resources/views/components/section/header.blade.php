@@ -86,7 +86,7 @@
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
                                             href="#">Welcome Message</a></li>
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0 {{ request()->is('organizing-committee') ? 'text-warning' : '' }}"
-                                            href="/organizing-committee" wire:navigate>Organizing Committee</a></li>
+                                            href="/organizing-committee" >Organizing Committee</a></li>
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
                                             href="#">Faculties</a></li>
                                 </ul>
@@ -98,7 +98,7 @@
                                 </a>
                                 <ul class="dropdown-menu bg-lightgrey p-0 rounded">
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                            href="javascript:void(0)">Program at Glance</a></li>
+                                            href="/program-at-glance" >Program at Glance</a></li>
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
                                             href="javascript:void(0)">Scientific Schedule </a></li>
                                 </ul>
@@ -107,7 +107,7 @@
                                 <a class="nav-link px-2 my-4 py-0" href="javascript:void(0)">Registration</a>
                             </li>
                             <li class="nav-item">
-                                <a wire:navigate class="nav-link px-2 my-4 py-0 {{ request()->is('submission') ? 'active' : '' }}"
+                                <a  class="nav-link px-2 my-4 py-0 {{ request()->is('submission') ? 'active' : '' }}"
                                     href="/submission">Submission</a>
                             </li>
                             {{-- <li class="nav-item dropdown ">
@@ -117,7 +117,7 @@
                             </a>
                             <ul class="dropdown-menu bg-lightgrey p-0 rounded">
                                 <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0 {{ request()->is('guideline-abstract') ? 'text-warning' : '' }}"
-                                        href="/guideline-abstract" wire:navigate>Guideline for Abstract</a></li>
+                                        href="/guideline-abstract" >Guideline for Abstract</a></li>
                                 <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
                                         href="#">Abstract Submission</a></li>
                             </ul>
