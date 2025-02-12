@@ -24,9 +24,6 @@
 
     <!--FontAwesome CSS-->
     <script src="https://kit.fontawesome.com/6d07745da9.js" crossorigin="anonymous"></script>
-
-    <!-- fullcalendar -->
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
     
 </head>
 

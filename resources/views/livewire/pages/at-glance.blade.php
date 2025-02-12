@@ -9,53 +9,88 @@
         </div>
     </section>
 
-    <section>
+    <section class="">
         <div class="container">
-            <div id='calendar'></div>
+            <div class="table-responsive mt-5">
+                <table class="table">
+                    <thead>
+                        <tr class="text-center">
+                            <th scope="col" style="width: 8%;"></th>
+                            <th scope="col">Room 1</th>
+                            <th scope="col">Room 2</th>
+                            <th scope="col">Room 3</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{-- @foreach ($atglances->groupBy('time') as $time => $atglancesByTime)
+                        <tr>
+                            <th scope="row">{{$time}}</th>
+                            @foreach ($atglancesByTime as $atGlance)
+
+                            <td rowspan="{{$atGlance->rowspan}}"
+                                class="align-middle text-bg-{{$atGlance->status}} rounded">
+                                <span class="d-block text-center">{{$atGlance->title}}</span>
+                            </td>
+                            @endforeach
+                        </tr>
+                        @endforeach --}}
+                        @foreach ($times as $time)
+
+                        <tr>
+
+                            <th scope="row">{{ $time->time }}</th>
+
+                            @if ($time->atGlances->isEmpty())
+
+                            <td colspan="3" class="text-center">Tidak ada jadwal</td>
+
+                            @else
+
+                            @foreach ($time->atGlances as $atGlance)
+
+                            @if ($loop->first)
+
+                            <td rowspan="{{ $time->atGlances->count() }}"
+                                class="align-middle text-bg-secondary rounded">
+
+                                <span class="d-block text-center">{{ $atGlance->title }} {{ $atGlance->room }}</span>
+
+                            </td>
+
+                            @endif
+
+                            @endforeach
+
+                            @endif
+
+                        </tr>
+
+                        @foreach ($time->atGlances as $atGlance)
+
+                        @if (!$loop->first)
+
+                        <tr>
+
+                            <th scope="row">{{ $time->time }}</th>
+
+                            <td class="align-middle text-bg-secondary rounded">
+
+                                <span class="d-block text-center">{{ $atGlance->title }} {{ $atGlance->room }}</span>
+
+                            </td>
+
+                        </tr>
+
+                        @endif
+
+                        @endforeach
+
+                        @endforeach
+
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 </div>
-
-@script
-<script type="text/javascript">
-    document.addEventListener('livewire:initialized', () => {
-        const calendarEl = document.getElementById('calendar');
-
-        const calendar = new FullCalendar.Calendar(calendarEl, {
-            // plugins: [timeGridPlugin],
-            initialView: 'timeGridDay',
-            selectable: true,
-            validRange: {
-                start: '2025-09-24', // Tanggal mulai
-                end: '2025-09-28' // Tanggal akhir (exclusive)
-            },
-            slotMinTime: '07:00:00', // Jam mulai
-            slotMaxTime: '19:00:00', // Jam akhir
-            events: [
-                {
-                    title: 'Event 1', // Judul event
-                    start: '2025-09-24T07:00:00', // Tanggal dan waktu mulai
-                    end: '2025-09-24T09:00:00', // Tanggal dan waktu akhir
-                    backgroundColor: '#ff9f00', // Warna latar belakang
-                    borderColor: '#ff9f00', // Warna batas
-                    textColor: '#ffffff' // Warna teks
-                },
-                {
-                    title: 'Event 2', // Judul event
-                    start: '2025-09-24T07:00:00', // Tanggal dan waktu mulai
-                    end: '2025-09-24T09:00:00', // Tanggal dan waktu akhir
-                    backgroundColor: '#ff0100', // Warna latar belakang
-                    borderColor: '#ff0100', // Warna batas
-                    textColor: '#ffffff' // Warna teks
-                }
-            ],
-            select: function(info) {
-
-                console.log(info);
-
-            }
-        });
-        calendar.render();
-    });
-</script>
-@endscript
