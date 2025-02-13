@@ -14,6 +14,7 @@ class GuidelineAbstract extends Component
     {
         $guidelineAbstracts = ModelsGuidelineAbstract::where('category', 'Abstract Free Paper')->orderBy('no_urut', 'asc')->get();
         $guidelineVideos = ModelsGuidelineAbstract::where('category', 'Abstract Video')->orderBy('no_urut', 'asc')->get();
-        return view('livewire.pages.guideline-abstract', ['guidelineAbstracts' => $guidelineAbstracts, 'guidelineVideos' => $guidelineVideos]);
+        $eduvideos = ModelsGuidelineAbstract::where('category', 'Educative Video')->orderBy('no_urut', 'asc')->get();
+        return view('livewire.pages.guideline-abstract', ['guidelineAbstracts' => $guidelineAbstracts, 'guidelineVideos' => $guidelineVideos, 'eduvideos' => $eduvideos]);
     }
 }

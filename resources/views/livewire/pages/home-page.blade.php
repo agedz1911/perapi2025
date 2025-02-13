@@ -235,6 +235,8 @@
         </div>
     </section>
 
+    <livewire:section.competition />
+
     <section class="direction pb-0">
         <div class="container">
             <div class="section-title text-center pb-2 w-lg-60 m-auto">
