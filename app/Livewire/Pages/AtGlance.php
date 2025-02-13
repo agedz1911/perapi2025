@@ -11,13 +11,18 @@ use Livewire\Component;
 #[Title('Program at Glance')]
 class AtGlance extends Component
 {
+
+    public $atglances;
+
+    public function mount()
+    {
+        $this->atglances = ModelsAtGlance::all();
+    }
+
     public function render()
     {
-        $times = Time::with('atGlances')->get(); // Ambil data times beserta atGlances
-        $atglances = ModelsAtGlance::all();
-
-        $groupedAtGlances = $atglances->groupBy('time_id');
-
-        return view('livewire.pages.at-glance', (compact('times', 'groupedAtGlances')));
+        return view('livewire.pages.at-glance', [
+            'atglances' => $this->atglances,
+        ]);
     }
 }

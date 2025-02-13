@@ -9,9 +9,23 @@
         </div>
     </section>
 
-    <section class="">
-        <div class="container">
-            <div class="table-responsive mt-5">
+
+    <section class="bg-dark">
+        <div class="container" style="height: 500px;">
+            <div id="scheduler_here" class="dhx_cal_container mb-5">
+                <div class="dhx_cal_navline">
+                    <div class="dhx_cal_prev_button">&nbsp;</div>
+                    <div class="dhx_cal_next_button">&nbsp;</div>
+                    <div class="dhx_cal_today_button"></div>
+                    <div class="dhx_cal_date"></div>
+                    <div class="dhx_cal_tab" name="day_tab"></div>
+                    <div class="dhx_cal_tab" name="week_tab"></div>
+                    <div class="dhx_cal_tab" name="month_tab"></div>
+                </div>
+                <div class="dhx_cal_header"></div>
+                <div class="dhx_cal_data"></div>
+            </div>
+            <!-- <div class="table-responsive mt-5">
                 <table class="table">
                     <thead>
                         <tr class="text-center">
@@ -23,7 +37,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {{-- @foreach ($atglances->groupBy('time') as $time => $atglancesByTime)
+                        {{-- @foreach ($times->groupBy('time') as $time => $atglancesByTime)
                         <tr>
                             <th scope="row">{{$time}}</th>
                             @foreach ($atglancesByTime as $atGlance)
@@ -35,62 +49,26 @@
                             @endforeach
                         </tr>
                         @endforeach --}}
-                        @foreach ($times as $time)
-
-                        <tr>
-
-                            <th scope="row">{{ $time->time }}</th>
-
-                            @if ($time->atGlances->isEmpty())
-
-                            <td colspan="3" class="text-center">Tidak ada jadwal</td>
-
-                            @else
-
-                            @foreach ($time->atGlances as $atGlance)
-
-                            @if ($loop->first)
-
-                            <td rowspan="{{ $time->atGlances->count() }}"
-                                class="align-middle text-bg-secondary rounded">
-
-                                <span class="d-block text-center">{{ $atGlance->title }} {{ $atGlance->room }}</span>
-
-                            </td>
-
-                            @endif
-
-                            @endforeach
-
-                            @endif
-
-                        </tr>
-
-                        @foreach ($time->atGlances as $atGlance)
-
-                        @if (!$loop->first)
-
-                        <tr>
-
-                            <th scope="row">{{ $time->time }}</th>
-
-                            <td class="align-middle text-bg-secondary rounded">
-
-                                <span class="d-block text-center">{{ $atGlance->title }} {{ $atGlance->room }}</span>
-
-                            </td>
-
-                        </tr>
-
-                        @endif
-
-                        @endforeach
-
-                        @endforeach
-
+                        
                     </tbody>
                 </table>
-            </div>
+            </div> -->
         </div>
     </section>
 </div>
+
+@script
+<script type="text/javascript">
+    scheduler.init("scheduler_here");
+</script>
+
+<script type="text/javascript">
+    scheduler.config.date_format = "%Y-%m-%d %H:%i:%s";
+</script>
+<script>
+    scheduler.init("scheduler_here", new Date(2025, 11, 3), "week");
+</script>
+<script>
+    scheduler.load("/api/data", "json");
+</script>
+@endscript

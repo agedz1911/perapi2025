@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\AtGlanceController;
 use App\Livewire\Pages\AtGlance;
 use App\Livewire\Pages\Committee;
 use App\Livewire\Pages\GuidelineAbstract;
