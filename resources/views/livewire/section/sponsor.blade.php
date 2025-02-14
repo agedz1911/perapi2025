@@ -14,7 +14,15 @@
         <div class="container border-dashed-bottom-2 py-8">
             <div class="partner-inner">
                 <div class="partner-title text-center pb-6 w-lg-60 m-auto">
-                    <h2 class="mb-1">{{$sponsor->category}}</h2>
+                    @php
+                    $category = $sponsor->category;
+                    $words = explode(' ', $category);
+                    if (count($words) > 1) {
+                    $words[1] = '<span class="black">' . $words[1] . '</span>';
+                    }
+                    $formattedCategory = implode(' ', $words);
+                    @endphp
+                    <h2 class="mb-1 kuning">{!! $formattedCategory !!}</h2>
                 </div>
                 <div class="row row-cols-1 row-cols-lg-4 row-cols-md-4  gx-2 gx-lg-3 gx-md-3">
                     <div class="col p-0 border-start border-end border-sm-0">

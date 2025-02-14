@@ -1,5 +1,4 @@
 <div>
-    {{-- @dd($importantDates) --}}
     <div class="table-responsive">
         <table class="table text-primary">
             <tbody>

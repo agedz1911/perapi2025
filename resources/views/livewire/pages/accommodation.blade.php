@@ -54,10 +54,10 @@
                                                 </p>
                                                 <div class="d-flex flex-column">
                                                     <p class="text-success fw-semibold mb-0"><span
-                                                            class="opacity-50">Rp.</span>
-                                                        {{$accommodation->idr_price}}</p>
+                                                            class="fw-normal">IDR</span>
+                                                        {{number_format($accommodation->idr_price, 0, ',', '.')}}</p>
                                                     <p class="text-success fw-semibold"><span
-                                                            class="opacity-50">USD.</span>
+                                                            class="fw-normal">USD</span>
                                                         {{$accommodation->usd_price}}</p>
                                                 </div>
                                             </div>
