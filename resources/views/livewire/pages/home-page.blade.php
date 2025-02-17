@@ -39,11 +39,14 @@
                         <div class="banner-right  ms-2 text-center text-lg-start pb-8">
                             <div class="banner-title pb-3">
                                 <img src="assets/images/logo/3.png" class="w-75 mb-3" alt="Logo-asosiasi">
-                                <h4 class="text-white pb-3"><span class="kuning">48<sup>th</sup></span> Annual Scientific Meeting of</h4>
-                                <h1 class="text-white">Indonesian <span class="kuning">Urological</span> Association</h1>
+                                <h4 class="text-white pb-3"><span class="kuning">48<sup>th</sup></span> Annual
+                                    Scientific Meeting of</h4>
+                                <h1 class="text-white">Indonesian <span class="kuning">Urological</span> Association
+                                </h1>
                             </div>
                             <div class="banner-event-info pb-3">
-                                <ul class="m-0 ps-0 d-sm-flex justify-content-center justify-content-lg-start list-unstyled">
+                                <ul
+                                    class="m-0 ps-0 d-sm-flex justify-content-center justify-content-lg-start list-unstyled">
                                     <li class="pe-2 border-end border-1 border-lightgrey">
                                         <i class="fa  fa-calendar-o pe-1"></i> 24-27 SEPTEMBER 2025
                                     </li>
@@ -99,9 +102,11 @@
                                 <div class="row justify-content-around ">
                                     <div class="col-lg-6 col-md-6">
                                         <a>
-                                            <div class="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                                            <div
+                                                class="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
                                                 <div class="event-info-icon text-center">
-                                                    <i class="fa fa-calendar-o  text-white bg-kuning rounded-circle me-3"></i>
+                                                    <i
+                                                        class="fa fa-calendar-o  text-white bg-kuning rounded-circle me-3"></i>
                                                 </div>
                                                 <div class="time-info">
                                                     <small>Wednesday To Saturday <br> Sept, 24-27, 2025</small>
@@ -111,12 +116,15 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <a>
-                                            <div class="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
+                                            <div
+                                                class="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
                                                 <div class="event-info-icon text-center ">
-                                                    <i class="fa fa-map-marker  text-white bg-kuning rounded-circle me-3"></i>
+                                                    <i
+                                                        class="fa fa-map-marker  text-white bg-kuning rounded-circle me-3"></i>
                                                 </div>
                                                 <div class="location-info">
-                                                    <small>Santika Premiere Dyandra Hotel & Convention, Medan, North Sumatra</small>
+                                                    <small>Santika Premiere Dyandra Hotel & Convention, Medan, North
+                                                        Sumatra</small>
                                                 </div>
                                             </div>
                                         </a>
@@ -132,10 +140,12 @@
                                 <div class="col-lg-6 col-md-6 p-0 ">
                                     <div class="container-img-left mb-2">
                                         <div class="img-left-1 float-end w-lg-80">
-                                            <img class="mb-2 w-100 rounded" src="assets/images/group/1.jpg" alt="group-image">
+                                            <img class="mb-2 w-100 rounded" src="assets/images/group/1.jpg"
+                                                alt="group-image">
                                         </div>
                                         <div class="img-left-2">
-                                            <img src="assets/images/group/2.jpg" alt="group-image" class="w-100 rounded">
+                                            <img src="assets/images/group/2.jpg" alt="group-image"
+                                                class="w-100 rounded">
                                         </div>
                                     </div>
                                 </div>
@@ -178,19 +188,22 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-4 p-2 ">
                                 <div class="counter-box p-2 border-end border-white border-opacity-25">
-                                    <h1 class="text-white m-0"><span class="num" data-val="100"></span><span>+</span></h1>
+                                    <h1 class="text-white m-0"><span class="num" data-val="100"></span><span>+</span>
+                                    </h1>
                                     <p>Speakers</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 p-2">
                                 <div class="counter-box p-2 border-end border-white border-opacity-25">
-                                    <h1 class="text-white m-0"><span class="num" data-val="50"></span><span>+</span></h1>
+                                    <h1 class="text-white m-0"><span class="num" data-val="50"></span><span>+</span>
+                                    </h1>
                                     <p>Symposium</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 p-2">
                                 <div class="counter-box p-2 border-end border-white border-opacity-25">
-                                    <h1 class="text-white m-0"><span class="num" data-val="10"></span><span>+</span></h1>
+                                    <h1 class="text-white m-0"><span class="num" data-val="10"></span><span>+</span>
+                                    </h1>
                                     <p>Workshops</p>
                                 </div>
                             </div>
@@ -237,6 +250,36 @@
 
     <livewire:section.competition />
 
+    <section class="partners ">
+        <div class="container border-dashed-bottom-2 pb-10">
+            <div class="partner-inner ">
+                <div class="partner-title text-center pb-6 w-lg-60 m-auto">
+                    <p class="mb-1 kuning">48<sup>th</sup> ASMIUA</p>
+                    <h2 class="mb-1">SPONSors</h2>
+                </div>
+                <div class="partner-img">
+                    <div class="row row-cols-1 row-cols-lg-5 row-cols-md-5 ">
+                        @foreach ($sponsors as $sponsor)
+                        <div class="col p-0 border-end border-sm-0">
+                            <div class="p-2 partner-img-box text-center">
+                                <a href="{{$sponsor->website ? $sponsor->website : 'javascript:void(0)'}}"
+                                    target="_blank">
+                                    {!! $sponsor->logo ? '<img src="' . asset('storage/' . $sponsor->logo) . '"
+                                        class="img-fluid opacity-75" alt="' . $sponsor->company . '" />' : '<small
+                                        class="text-center text-blue">' . $sponsor->company . '</small>' !!}
+                                </a>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="partner-button text-center">
+                    <a class="btn" href="/sponsors">VIEW MORE Sponsors</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="direction pb-0">
         <div class="container">
             <div class="section-title text-center pb-2 w-lg-60 m-auto">
@@ -252,7 +295,8 @@
                                     <h5 class="text-white pb-2">EVENT VENUE:</h5>
                                     <p class="pb-5 m-0">Santika Premiere Dyandra Hotel & Convention</p>
                                     <h5 class="text-white pb-2">ADDRESS:</h5>
-                                    <p class="pb-5 m-0">Kapten Maulana Lubis No.7, Petisah Tengah, Kec. Medan Petisah, Medan City, North Sumatra</p>
+                                    <p class="pb-5 m-0">Kapten Maulana Lubis No.7, Petisah Tengah, Kec. Medan Petisah,
+                                        Medan City, North Sumatra</p>
                                     <!-- <h5 class="text-white pb-2">RECEPTION INFO:</h5>
                                     <p class="pb-5 m-0">Booking: (+62) 1919-2020</p> -->
                                     <a>Get Directions</a>
@@ -260,20 +304,24 @@
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-7 px-1 py-2">
-                            <iframe height="400" class="rounded w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.993011784665!2d98.6676701954653!3d3.589077314075902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131cfb9769189%3A0xc73602d265aeceb4!2sHotel%20Santika%20Premiere%20Dyandra%20Hotel%20%26%20Convention!5e0!3m2!1sen!2sid!4v1738729066520!5m2!1sen!2sid"></iframe>
+                            <iframe height="400" class="rounded w-100"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.993011784665!2d98.6676701954653!3d3.589077314075902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131cfb9769189%3A0xc73602d265aeceb4!2sHotel%20Santika%20Premiere%20Dyandra%20Hotel%20%26%20Convention!5e0!3m2!1sen!2sid!4v1738729066520!5m2!1sen!2sid"></iframe>
                         </div>
                     </div>
                 </div>
                 <div class="location-gallery">
                     <div id="selector" class="row pt-1 justify-content-center">
                         <div class="item col-lg-4 col-md-6 p-1" data-src="assets/images/group/4.jpg">
-                            <a><img src="assets/images/thumbnail/4.jpg" class="w-100 rounded" alt="Santika Premiere Dyandra Hotel & Convention"></a>
+                            <a><img src="assets/images/thumbnail/4.jpg" class="w-100 rounded"
+                                    alt="Santika Premiere Dyandra Hotel & Convention"></a>
                         </div>
                         <div class="item col-lg-4 col-md-6 p-1" data-src="assets/images/group/5.jpg">
-                            <a><img src="assets/images/thumbnail/5.jpg" class="w-100 rounded" alt="Santika Premiere Dyandra Hotel & Convention"></a>
+                            <a><img src="assets/images/thumbnail/5.jpg" class="w-100 rounded"
+                                    alt="Santika Premiere Dyandra Hotel & Convention"></a>
                         </div>
                         <div class="item col-lg-4 col-md-6 p-1" data-src="assets/images/group/6.jpg">
-                            <a><img src="assets/images/thumbnail/6.jpg" class="w-100 rounded" alt="Santika Premiere Dyandra Hotel & Convention"></a>
+                            <a><img src="assets/images/thumbnail/6.jpg" class="w-100 rounded"
+                                    alt="Santika Premiere Dyandra Hotel & Convention"></a>
                         </div>
                     </div>
                 </div>

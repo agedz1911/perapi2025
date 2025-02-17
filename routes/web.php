@@ -13,7 +13,7 @@ Route::get('/', HomePage::class);
 
 Route::get('/organizing-committee', Committee::class);
 
-// Route::get('/program-at-glance', AtGlance::class);
+Route::get('/program-at-glance', AtGlance::class);
 
 Route::get('/submission', GuidelineAbstract::class);
 

@@ -25,10 +25,6 @@
     <!--FontAwesome CSS-->
     <script src="https://kit.fontawesome.com/6d07745da9.js" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.dhtmlx.com/scheduler/edge/dhtmlxscheduler.js"></script>
-    <link href="https://cdn.dhtmlx.com/scheduler/edge/dhtmlxscheduler.css"
-        rel="stylesheet">
-
 </head>
 
 

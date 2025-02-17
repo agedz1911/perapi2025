@@ -21,7 +21,7 @@
                 </div>
                 <div class=" col-lg-4  p-4 pb-0">
                     <div class="blog-box border border-1 rounded pb-2 text-center">
-                        <h5 class="p-4"><a href="javascript:void(0)" class="black">Absract video</a></h5>
+                        <h5 class="p-4"><a href="javascript:void(0)" class="black">Abstract video</a></h5>
                         <a href="/submission" class="text-blue">Read More <i
                         class="fa-solid fa-angles-right"></i></a>
                         <div class="p-4 pt-0 m-0 border-bottom"></div>

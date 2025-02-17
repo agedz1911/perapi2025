@@ -1056,6 +1056,18 @@ footer .overlay {
     color: #ffce3d;
 }
 
+.nav-tabs .nav-link
+{
+    color: #223645;
+    padding: 20px 0px 20px;
+    background-color: #e7e7e7;
+}
+
+.nav-tabs .nav-link:hover
+{
+    color: #00474f ;
+}
+
 .nav-item .nav-link {
     color: white;
 }
