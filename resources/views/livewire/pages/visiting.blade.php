@@ -443,8 +443,226 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>MASJID RAYA AL-MASHUN</h4>
+                                    <p>Al-Mashun Mosque, Medan's architectural gem with beauty
+                                        stunning design, offering a spiritual experience and
+                                        deep history</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/2So4hXxox9yMELpF7" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
 
+                                        <a href=" https://vt.tiktok.com/ZS638JsrV/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>ISTANA MAIMUN</h4>
+                                    <p>Maimun Palace, a symbol of the glory of the Deli Sultanate, is enchanting
+                                        with magnificent architecture and preserved historical charm.</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/YKYNa3pT6zZsa1ay5" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS638CMvK" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>DANAU TOBA</h4>
+                                    <p>Lake Toba is the largest volcanic lake in the world, formed
+                                        from a supervolcano eruption, with Samosir Island in the middle
+                                        as a tourist and cultural destination.</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/cTBe8D3CiEJnwmam7" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS6wsJPF8/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>MIKIE FUNLAND</h4>
+                                    <p>Known as the largest outdoor amusement park in Sumatra,
+                                        located in Berastagi, with more than 35 exciting rides for
+                                        all ages</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/o2PkJMRBMa2ELyH16" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href=" https://vt.tiktok.com/ZS6Kefa2U/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>Taman Seribu Bunga Raya</h4>
+                                    <p>Taman Seribu Bunga Raya is a tourist destination in Berastagi
+                                        which presents the beauty of thousands of colorful flowers, replicas
+                                        the Eiffel Tower, and local culinary delights in a cool mountain atmosphere</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/mUSkvcpcLvMp9dkx9" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS6KeDjVU" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>BUDAYALAND</h4>
+                                    <p>Exciting amusement park in the city center, with rides and attractions
+                                        Interesting for all ages, perfect for quality time
+                                        with family and friends.</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/MhEyRSY8dEc8Z6jB9" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS63UcPML/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>TAMAN ALAM LUMBINI</h4>
+                                    <p>A tourist destination with a calm natural feel, beautiful views, and
+                                        calming spiritual atmosphere.</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/a1rhPK18DZa5Pf9V7" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS63yCFH5" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>GUNDALING FARMSTEAD</h4>
+                                    <p>Enjoy the farm experience in Berastagi with
+                                        view of Mount Sinabung, feeding animals,
+                                        horse riding, and fresh mountain air</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/je71hnJCcahYSobT7" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS63yyQXH/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>AIR TERJUN SIPISO-PISO</h4>
+                                    <p>Offers spectacular views with a lake in the background
+                                        Toba, Sipiso-piso Waterfall is the perfect place for
+                                        enjoy the beauty of nature and fresh air.</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/XX8KBZpiUvePXJ1e8" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS63f1f8P/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>AIR TERJUN EFRATA</h4>
+                                    <p>Efrata Waterfall, hidden in the middle of the forest, offers
+                                        Stunning natural beauty with a calm atmosphere
+                                        and fresh, suitable for adventure and relaxation</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/wSM8zuhrgJeEzAbc7" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS63yE1ad/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>AIR TERJUN LAU LUTIH</h4>
+                                    <p>Clear water flow and surrounded by green trees,
+                                        offers a cool and calming natural atmosphere,
+                                        perfect for outdoor adventures</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/aH5cWH681PVsi4dE9" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS635hDgp/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div><!--end teb pane-->
 
                         <div class="tab-pane fade bg-white p-4 rounded shadow" id="designing" role="tabpanel"
