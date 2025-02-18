@@ -8,7 +8,7 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
-#[Title('Program at Glance')]
+#[Title('ASMIUA - Program at Glance')]
 class AtGlance extends Component
 {
 

@@ -45,12 +45,12 @@
                                         <small>asmiua2025@pharma-pro.com</small>
                                     </a>
                                 </li>
-                                <li class=" px-2 d-inline ">
+                                {{-- <li class=" px-2 d-inline ">
                                     <i class="fa fa-whatsapp pe-1"></i>
                                     <a href="https://wa.me/+628111018517">
                                         <small>+62 811 1018 517</small>
                                     </a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>
@@ -110,18 +110,7 @@
                                 <a  class="nav-link px-2 my-4 py-0 {{ request()->is('submission') ? 'active' : '' }}"
                                     href="/submission">Submission</a>
                             </li>
-                            {{-- <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle px-2 my-4 py-0 {{ request()->is('guideline-abstract') ? 'active' : '' }}"
-                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Submission
-                            </a>
-                            <ul class="dropdown-menu bg-lightgrey p-0 rounded">
-                                <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0 {{ request()->is('guideline-abstract') ? 'text-warning' : '' }}"
-                                        href="/guideline-abstract" >Guideline for Abstract</a></li>
-                                <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                        href="#">Abstract Submission</a></li>
-                            </ul>
-                            </li> --}}
+                            
                             <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle px-2 my-4 py-0" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -129,7 +118,7 @@
                                 </a>
                                 <ul class="dropdown-menu bg-lightgrey p-0 rounded">
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                            href="javascript:void(0)">Medan, North Sumatra</a></li>
+                                            href="/visiting">Medan, North Sumatra</a></li>
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
                                             href="javascript:void(0)">Venue</a></li>
                                 </ul>

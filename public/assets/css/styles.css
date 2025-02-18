@@ -1268,3 +1268,9 @@ footer .overlay {
 .at-glance:hover {
     color: #FFCE3D;
 }
+
+
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link
+{
+    background-color: #00474F;
+}
