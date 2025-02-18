@@ -13,9 +13,13 @@ return new class extends Migration
     {
         Schema::create('atglances', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->dateTime('start');
-            $table->dateTime('end');
+            $table->string('date');
+            $table->string('room');
+            $table->string('session_category');
+            $table->string('session_name');
+            $table->string('moderator');
+            $table->time('start_time');
+            $table->time('end_time');
             $table->timestamps();
         });
     }

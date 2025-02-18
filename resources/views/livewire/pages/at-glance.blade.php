@@ -11,7 +11,9 @@
 
 
     <section>
+        <!-- HTML STATIC -->
         <div class="container">
+            <p>static</p>
             <nav>
                 <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="nav-24-tab" data-bs-toggle="tab" data-bs-target="#nav-24"
@@ -31,215 +33,49 @@
                         <table class="table align-middle">
                             <thead>
                                 <tr class="text-center">
-                                    <th scope="col" style="width: 8%;"></th>
+                                    <td scope="col" style="width: 8%;"><small>Time
+                                            WIB<br> (UTC +7)</small></td>
                                     <th scope="col">Room 1</th>
                                     <th scope="col">Room 2</th>
-                                    <th scope="col">Room 3</th>
-                                    <th scope="col">Room 4</th>
-                                    <th scope="col">Room 5</th>
-                                    <th scope="col">Room 6</th>
+
+
                                 </tr>
                             </thead>
                             <tbody>
-
                                 <tr>
-                                    <th scope="row">07:00</th>
-                                    <td rowspan="2" class="text-bg-success">
-                                        <div class="d-grid">
-                                            <button type="button" class="btn text-bg-success" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">
-                                                <div class="mb-0 p-0">
-                                                    <small>Workshop</small>
-                                                    <p>Master Class ASMIUA</p>
-                                                </div>
-                                            </button>
+                                    <th scope="row">07:00-07:30</th>
+                                    <td rowspan="5" class="text-bg-success">
+                                        <div class="d-flex align-items-center justify-content-center p-0">
+                                            <div class="text-center at-glance w-100" data-bs-toggle="modal" data-bs-target="#InaSFFU-1">
+                                                <small>Masterclass</small>
+                                                <p>InaSFFU</p>
+                                            </div>
                                         </div>
                                     </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
+                                    <td rowspan="5" class="text-bg-success">
+                                        <div class="d-flex align-items-center justify-content-center p-0">
+                                            <div class="text-center at-glance w-100" data-bs-toggle="modal" data-bs-target="#InaSPU-1">
+                                                <small>Masterclass</small>
+                                                <p>InaSPU</p>
+                                            </div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">07:30</th>
-
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
+                                    <th scope="row">07:30-08:00</th>
                                 </tr>
                                 <tr>
-                                    <th scope="row">08:00</th>
-
-                                    <td rowspan="2" class="text-bg-success">
-                                        <div class="d-grid">
-                                            <button type="button" class="btn text-bg-success">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA 1</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
+                                    <th scope="row">08:00-08:30</th>
                                 </tr>
                                 <tr>
-                                    <th scope="row">08:30</th>
-                                    
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="d-grid">
-                                            <button type="button" class="btn btn3">
-                                                <small>Workshop</small>
-                                                <p>Master Class ASMIUA</p>
-                                            </button>
-                                        </div>
-                                    </td>
+                                    <th scope="row">08:30-09:00</th>
                                 </tr>
-                                
                                 <tr>
-                                    <th scope="row">09:00</th>
-                                    <td rowspan="" colspan="6" class="">
+                                    <th scope="row">09:00-09:45</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">09:45-10:00</th>
+                                    <td rowspan="" colspan="2" class="">
                                         <div class="d-grid">
                                             <button type="button" class="btn text-bg-secondary">
                                                 <div class="mb-0 p-0">
@@ -249,22 +85,140 @@
                                         </div>
                                     </td>
                                 </tr>
-
+                                <tr>
+                                    <th scope="row">10:00-10:30</th>
+                                    <td rowspan="5" class="text-bg-success">
+                                        <div class="d-flex align-items-center justify-content-center p-0">
+                                            <div class="text-center at-glance w-100" data-bs-toggle="modal" data-bs-target="#InaSFFU-2">
+                                                <small>Masterclass</small>
+                                                <p>InaSFFU</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td rowspan="5" class="text-bg-success">
+                                        <div class="d-flex align-items-center justify-content-center p-0">
+                                            <div class="text-center at-glance w-100" data-bs-toggle="modal" data-bs-target="#InaSPU-2">
+                                                <small>Masterclass</small>
+                                                <p>InaSPU</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10:30-11:00</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11:00-11:30</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11:30-12:00</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">12:00-12:30</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">12:30-13:00</th>
+                                    <td colspan="7">
+                                        <div class="d-grid">
+                                            <button type="button" class="btn text-bg-secondary">
+                                                <div class="mb-0 p-0">
+                                                    <small>Lunch</small>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">13:00-13:30</th>
+                                    <td rowspan="7" class="text-bg-success">
+                                        <div class="d-flex align-items-center justify-content-center p-0">
+                                            <div class="text-center at-glance w-100" data-bs-toggle="modal" data-bs-target="#InaSFFU-3">
+                                                <small>Masterclass</small>
+                                                <p>InaSFFU</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td rowspan="7" class="text-bg-success">
+                                        <div class="d-flex align-items-center justify-content-center p-0">
+                                            <div class="text-center at-glance w-100" data-bs-toggle="modal" data-bs-target="#InaSPU-3">
+                                                <small>Masterclass</small>
+                                                <p>InaSPU</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">13:30-14:00</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">14:00-14:30</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">14:30-15:00</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">15:00-15:30</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">15:30-16:00</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">16:00-16:30</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">16:30-17:00</th>
+                                    <td colspan="7">
+                                        <div class="d-grid">
+                                            <button type="button" class="btn text-bg-secondary">
+                                                <div class="mb-0 p-0">
+                                                    <small>Coffee Break</small>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade" id="InaSPU-1" tabindex="-1" aria-labelledby="InaSPUModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Master Class ASMIUA</h1>
+                                    <h1 class="modal-title fs-5" id="InaSPUModalLabel">Master Class InaSPU 1</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    ...
+                                    <div class="mb-0 p-0">
+                                        <p class="title">Date & time : 24 September 2025, 07:00 - 09:45 <br>
+                                            Room : Room 2</p>
+                                        <p class="title">Session : Master Class InaSPU 1 <br>
+                                            Moderator : dr. asep saepuloh</p>
+                                    </div>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Topic</th>
+                                                <th scope="col">Speaker</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">08:00 - 08:15</th>
+                                                <td>Opening Remarks and Course Overview</td>
+                                                <td>Yasser Farahat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">08:15 - 08:35</th>
+                                                <td>Keynote Lecture: "Advances in Urological Surgery" </td>
+                                                <td>Chaidir Arif Mochtar</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn1 "

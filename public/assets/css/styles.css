@@ -1260,3 +1260,11 @@ footer .overlay {
         padding: 25px !important;
     }
 }
+
+.at-glance {
+    cursor: pointer;
+}
+
+.at-glance:hover {
+    color: #FFCE3D;
+}
