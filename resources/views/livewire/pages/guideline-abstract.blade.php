@@ -50,8 +50,8 @@
                                 <p class="m-0">*make sure the file complies with the guidelines.</p>
                             </div>
                             <div class="div d-grid">
-                                <button class="btn mb-5"><i class="fa-solid fa-upload me-1"></i> Submit Abstract
-                                </button>
+                                <a href="https://expo.virconex-id.com/abstract/asmiua2025/upload_abstract" class="btn mb-5"><i class="fa-solid fa-upload me-1"></i> Submit Abstract
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -71,8 +71,8 @@
                                 <p class="mb-0">*make sure the file complies with the guidelines.</p>
                             </div>
                             <div class="div d-grid">
-                                <button class="btn3 mb-5"><i class="fa-solid fa-upload me-1"></i> Submit Abstract
-                                </button>
+                                <a href="https://expo.virconex-id.com/abstract/asmiua2025/upload_abstract" class="btn btn3 mb-5"><i class="fa-solid fa-upload me-1"></i> Submit Abstract
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -155,8 +155,8 @@
                                             class="fa-solid fa-angles-right"></i></span></small>
                             </div>
                             <div class="div d-grid">
-                                <button class="btn mb-5"><i class="fa-solid fa-upload me-1"></i> Upload Video & Flyer
-                                </button>
+                                <a href="https://expo.virconex-id.com/submit_video/edu_video_asmiua2025/" class="btn mb-5"><i class="fa-solid fa-upload me-1"></i> Upload Video & Flyer
+                                </a>
                             </div>
                         </div>
                     </div>

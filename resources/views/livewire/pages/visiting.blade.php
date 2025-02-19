@@ -815,7 +815,7 @@
                             aria-labelledby="webdesigning">
                             <div class="row">
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/bus-09.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
                                     <h4>Medan to Lake Toba</h4>
@@ -845,7 +845,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/ferry-09.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
                                     <h4>Medan to Lake Toba</h4>
@@ -862,7 +862,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/bus2-09.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
                                     <h4>Medan to Berastagi</h4>
@@ -879,7 +879,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/travel-09.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
                                     <h4>Medan to Berastagi</h4>

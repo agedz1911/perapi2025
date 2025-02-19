@@ -78,7 +78,7 @@
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle px-3 my-4 py-0 {{ request()->is('organizing-committee') || request()->is('/welcome-message') || request()->is('/faculties') ? 'active' : '' }}"
+                                <a class="nav-link dropdown-toggle px-2 my-4 py-0 {{ request()->is('organizing-committee') || request()->is('/welcome-message') || request()->is('/faculties') ? 'active' : '' }}"
                                     href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Congress Information
                                 </a>
@@ -92,7 +92,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle px-3 my-4 py-0" href="#" role="button"
+                                <a class="nav-link dropdown-toggle px-2 my-4 py-0" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Scientific Program
                                 </a>
@@ -104,14 +104,14 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-3 my-4 py-0" href="javascript:void(0)">Registration</a>
+                                <a class="nav-link px-2 my-4 py-0" href="javascript:void(0)">Registration</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-3 my-4 py-0 {{ request()->is('accommodation') ? 'active' : '' }}"
+                                <a class="nav-link px-2 my-4 py-0 {{ request()->is('accommodation') ? 'active' : '' }}"
                                     href="/accommodation">Accommodation</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-3 my-4 py-0 {{ request()->is('submission') ? 'active' : '' }}"
+                                <a class="nav-link px-2 my-4 py-0 {{ request()->is('submission') ? 'active' : '' }}"
                                     href="/submission">Submission</a>
                             </li>
 
