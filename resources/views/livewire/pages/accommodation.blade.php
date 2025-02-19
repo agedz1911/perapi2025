@@ -52,18 +52,21 @@
                                                             class="fa-solid text-success opacity-50 fa-circle-info"></i>
                                                         {{$accommodation->distance}}</small>
                                                 </p>
-                                                <div class="d-flex flex-column">
+                                                <div class="d-flex flex-column mb-5">
+                                                    <small>Estimated Cost/Night</small>
                                                     <p class="text-success fw-semibold mb-0"><span
                                                             class="fw-normal">IDR</span>
                                                         {{number_format($accommodation->idr_price, 0, ',', '.')}}</p>
-                                                    <p class="text-success fw-semibold"><span
+                                                    {{-- <p class="text-success fw-semibold"><span
                                                             class="fw-normal">USD</span>
-                                                        {{$accommodation->usd_price}}</p>
+                                                        {{$accommodation->usd_price}}</p> --}}
                                                 </div>
                                             </div>
-                                            <div class="add-to-cart-btn">
+                                            <div class="add-to-cart-btn d-flex justify-content-evenly">
                                                 <a href="{{$accommodation->url ? $accommodation->url : 'javascript:void(0)'}}"
-                                                    class="btn">Book Now</a>
+                                                    class="btn px-5">Book Now</a>
+                                                <a href="{{$accommodation->direction ? $accommodation->direction : 'javascript:void(0)'}}"
+                                                    class="btn btn1 px-4"><i class="fa-solid fa-location-dot mx-1"></i>Direction</a>
                                             </div>
                                         </div>
                                     </div>

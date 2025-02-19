@@ -31,7 +31,7 @@
             </div>
             <div class="row mt-lg-4 mt-md-2">
                 <div class="item col-lg-6 px-1 mb-2">
-                    <img src="assets/images/thumbnail/4.jpg" class="w-100 rounded" alt="VR Presentation and conference">
+                    <img src="assets/images/medan/visit-medan.png" class="w-100 rounded" alt="VR Presentation and conference">
                 </div>
                 <div class="col-lg-6 px-5">
                     <p>Medan is the largest city in Sumatra and serves as both an economic and cultural hub in northern Indonesia. The combination of history and modernity creates a unique charm that attracts tourists from all over. The city’s cultural diversity is reflected in its architecture, traditions, and signature culinary delights. In addition to being a major trade center, Medan is also the gateway to various tourist destinations across North Sumatra. With its rapidly developing infrastructure and dynamic urban life, Medan is an exciting city to explore</p>
@@ -424,7 +424,7 @@
                             aria-labelledby="server">
                             <div class="row">
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/tjong-08.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
                                     <h4>Tjong A Fie Mansion</h4>
@@ -444,7 +444,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/al-mashun-08.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
                                     <h4>MASJID RAYA AL-MASHUN</h4>
@@ -464,10 +464,10 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/maimun-08.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
-                                    <h4>ISTANA MAIMUN</h4>
+                                    <h4>MAIMUN PALACE</h4>
                                     <p>Maimun Palace, a symbol of the glory of the Deli Sultanate, is enchanting
                                         with magnificent architecture and preserved historical charm.</p>
                                     <div class="d-flex justify-content-evenly">
@@ -483,10 +483,10 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/lake-toba-08.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
-                                    <h4>DANAU TOBA</h4>
+                                    <h4>Lake TOBA</h4>
                                     <p>Lake Toba is the largest volcanic lake in the world, formed
                                         from a supervolcano eruption, with Samosir Island in the middle
                                         as a tourist and cultural destination.</p>
@@ -503,7 +503,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/miki-funland-08.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
                                     <h4>MIKIE FUNLAND</h4>
@@ -523,7 +523,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/taman-seribu-08.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
                                     <h4>Taman Seribu Bunga Raya</h4>
@@ -543,7 +543,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/budaya-09.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
                                     <h4>BUDAYALAND</h4>
@@ -563,10 +563,10 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/lumbini-09.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
-                                    <h4>TAMAN ALAM LUMBINI</h4>
+                                    <h4>LUMBINI NATURAL PARK</h4>
                                     <p>A tourist destination with a calm natural feel, beautiful views, and
                                         calming spiritual atmosphere.</p>
                                     <div class="d-flex justify-content-evenly">
@@ -582,7 +582,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/gundaling-09.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
                                     <h4>GUNDALING FARMSTEAD</h4>
@@ -602,10 +602,10 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/sipiso-09.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
-                                    <h4>AIR TERJUN SIPISO-PISO</h4>
+                                    <h4>SIPISO-PISO WATERFALL</h4>
                                     <p>Offers spectacular views with a lake in the background
                                         Toba, Sipiso-piso Waterfall is the perfect place for
                                         enjoy the beauty of nature and fresh air.</p>
@@ -622,10 +622,10 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/efrata-09.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
-                                    <h4>AIR TERJUN EFRATA</h4>
+                                    <h4>EFRATA WATERFALL</h4>
                                     <p>Efrata Waterfall, hidden in the middle of the forest, offers
                                         Stunning natural beauty with a calm atmosphere
                                         and fresh, suitable for adventure and relaxation</p>
@@ -642,10 +642,10 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/laulutih-09.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
-                                    <h4>AIR TERJUN LAU LUTIH</h4>
+                                    <h4>LAU LUTIH WATERFALL</h4>
                                     <p>Clear water flow and surrounded by green trees,
                                         offers a cool and calming natural atmosphere,
                                         perfect for outdoor adventures</p>
@@ -670,7 +670,7 @@
 
                             <div class="row">
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/bistronomix-08.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
                                     <h4>BISTRONOMIX</h4>
@@ -688,9 +688,127 @@
                                         </a>
                                     </div>
                                 </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/house-brew-08.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>HOUSE OF BREW 2</h4>
+                                    <p>Enjoy various variants of coffee and specialty drinks with
+                                        Cozy and comfortable atmosphere, suitable for gathering with friends
+                                        friends or just relax.</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/5kpEMfVgwrxmDsjj8" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS63LhQkK/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/tropical-08.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>TROPICAL ROOFTOP</h4>
+                                    <p>Enjoy various variants of coffee and specialty drinks with
+                                        Cozy and comfortable atmosphere, suitable for gathering with friends
+                                        friends or just relax.</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="javascript:void(0)" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS63LhQkK/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/bistronomix-08.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>THE THIRTY-SIX</h4>
+                                    <p>Stylish decoration and warm atmosphere accompanied live
+                                        music that will accompany your every moment.</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/py88Y5tzecozMu4z6" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS63DBvbm/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/campion-08.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>CHAMPION CAFE</h4>
+                                    <p>Cozy atmosphere with delicious menu choices, suitable for
+                                        relax and enjoy time with friends or family.</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/8tg8GeeY2dpx384a8" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS63D67g4/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/rumah-pohon-08.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>CAFE RUMAH POHON</h4>
+                                    <p>Enjoy a delicious meal amidst the trees with ambiance
+                                        unique and beautiful natural scenery, creating
+                                        a calm and refreshing dining experience</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/d3Nwb7m44TFjT36F7" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS63DUPDu/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/no-brand-08.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>NO BRAND CAFE</h4>
+                                    <p>Have fun hanging out with friends at No Brand Cafe!
+                                        Cozy atmosphere, delicious menu, and cool live music
+                                        hanging out becomes more fun. Enjoy delicious coffee, snacks
+                                        appetizing, and comfortable vibes all night long</p>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="https://maps.app.goo.gl/MUTTGiha7mcN8QV68" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <small class="text-muted">Address</small>
+                                        </a>
+
+                                        <a href="https://vt.tiktok.com/ZS6KYJa1U/" target="_blank" class="kuning">
+                                            <i class="fa-solid fa-star"></i>
+                                            <small class="text-muted">Review</small>
+                                        </a>
+                                    </div>
+                                </div>
 
                             </div>
-
                         </div><!--end teb pane-->
 
                         <div class="tab-pane fade bg-white p-4 rounded shadow" id="kuliner" role="tabpanel"
@@ -701,19 +819,85 @@
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
                                     <h4>Medan to Lake Toba</h4>
-                                    <p>The perfect place to enjoy a delicious meal while
-                                        Enjoy a relaxed atmosphere with entertaining live music</p>
-                                    <div class="d-flex justify-content-evenly">
-                                        <a href="https://maps.app.goo.gl/AVmccdMLekqhtTVp8" target="_blank" class="kuning">
-                                            <i class="fa-solid fa-location-dot"></i>
-                                            <small class="text-muted">Address</small>
-                                        </a>
-
-                                        <a href="https://vt.tiktok.com/ZS638GcjY/" target="_blank" class="kuning">
-                                            <i class="fa-solid fa-star"></i>
-                                            <small class="text-muted">Review</small>
-                                        </a>
-                                    </div>
+                                    <p class="mb-0">Land Track (Samosir via Tele)</p>
+                                    <small class="mb-0">By Bus or Car</small>
+                                    <ul>
+                                        <li>Route: Medan - Berastagi - Kabanjahe - Simpang Tele - Jalan
+                                            Tele - Samosir</li>
+                                        <li>Distance: ~ 220 km / ~ 7 Hours</li>
+                                        <li>Sampri Bus Terminal (Medan - Samosir): ~ Rp. 200,000</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>Medan to Lake Toba</h4>
+                                    <p class="mb-0">Land Track (Parapat)</p>
+                                    <small class="mb-0">By Train</small>
+                                    <ul>
+                                        <li>Route: Train (Medan Station - Siantar Station) - Terminal
+                                            Parapat</li>
+                                        <li>Distance: ~ 150 km / ~ 4-5 Hours</li>
+                                        <li>Local Train (Medan Station - Siantar Station): Rp. 22,000</li>
+                                        <li>Train tickets can be ordered via KAI Access</li>
+                                        <li>Public Transportation Siantar Station - Parapat Terminal: Rp. 30,000</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>Medan to Lake Toba</h4>
+                                    <p class="mb-0">Sea Track (Samosir via Parapat)</p>
+                                    <small class="mb-0">By Train</small>
+                                    <ul>
+                                        <li>Route: Ajibata Parapat Harbor - Ambarita Harbor
+                                            Samosir
+                                        </li>
+                                        <li>Distance: ~ 6 km / ~ 30 minutes</li>
+                                        <li>Ferry (Ajibata Parapat Port - Ambarita Port
+                                            Samosir): Rp. 16,700</li>
+                                        <li>Ferry tickets can be ordered via trip.ferizy.com</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>Medan to Berastagi</h4>
+                                    <p class="mb-0">Land Track</p>
+                                    <small class="mb-0">By Public Transport</small>
+                                    <ul>
+                                        <li>Route: Medan – Sembahe – Sibaulangit – Berastagi
+                                            ~ 50 km (~ 1.5 Hours - 2 Hours)
+                                        </li>
+                                        <li>Alternative Route: Medan – Pancurbatu – Sibaulangit – Berastagi
+                                            ~ 55-60 km (~ 2 Hours - 2.5 Hours)</li>
+                                        <li>Sinabung Bus (Terminal Padang Bulan - Penatapan
+                                            Berastagi): ~ 20,000 - 25.00</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 px-5 py-2">
+                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                </div>
+                                <div class="col-lg-8 px-5 py-5">
+                                    <h4>Medan to Berastagi</h4>
+                                    <p class="mb-0">Land Track</p>
+                                    <small class="mb-0">Travel Trip Packages</small>
+                                    <ul>
+                                        <li>Travel: Besi Berani Travel
+                                        </li>
+                                        <li>Contact: +62 852 7560 9025</li>
+                                        <li>Cost: Travel costs IDR 650,000 per car, including fuel,
+                                            drivers, and cars. Does not include tourist tickets</li>
+                                        <li>Tourist Locations: Silikap Waterfall, Pariban Hot Water, Pagoda
+                                            Gundailing, Strawberry Farm, Gundaling Farmstead. Can
+                                            request tourist attractions to visit</li>
+                                        <li>Departure Time: 06:00 Morning from Medan</li>
+                                        <li>Return Time: 18:00 Afternoon from Berastasgi, to Medan
+                                            Evening</li>
+                                    </ul>
                                 </div>
 
                             </div>

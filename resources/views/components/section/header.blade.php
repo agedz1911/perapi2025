@@ -6,9 +6,9 @@
                     <div class="col-lg-6">
                         <div class="social-links ">
                             <ul class="m-0 p-0">
-                                <li class="d-inline" >
+                                <li class="d-inline">
                                     <a href="mailto:asmiua2025@pharma-pro.com">
-                                        <i class="fa fa-envelope-open border-social rounded-circle text-center" ></i>
+                                        <i class="fa fa-envelope-open border-social rounded-circle text-center"></i>
                                     </a>
                                 </li>
                                 <li class="d-inline">
@@ -41,7 +41,7 @@
                                 </li>
                                 <li class=" px-2 border-end d-inline border-lightgrey border-opacity-50">
                                     <i class="fa fa-envelope-o pe-1"></i>
-                                    <a href="mailto:asmiua2025@pharma-pro.com">    
+                                    <a href="mailto:asmiua2025@pharma-pro.com">
                                         <small>asmiua2025@pharma-pro.com</small>
                                     </a>
                                 </li>
@@ -69,7 +69,7 @@
                         <img src="assets/images/logo/1.png" alt="Logo" class="w-100">
                     </div>
                 </div>
-                <div class="col-lg-9 offset-lg-1 col-md-6">
+                <div class="col-lg-10 col-md-6">
                     <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
                         <ul class="navbar-nav align-items-center" id="responsive-menu">
                             <li class="nav-item ">
@@ -78,7 +78,7 @@
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle px-2 my-4 py-0 {{ request()->is('organizing-committee') || request()->is('/welcome-message') || request()->is('/faculties') ? 'active' : '' }}"
+                                <a class="nav-link dropdown-toggle px-3 my-4 py-0 {{ request()->is('organizing-committee') || request()->is('/welcome-message') || request()->is('/faculties') ? 'active' : '' }}"
                                     href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Congress Information
                                 </a>
@@ -86,38 +86,42 @@
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
                                             href="#">Welcome Message</a></li>
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0 {{ request()->is('organizing-committee') ? 'text-warning' : '' }}"
-                                            href="/organizing-committee" >Organizing Committee</a></li>
+                                            href="/organizing-committee">Organizing Committee</a></li>
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
                                             href="#">Faculties</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle px-2 my-4 py-0" href="#" role="button"
+                                <a class="nav-link dropdown-toggle px-3 my-4 py-0" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Scientific Program
                                 </a>
                                 <ul class="dropdown-menu bg-lightgrey p-0 rounded">
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
-                                            href="javascript:void(0)" >Program at Glance</a></li>
+                                            href="javascript:void(0)">Program at Glance</a></li>
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
                                             href="javascript:void(0)">Scientific Schedule </a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-2 my-4 py-0" href="javascript:void(0)">Registration</a>
+                                <a class="nav-link px-3 my-4 py-0" href="javascript:void(0)">Registration</a>
                             </li>
                             <li class="nav-item">
-                                <a  class="nav-link px-2 my-4 py-0 {{ request()->is('submission') ? 'active' : '' }}"
+                                <a class="nav-link px-3 my-4 py-0 {{ request()->is('accommodation') ? 'active' : '' }}"
+                                    href="/accommodation">Accommodation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 my-4 py-0 {{ request()->is('submission') ? 'active' : '' }}"
                                     href="/submission">Submission</a>
                             </li>
-                            
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle px-2 my-4 py-0" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle px-3 my-4 py-0 {{ request()->is('visiting') || request()->is('venue') ? 'active' : '' }}"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Visiting
                                 </a>
                                 <ul class="dropdown-menu bg-lightgrey p-0 rounded">
-                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
+                                    <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0 {{ request()->is('visiting') ? 'text-warning' : '' }}"
                                             href="/visiting">Medan, North Sumatra</a></li>
                                     <li><a class="dropdown-item py-3 px-6 text-capitalize black border-0"
                                             href="javascript:void(0)">Venue</a></li>

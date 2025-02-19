@@ -32,6 +32,9 @@ class AccommodationResource extends Resource
             ->schema([
                 TextInput::make('hotel_name'),
                 TextInput::make('distance'),
+                TextInput::make('direction')
+                    ->url()
+                    ->label('Direction URL'),
                 TextInput::make('hotel_star')
                     ->numeric(),
                 TextInput::make('idr_price')
@@ -67,7 +70,7 @@ class AccommodationResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('hotel_name')
-                    ->description(fn(Accommodation $record):string => 'Rating: ' .  $record->hotel_star)
+                    ->description(fn(Accommodation $record): string => 'Rating: ' .  $record->hotel_star)
                     ->searchable(),
                 ImageColumn::make('image'),
                 TextColumn::make('distance'),

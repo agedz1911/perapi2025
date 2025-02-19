@@ -19,6 +19,7 @@ class Accommodation extends Model
         'image',
         'tag',
         'no_urut',
-        'is_active'
+        'is_active',
+        'direction'
     ];
 }

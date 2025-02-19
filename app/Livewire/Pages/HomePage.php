@@ -12,7 +12,7 @@ class HomePage extends Component
 {
     public function render()
     {
-        $sponsors = Sponsor::where('is_active', true)->get();
+        $sponsors = Sponsor::orderBy('company', 'asc')->take(10)->get();
         return view('livewire.pages.home-page', ['sponsors' => $sponsors]);
     }
 }
