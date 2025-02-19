@@ -829,7 +829,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-lg-4 px-5 py-2">
-                                    <img src="assets/images/medan/teri-0.jpg" class="img-fluid rounded" alt="tabona">
+                                    <img src="assets/images/medan/kereta-09.jpg" class="img-fluid rounded" alt="tabona">
                                 </div>
                                 <div class="col-lg-8 px-5 py-5">
                                     <h4>Medan to Lake Toba</h4>
