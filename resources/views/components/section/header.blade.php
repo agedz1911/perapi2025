@@ -104,7 +104,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-2 my-4 py-0" href="javascript:void(0)">Registration</a>
+                                <a class="nav-link px-2 my-4 py-0 {{ request()->is('registration') ? 'active' : '' }}" href="/registration">Registration</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link px-2 my-4 py-0 {{ request()->is('accommodation') ? 'active' : '' }}"
