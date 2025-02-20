@@ -886,9 +886,8 @@
                                     <p class="mb-0">Land Track</p>
                                     <small class="mb-0">Travel Trip Packages</small>
                                     <ul>
-                                        <li>Travel: Besi Berani Travel
-                                        </li>
-                                        <li>Contact: +62 852 7560 9025</li>
+                                        <!-- <li>Travel: Besi Berani Travel</li> -->
+                                        <!-- <li>Contact: +62 852 7560 9025</li> -->
                                         <li>Cost: Travel costs IDR 650,000 per car, including fuel,
                                             drivers, and cars. Does not include tourist tickets</li>
                                         <li>Tourist Locations: Silikap Waterfall, Pariban Hot Water, Pagoda
