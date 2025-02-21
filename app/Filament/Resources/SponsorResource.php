@@ -7,6 +7,7 @@ use App\Filament\Resources\SponsorResource\RelationManagers;
 use App\Models\Sponsor;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
@@ -35,6 +36,9 @@ class SponsorResource extends Resource
                 TextInput::make('website')
                     ->url(),
                 TextInput::make('category'),
+                TextInput::make('no_urut')
+                    ->numeric(),
+                MarkdownEditor::make('company_profile'),
                 FileUpload::make('logo')
                     ->label('Images')
                     ->helperText(new HtmlString('<small style="color:red; "><sup>*</sup><i>Max 2Mb</i></small>'))
@@ -45,8 +49,6 @@ class SponsorResource extends Resource
                     ->image()
                     ->imageEditor()
                     ->directory('sponsor'),
-                TextInput::make('no_urut')
-                    ->numeric(),
                 Toggle::make('is_active')
                     ->inline()
                     ->default(true),
@@ -64,6 +66,9 @@ class SponsorResource extends Resource
                 TextColumn::make('website'),
                 TextColumn::make('category')
                     ->sortable(),
+                TextColumn::make('company_profile')
+                    ->markdown()
+                    ->limit(50),
                 IconColumn::make('is_active')
                     ->boolean()
             ])

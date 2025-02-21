@@ -13,6 +13,7 @@ class Sponsor extends Model
         'website',
         'category',
         'is_active',
-        'no_urut'
+        'no_urut',
+        'company_profile'
     ];
 }
