@@ -666,7 +666,7 @@ h2:hover .spin {
 
 .accordion-button:not(.collapsed),
 .accordion-button::after {
-    color: #FFCE3D;
+    color: #ffce3d;
     background-color: #fff;
     box-shadow: none;
 }
@@ -683,7 +683,7 @@ h2:hover .spin {
     background-image: none;
     font-family: "FontAwesome";
     font-size: 16px;
-    color: #FFCE3D;
+    color: #ffce3d;
     content: "\f068";
 }
 
@@ -1056,16 +1056,14 @@ footer .overlay {
     color: #ffce3d;
 }
 
-.nav-tabs .nav-link
-{
+.nav-tabs .nav-link {
     color: #223645;
     padding: 20px 0px 20px;
     background-color: #e7e7e7;
 }
 
-.nav-tabs .nav-link:hover
-{
-    color: #00474f ;
+.nav-tabs .nav-link:hover {
+    color: #00474f;
 }
 
 .nav-item .nav-link {
@@ -1266,11 +1264,10 @@ footer .overlay {
 }
 
 .at-glance:hover {
-    color: #FFCE3D;
+    color: #ffce3d;
 }
 
-
-.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link
-{
-    background-color: #00474F;
+.nav-fill .nav-item .nav-link,
+.nav-justified .nav-item .nav-link {
+    background-color: #00474f;
 }
