@@ -9,9 +9,9 @@ class Schedule extends Model
 {
     
     protected $fillable = [
-        'time',
-        'title',
-        'panelist',
+        'time_speaker',
+        'topic_title',
+        'speaker',
         'sesi_id'
     ];
 

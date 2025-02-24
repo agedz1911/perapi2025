@@ -23,6 +23,7 @@ use Illuminate\Support\HtmlString;
 
 class SponsorResource extends Resource
 {
+    
     protected static ?string $model = Sponsor::class;
     protected static ?string $navigationGroup = 'Section';
     protected static ?string $navigationIcon = 'heroicon-o-arrow-path';

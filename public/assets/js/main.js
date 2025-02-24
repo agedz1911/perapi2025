@@ -109,16 +109,16 @@
   /*//For slick slider end//*/
 
   /*//For Popup search start//*/
-  $('a[href="#search1"]').on('click', function(event) {
-      event.preventDefault();
-      $('#search1').addClass('open');
-      $('#search1 > form > input[type="search"]').focus();
-  });
-  $('#search1, #search1 button.close').on('click keyup', function(event) {
-      if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
-          $(this).removeClass('open');
-      }
-  });
+//   $('a[href="#search1"]').on('click', function(event) {
+//       event.preventDefault();
+//       $('#search1').addClass('open');
+//       $('#search1 > form > input[type="search"]').focus();
+//   });
+//   $('#search1, #search1 button.close').on('click keyup', function(event) {
+//       if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+//           $(this).removeClass('open');
+//       }
+//   });
 
   /*//For Popup search end//*/
 

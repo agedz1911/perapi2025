@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('schedules', function (Blueprint $table) {
             $table->id();
-            $table->string('time')->nullable();
-            $table->string('title')->nullable();
-            $table->string('panelist')->nullable();
+            $table->string('time_speaker')->nullable();
+            $table->string('topic_title')->nullable();
+            $table->string('speaker')->nullable();
             $table->foreignId('sesi_id')->nullable()->constrained('schedule_sessions')->nullOnDelete();
             $table->timestamps();
         });

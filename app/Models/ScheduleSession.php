@@ -19,8 +19,8 @@ class ScheduleSession extends Model
     ];
     
 
-    public function schedules() 
+    public function schedules() : HasMany
     {
-       return $this->hasMany(Schedule::class, 'id');
+       return $this->hasMany(Schedule::class, 'sesi_id');
     }
 }
