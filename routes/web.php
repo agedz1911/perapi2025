@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\AtGlanceController;
 use App\Livewire\Pages\Accommodation;
 use App\Livewire\Pages\AtGlance;
 use App\Livewire\Pages\Committee;
+use App\Livewire\Pages\Faculty;
 use App\Livewire\Pages\GuidelineAbstract;
 use App\Livewire\Pages\HomePage;
 use App\Livewire\Pages\Registration;
@@ -19,7 +20,7 @@ Route::get('/program-at-glance', AtGlance::class);
 Route::get('/scientific-schedule', Schedule::class);
 Route::get('/registration', Registration::class);
 Route::get('/submission', GuidelineAbstract::class);
-
+Route::get('/faculties', Faculty::class);
 Route::get('/accommodation', Accommodation::class);
 Route::get('/sponsors', Sponsor::class);
 Route::get('/visiting', Visiting::class);

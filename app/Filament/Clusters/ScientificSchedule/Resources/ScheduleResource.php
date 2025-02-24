@@ -35,7 +35,9 @@ class ScheduleResource extends Resource
                 TextInput::make('speaker'),
                 Select::make('sesi_id')
                     ->label('Session Title')
-                    ->options(ScheduleSession::all()->pluck('title_ses', 'id'))
+                    ->options(ScheduleSession::all()->mapWithKeys(function ($session) {
+                        return [$session->id => $session->title_ses . ' - ' . \Carbon\Carbon::parse($session->date)->format('d F')];
+                    }))
                     ->searchable(),
             ]);
     }
@@ -54,7 +56,8 @@ class ScheduleResource extends Resource
                     ->searchable(),
                 TextColumn::make('sesi.title_ses')
                     ->searchable()
-                    ->sortable(),
+                    ->sortable()
+                    ->description(fn ($record) => \Carbon\Carbon::parse($record->sesi->date)->format('d F')),
             ])
             ->filters([
                 //
