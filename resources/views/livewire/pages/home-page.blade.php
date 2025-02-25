@@ -48,7 +48,7 @@
                                 <ul
                                     class="m-0 ps-0 d-sm-flex justify-content-center justify-content-lg-start list-unstyled">
                                     <li class="pe-2 border-end border-1 border-lightgrey">
-                                        <i class="fa  fa-calendar-o pe-1"></i> 24-27 SEPTEMBER 2025
+                                        <i class="fa  fa-calendar-o pe-1"></i> 25-27 SEPTEMBER 2025
                                     </li>
                                     <li class="ps-2">
                                         <i class="fa  fa-map-marker pe-1"></i> Medan, North Sumatra
@@ -60,10 +60,10 @@
                                 <div class="banner-button">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6">
-                                            <a class="btn me-3 my-1 w-100 text-uppercase" href="#">REGISTER</a>
+                                            <a class="btn me-3 my-1 w-100 text-uppercase" href="/registration">REGISTER</a>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
-                                            <a class="btn btn2 my-1 w-100 text-uppercase" href="#">read more</a>
+                                            <a class="btn btn2 my-1 w-100 text-uppercase" href="/visiting">read more</a>
                                         </div>
                                     </div>
                                 </div>
@@ -109,7 +109,7 @@
                                                         class="fa fa-calendar-o  text-white bg-kuning rounded-circle me-3"></i>
                                                 </div>
                                                 <div class="time-info">
-                                                    <small>Wednesday To Saturday <br> Sept, 24-27, 2025</small>
+                                                    <small>Thursday To Saturday <br> Sept, 25-27, 2025</small>
                                                 </div>
                                             </div>
                                         </a>

@@ -13,7 +13,8 @@ class Schedule extends Model
         'time_speaker',
         'topic_title',
         'speaker',
-        'sesi_id'
+        'sesi_id',
+        'faculty_id'
     ];
 
     public function sesi() : BelongsTo
@@ -21,8 +22,9 @@ class Schedule extends Model
         return $this->belongsTo(ScheduleSession::class, 'sesi_id');
     }
 
-    public function faculties(): BelongsToMany
+    public function faculties(): BelongsTo
     {
-        return $this->belongsToMany(Faculty::class, 'faculty_schedule');
+        return $this->belongsTo(Faculty::class, 'faculty_id');
     }
+
 }

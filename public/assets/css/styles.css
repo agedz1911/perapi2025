@@ -386,6 +386,7 @@
     left: 0;
     border-radius: 25px;
     transition: all ease-in-out 0.5s;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .speaker-box:after {
@@ -1278,7 +1279,6 @@ footer .overlay {
 
 .faculty {
     cursor: pointer;
-    color: #00474f;
 }
 
 .faculty:hover {

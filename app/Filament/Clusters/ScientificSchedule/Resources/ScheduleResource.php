@@ -5,6 +5,7 @@ namespace App\Filament\Clusters\ScientificSchedule\Resources;
 use App\Filament\Clusters\ScientificSchedule;
 use App\Filament\Clusters\ScientificSchedule\Resources\ScheduleResource\Pages;
 use App\Filament\Clusters\ScientificSchedule\Resources\ScheduleResource\RelationManagers;
+use App\Models\Faculty;
 use App\Models\Schedule;
 use App\Models\ScheduleSession;
 use Filament\Forms;
@@ -39,6 +40,10 @@ class ScheduleResource extends Resource
                         return [$session->id => $session->title_ses . ' - ' . \Carbon\Carbon::parse($session->date)->format('d F')];
                     }))
                     ->searchable(),
+                Select::make('faculty_id')
+                    ->label('Faculty')
+                    ->searchable()
+                    ->options(Faculty::all()->pluck('name', 'id'))
             ]);
     }
 
@@ -57,7 +62,9 @@ class ScheduleResource extends Resource
                 TextColumn::make('sesi.title_ses')
                     ->searchable()
                     ->sortable()
-                    ->description(fn ($record) => \Carbon\Carbon::parse($record->sesi->date)->format('d F')),
+                    ->description(fn($record) => \Carbon\Carbon::parse($record->sesi->date)->format('d F')),
+                TextColumn::make('faculties.name')
+                    ->limit(20)
             ])
             ->filters([
                 //

@@ -8,6 +8,7 @@ use App\Models\Faculty;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
@@ -46,6 +47,7 @@ class FacultyResource extends Resource
                     ->image()
                     ->imageEditor()
                     ->directory('Faculty'),
+                Textarea::make('description'),
                 TextInput::make('no_urut')
                     ->numeric(),
                 Toggle::make('is_active')
@@ -58,15 +60,15 @@ class FacultyResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('no_urut')
-                    ->sortable()
-                    ->label('No'),
                 TextColumn::make('name')
                     ->searchable()
                     ->sortable(),
                 ImageColumn::make('image'),
                 TextColumn::make('country')
                     ->searchable(),
+                TextColumn::make('schedules.topic_title')
+                    ->limit(40),
+                TextColumn::make('description'),
                 IconColumn::make('is_active')
                     ->boolean()
                     ->sortable()

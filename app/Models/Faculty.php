@@ -17,11 +17,12 @@ class Faculty extends Model
         'image',
         'is_active',
         'no_urut',
-        'description',
+        'description'
     ];
 
-    public function schedules(): BelongsToMany
+
+    public function schedules() : HasMany
     {
-        return $this->belongsToMany(Schedule::class, 'faculty_schedule');
+       return $this->hasMany(Schedule::class, 'faculty_id');
     }
 }
