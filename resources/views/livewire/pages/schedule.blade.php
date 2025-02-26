@@ -13,7 +13,7 @@
         <div class="container">
             <div class="general-ques">
                 <div class="row">
-                    <div class="col-lg-4 order-1 order-lg-2 p-2 align-self-baseline" style="
+                    {{-- <div class="col-lg-4 order-1 order-lg-2 p-2 align-self-baseline" style="
                     position: sticky !important;
                     top: 0 !important;
                     z-index: 1;">
@@ -25,7 +25,9 @@
                                 <p class="fw-bold black">Date</p>
                                 @foreach ($dates as $date)
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="{{ $date }}" id="date-{{ $loop->index }}" wire:model="selectedDates" wire:click="updateSelectedDates('{{ $date }}')">
+                                    <input class="form-check-input" type="checkbox" value="{{ $date }}"
+                                        id="date-{{ $loop->index }}" wire:model.live="selectedDates"
+                                        >
                                     <label class="form-check-label" for="date-{{ $loop->index }}">
                                         {{ \Carbon\Carbon::parse($date)->format('d F Y') }}
                                     </label>
@@ -36,9 +38,9 @@
                                 @foreach ($rooms as $room)
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="{{ $room }}"
-                                        id="room-{{ $loop->index }}" wire:model="selectedRooms"
-                                        wire:click="updateSelectedRooms('{{ $room }}')">
-                                    <label class="form-check-label" for="room-{{ $loop->index }}">
+                                        id="room-{{ $loop->index }}" wire:model.live="selectedRooms">
+                                    <label class="form-check-label" for="room-{{ $loop->index }}"
+                                        >
                                         {{ $room }}
                                     </label>
                                 </div>
@@ -48,7 +50,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="{{ $category }}"
                                         id="category-{{ $loop->index }}" wire:model="selectedCategories"
-                                        wire:click="updateSelectedCategories('{{ $category }}')">
+                                        >
                                     <label class="form-check-label" for="category-{{ $loop->index }}">
                                         {{ $category }}
                                     </label>
@@ -56,9 +58,9 @@
                                 @endforeach
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
-                    <div class="col-lg-8 order-2 order-lg-1 p-2">
+                    <div class="col-lg-12 order-2 order-lg-1 p-2">
                         <div class="general-ques-right mx-5">
                             <div class="row gy-3">
                                 <div class="px-3 pb-5">
@@ -68,8 +70,7 @@
                                         </span>
                                         <input type="text" class="form-control border" placeholder="Search Schedule"
                                             aria-label="Search Schedule" aria-describedby="basic-addon1"
-                                            wire:model.debounce.500ms="search">
-                                        <button class="btn" wire:click="increment">Search</button>
+                                            wire:model.live.debounce.500ms="search">
                                     </div>
                                 </div>
                             </div>

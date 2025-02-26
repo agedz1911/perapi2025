@@ -17,10 +17,10 @@ Route::get('/', HomePage::class);
 
 Route::get('/organizing-committee', Committee::class);
 // Route::get('/program-at-glance', AtGlance::class);
-// Route::get('/scientific-schedule', Schedule::class);
+Route::get('/scientific-schedule', Schedule::class);
 Route::get('/registration', Registration::class);
 Route::get('/submission', GuidelineAbstract::class);
-// Route::get('/faculties', Faculty::class);
+Route::get('/faculties', Faculty::class);
 Route::get('/accommodation', Accommodation::class);
 Route::get('/sponsors', Sponsor::class);
 Route::get('/visiting', Visiting::class);

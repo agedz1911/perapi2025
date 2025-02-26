@@ -10,16 +10,6 @@ use Livewire\Component;
 class Faculty extends Component
 {
     public $searchTerm = "";
-    public $count = 0;
-
-    public function decrement()
-    {
-        $this->count--;
-    }
-    public function increment()
-    {
-        $this->count++;
-    }
 
     public function render()
     {
@@ -29,12 +19,18 @@ class Faculty extends Component
 
         $indofaculties = $faculties->where('country', 'Indonesia')
             ->filter(function ($faculty) {
-                return str_contains(strtolower($faculty->name), strtolower($this->searchTerm));
+                if (strlen($this->searchTerm) >= 3) {
+                    return str_contains(strtolower($faculty->name), strtolower($this->searchTerm));
+                }
+                return true;
             });
 
         $foreignfaculties = $faculties->where('country', '!=', 'Indonesia')
             ->filter(function ($faculty) {
-                return str_contains(strtolower($faculty->name), strtolower($this->searchTerm));
+                if (strlen($this->searchTerm) >= 3) {
+                    return str_contains(strtolower($faculty->name), strtolower($this->searchTerm));
+                }
+                return true;
             });
 
         return view('livewire.pages.faculty', ['indofaculties' => $indofaculties, 'foreignfaculties' => $foreignfaculties]);

@@ -16,10 +16,9 @@
                     <span class="input-group-text" id="basic-addon1">
                         <i class="fa-solid fa-search"></i>
                     </span>
-                    <input type="text" wire:model='searchTerm' class="form-control border"
+                    <input type="text" wire:model.live.debounce.500ms='searchTerm' class="form-control border"
                         placeholder="Search Faculties" aria-label="Search Faculties"
                         aria-describedby="basic-addon1">
-                    <button wire:click='decrement' class="btn">Search</button>
                 </div>
             </div>
             <div class="speaker-inner">

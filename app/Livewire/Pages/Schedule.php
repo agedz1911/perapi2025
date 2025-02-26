@@ -11,17 +11,11 @@ use Livewire\Component;
 class Schedule extends Component
 {
     public $search = '';
-
-    public $count = 0;
-
-    public function increment()
-    {
-        $this->count++;
-    }
-
     public $selectedDates = [];
     public $selectedRooms = [];
     public $selectedCategories = [];
+
+    protected $queryString = ['selectedRooms', 'selectedDates'];
 
     public $dates = [];
     public $rooms = [];
@@ -36,8 +30,6 @@ class Schedule extends Component
 
     public function render()
     {
-        // Log::info('Current search value: ' . $this->search); // Mencatat nilai pencarian
-
         $scheduleSessions = ScheduleSession::with('schedules')
             ->where('title_ses', 'like', '%' . $this->search . '%')
             ->orWhere('room', 'like', '%' . $this->search . '%')
@@ -45,11 +37,11 @@ class Schedule extends Component
                 $query->where('topic_title', 'like', '%' . $this->search . '%')
                     ->orWhere('speaker', 'like', '%' . $this->search . '%');
             })
-            ->when($this->selectedDates, function ($query) {
-                return $query->whereIn('date', $this->selectedDates);
-            })
             ->when($this->selectedRooms, function ($query) {
-                return $query->whereIn('room', $this->selectedRooms);
+                $query->whereIn('room', $this->selectedRooms);
+            })
+            ->when($this->selectedDates, function ($query) {
+                $query->whereIn('date', $this->selectedDates);
             })
             ->when($this->selectedCategories, function ($query) {
                 return $query->whereIn('category_sesi', $this->selectedCategories);
@@ -76,30 +68,30 @@ class Schedule extends Component
         ]);
     }
 
-    public function updateSelectedDates($date)
-    {
-        if (in_array($date, $this->selectedDates)) {
-            $this->selectedDates = array_diff($this->selectedDates, [$date]);
-        } else {
-            $this->selectedDates[] = $date;
-        }
-    }
+    // public function updateSelectedDates($date)
+    // {
+    //     if (in_array($date, $this->selectedDates)) {
+    //         $this->selectedDates = array_diff($this->selectedDates, [$date]);
+    //     } else {
+    //         $this->selectedDates[] = $date;
+    //     }
+    // }
 
-    public function updateSelectedRooms($room)
-    {
-        if (in_array($room, $this->selectedRooms)) {
-            $this->selectedRooms = array_diff($this->selectedRooms, [$room]);
-        } else {
-            $this->selectedRooms[] = $room;
-        }
-    }
+    // public function updateSelectedRooms($room)
+    // {
+    //     if (in_array($room, $this->selectedRooms)) {
+    //         $this->selectedRooms = array_diff($this->selectedRooms, [$room]);
+    //     } else {
+    //         $this->selectedRooms[] = $room;
+    //     }
+    // }
 
-    public function updateSelectedCategories($category)
-    {
-        if (in_array($category, $this->selectedCategories)) {
-            $this->selectedCategories = array_diff($this->selectedCategories, [$category]);
-        } else {
-            $this->selectedCategories[] = $category;
-        }
-    }
+    // public function updateSelectedCategories($category)
+    // {
+    //     if (in_array($category, $this->selectedCategories)) {
+    //         $this->selectedCategories = array_diff($this->selectedCategories, [$category]);
+    //     } else {
+    //         $this->selectedCategories[] = $category;
+    //     }
+    // }
 }
