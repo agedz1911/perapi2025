@@ -19,10 +19,10 @@ class AtGlanceSeeder extends Seeder
 
             [
                 'date' => '2025-09-24',
-                'room' => 'Room 1',
-                'session_category' => 'Master Class',
-                'session_name' => 'InaSFFU 1',
-                'moderator' => 'dr. asep saepuloh',
+                'room' => 'Room 2',
+                'session_category' => 'Master Class 2',
+                'session_name' => 'UAA',
+                'moderator' => 'ponco',
                 'start_time' => '07:00:00',
                 'end_time' => '09:45:00',
             ],

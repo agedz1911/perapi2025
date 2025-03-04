@@ -1064,7 +1064,7 @@ footer .overlay {
 }
 
 .nav-tabs .nav-link:hover {
-    color: #00474f;
+    color: #ffce3d;
 }
 
 .nav-item .nav-link {
@@ -1283,4 +1283,23 @@ footer .overlay {
 
 .faculty:hover {
     color: #ffce3d;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #002965;
+    color: #ffce3d;
+}
+
+.nav-pills .nav-link
+{
+    color: #000000;
+    /* border: 1px solid #000000; */
+    margin: 3px 0;
+    padding: 10px 0;
+    background-color: #ebebeb;
+}
+
+.program-atglance:hover {
+    scale: 105%;
+    transition: 300ms;
 }

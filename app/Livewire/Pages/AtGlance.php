@@ -3,6 +3,7 @@
 namespace App\Livewire\Pages;
 
 use App\Models\atGlance as ModelsAtGlance;
+use App\Models\ScheduleSession;
 use App\Models\Time;
 use Livewire\Attributes\Title;
 use Livewire\Component;
@@ -12,17 +13,18 @@ use Livewire\Component;
 class AtGlance extends Component
 {
 
-    public $atglances;
+    // public $atglances;
 
-    public function mount()
-    {
-        $this->atglances = ModelsAtGlance::all();
-    }
+    // public function mount()
+    // {
+    //     $this->atglances = ScheduleSession::where('room', 'Ballroom A')->get();
+    // }
 
     public function render()
     {
+        $atglances = ScheduleSession::where('room', 'Ballroom A')->get();
         return view('livewire.pages.at-glance', [
-            'atglances' => $this->atglances,
+            'atglances' => $atglances,
         ]);
     }
 }

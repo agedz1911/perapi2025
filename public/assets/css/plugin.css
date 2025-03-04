@@ -339,7 +339,7 @@ Change the following styles to modify the appearance of the menu.
     }
     .nav-link:hover
     {
-        background-color: #e91e63;
+        background-color: #ffce3d;
         color: white;
     }
     .dropdown-menu>li>a {
@@ -372,7 +372,7 @@ Change the following styles to modify the appearance of the menu.
     }
     .nav-link:hover
     {
-        background-color: #e91e63 ;
+        background-color: #ffce3d ;
         color: white;
     }
     .dropdown-menu>li>a {
@@ -406,7 +406,7 @@ Change the following styles to modify the appearance of the menu.
     }
     .nav-link:hover
     {
-        background-color: #e91e63 !important;
+        background-color: #ffce3d !important;
         color: white;
     }
     .dropdown-menu>li>a {
