@@ -1,331 +1,250 @@
-<div>
-    <section class="banner position-relative pb-0">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="inner-banner position-relative text-white ">
-                <div class="row">
-                    <div class="col-lg-6 order-2 order-lg-1">
-                        <div class="banner-left text-center pb-lg-5 p-md-0">
-                            <div class="banner-image">
-                                <img src="assets/images/banner.png" alt="banner-image" class="w-75"><br>
-                            </div>
-                            <div class="countdown">
-                                <div id="countdown"
-                                    class="countdown-inner d-flex w-100 bg-white p-2 rounded-5 justify-content-center box-shadow position-relative z-2">
-                                    <div class="time m-auto py-4 ">
-                                        <span id="days" class="lh-1 h1 fw-bold"></span><br>
-                                        <small class="text-secondary">Days</small>
-                                    </div>
+<div class="w-full lg:w-3/4 p-8">
 
-                                    <div class="time  m-auto py-4">
-                                        <span id="hours" class="lh-1 h1 fw-bold"></span><br>
-                                        <small class="text-secondary">Hours</small>
-                                    </div>
 
-                                    <div class="time  m-auto py-4">
-                                        <span id="minutes" class="lh-1 h1 fw-bold"></span><br>
-                                        <small class="text-secondary">Minutes</small>
-                                    </div>
-
-                                    <div class="time  m-auto py-4">
-                                        <span id="seconds" class="lh-1 h1 fw-bold"></span><br>
-                                        <small class="text-secondary">Seconds</small>
-                                    </div>
-                                </div>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+            </a>
+            <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 order-1 order-lg-2">
-                        <div class="banner-right  ms-2 text-center text-lg-start pb-8">
-                            <div class="banner-title pb-3">
-                                <img src="assets/images/logo/3.png" class="w-75 mb-3" alt="Logo-asosiasi">
-                                <h4 class="text-white pb-3"><span class="kuning">48<sup>th</sup></span> Annual
-                                    Scientific Meeting of</h4>
-                                <h1 class="text-white">Indonesian <span class="kuning">Urological</span> Association
-                                </h1>
-                            </div>
-                            <div class="banner-event-info pb-3">
-                                <ul
-                                    class="m-0 ps-0 d-sm-flex justify-content-center justify-content-lg-start list-unstyled">
-                                    <li class="pe-2 border-end border-1 border-lightgrey">
-                                        <i class="fa  fa-calendar-o pe-1"></i> 25-27 SEPTEMBER 2025
-                                    </li>
-                                    <li class="ps-2">
-                                        <i class="fa  fa-map-marker pe-1"></i> Medan, North Sumatra
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="event-discription">
-                                <p class="pb-4 m-0 fst-italic">" "</p>
-                                <div class="banner-button">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <a class="btn me-3 my-1 w-100 text-uppercase" href="/registration">REGISTER</a>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <a class="btn btn2 my-1 w-100 text-uppercase" href="/visiting">read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <button data-popover-target="popover-default" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Default popover</button>
+
+<div data-popover id="popover-default" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-xs opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+    <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+        <h3 class="font-semibold text-gray-900 dark:text-white">Popover title</h3>
+    </div>
+    <div class="px-3 py-2">
+        <p>And here's some amazing content. It's very engaging. Right?</p>
+    </div>
+    <div data-popper-arrow></div>
+</div>
+
+
+
+    <!-- Modal toggle -->
+    <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+        Toggle modal
+    </button>
+
+    <!-- Main modal -->
+    <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Terms of Service
+                    </h3>
+                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 space-y-4">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="default-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
+                    <button data-modal-hide="default-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Decline</button>
                 </div>
             </div>
         </div>
-        <div class="wave overflow-hidden position-absolute w-100 z-0">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"
-                class="d-block position-relative">
-                <path class="elementor-shape-fill" d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3
-          c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3
-          c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"></path>
-            </svg>
+    </div>
+
+
+
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <a href="#">
+            <img class="rounded-t-lg" src="assets/images/bg.png" alt="" />
+        </a>
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
         </div>
-    </section>
+    </div>
 
-    <section class="overview pb-0">
-        <div class="container">
-            <div class="inner-overview pb-10 position-relative border-dashed-bottom-2">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="overview-left text-center text-lg-start">
-                            <div class="overview-title pb-4">
-                                <img src="assets/images/logo/3.png" class="w-100 mb-3" alt="Logo-asosiasi">
-                                <img src="assets/images/logo/2.png" alt="Logo" class="w-50 mb-3">
-                                <p>48<sup>th</sup> Annual Scientific Meeting of Indonesian Urological Association</p>
-                                <p class="mb-2 fst-italic">" "</p>
 
-                                <p class="mb-0 opacity-70"><small>Organized by</small></p>
-                                <p><small>Indonesian Urological Association (InaUA)</small></p>
-                            </div>
-                            <div class="overview-event-info pb-6 g-4 text-start position-absolute">
-                                <div class="row justify-content-around ">
-                                    <div class="col-lg-6 col-md-6">
-                                        <a>
-                                            <div
-                                                class="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
-                                                <div class="event-info-icon text-center">
-                                                    <i
-                                                        class="fa fa-calendar-o  text-white bg-kuning rounded-circle me-3"></i>
-                                                </div>
-                                                <div class="time-info">
-                                                    <small>Thursday To Saturday <br> Sept, 25-27, 2025</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <a>
-                                            <div
-                                                class="event-info-box align-items-center d-flex p-4 rounded bg-white box-shadow my-2">
-                                                <div class="event-info-icon text-center ">
-                                                    <i
-                                                        class="fa fa-map-marker  text-white bg-kuning rounded-circle me-3"></i>
-                                                </div>
-                                                <div class="location-info">
-                                                    <small>Santika Premiere Dyandra Hotel & Convention, Medan, North
-                                                        Sumatra</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="overview-img">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 col-md-6 p-0 ">
-                                    <div class="container-img-left mb-2">
-                                        <div class="img-left-1 float-end w-lg-80">
-                                            <img class="mb-2 w-100 rounded" src="assets/images/group/1.jpg"
-                                                alt="group-image">
-                                        </div>
-                                        <div class="img-left-2">
-                                            <img src="assets/images/group/2.jpg" alt="group-image"
-                                                class="w-100 rounded">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="container-img-right w-lg-75">
-                                        <img src="assets/images/group/3.jpg" alt="group-image" class="w-100 rounded">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="bg-white p-8 shadow-md">
+        <img src="assets/images/bg.png" alt="">
+        <h2 class="text-purple-600 text-xl font-bold">Our Services</h2>
+        <h1 class="text-3xl font-bold mt-2">What we do?</h1>
+        <p class="text-gray-600 mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio veritatis qui asperiores, quae beatae autem repudiandae praesentium reiciendis illum minus fugiat animi molestiae nobis! Harum atque quod, similique maiores itaque dolorum sequi, expedita. Omnis, ex!
+        </p>
+        <p class="text-gray-600 mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio veritatis qui asperiores, quae beatae autem repudiandae praesentium reiciendis illum minus fugiat animi molestiae nobis! Harum atque quod, similique maiores itaque dolorum sequi, expedita. Omnis, ex!
+        </p>
+        <button class="mt-4 bg-purple-600 text-white py-2 px-4 rounded-full">Price</button>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+        <div class="space-y-4">
+            <img alt="Makeup tools" height="200" src="https://storage.googleapis.com/a1aa/image/3viWQivhwJf-JoM_3wLmcaogNd79VeKJQbtHqKdelwk.jpg" width="300" />
+            <img alt="Nail polish" height="200" src="https://storage.googleapis.com/a1aa/image/kGKBurBD6o3sjlt2c0ZHuM1OdkH5lmDWFcNal5JneYE.jpg" width="300" />
+        </div>
+        <div class="space-y-4">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-check text-purple-600"></i>
+                <p>Assertively Fabricate.</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-check text-purple-600"></i>
+                <p>Distinctively disseminate.</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-check text-purple-600"></i>
+                <p>Appropriately predominate.</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-check text-purple-600"></i>
+                <p>Assertively Fabricate.</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-check text-purple-600"></i>
+                <p>Distinctively disseminate.</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-check text-purple-600"></i>
+                <p>Assertively Fabricate.</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-check text-purple-600"></i>
+                <p>Distinctively disseminate.</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-check text-purple-600"></i>
+                <p>Authoritatively scale Web.</p>
             </div>
         </div>
-    </section>
-
-    <section class="partners">
-        <div class="container">
-            <div class="partner-inner">
-                <div class="partner-title text-center pb-6 w-lg-60 m-auto">
-                    <p class="mb-1 kuning">48<sup>th</sup> ASMIUA</p>
-                    <h2 class="mb-1">important <span class="kuning">Dates</span></h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-10 offset-lg-1">
-                        <livewire:section.important-date />
-                    </div>
-                </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+        <div class="relative">
+            <img alt="Hair Styling" height="200" src="https://storage.googleapis.com/a1aa/image/U6BHHu_VPUMQvq4Jr9mTLP8u-aWGK_DIZZr7n43WE_Y.jpg" width="300" />
+            <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 w-full">
+                <p>Hair Styling</p>
             </div>
         </div>
-    </section>
-
-    <section class="feature text-white position-relative z-0 start-0">
-        <div class="overlay z-n1">
-        </div>
-        <div class="container">
-            <div class="feature-inner">
-                <div class="counter text-center border-bottom border-white border-opacity-25">
-                    <div class="inner-counter mb-7">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 p-2 ">
-                                <div class="counter-box p-2 border-end border-white border-opacity-25">
-                                    <h1 class="text-white m-0"><span class="num" data-val="100"></span><span>+</span>
-                                    </h1>
-                                    <p>Speakers</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 p-2">
-                                <div class="counter-box p-2 border-end border-white border-opacity-25">
-                                    <h1 class="text-white m-0"><span class="num" data-val="50"></span><span>+</span>
-                                    </h1>
-                                    <p>Symposium</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 p-2">
-                                <div class="counter-box p-2 border-end border-white border-opacity-25">
-                                    <h1 class="text-white m-0"><span class="num" data-val="10"></span><span>+</span>
-                                    </h1>
-                                    <p>Workshops</p>
-                                </div>
-                            </div>
-                            <!-- <div class="col-lg-3 col-md-3 p-2">
-                                <div class="p-2">
-                                    <h1 class="text-white m-0"><span class="num" data-val="300"></span><span>+</span></h1>
-                                    <p class="mb-0">Journalist</p>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="general-ques mt-5">
-                    <div class="row">
-                        <div class="col-lg-6 order-2 order-lg-1 p-2">
-                            <div class="general-ques-left text-white">
-                                <div class="general-ques-image text-center">
-                                    <img src="assets/images/team/4.png" alt="faq-general-image" class="w-50"><br>
-                                </div>
-                                <div class="speaker-statement-box p-4 rounded bg-blue w-lg-80 mb-mi">
-                                    <div class="speaker-statement ps-4 border-start border-white border-7">
-                                        <p><small>" Congress Chairman "</small></p>
-                                        <h6 class="text-white">Name</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 order-1 order-lg-2 p-2">
-                            <div class="general-ques-right">
-                                <div class="section-title pb-4 text-center text-lg-start">
-                                    <p class="mb-1 kuning">GENERAL QUESTIONS</p>
-                                    <h2 class="mb-2 text-white">Welcome <span class="kuning">message </span></h2>
-                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
+        <div class="relative">
+            <img alt="Makeup" height="200" src="https://storage.googleapis.com/a1aa/image/8m1aoSimP54lGJUIZcehJiEQmnNfuDccw8HH4wQQTjA.jpg" width="300" />
+            <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 w-full">
+                <p>Makeup</p>
             </div>
         </div>
-    </section>
-
-    <livewire:section.competition />
-
-    <section class="partners ">
-        <div class="container border-dashed-bottom-2 pb-10">
-            <div class="partner-inner ">
-                <div class="partner-title text-center pb-6 w-lg-60 m-auto">
-                    <p class="mb-1 kuning">48<sup>th</sup> ASMIUA</p>
-                    <h2 class="mb-1">SPONSors</h2>
-                </div>
-                <div class="partner-img">
-                    <div class="row row-cols-1 row-cols-lg-5 row-cols-md-5 ">
-                        @foreach ($sponsors as $sponsor)
-                        <div class="col p-0 border-end border-sm-0">
-                            <div class="p-2 partner-img-box text-center">
-                                <a href="{{$sponsor->website ? $sponsor->website : 'javascript:void(0)'}}"
-                                    target="_blank">
-                                    {!! $sponsor->logo ? '<img src="' . asset('storage/' . $sponsor->logo) . '"
-                                        class="img-fluid opacity-75" alt="' . $sponsor->company . '" />' : '<small
-                                        class="text-center text-blue">' . $sponsor->company . '</small>' !!}
-                                </a>
-                            </div>
-                        </div>
-                        @endforeach
-                    </div>
-                </div>
-                <div class="partner-button text-center">
-                    <a class="btn" href="/sponsors">VIEW MORE Sponsors</a>
-                </div>
+        <div class="relative">
+            <img alt="Nail Art" height="200" src="https://storage.googleapis.com/a1aa/image/HzbI_6_lZlFVS_ofqgysFXPUzXZLvXBlFgsdDgoQDz8.jpg" width="300" />
+            <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 w-full">
+                <p>Nail Art</p>
             </div>
         </div>
-    </section>
-
-    <section class="direction pb-0">
-        <div class="container">
-            <div class="section-title text-center pb-2 w-lg-60 m-auto">
-                <p class="mb-1  kuning">Visiting</p>
-                <h2 class="mb-1">GET DIRECTION TO THE <span class="kuning">Venue</span></h2>
-            </div>
-            <div class="direction-content">
-                <div class="direction-info">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-5 px-1">
-                            <div class="p-6 d-flex text-white w-100 h-100 rounded bg-blue ">
-                                <div class="justify-content-center align-self-center ms-6">
-                                    <h5 class="text-white pb-2">EVENT VENUE:</h5>
-                                    <p class="pb-5 m-0">Santika Premiere Dyandra Hotel & Convention</p>
-                                    <h5 class="text-white pb-2">ADDRESS:</h5>
-                                    <p class="pb-5 m-0">Kapten Maulana Lubis No.7, Petisah Tengah, Kec. Medan Petisah,
-                                        Medan City, North Sumatra</p>
-                                    <!-- <h5 class="text-white pb-2">RECEPTION INFO:</h5>
-                                    <p class="pb-5 m-0">Booking: (+62) 1919-2020</p> -->
-                                    <a>Get Directions</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 col-md-7 px-1 py-2">
-                            <iframe height="400" class="rounded w-100"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.993011784665!2d98.6676701954653!3d3.589077314075902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131cfb9769189%3A0xc73602d265aeceb4!2sHotel%20Santika%20Premiere%20Dyandra%20Hotel%20%26%20Convention!5e0!3m2!1sen!2sid!4v1738729066520!5m2!1sen!2sid"></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="location-gallery">
-                    <div id="selector" class="row pt-1 justify-content-center">
-                        <div class="item col-lg-4 col-md-6 p-1" data-src="assets/images/group/4.jpg">
-                            <a><img src="assets/images/thumbnail/4.jpg" class="w-100 rounded"
-                                    alt="Santika Premiere Dyandra Hotel & Convention"></a>
-                        </div>
-                        <div class="item col-lg-4 col-md-6 p-1" data-src="assets/images/group/5.jpg">
-                            <a><img src="assets/images/thumbnail/5.jpg" class="w-100 rounded"
-                                    alt="Santika Premiere Dyandra Hotel & Convention"></a>
-                        </div>
-                        <div class="item col-lg-4 col-md-6 p-1" data-src="assets/images/group/6.jpg">
-                            <a><img src="assets/images/thumbnail/6.jpg" class="w-100 rounded"
-                                    alt="Santika Premiere Dyandra Hotel & Convention"></a>
-                        </div>
-                    </div>
-                </div>
+        <div class="relative">
+            <img alt="Spa &amp; Scrub" height="200" src="https://storage.googleapis.com/a1aa/image/KlEiW5pEg0wSxZYjBqJaoYIvbLZUN5mzXF8RZwhfjfU.jpg" width="300" />
+            <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 w-full">
+                <p>Spa &amp; Scrub</p>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="bg-purple-700 text-white p-8 mt-8">
+        <h2 class="text-2xl font-bold">Featured Pricing</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+            <div>
+                <div class="flex justify-between border-b border-purple-500 py-2">
+                    <p>Hair Cut &amp; Blowdry</p>
+                    <p>$13</p>
+                </div>
+                <div class="flex justify-between border-b border-purple-500 py-2">
+                    <p>Hair Color Service</p>
+                    <p>$15</p>
+                </div>
+                <div class="flex justify-between border-b border-purple-500 py-2">
+                    <p>Bridal makeup</p>
+                    <p>$23</p>
+                </div>
+                <div class="flex justify-between border-b border-purple-500 py-2">
+                    <p>Full Body Relaxation</p>
+                    <p>$59</p>
+                </div>
+                <div class="flex justify-between border-b border-purple-500 py-2">
+                    <p>Nails Art</p>
+                    <p>$09</p>
+                </div>
+                <div class="flex justify-between border-b border-purple-500 py-2">
+                    <p>Party MakeUp</p>
+                    <p>$11</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold">View Full Menu</h3>
+                <p class="mt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aspernatur laboriosam consequatur incidunt quod excepturi dignissimos illum, aut, doloremque, possimus suscipit, unde sapiente.
+                </p>
+                <img alt="Menu images" class="mt-4" height="200" src="https://storage.googleapis.com/a1aa/image/usuhA-N-Ke11L2CF5hQa8kcWPIVNqtzL8F6sCpTwiKc.jpg" width="300" />
+                <p class="mt-2 text-sm">* Members will get more 10% Off!</p>
+            </div>
+        </div>
+    </div>
 </div>

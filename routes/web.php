@@ -14,6 +14,9 @@ use App\Livewire\Section\Sponsor;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomePage::class);
+Route::get('/test', function() {
+    return view('welcome');
+});
 
 Route::get('/organizing-committee', Committee::class);
 Route::get('/program-at-glance', AtGlance::class);
