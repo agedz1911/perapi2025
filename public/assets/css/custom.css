@@ -5,13 +5,25 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 body {
-	font-family: "Inter", sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fef7ff;
 }
 .offcanvas {
-	transform: translateX(100%);
+	transform: translateX(-100%);
 	transition: transform 0.3s ease-in-out;
 }
 .offcanvas.show {
 	transform: translateX(0);
+}
+
+.banner {
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.inner-banner {
+    padding-top: 150px;
 }
 

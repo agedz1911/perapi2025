@@ -25,7 +25,7 @@
 </head>
 
 
-<body class="bg-gray-100">
+<body>
 
     <div class="flex flex-col lg:flex-row">
         <x-section.header />
