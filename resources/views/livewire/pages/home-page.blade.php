@@ -2,15 +2,16 @@
     <section class="lg:min-h-screen banner relative pb-16">
         <div class="absolute inset-0 bg-gradient-to-b from-[#470858]/80 to-[#92278F]/10"></div>
         <div class="flex items-center justify-center relative pt-10 md:pt-14 lg:pt-32">
-            <div class="text-center max-w-2xl w-full mx-auto px-1">
-                <div class="flex justify-center">
-                    <img src="assets/images/logo/logo.png" class="w-32 md:w-48" alt="">
+            <div class="text-center max-w-5xl w-full mx-auto px-1">
+                <div class="flex flex-col items-center w-full">
+                    <img src="assets/images/logo/logo.png" class="w-32 md:w-44" alt="">
+                    <img src="assets/images/logo/logo-event-light.png" class="w-1/2" alt="">
                 </div>
-                <h1 class="md:text-6xl text-3xl font-bold text-white mt-2 md:mt-5 lg:mt-10">28<sup>th</sup> InaPRAS</h1>
-                <p class="text-white font-normal mt-0">Annual Scientific Meeting of the Indonesian Association <br> of Plastic Reconstructive and Aesthetic Surgeons</p>
+                <!-- <h1 class="md:text-6xl text-3xl font-bold text-white mt-2 md:mt-5 lg:mt-10">28<sup>th</sup> InaPRAS</h1>
+                <p class="text-white font-normal mt-2">Annual Scientific Meeting of the Indonesian Association of Plastic Reconstructive and Aesthetic Surgeons</p> -->
                 <h3 class="text-yellow-400 font-semibold text-xl md:text-3xl italic mt-2 md:mt-5 lg:mt-7 ">" Aesthetics and Beyond "</h3>
-                <p class="text-slate-100">July 30<sup>th</sup> – August 2<sup>nd</sup>, 2025 <br> JW Marriot Hotel, Medan, North Sumatera</p>
-                <div class="mt-5">
+                <p class="text-slate-100 mt-4">July 30<sup>th</sup> – August 2<sup>nd</sup>, 2025 <br> JW Marriot Hotel, Medan, North Sumatera</p>
+                <div class="mt-10">
                     <button
                         class="hover:text-amber-300 text-white bg-gradient-to-br from-purple-800 to-[#92278F] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center">Read More <i class="fa-solid fa-angles-right text-xs"></i></button>
                     <button
