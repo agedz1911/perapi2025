@@ -15,7 +15,7 @@
                     Medan, North Sumatera</p>
                 <div class="mt-10">
                     <button
-                        class="hover:text-amber-300 text-white bg-gradient-to-br from-purple-800 to-[#92278F] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center">Read
+                        class=" text-white bg-gradient-to-br from-amber-400 to-[#bd9c2e] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-amber-300 dark:focus:ring-amber-800 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center">Read
                         More <i class="fa-solid fa-angles-right text-xs"></i></button>
                     <button
                         class="text-white hover:text-white border border-white hover:bg-amber-400 hover:border-amber-400 focus:ring-4 focus:outline-none focus:ring-amber-300 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center  dark:border-amber-400 dark:text-amber-400 dark:hover:text-white dark:hover:bg-amber-500 dark:focus:ring-amber-300"><i
@@ -78,7 +78,7 @@
                 class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                 <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                     <img src="assets/images/mockup.png"
-                        class="dark:hidden h-[156px] md:h-[278px] w-full rounded-lg relative" alt="">
+                        class=" h-[156px] md:h-[278px] w-full rounded-lg relative" alt="">
                     <div class="w-full absolute top-1 lg:top-4 text-center grid justify-items-center gap-0">
                         <img src="assets/images/logo/logo.png" class="lg:w-28 w-12" alt="">
                         <div id="countdown" class="flex gap-3 w-full lg:gap-8 rounded-lg bg-black/50 mt-1">
@@ -144,21 +144,52 @@
 
     </section>
 
-    <section class="px-10 mx-auto">
-        <div class="bg-red-400 mx-2 p-5 rounded-lg shadow-md">
-            <h2 class="text-purple-600 text-xl font-bold">Our Services</h2>
-            <h1 class="text-3xl font-bold mt-2">What we do?</h1>
-            <p class="text-gray-600 mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio veritatis qui asperiores, quae beatae
-                autem repudiandae praesentium reiciendis illum minus fugiat animi molestiae nobis! Harum atque quod,
-                similique maiores itaque dolorum sequi, expedita. Omnis, ex!
-            </p>
-            <p class="text-gray-600 mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio veritatis qui asperiores, quae beatae
-                autem repudiandae praesentium reiciendis illum minus fugiat animi molestiae nobis! Harum atque quod,
-                similique maiores itaque dolorum sequi, expedita. Omnis, ex!
-            </p>
-            <button class="mt-4 bg-purple-600 text-white py-2 px-4 rounded-full">Price</button>
+    <section class="w-full pb-0 px-2 lg:px-4">
+        <div class="">
+            <div class="text-center pb-2 m-auto">
+                <p class="mb-1 ">Visiting</p>
+                <h2 class="mb-1">GET DIRECTION TO THE <span class="kuning">Venue</span></h2>
+            </div>
+            <div class="">
+                <div class="">
+                    <div class="flex flex-col lg:flex-row gap-5">
+                        <div class="w-2/5">
+                            <div class="py-10 px-4 text-white rounded bg-blue-700">
+                                <div class="">
+                                    <h5 class="text-white pb-2">EVENT VENUE:</h5>
+                                    <p class="pb-5 m-0 text-sm">Santika Premiere Dyandra Hotel & Convention</p>
+                                    <h5 class="text-white pb-2">ADDRESS:</h5>
+                                    <p class="pb-5 m-0 text-sm">Kapten Maulana Lubis No.7, Petisah Tengah, Kec. Medan Petisah,
+                                        Medan City, North Sumatra</p>
+                                    <!-- <h5 class="text-white pb-2">RECEPTION INFO:</h5>
+                                    <p class="pb-5 m-0">Booking: (+62) 1919-2020</p> -->
+                                    <a>Get Directions</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-3/5 px-1 py-2">
+                            <iframe height="400" class="rounded w-full"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.993011784665!2d98.6676701954653!3d3.589077314075902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131cfb9769189%3A0xc73602d265aeceb4!2sHotel%20Santika%20Premiere%20Dyandra%20Hotel%20%26%20Convention!5e0!3m2!1sen!2sid!4v1738729066520!5m2!1sen!2sid"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-2">
+                    
+                        <div class="w-full max-w-sm" data-src="assets/images/group/4.jpg">
+                            <a><img src="assets/images/bg.png" class="w-100 rounded"
+                                    alt="Santika Premiere Dyandra Hotel & Convention"></a>
+                        </div>
+                        <div class="w-full max-w-sm" data-src="assets/images/group/5.jpg">
+                            <a><img src="assets/images/bg.png" class="w-100 rounded"
+                                    alt="Santika Premiere Dyandra Hotel & Convention"></a>
+                        </div>
+                        <div class="w-full max-w-sm" data-src="assets/images/group/6.jpg">
+                            <a><img src="assets/images/bg.png" class="w-100 rounded"
+                                    alt="Santika Premiere Dyandra Hotel & Convention"></a>
+                        </div>
+                    
+                </div>
+            </div>
         </div>
     </section>
 
