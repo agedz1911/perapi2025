@@ -34,46 +34,9 @@
         </div>
     </section>
 
-    <section class="pb-10 grid grid-cols-1 lg:grid-cols-2 px-3 gap-3 border-b-2 border-dashed border-gray-400">
+    <section
+        class="lg:pb-28 pb-20  pt-0 lg:-mt-14 grid grid-cols-1 lg:grid-cols-2 px-3 gap-3 border-b-2 border-dashed border-gray-400">
         <div class="">
-            
-            <div class="flex gap-3 ">
-                <div
-                    class="block hover:cursor-pointer max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                    <div class="flex items-center">
-                        <div class="shrink-0 bg-amber-500 py-3 px-4 rounded-full">
-                            <i class="fa fa-calendar-o text-4xl text-white dark:text-gray-700"></i>
-                        </div>
-                        <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                                Thursday to Saturday 
-                            </p>
-                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                                July 31st – August 2nd, 2025
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="block hover:cursor-pointer max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                    <div class="flex items-center">
-                        <div class="shrink-0 bg-amber-500 py-3 px-4 rounded-full">
-                            <i class="fa fa-calendar-o text-4xl text-white dark:text-gray-700"></i>
-                        </div>
-                        <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                                Thursday to Saturday 
-                            </p>
-                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                                July 31st – August 2nd, 2025
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
             <!-- Countdown -->
             <div
                 class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
@@ -81,28 +44,27 @@
                     <img src="assets/images/mockup.png" class=" h-[156px] md:h-[278px] w-full rounded-lg relative"
                         alt="">
                     <div class="w-full absolute bottom-1 lg:bottom-4 text-center grid justify-items-center gap-0">
-                        {{-- <img src="assets/images/logo/logo.png" class="lg:w-28 w-12" alt=""> --}}
                         <div id="countdown" class="flex gap-3 w-full lg:gap-8 rounded-lg bg-black/50 mt-1">
                             <div class="m-auto py-2 lg:py-4 ">
                                 <span id="days" class="font-bold mb-0 text-2xl lg:text-4xl text-amber-500"></span><br>
-                                <small class="text-white">Days</small>
+                                <small class="text-white text-xs">Days</small>
                             </div>
 
                             <div class=" m-auto py-2 lg:py-4">
                                 <span id="hours" class="font-bold mb-0 text-2xl lg:text-4xl text-amber-500"></span><br>
-                                <small class="text-white">Hours</small>
+                                <small class="text-white text-xs">Hours</small>
                             </div>
 
                             <div class=" m-auto py-2 lg:py-4">
                                 <span id="minutes"
                                     class="font-bold mb-0 text-2xl lg:text-4xl text-amber-500"></span><br>
-                                <small class="text-white">Minutes</small>
+                                <small class="text-white text-xs">Minutes</small>
                             </div>
 
                             <div class=" m-auto py-2 lg:py-4">
                                 <span id="seconds"
                                     class="font-bold mb-0 text-2xl lg:text-4xl text-amber-500"></span><br>
-                                <small class="text-white">Seconds</small>
+                                <small class="text-white text-xs">Seconds</small>
                             </div>
                         </div>
                         <button
@@ -117,32 +79,59 @@
                     class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
                 </div>
             </div>
-
+            <div class="flex flex-col md:flex-row lg:justify-start justify-center items-center gap-3 mt-5">
+                <div
+                    class="z-30 hover:cursor-pointer max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div class="flex items-center">
+                        <div class="shrink-0 bg-amber-500 py-3 px-4 rounded-full">
+                            <i class="fa fa-calendar-o text-4xl text-white"></i>
+                        </div>
+                        <div class="flex-1 min-w-0 ms-4">
+                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                Thursday to Saturday
+                            </p>
+                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                July 31<sup>st</sup> - August 2<sup>nd</sup>, 2025
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="z-30 hover:cursor-pointer max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div class="flex items-center px-5">
+                        <div class="shrink-0 bg-amber-500 py-3 px-4 rounded-full">
+                            <i class="fa fa-map-marker text-4xl text-white"></i>
+                        </div>
+                        <div class="flex-1 min-w-0 ms-4">
+                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                JW Marriot Hotel Medan
+                            </p>
+                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                Medan, North Sumatera
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
             <div class="grid gap-4">
-
-                <div>
-                    <img class="h-auto max-w-full rounded-2xl"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+                <div class="bg-gray-200 rounded-lg place-items-center place-content-center">
+                    <img src="assets/images/logo/logo.png" class="max-w-full h-auto" alt="">
                 </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-2xl"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+                <div class="bg-gray-200 rounded-lg place-items-center place-content-start">
+                    <img src="assets/images/logo/logo-event.png" class="max-w-full h-auto" alt="">
                 </div>
             </div>
             <div class="grid gap-4">
-
-                <div>
-                    <img class="h-auto max-w-full rounded-2xl"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+                <div class="relative">
+                    <img class="h-full object-cover max-w-full rounded-2xl"
+                        src="assets/images/medan/landmark.webp" alt="">
+                    <div class="absolute inset-0 bg-slate-950/50"></div>
                 </div>
-
             </div>
         </div>
-
     </section>
 
     <section class="py-28 px-2">
@@ -183,9 +172,9 @@
                         <div class="w-full border-e border-opacity-35 border-white">
                             <div class="border-b border-opacity-25 border-white md:border-b-0 text-center py-5 px-2">
                                 <h1 class="text-amber-400 m-0 text-4xl md:text-5xl font-semibold"><span class="num"
-                                        data-val="10"></span><span>+</span>
+                                        data-val="20"></span><span>+</span>
                                 </h1>
-                                <p class="text-xs">Workshops</p>
+                                <p class="text-xs">Workshops and Master Class</p>
                             </div>
                         </div>
                         <div class="w-full border-e border-opacity-35 border-white">
@@ -193,7 +182,7 @@
                                 <h1 class="text-amber-400 m-0 text-4xl md:text-5xl font-semibold"><span class="num"
                                         data-val="300"></span><span>+</span>
                                 </h1>
-                                <p class="">Journalist</p>
+                                <p class="text-xs">Journalist</p>
                             </div>
                         </div>
                     </div>

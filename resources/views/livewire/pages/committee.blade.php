@@ -1,4 +1,4 @@
-<div>
+<div class="w-full lg:w-11/12">
     <section class="banner page-banner position-relative pb-0">
         <div class="overlay">
         </div>
@@ -38,4 +38,5 @@
             </div>
         </div>
     </section>
+    <x-section.footer />
 </div>
