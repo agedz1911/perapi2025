@@ -5,15 +5,15 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #fef7ff;
 }
 .offcanvas {
-	transform: translateX(-100%);
-	transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
 }
 .offcanvas.show {
-	transform: translateX(0);
+    transform: translateX(0);
 }
 
 .banner {
@@ -27,3 +27,22 @@ body {
     padding-top: 150px;
 }
 
+.bg-competition {
+    background-image: url(../images/4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.feature {
+    background-image: url(../images/5.png);
+    background-size: cover;
+    background-position: top center;
+}
+
+.image-welcome {
+    background-image: url(../images/3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -14,7 +14,7 @@
         <img src="assets/images/logo/logo-event.png" class="w-full max-w-xs" />
     </div>
     <x-section.menu />
-    <h4 class="mt-8 mb-2 text-gray-500 text-base font-normal">Get in touch with us</h4>
+    <h4 class="mt-8 mb-2 text-gray-600 text-base font-normal">Get in touch with us</h4>
     <x-section.contact-icon-m />
 </div>
 <!-- Sidebar -->
@@ -23,6 +23,6 @@
         <img src="assets/images/logo/logo-event.png" class="w-full max-w-sm" />
     </div>
     <x-section.menu />
-    <h4 class="mt-8 mb-2 text-gray-500 text-base font-normal">Get in touch with us</h4>
+    <h4 class="mt-8 mb-2 text-gray-600 text-base font-normal">Get in touch with us</h4>
     <x-section.contact-icon />
 </div>
