@@ -12,7 +12,7 @@
                 <h3 class="text-yellow-400 font-semibold text-xl md:text-3xl italic mt-2 md:mt-5 lg:mt-7 ">" Aesthetics
                     and Beyond "</h3>
                 <p class="text-slate-100 mt-4">July 30<sup>th</sup> – August 2<sup>nd</sup>, 2025 <br> JW Marriot Hotel,
-                    Medan, North Sumatera</p>
+                    Medan, North Sumatra</p>
                 <div class="mt-10">
                     <button
                         class=" text-white bg-gradient-to-br from-amber-300 to-[#f6921e] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-amber-300 dark:focus:ring-amber-800 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center">Read
@@ -81,33 +81,33 @@
             </div>
             <div class="flex flex-col md:flex-row lg:justify-start justify-center items-center gap-3 mt-5">
                 <div
-                    class="z-30 hover:cursor-pointer max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    class="z-30 hover:cursor-pointer max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100">
                     <div class="flex items-center">
                         <div class="shrink-0 bg-amber-500 py-3 px-4 rounded-full">
                             <i class="fa fa-calendar-o text-4xl text-white"></i>
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                            <p class="text-sm font-medium text-gray-900 truncate">
                                 Thursday to Saturday
                             </p>
-                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            <p class="text-sm text-gray-500 truncate">
                                 July 31<sup>st</sup> - August 2<sup>nd</sup>, 2025
                             </p>
                         </div>
                     </div>
                 </div>
                 <div
-                    class="z-30 hover:cursor-pointer max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    class="z-30 hover:cursor-pointer max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100">
                     <div class="flex items-center px-5">
                         <div class="shrink-0 bg-amber-500 py-3 px-4 rounded-full">
                             <i class="fa fa-map-marker text-4xl text-white"></i>
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                            <p class="text-sm font-medium text-gray-900 truncate ">
                                 JW Marriot Hotel Medan
                             </p>
-                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                                Medan, North Sumatera
+                            <p class="text-sm text-gray-500 truncate">
+                                Medan, North Sumatra
                             </p>
                         </div>
                     </div>

@@ -5,7 +5,7 @@ namespace App\Livewire\Pages;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-#[Title('ASMIUA - Visiting')]
+#[Title('Venue - The 28th InaPRAS')]
 class Visiting extends Component
 {
     public function render()
