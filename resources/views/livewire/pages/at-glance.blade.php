@@ -1,12 +1,12 @@
-<div>
-    <section class="banner page-banner position-relative pb-0">
-        <div class="overlay">
+<div class="w-full lg:w-11/12">
+    <section class="breadcrumbs relative pb-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#470858]/80 to-[#9E1F63]/30"></div>
+
+
+        <div class="py-16 lg:py-28 text-center relative">
+            <h2 class="text-white uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Program at Glance</h2>
         </div>
-        <div class="container">
-            <div class="page-title text-center position-relative py-11">
-                <h2 class="text-white text-uppercase">Program at Glance</h2>
-            </div>
-        </div>
+
     </section>
 
 
@@ -156,4 +156,6 @@
 
         </div>
     </section>
+
+    <x-section.footer />
 </div>

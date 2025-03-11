@@ -174,15 +174,15 @@
                                 <h1 class="text-amber-400 m-0 text-4xl md:text-5xl font-semibold"><span class="num"
                                         data-val="20"></span><span>+</span>
                                 </h1>
-                                <p class="text-xs">Workshops and Master Class</p>
+                                <p class="text-xs">Workshops, Master Classes <br> & Master Courses</p>
                             </div>
                         </div>
                         <div class="w-full border-e border-opacity-35 border-white">
                             <div class="border-b border-opacity-25 border-white md:border-b-0 text-center py-5 px-2">
                                 <h1 class="text-amber-400 m-0 text-4xl md:text-5xl font-semibold"><span class="num"
-                                        data-val="300"></span><span>+</span>
+                                        data-val="30"></span><span>+</span>
                                 </h1>
-                                <p class="text-xs">Journalist</p>
+                                <p class="text-xs">Topics</p>
                             </div>
                         </div>
                     </div>
@@ -228,7 +228,7 @@
                             </div>
                         </div>
                         @endforeach
-
+                        
                     </div>
                 </div>
             </div>
@@ -287,7 +287,7 @@
     <x-section.footer />
 </div>
 
-<script>
+<script data-navigate-once>
     document.addEventListener('DOMContentLoaded', function() {
         const days = document.getElementById('days');
         const hours = document.getElementById('hours');

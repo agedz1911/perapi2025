@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomePage::class);
 Route::get('/test', function() {
-    return view('welcome');
+    return view('pages');
 });
 
 Route::get('/organizing-committee', Committee::class);

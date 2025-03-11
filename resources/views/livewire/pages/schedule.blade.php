@@ -1,12 +1,11 @@
-<div>
-    <section class="banner page-banner position-relative pb-0">
-        <div class="overlay">
+<div class="w-full lg:w-11/12">
+    <section class="breadcrumbs relative pb-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#470858]/80 to-[#9E1F63]/30"></div>
+
+        <div class="py-16 lg:py-28 text-center relative">
+            <h2 class="text-white uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Scientific Schedule</h2>
         </div>
-        <div class="container">
-            <div class="page-title text-center position-relative py-11">
-                <h2 class="text-white text-uppercase">Scientific Schedule</h2>
-            </div>
-        </div>
+
     </section>
 
     <section class="faq-general-ques pb-10">
@@ -26,110 +25,110 @@
                                 @foreach ($dates as $date)
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="{{ $date }}"
-                                        id="date-{{ $loop->index }}" wire:model.live="selectedDates"
-                                        >
-                                    <label class="form-check-label" for="date-{{ $loop->index }}">
-                                        {{ \Carbon\Carbon::parse($date)->format('d F Y') }}
-                                    </label>
-                                </div>
-                                @endforeach
+                    id="date-{{ $loop->index }}" wire:model.live="selectedDates"
+                    >
+                    <label class="form-check-label" for="date-{{ $loop->index }}">
+                        {{ \Carbon\Carbon::parse($date)->format('d F Y') }}
+                    </label>
+                </div>
+                @endforeach
 
-                                <p class="fw-bold black mt-3">Room</p>
-                                @foreach ($rooms as $room)
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="{{ $room }}"
-                                        id="room-{{ $loop->index }}" wire:model.live="selectedRooms">
-                                    <label class="form-check-label" for="room-{{ $loop->index }}"
-                                        >
-                                        {{ $room }}
-                                    </label>
-                                </div>
-                                @endforeach
-                                <p class="fw-bold black mt-3">Sessions</p>
-                                @foreach ($categories as $category)
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="{{ $category }}"
-                                        id="category-{{ $loop->index }}" wire:model="selectedCategories"
-                                        >
-                                    <label class="form-check-label" for="category-{{ $loop->index }}">
-                                        {{ $category }}
-                                    </label>
-                                </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div> --}}
+                <p class="fw-bold black mt-3">Room</p>
+                @foreach ($rooms as $room)
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="{{ $room }}"
+                        id="room-{{ $loop->index }}" wire:model.live="selectedRooms">
+                    <label class="form-check-label" for="room-{{ $loop->index }}">
+                        {{ $room }}
+                    </label>
+                </div>
+                @endforeach
+                <p class="fw-bold black mt-3">Sessions</p>
+                @foreach ($categories as $category)
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="{{ $category }}"
+                        id="category-{{ $loop->index }}" wire:model="selectedCategories">
+                    <label class="form-check-label" for="category-{{ $loop->index }}">
+                        {{ $category }}
+                    </label>
+                </div>
+                @endforeach
+            </div>
+        </div>
+</div> --}}
 
-                    <div class="col-lg-12 order-2 order-lg-1 p-2">
-                        <div class="general-ques-right mx-5">
-                            <div class="row gy-3">
-                                <div class="px-3 pb-5">
-                                    <div class="input-group">
-                                        <span class="input-group-text" id="basic-addon1">
-                                            <i class="fa-solid fa-search"></i>
-                                        </span>
-                                        <input type="text" class="form-control border" placeholder="Search Schedule"
-                                            aria-label="Search Schedule" aria-describedby="basic-addon1"
-                                            wire:model.live.debounce.500ms="search">
-                                    </div>
-                                </div>
-                            </div>
-
-                            @foreach ($groupedSessions as $group)
-                            <div class="section-title py-2 text-center text-lg-start">
-                                <h4 class="mb-1">{{ \Carbon\Carbon::parse($group['date'])->format('l, d F') }}</h4>
-                                <p>{{ $group['category_sesi'] }}</p>
-                            </div>
-                            <div class="faq-accordion p-4 bg-lightgrey rounded border-2 border-light-subtle ">
-                                <div class="accordion accordion-faq " id="accordionFlushExample">
-                                    @foreach ($group['sesis'] as $sesi)
-                                    <div class="accordion-item border mb-1 rounded">
-                                        <p class="accordion-header p-4">
-                                            <button class="accordion-button collapsed fw-semibold p-0" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#{{$sesi->id}}"
-                                                aria-expanded="false" aria-controls="tes">
-                                                {{$sesi->title_ses}}
-                                            </button>
-                                        </p>
-                                        <div id="{{$sesi->id}}" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body bg-lightgrey">
-                                                <div class="px-0">
-                                                    <small class="text-light-grey">{{$sesi->category_sesi}}</small>
-                                                    <h4>{{$sesi->title_ses}}</h4>
-                                                    <p class="black mb-2">{{$sesi->time}} | {{$sesi->room}}</p>
-                                                    <p class="mb-0">Moderator : <span class="black fw-semibold">
-                                                            {{$sesi->moderator}}</span></p>
-                                                    <p class="">Panelist : <span class="black fw-semibold">
-                                                            {{$sesi->panelist}}</span></p>
-                                                </div>
-                                                <div class="table-responsive">
-                                                    <table class="table rounded table-hover">
-                                                        <tbody>
-                                                            @foreach ($sesi->schedules as $schedule)
-                                                            <tr>
-                                                                <td>{{$schedule->time_speaker}}</td>
-                                                                <td><span
-                                                                        class="black fw-bold">{{$schedule->topic_title}}</span>
-                                                                    <br><small>Speaker: {{$schedule->speaker}}</small>
-                                                                </td>
-                                                                <td></td>
-                                                            </tr>
-                                                            @endforeach
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    @endforeach
-                                </div>
-                            </div>
-                            @endforeach
-                        </div>
-                    </div>
+<div class="col-lg-12 order-2 order-lg-1 p-2">
+    <div class="general-ques-right mx-5">
+        <div class="row gy-3">
+            <div class="px-3 pb-5">
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="fa-solid fa-search"></i>
+                    </span>
+                    <input type="text" class="form-control border" placeholder="Search Schedule"
+                        aria-label="Search Schedule" aria-describedby="basic-addon1"
+                        wire:model.live.debounce.500ms="search">
                 </div>
             </div>
         </div>
-    </section>
+
+        @foreach ($groupedSessions as $group)
+        <div class="section-title py-2 text-center text-lg-start">
+            <h4 class="mb-1">{{ \Carbon\Carbon::parse($group['date'])->format('l, d F') }}</h4>
+            <p>{{ $group['category_sesi'] }}</p>
+        </div>
+        <div class="faq-accordion p-4 bg-lightgrey rounded border-2 border-light-subtle ">
+            <div class="accordion accordion-faq " id="accordionFlushExample">
+                @foreach ($group['sesis'] as $sesi)
+                <div class="accordion-item border mb-1 rounded">
+                    <p class="accordion-header p-4">
+                        <button class="accordion-button collapsed fw-semibold p-0" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#{{$sesi->id}}"
+                            aria-expanded="false" aria-controls="tes">
+                            {{$sesi->title_ses}}
+                        </button>
+                    </p>
+                    <div id="{{$sesi->id}}" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body bg-lightgrey">
+                            <div class="px-0">
+                                <small class="text-light-grey">{{$sesi->category_sesi}}</small>
+                                <h4>{{$sesi->title_ses}}</h4>
+                                <p class="black mb-2">{{$sesi->time}} | {{$sesi->room}}</p>
+                                <p class="mb-0">Moderator : <span class="black fw-semibold">
+                                        {{$sesi->moderator}}</span></p>
+                                <p class="">Panelist : <span class="black fw-semibold">
+                                        {{$sesi->panelist}}</span></p>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table rounded table-hover">
+                                    <tbody>
+                                        @foreach ($sesi->schedules as $schedule)
+                                        <tr>
+                                            <td>{{$schedule->time_speaker}}</td>
+                                            <td><span
+                                                    class="black fw-bold">{{$schedule->topic_title}}</span>
+                                                <br><small>Speaker: {{$schedule->speaker}}</small>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+        @endforeach
+    </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<x-section.footer />
 </div>

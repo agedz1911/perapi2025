@@ -23,6 +23,13 @@ body {
     background-position: center top;
 }
 
+.breadcrumbs {
+    background-image: url(../images/mockup.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
 .inner-banner {
     padding-top: 150px;
 }

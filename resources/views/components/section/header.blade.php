@@ -13,7 +13,7 @@
     <div class="mb-8">
         <img src="assets/images/logo/logo-event.png" class="w-full max-w-xs" />
     </div>
-    <x-section.menu />
+    <x-section.menu-mobile />
     <h4 class="mt-8 mb-2 text-gray-600 text-base font-normal">Get in touch with us</h4>
     <x-section.contact-icon-m />
 </div>
