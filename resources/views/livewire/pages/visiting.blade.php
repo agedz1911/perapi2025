@@ -6,7 +6,7 @@
         </div>
     </section>
 
-    <section class="py-24 bg-gray-50">
+    <section class="pb-24 pt-10">
         <div class="px-2 lg:px-5">
             <div class="flex gap-2 flex-wrap justify-between w-full items-end text-gray-500">
                 <div class="w-full max-w-xl pb-2">
@@ -57,11 +57,11 @@
                 <div id="default-styled-tab-content">
                     <div class="hidden p-4 rounded-lg text-gray-500" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/Rumah-Makan-Tabona-05.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">Rumah Makan Tabona</h4>
                                     <p>Enjoy the rich and flavorful chicken and beef curry of Medan, made with a blend of traditional spices and a savory broth that creates an unforgettable culinary experience</p>
                                     <div class="flex justify-evenly mt-4">
@@ -77,11 +77,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/Bihun-Bebek-Asie-05.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">Bihun Bebek Asie</h4>
                                     <p>A bowl of thin vermicelli noodles served with a rich and aromatic duck broth, topped with tender slices of duck and a unique herbal spice blend</p>
                                     <div class="flex justify-evenly mt-4">
@@ -97,11 +97,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/soto-sinar-pagi-05.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">SOTO SINAR PAGI</h4>
                                     <p>A famous beef soup with a thick, flavorful broth, packed with spices and served with tender beef slices</p>
                                     <div class="flex justify-evenly mt-4">
@@ -117,11 +117,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/si-bolang-05.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">SI BOLANG DURIAN</h4>
                                     <p>Pamper your tongue with delicious fresh durian at Si Bolang
                                         Durian, the best place in Medan to enjoy durian with
@@ -139,11 +139,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/ucok-durian-05.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">UCOK DURIAN</h4>
                                     <p>Enjoy the best durian at Durian Ucok, an iconic place in Medan
                                         which serves selected durian with rich taste and texture
@@ -161,11 +161,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/kedai-kopi-05.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">KEDAI KOPI APEK</h4>
                                     <p>Legendary place in Medan with typical traditional coffee, kopi
                                         cold milk, and rich jam toast in a pleasant atmosphere
@@ -183,11 +183,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/wajir-05.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">WAJIR SEAFOOD</h4>
                                     <p>Experience the sensation of fresh seafood at Wajir Seafood, with spices
                                         tempting specialties and attractive flavors in each
@@ -205,11 +205,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/gumarang-05.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">RM GUMARANG JAYA</h4>
                                     <p>Authentic Minang dishes with distinctive taste, Rumah Makan
                                         Gumarang offers a variety of delicious menus with spices
@@ -227,11 +227,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/nelayan-05.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">NELAYAN</h4>
                                     <p>Enjoy premium dim sum at Nelayan Sun Plaza Medan, which
                                         a must try when visiting Medan</p>
@@ -248,11 +248,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/tiptop-05.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">TIP TOP RESTAURANT</h4>
                                     <p>Classic dishes with legendary taste at TipTop, restaurant
                                         iconic Medan which serves a variety of delicious menus, from steak
@@ -275,11 +275,11 @@
 
                     <div class="hidden p-4 rounded-lg text-gray-500" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/bika-03.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">BIKA AMBON ZULAIKHA</h4>
                                     <p>Legendary place in Medan to enjoy authentic Bika Ambon
                                         which is delicious with a sweet and chewy taste, is the right choice
@@ -297,11 +297,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/bolu-03.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">BOLU MERANTI</h4>
                                     <p>The layered sponge cake is super soft, tender and has a very sweet taste
                                         just right. Each layer is full of deliciousness, making it a snack
@@ -319,11 +319,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/gogo-03.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">RISOL SPESIAL GOGO</h4>
                                     <p>Risol with crispy skin and rich filling, snack
                                         a mouth-watering tantalizer full of flavour, perfect to accompany
@@ -341,11 +341,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/clover-03.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">CLOVER BAKESHOPPE</h4>
                                     <p>Delicious cakes and breads with mouth-watering flavors.
                                         Each option is made with quality materials, perfect for
@@ -363,11 +363,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/toba-03.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">BOLU TOBA MEDAN</h4>
                                     <p>Soft, layered sponge cake with a distinctive taste makes it a souvenir
                                         a favorite that tourists are always looking for. With a sweet taste
@@ -385,11 +385,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/teri-03.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">TERI BAJAK</h4>
                                     <p>A typical Medan snack that is crunchy, spicy and tasty. Made
                                         with special spices that are rich in taste, every bite
@@ -412,11 +412,11 @@
 
                     <div class="hidden p-4 rounded-lg text-gray-500" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/tjong-08.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">Tjong A Fie Mansion</h4>
                                     <p>A historic house in Medan that holds cultural stories
                                         Chinese with magnificent architecture and a rich art collection
@@ -434,11 +434,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/al-mashun-08.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">MASJID RAYA AL-MASHUN</h4>
                                     <p>Al-Mashun Mosque, Medan's architectural gem with beauty
                                         stunning design, offering a spiritual experience and
@@ -456,11 +456,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/maimun-08.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">MAIMUN PALACE</h4>
                                     <p>Maimun Palace, a symbol of the glory of the Deli Sultanate, is enchanting
                                         with magnificent architecture and preserved historical charm.</p>
@@ -477,11 +477,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/lake-toba-08.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">Lake TOBA</h4>
                                     <p>Lake Toba is the largest volcanic lake in the world, formed
                                         from a supervolcano eruption, with Samosir Island in the middle
@@ -499,11 +499,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/miki-funland-08.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">MIKIE FUNLAND</h4>
                                     <p>Known as the largest outdoor amusement park in Sumatra,
                                         located in Berastagi, with more than 35 exciting rides for
@@ -521,11 +521,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/taman-seribu-08.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">Taman Seribu Bunga Raya</h4>
                                     <p>Taman Seribu Bunga Raya is a tourist destination in Berastagi
                                         which presents the beauty of thousands of colorful flowers, replicas
@@ -543,11 +543,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/budaya-09.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">BUDAYALAND</h4>
                                     <p>Exciting amusement park in the city center, with rides and attractions
                                         Interesting for all ages, perfect for quality time
@@ -565,11 +565,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/lumbini-09.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">LUMBINI NATURAL PARK</h4>
                                     <p>A tourist destination with a calm natural feel, beautiful views, and
                                         calming spiritual atmosphere.</p>
@@ -586,11 +586,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/gundaling-09.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">GUNDALING FARMSTEAD</h4>
                                     <p>Enjoy the farm experience in Berastagi with
                                         view of Mount Sinabung, feeding animals,
@@ -608,11 +608,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/sipiso-09.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">SIPISO-PISO WATERFALL</h4>
                                     <p>Offers spectacular views with a lake in the background
                                         Toba, Sipiso-piso Waterfall is the perfect place for
@@ -630,11 +630,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/efrata-09.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">EFRATA WATERFALL</h4>
                                     <p>Efrata Waterfall, hidden in the middle of the forest, offers
                                         Stunning natural beauty with a calm atmosphere
@@ -652,11 +652,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/laulutih-09.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">LAU LUTIH WATERFALL</h4>
                                     <p>Clear water flow and surrounded by green trees,
                                         offers a cool and calming natural atmosphere,
@@ -680,11 +680,11 @@
 
                     <div class="hidden p-4 rounded-lg text-gray-500" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/bistronomix-08.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">BISTRONOMIX</h4>
                                     <p>The perfect place to enjoy a delicious meal while
                                         Enjoy a relaxed atmosphere with entertaining live music</p>
@@ -701,11 +701,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/house-brew-08.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">HOUSE OF BREW 2</h4>
                                     <p>Enjoy various variants of coffee and specialty drinks with
                                         Cozy and comfortable atmosphere, suitable for gathering with friends
@@ -723,11 +723,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/tropical-08.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">TROPICAL ROOFTOP</h4>
                                     <p>Enjoy various variants of coffee and specialty drinks with
                                         Cozy and comfortable atmosphere, suitable for gathering with friends
@@ -745,11 +745,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/bistronomix-08.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">THE THIRTY-SIX</h4>
                                     <p>Stylish decoration and warm atmosphere accompanied live
                                         music that will accompany your every moment.</p>
@@ -766,11 +766,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/campion-08.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">CHAMPION CAFE</h4>
                                     <p>Cozy atmosphere with delicious menu choices, suitable for
                                         relax and enjoy time with friends or family.</p>
@@ -787,11 +787,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/rumah-pohon-08.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">CAFE RUMAH POHON</h4>
                                     <p>Enjoy a delicious meal amidst the trees with ambiance
                                         unique and beautiful natural scenery, creating
@@ -809,11 +809,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/no-brand-08.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">NO BRAND CAFE</h4>
                                     <p>Have fun hanging out with friends at No Brand Cafe!
                                         Cozy atmosphere, delicious menu, and cool live music
@@ -837,11 +837,11 @@
 
                     <div class="hidden p-4 rounded-lg text-gray-500" id="styled-transport" role="tabpanel" aria-labelledby="transport-tab">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/bus-09.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">Medan to Lake Toba</h4>
                                     <p class="mb-0">Land Track (Samosir via Tele)</p>
                                     <small class="mb-0">By Bus or Car</small>
@@ -853,11 +853,11 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/kereta-09.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">Medan to Lake Toba</h4>
                                     <p class="mb-0">Land Track (Parapat)</p>
                                     <small class="mb-0">By Train</small>
@@ -871,11 +871,11 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/ferry-09.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">Medan to Lake Toba</h4>
                                     <p class="mb-0">Sea Track (Samosir via Parapat)</p>
                                     <small class="mb-0">By Train</small>
@@ -890,11 +890,11 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/bus2-09.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">Medan to Berastagi</h4>
                                     <p class="mb-0">Land Track</p>
                                     <small class="mb-0">By Public Transport</small>
@@ -909,11 +909,11 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1">
+                            <div class="border shadow rounded-xl flex flex-col items-center px-2 py-1 bg-white">
                                 <div class="w-60 h-60">
                                     <img src="assets/images/medan/travel-09.jpg" class="h-full w-full object-cover rounded-lg" alt="tabona">
                                 </div>
-                                <div class="py-5">
+                                <div class="py-5 px-2">
                                     <h4 class="uppercase text-xl mb-2 font-semibold text-gray-700">Medan to Berastagi</h4>
                                     <p class="mb-0">Land Track</p>
                                     <small class="mb-0">Travel Trip Packages</small>

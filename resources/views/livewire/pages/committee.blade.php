@@ -9,10 +9,10 @@
 
     </section>
 
-    <section class="mx-auto w-full px-5 pt-16 pb-28">
+    <section class="mx-auto w-full px-5 pt-16 pb-28 bg-gray-50">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             @foreach ($uniqueCategories as $category)
-            <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-purple-50">
                 <h2 class="text-xl font-semibold mb-2 text-amber-500 dark:text-amber-300 uppercase">{{$category}}</h2>
                 @foreach ($committees as $committee)
                 <ul class="list-disc list-inside text-gray-500 dark:text-white">

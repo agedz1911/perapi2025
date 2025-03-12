@@ -287,8 +287,8 @@
     <x-section.footer />
 </div>
 
-<script data-navigate-once>
-    document.addEventListener('DOMContentLoaded', function() {
+<script>
+    document.addEventListener('livewire:navigated', function() {
         const days = document.getElementById('days');
         const hours = document.getElementById('hours');
         const minutes = document.getElementById('minutes');
@@ -329,21 +329,21 @@
         // Call updateCountdown initially and set it to run every second
         updateCountdown();
         setInterval(updateCountdown, 1000);
+        let valueDisplays = document.querySelectorAll(".num");
+        let interval = 4000;
+    
+      valueDisplays.forEach((valueDisplay) => {
+          let startValue = 0;
+          let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+          let duration = Math.floor(interval / endValue);
+          let counter = setInterval(function() {
+              startValue += 1;
+              valueDisplay.textContent = startValue;
+              if (startValue == endValue) {
+                  clearInterval(counter);
+              }
+          }, duration);
+      });
     });
 
-    let valueDisplays = document.querySelectorAll(".num");
-    let interval = 4000;
-
-  valueDisplays.forEach((valueDisplay) => {
-      let startValue = 0;
-      let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-      let duration = Math.floor(interval / endValue);
-      let counter = setInterval(function() {
-          startValue += 1;
-          valueDisplay.textContent = startValue;
-          if (startValue == endValue) {
-              clearInterval(counter);
-          }
-      }, duration);
-  });
 </script>

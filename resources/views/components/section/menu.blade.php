@@ -1,7 +1,7 @@
 <nav class="space-y-4">
     <ul class="flex flex-col gap-5">
         <li>
-            <a href="/" wire:navigate.refresh
+            <a href="/" wire:navigate
                 class="{{ request()->is('/') ? 'text-purple-700' : 'text-gray-700' }} justify-between font-normal hover:text-purple-700 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-purple-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Home
                 <i class="fa-solid fa-angle-right"></i></a>
         </li>
@@ -11,7 +11,7 @@
                 Committee <i class="fa-solid fa-angle-right"></i></a>
         </li>
         <li>
-            <a href="/faculties" wire:navigate.refresh
+            <a href="/faculties" wire:navigate
                 class="{{ request()->is('faculties') ? 'text-purple-700' : 'text-gray-700' }} justify-between font-normal hover:text-purple-700 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-purple-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Faculties
                 <i class="fa-solid fa-angle-right"></i></a>
         </li>
