@@ -18,7 +18,7 @@
     <x-section.contact-icon-m />
 </div>
 <!-- Sidebar -->
-<div class="w-1/5 bg-white shadow-lg border-r-2 p-8 hidden lg:block sticky top-0 h-screen">
+<div class="w-1/5 bg-white shadow-lg border-r border-purple-50 p-8 hidden lg:block sticky top-0 h-screen">
     <div class="mb-10">
         <img src="assets/images/logo/logo-event.png" class="w-full max-w-sm" />
     </div>

@@ -9,18 +9,25 @@
 
     </section>
 
-    <section class="mx-auto w-full px-5 pt-16 pb-28 bg-gray-50">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <section class="mx-auto w-full px-5 pt-16 pb-28 bg-competition">
+        <div class="flex flex-wrap gap-4 ">
             @foreach ($uniqueCategories as $category)
-            <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-purple-50">
-                <h2 class="text-xl font-semibold mb-2 text-amber-500 dark:text-amber-300 uppercase">{{$category}}</h2>
-                @foreach ($committees as $committee)
-                <ul class="list-disc list-inside text-gray-500 dark:text-white">
+            <div class="card shadow-sm w-full max-w-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-[#9E1F63]">{{$category}}</h2>
+                    @foreach ($committees as $committee)
                     @if ($committee->category == $category)
-                    <li>{{$committee->name}}</li>
+                    <ul class= "list-disc list-inside">
+                        <li class="mb-2">{{ $committee->name }}
+                            @if ($committee->title != null)
+                            <br>
+                            <span class="font-semibold ml-3">({{ $committee->title }})</span>
+                            @endif
+                        </li>
+                    </ul>
                     @endif
-                </ul>
-                @endforeach
+                    @endforeach
+                </div>
             </div>
             @endforeach
         </div>

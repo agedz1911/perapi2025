@@ -23,7 +23,7 @@
                     <div class="mb-3 relative p-3">
                         {{-- menampilkan string HTML --}}
                         {!! $accommodation->tag ? '<span
-                            class="absolute top-1 right-4 translate-y-5 bg-purple-700 rounded-xl text-white px-3 py-1">
+                            class="absolute top-1 right-4 translate-y-5 bg-indigo-700 rounded-xl text-white px-3 py-1">
                             <p class="text-xs">' . $accommodation->tag . '</p>
                         </span>' : " " !!}
                         <a href="javascript:void(0)"><img
@@ -40,11 +40,11 @@
                                 @endif
                                 @endfor
                         </div>
-                        <p class="mt-2 mb-5 text-xs text-gray-500"><i
+                        <p class="mt-2 mb-5 text-xs"><i
                                 class="fa-solid text-green-600/70 fa-circle-info"></i>
                             {{$accommodation->distance}}
                         </p>
-                        <p class="text-sm text-gray-500"> Estimated Cost/Night</p>
+                        <p class="text-sm"> Estimated Cost/Night</p>
                         <div class="text-sm mb-6 flex justify-center gap-3">
                             <p class="text-green-500 font-semibold mb-0"><span
                                     class="fw-normal">IDR</span>
@@ -58,9 +58,9 @@
                     </div>
                     <div class="flex justify-evenly">
                         <a href="{{$accommodation->url ? $accommodation->url : 'javascript:void(0)'}}"
-                            class="bg-purple-600 py-3 rounded-2xl text-lg text-white hover:bg-amber-500 ease-out duration-100 px-6">Book Now</a>
+                            class="bg-purple-700 py-3 rounded-2xl font-semibold text-white hover:bg-amber-500 ease-out duration-100 px-6">Book Now</a>
                         <a href="{{$accommodation->direction ? $accommodation->direction : 'javascript:void(0)'}}"
-                            class="bg-transparent py-3 rounded-2xl text-lg text-purple-900 hover:bg-amber-500 ease-out duration-100 hover:text-white px-6"><i class="fa-solid fa-location-dot mx-1"></i>Direction</a>
+                            class="bg-transparent py-3 rounded-2xl font-semibold text-purple-900 hover:bg-amber-500 ease-out duration-100 hover:text-white px-6"><i class="fa-solid fa-location-dot mx-1"></i>Direction</a>
                     </div>
                 </div>
             </div>

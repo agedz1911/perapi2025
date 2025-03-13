@@ -1,9 +1,8 @@
-import "flowbite";
 import "./bootstrap";
+import "daisyui";
 
 document.addEventListener('livewire:navigated', () => {
-    initFlowbite();
-    // console.log('navigated');
+    console.log('navigated');
     
 });
 

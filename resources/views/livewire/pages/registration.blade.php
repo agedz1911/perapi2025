@@ -107,27 +107,13 @@
                 </h2>
             </div>
 
-            <div class="px-3 py-5 bg-white rounded-xl mt-3">
+            <div>
                 @foreach ($regInfos as $regInfo)
-                <div id="accordion-color" data-accordion="open" data-active-classes="bg-[#92278F] text-white">
-                    <h2 id="accordion-heading-{{$regInfo->id}}">
-                        <button type="button"
-                            class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 hover:text-white border border-b-0 border-gray-300 rounded-lg focus:ring-1 focus:ring-blue-200 hover:bg-purple-800 gap-3"
-                            data-accordion-target="#accordion-body-{{$regInfo->id}}" aria-expanded="true"
-                            aria-controls="accordion-body-{{$regInfo->id}}">
-                            <span>{{ $regInfo->title }}</span>
-                            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M9 5 5 1 1 5" />
-                            </svg>
-                        </button>
-                    </h2>
-                    <div id="accordion-body-{{$regInfo->id}}" class="hidden"
-                        aria-labelledby="accordion-heading-{{$regInfo->id}}">
-                        <div class="p-5 text-gray-500">
-                            {!!str($regInfo->description)->markdown()->sanitizeHtml() !!}
-                        </div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title font-semibold">{{ $regInfo->title }}</div>
+                    <div class="collapse-content text-sm text-gray-500">
+                        {!!str($regInfo->description)->markdown()->sanitizeHtml() !!}
                     </div>
                 </div>
                 @endforeach
