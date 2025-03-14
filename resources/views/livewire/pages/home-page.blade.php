@@ -87,7 +87,7 @@
                             <i class="fa fa-calendar-o text-4xl text-white"></i>
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-medium text-gray-900 truncate">
+                            <p class="text-sm font-medium  truncate">
                                 Thursday to Saturday
                             </p>
                             <p class="text-sm text-gray-500 truncate">
@@ -103,7 +103,7 @@
                             <i class="fa fa-map-marker text-4xl text-white"></i>
                         </div>
                         <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-medium text-gray-900 truncate ">
+                            <p class="text-sm font-medium  truncate ">
                                 JW Marriot Hotel Medan
                             </p>
                             <p class="text-sm text-gray-500 truncate">
@@ -137,8 +137,8 @@
     <section class="py-28 px-2">
         <div class="w-full max-w-3xl mx-auto">
             <div class="text-center pb-6 m-auto">
-                <p class="mb-1 font-semibold text-gray-500 tracking-wide">28<sup>th</sup> InaPRAS</p>
-                <h2 class="mb-1 text-gray-700 text-4xl font-semibold uppercase tracking-wide">important <span
+                <p class="mb-1 font-semibold tracking-wide">28<sup>th</sup> InaPRAS</p>
+                <h2 class="mb-1 text-4xl font-semibold uppercase tracking-wide">important <span
                         class="text-amber-500 ">Dates</span></h2>
             </div>
             <div class="w-full pt-5">
@@ -239,8 +239,8 @@
 
     <section class="w-full pt-24 pb-3 px-2 lg:px-4">
         <div class="text-center mb-5 pb-10">
-            <p class="mb-1 font-semibold text-gray-500 tracking-wide">Venue</p>
-            <h2 class="text-gray-700 text-4xl font-semibold uppercase tracking-wide mb-1">GET DIRECTION TO THE <span
+            <p class="mb-1 font-semibold tracking-wide">Venue</p>
+            <h2 class=" text-4xl font-semibold uppercase tracking-wide mb-1">GET DIRECTION TO THE <span
                     class="text-amber-500">Venue</span></h2>
         </div>
         <div class="">

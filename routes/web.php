@@ -14,7 +14,7 @@ use App\Livewire\Section\Sponsor;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomePage::class);
-Route::get('/test', function() {
+Route::get('/topics', function() {
     return view('pages');
 });
 
