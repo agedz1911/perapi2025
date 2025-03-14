@@ -11,7 +11,7 @@
                 <div class="w-full max-w-md">
                     <div class="border border-gray-200 rounded-xl shadow-md text-center pt-4 pb-6">
                         <h5 class="p-4  uppercase font-semibold tracking-wide text-xl hover:text-amber-500 hover:cursor-pointer">abstract Free paper</h5>
-                        <a href="javascript:void(0)" class="text-purple-700 hover:text-amber-500">Read More <i
+                        <a href="/submission" wire:navigate class="text-purple-700 hover:text-amber-500">Read More <i
                         class="fa-solid fa-angles-right"></i></a>
                         <div class="p-5 pt-0 m-0 border-b border-gray-300"></div>
                         <div class="pt-5 tracking-wide">
@@ -22,7 +22,7 @@
                 <div class="w-full max-w-md">
                     <div class="border border-gray-200 rounded-xl shadow-md text-center pt-4 pb-7">
                         <h5 class="p-4  uppercase font-semibold tracking-wide text-xl hover:text-amber-500 hover:cursor-pointer">Abstract E-Poster</h5>
-                        <a href="javascript:void(0)" class="text-purple-700 hover:text-amber-500">Read More <i
+                        <a href="/submission" wire:navigate class="text-purple-700 hover:text-amber-500">Read More <i
                         class="fa-solid fa-angles-right"></i></a>
                         <div class="p-5 pt-0 m-0 border-b border-gray-300"></div>
                         <div class="pt-5 text-gray-500 tracking-wide">

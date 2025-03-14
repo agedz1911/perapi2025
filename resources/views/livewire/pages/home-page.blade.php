@@ -17,9 +17,9 @@
                     <button
                         class=" text-white bg-gradient-to-br from-amber-300 to-[#f6921e] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-amber-300 dark:focus:ring-amber-800 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center">Read
                         More <i class="fa-solid fa-angles-right text-xs"></i></button>
-                    <button
+                    <a href="/registration" wire:navigate
                         class="text-white hover:text-white border border-white hover:bg-amber-400 hover:border-amber-400 focus:ring-4 focus:outline-none focus:ring-amber-300 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center  dark:border-amber-400 dark:text-amber-400 dark:hover:text-white dark:hover:bg-amber-500 dark:focus:ring-amber-300"><i
-                            class="fa-solid fa-pen-to-square"></i> Regiter Now </button>
+                            class="fa-solid fa-pen-to-square"></i> Regiter Now </a>
                 </div>
             </div>
         </div>
@@ -67,9 +67,9 @@
                                 <small class="text-white text-xs">Seconds</small>
                             </div>
                         </div>
-                        <button
+                        <a href="/registration" wire:navigate
                             class="hover:text-indigo-700 mt-2 text-white bg-gradient-to-br from-amber-300 to-[#f6921e] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center uppercase">Join
-                            Now !</button>
+                            Now !</a>
                     </div>
                 </div>
             </div>

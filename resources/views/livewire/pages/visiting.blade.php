@@ -28,7 +28,7 @@
                     <p class="text-gray-500">Medan is the largest city in Sumatra and serves as both an economic and cultural hub in northern Indonesia. The combination of history and modernity creates a unique charm that attracts tourists from all over. The city’s cultural diversity is reflected in its architecture, traditions, and signature culinary delights. In addition to being a major trade center, Medan is also the gateway to various tourist destinations across North Sumatra. With its rapidly developing infrastructure and dynamic urban life, Medan is an exciting city to explore</p>
                     <p class="text-gray-500">As the main gateway to famous tourist attractions like Lake Toba, Medan also has a rich history showcased in its colonial buildings, museums, and well-preserved cultural sites. The city is also known for its diverse and authentic cuisine, making it a paradise for food lovers. Many legendary eateries offer unique and delicious local flavors</p>
                     <p class="text-gray-500">For shopping enthusiasts, Medan has modern shopping malls as well as traditional markets where visitors can find unique local souvenirs. The city’s vibrant nightlife, cultural performances, and entertainment venues add to the unforgettable experience of visiting Medan</p>
-                    < class="text-gray-500" p>Medan is not just a transit city; it is a destination that offers an unforgettable experience for all who wish to explore the charm of North Sumatra</p>
+                    <p class="text-gray-500" p>Medan is not just a transit city; it is a destination that offers an unforgettable experience for all who wish to explore the charm of North Sumatra</p>
                 </div>
             </div>
 
