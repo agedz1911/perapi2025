@@ -10,9 +10,9 @@
     </section>
 
     <section class="mx-auto w-full px-5 pt-16 pb-28 bg-competition">
-        <div class="flex flex-wrap gap-4 ">
+        <div class="flex flex-wrap gap-4 justify-evenly">
             @foreach ($uniqueCategories as $category)
-            <div class="card shadow-sm w-full max-w-sm">
+            <div class="card shadow-sm w-full max-w-xs">
                 <div class="card-body">
                     <h2 class="card-title text-[#9E1F63]">{{$category}}</h2>
                     @foreach ($committees as $committee)

@@ -22,7 +22,7 @@
                         class="tab uppercase tracking-wider  text-lg text-purple-700 hover:text-[#9E1F63]"
                         aria-label="Indonesian Faculties" checked="checked" />
                     <div class="tab-content border-base-300 bg-purple-50 p-5 rounded-lg">
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
                             @foreach ($indofaculties as $indo)
                             <div class="card bg-base-100 shadow-sm ">
                                 <figure class="relative">
@@ -42,6 +42,7 @@
                                     <p>{{$indo->description}}</p>
                                 </div>
                             </div>
+                            
 
                             <dialog id="my_modal_{{$loop->index}}" class="modal">
                                 <div class="modal-box w-10/12 max-w-5xl">
@@ -88,12 +89,16 @@
                             </dialog>
                             @endforeach
                         </div>
+                        <div class="mt-5 border-t border-dashed pt-3">
+                            {{ $indofaculties->links() }}
+                        </div>
                     </div>
 
                     <input type="radio" name="my_tabs_2"
                         class="tab uppercase tracking-wider  text-lg text-purple-700 hover:text-[#9E1F63]"
                         aria-label="Foreign faculties" />
                     <div class="tab-content border-base-300 bg-purple-50 p-5 rounded-lg">
+                        {{-- @dd($indofaculties) --}}
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                             @foreach ($foreignfaculties as $foreign)
                             <div class="card bg-base-100 shadow-sm ">
@@ -159,6 +164,9 @@
                                 </div>
                             </dialog>
                             @endforeach
+                        </div>
+                        <div class="mt-5 border-t border-dashed pt-3">
+                            {{ $foreignfaculties->links() }}
                         </div>
                     </div>
 
