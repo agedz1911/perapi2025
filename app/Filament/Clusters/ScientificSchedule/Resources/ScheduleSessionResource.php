@@ -37,6 +37,10 @@ class ScheduleSessionResource extends Resource
                         'Symposium' => 'Symposium',
                         'Workshop' => 'Workshop',
                         'Master Class' => 'Master Class',
+                        'Free Paper' => 'Free Paper',
+                        'Research Proposal' => 'Research Proposal',
+                        'E-Poster' => 'E-Poster',
+                        'Video Parade' => 'Video Parade',
                     ])
                     ->native(false),
                 TextInput::make('title_ses')
