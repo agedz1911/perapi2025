@@ -50,10 +50,10 @@
                                     class="fw-normal">IDR</span>
                                 {{number_format($accommodation->idr_price, 0, ',', '.')}}
                             </p>
-                            <!-- <p class="text-green-500 font-semibold"><span
+                            <p class="text-green-500 font-semibold"><span
                                     class="fw-normal">USD</span>
                                 {{$accommodation->usd_price}}
-                            </p> -->
+                            </p>
                         </div>
                     </div>
                     <div class="flex justify-evenly">

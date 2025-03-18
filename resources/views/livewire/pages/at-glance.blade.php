@@ -514,7 +514,7 @@
                                         </span>
                                     </p>
                                 </td>
-                                <td class="bg-amber-500/50 border-r border-gray-300">
+                                <td colspan="2" class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="font-semibold">
                                             16.00 - 17.00
                                         </span><br>
@@ -524,16 +524,7 @@
                                         </span>
                                     </p>
                                 </td>
-                                <td class="bg-amber-500/50 border-r border-gray-300">
-                                    <p><span class="font-semibold">
-                                            16.00 - 17.00
-                                        </span><br>
-                                        AESTHETIC TRACK 9
-                                        <span class="italic text-purple-700"> <br>
-                                            New York
-                                        </span>
-                                    </p>
-                                </td>
+                                
                                 <td class="bg-blue-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
                                             16.00 - 17.00
