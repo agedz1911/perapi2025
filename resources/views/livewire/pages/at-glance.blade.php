@@ -5,7 +5,7 @@
             <h2 class="text-white uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Program at Glance</h2>
         </div>
     </section>
-
+    
     <section class="pt-10 pb-24 px-2 lg:px-5 bg-competition">
         <!-- name of each tab group should be unique -->
         <div class="tabs tabs-border justify-evenly">
@@ -524,7 +524,7 @@
                                         </span>
                                     </p>
                                 </td>
-                                
+
                                 <td class="bg-blue-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
                                             16.00 - 17.00
@@ -887,7 +887,7 @@
                 </div>
             </div>
 
-            <input type="radio" name="my_tabs_2" 
+            <input type="radio" name="my_tabs_2"
                 class="tab uppercase tracking-wider text-purple-700 hover:text-[#9E1F63]" aria-label="2 August 2025" />
             <div class="tab-content">
                 <div class="overflow-x-auto  rounded-box border border-base-content/5 bg-base-100 border-gray-300">
