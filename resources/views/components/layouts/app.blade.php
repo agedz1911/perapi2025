@@ -31,6 +31,21 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@$5/themes.css" rel="stylesheet" type="text/css" />
 
     {{-- @vite(['resources/css/app.css','resources/js/app.js']) --}}
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJSCNFEWXC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FJSCNFEWXC');
+    </script>
+
 </head>
 
 
