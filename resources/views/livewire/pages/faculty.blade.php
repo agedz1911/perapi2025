@@ -28,7 +28,7 @@
                                 <figure class="relative">
                                     <img src="{{$indo->image ? asset('storage/' . $indo->image) : "
                                         assets/images/speaker.png"}}" alt="{{$indo->name}}"
-                                        class="w-full h-full object-cover rounded">
+                                        class="w-full h-full max-h-72 object-cover rounded">
                                     <button onclick="my_modal_{{$loop->index}}.showModal()"
                                         class="btn bg-purple-700 text-white hover:bg-[#d02ec5] btn-xs rounded-xl absolute right-0 top-1">
                                         <i class="fa fa-info-circle text-green-400"></i> Read more..
@@ -92,6 +92,7 @@
                         <div class="mt-5 border-t border-dashed pt-3">
                             {{ $indofaculties->links() }}
                         </div>
+                        <p class="text-gray-500 italic text-xs">*within confirmation</p>
                     </div>
 
                     <input type="radio" name="my_tabs_2"
@@ -105,7 +106,7 @@
                                 <figure class="relative">
                                     <img src="{{$foreign->image ? asset('storage/' . $foreign->image) : "
                                         assets/images/speaker.png"}}" alt="{{$foreign->name}}"
-                                        class="w-full h-full object-cover rounded">
+                                        class="w-full h-full max-h-72 object-cover rounded">
                                     <button onclick="my_modal_f{{$loop->index}}.showModal()"
                                         class="btn bg-purple-700 text-white hover:bg-[#d02ec5] btn-xs rounded-xl absolute right-0 top-1">
                                         <i class="fa fa-info-circle text-green-400"></i> Read more..
@@ -168,6 +169,7 @@
                         <div class="mt-5 border-t border-dashed pt-3">
                             {{ $foreignfaculties->links() }}
                         </div>
+                        <p class="text-gray-500 italic text-xs">*within confirmation</p>
                     </div>
 
                 </div>
