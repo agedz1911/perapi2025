@@ -66,9 +66,13 @@ class RegistrationResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('category_reg'),
-                TextColumn::make('wilayah_reg'),
-                TextColumn::make('title'),
+                TextColumn::make('category_reg')
+->sortable(),
+                TextColumn::make('wilayah_reg')
+->sortable(),
+                TextColumn::make('title')
+->sortable()
+                    ->searchable(),
                 TextColumn::make('early_bird_reg')
                     ->numeric(),
                 TextColumn::make('normal_reg')
