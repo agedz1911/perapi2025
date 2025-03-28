@@ -24,7 +24,7 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
-            // ->registration()
+            ->registration()
             ->passwordReset()
             ->emailVerification()
             ->profile()
