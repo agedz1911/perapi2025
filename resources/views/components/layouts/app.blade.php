@@ -31,6 +31,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@$5/themes.css" rel="stylesheet" type="text/css" />
 
     {{-- @vite(['resources/css/app.css','resources/js/app.js']) --}}
+    @filamentStyles
+    {{-- @vite('resources/css/app.css') --}}
 
 
     <!-- Google tag (gtag.js) -->
@@ -45,7 +47,7 @@
 
         gtag('config', 'G-FJSCNFEWXC');
     </script>
-
+@livewireStyles
 </head>
 
 
@@ -62,7 +64,9 @@
     <!-- Back-to-top Button end -->
 
     <script src="assets/js/custom.js" data-navigate-once></script>
-
+    {{-- @filamentScripts
+    @vite('resources/js/app.js') --}}
+@livewireScripts
 </body>
 
 </html>

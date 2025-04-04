@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\Api\AtGlanceController;
+use App\Livewire\Auth\Login;
+use App\Livewire\Auth\Logout;
+use App\Livewire\Auth\Register;
 use App\Livewire\Pages\Accommodation;
 use App\Livewire\Pages\AtGlance;
 use App\Livewire\Pages\Committee;
@@ -11,14 +14,14 @@ use App\Livewire\Pages\Registration;
 use App\Livewire\Pages\Schedule;
 use App\Livewire\Pages\Topics;
 use App\Livewire\Pages\Visiting;
+use App\Livewire\Section\Auth;
 use App\Livewire\Section\Sponsor;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomePage::class);
-Route::get('/test', function() {
-    return view('pages');
-});
-
+// Route::get('/test', function() {
+//     return view('pages');
+// });
 Route::get('/organizing-committee', Committee::class);
 Route::get('/program-at-glance', AtGlance::class);
 Route::get('/scientific-schedule', Schedule::class);
@@ -29,3 +32,8 @@ Route::get('/accommodation', Accommodation::class);
 Route::get('/sponsors', Sponsor::class);
 Route::get('/visiting', Visiting::class);
 Route::get('/topics', Topics::class);
+
+Route::middleware('guest')->group(function() {
+    Route::get('/login', Login::class)->name('login');
+    Route::get('/register', Register::class)->name('register');
+});
