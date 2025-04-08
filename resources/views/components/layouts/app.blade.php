@@ -32,6 +32,7 @@
 
     {{-- @vite(['resources/css/app.css','resources/js/app.js']) --}}
     @filamentStyles
+    @livewireStyles
     {{-- @vite('resources/css/app.css') --}}
 
 
@@ -47,7 +48,6 @@
 
         gtag('config', 'G-FJSCNFEWXC');
     </script>
-@livewireStyles
 </head>
 
 

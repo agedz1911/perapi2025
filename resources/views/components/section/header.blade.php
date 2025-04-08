@@ -3,11 +3,23 @@
     <img src="assets/images/logo/logo-event.png" class="w-full max-w-52" />
     <div class="flex items-center gap-2">
         @if (Auth::check())
-        <div class="avatar">
-            <div class="w-10 rounded-full">
-                <img src="https://ui-avatars.com/api/?name={{Auth::user()->name}}" />
+        <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="">
+                <div class="avatar">
+                    <div class="w-10 rounded-full">
+                        <img src="https://ui-avatars.com/api/?name={{Auth::user()->name}}" />
+                    </div>
+                </div>
             </div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                <li><a>Dashboard</a></li>
+                <li><a>
+                        <livewire:auth.logout />
+                    </a>
+                </li>
+            </ul>
         </div>
+
         @else
         <a href="/login" wire:navigate class="btn btn-primary btn-sm">Sign In</a>
         @endif
@@ -34,23 +46,19 @@
         <img src="assets/images/logo/logo-event.png" class="w-full max-w-sm" />
     </div>
     <x-section.menu />
-    <div class="flex justify-start items-center gap-1 mt-5">
+    <div class="flex justify-between items-center gap-1 mt-5">
         @if (Auth::check())
-        <div class="avatar">
-            <div class="w-10 rounded-full">
-                <img src="https://ui-avatars.com/api/?name={{Auth::user()->name}}" />
+        <a href="/dashboard" wire:navigate>
+            <div class="flex items-center gap-1 hover:cursor-pointer">
+                <div class="avatar">
+                    <div class="w-10 rounded-full">
+                        <img src="https://ui-avatars.com/api/?name={{Auth::user()->name}}" />
+                    </div>
+                </div>
+                <p class="font-semibold">Dashboard</p>
             </div>
-        </div>
-        <div class="collapse">
-            <input type="checkbox" />
-            <div class="collapse-title">
-                <p class="text-sm">Menu</p>
-                <p class="text-xs text-gray-500">{{Auth::user()->email}}</p>
-            </div>
-            <div class="collapse-content text-sm">
-                <livewire:auth.logout />
-            </div>
-        </div>
+        </a>
+        <livewire:auth.logout />
         @else
         <a href="/login" wire:navigate class="btn btn-primary w-full">Sign In</a>
         @endif

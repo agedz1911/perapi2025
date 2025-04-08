@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\AtGlanceController;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Logout;
 use App\Livewire\Auth\Register;
+use App\Livewire\Dashboard\Index;
 use App\Livewire\Pages\Accommodation;
 use App\Livewire\Pages\AtGlance;
 use App\Livewire\Pages\Committee;
@@ -36,4 +37,8 @@ Route::get('/topics', Topics::class);
 Route::middleware('guest')->group(function() {
     Route::get('/login', Login::class)->name('login');
     Route::get('/register', Register::class)->name('register');
+});
+
+Route::middleware('auth')->group(function() {
+    Route::get('/dashboard', Index::class);
 });
