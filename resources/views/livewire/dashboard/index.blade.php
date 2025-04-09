@@ -1,21 +1,84 @@
 <div class="w-full lg:w-11/12">
     <section class="pt-10 pb-24 px-2 lg:px-5">
-        <div class="w-full flex justify-center items-center">
-            <x-section.menu-dashboard />
-        </div>
-        
-        <div class="flex items-center gap-1 hover:cursor-pointer">
-            <div class="avatar">
-                <div class="w-10 rounded-full">
-                    <img src="https://ui-avatars.com/api/?name={{$user->name}}" />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="card bg-base-100 w-full shadow-sm">
+                <div class="card-body">
+                    <div class="flex flex-col items-center gap-2 justify-center">
+                        <div class="avatar">
+                            <div class="w-16 rounded-full">
+                                <img src="https://ui-avatars.com/api/?name={{$user->name}}" />
+                            </div>
+                        </div>
+                        <span class="badge badge-xs badge-warning">{{$user->email}}</span>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Full Name</td>
+                                    <td>{{$profile->title ?? ''}} {{$user->name}} {{$profile->first_name ?? ''}}, {{$profile->title_specialist ?? ''}}</td> 
+                                </tr>
+                                <tr>
+                                    <td>NIK</td>
+                                    <td>{{$profile->nik ?? ''}}</td> 
+                                </tr>
+                                <tr>
+                                    <td>Name on Certificate</td>
+                                    <td>{{$profile->name_on_certificate ?? ''}}</td> 
+                                </tr>
+                                <tr>
+                                    <td>Institution</td>
+                                    <td>{{$profile->institution ?? ''}}</td> 
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>{{$profile->address ?? ''}}</td> 
+                                </tr>
+                                <tr>
+                                    <td>Country</td>
+                                    <td>{{$profile->country ?? ''}}</td> 
+                                </tr>
+                                <tr>
+                                    <td>Province</td>
+                                    <td>{{$profile->province ?? ''}}</td> 
+                                </tr>
+                                <tr>
+                                    <td>City</td>
+                                    <td>{{$profile->city ?? ''}}</td> 
+                                </tr>
+                                <tr>
+                                    <td>Postal Code</td>
+                                    <td>{{$profile->postal_code ?? ''}}</td> 
+                                </tr>
+                                <tr>
+                                    <td>Phone Number</td>
+                                    <td>{{$profile->phone_number ?? ''}}</td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-6">
+                        <a href="/profile" wire:navigate class="btn btn-primary btn-block">Update Profile</a>
+                    </div>
                 </div>
             </div>
-            <p class="font-semibold">{{$user->name}}</p>
-            <p class="font-semibold">{{$user->email}}</p>
+            <div class="flex flex-wrap gap-4">
+                <div class="card w-full bg-base-100 shadow-sm">
+                    <figure>
+                        <img
+                            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Card Title</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-        <p>
-            Title: 
-            {{$profile->title ?? ''}}
-        </p>
     </section>
 </div>

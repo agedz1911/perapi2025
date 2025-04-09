@@ -46,17 +46,10 @@
         <img src="assets/images/logo/logo-event.png" class="w-full max-w-sm" />
     </div>
     <x-section.menu />
-    <div class="flex justify-between items-center gap-1 mt-5">
+    <div class="flex justify-between items-center border-t border-dashed border-gray-400 pt-2 gap-1 mt-5">
         @if (Auth::check())
-        <a href="/dashboard" wire:navigate>
-            <div class="flex items-center gap-1 hover:cursor-pointer">
-                <div class="avatar">
-                    <div class="w-10 rounded-full">
-                        <img src="https://ui-avatars.com/api/?name={{Auth::user()->name}}" />
-                    </div>
-                </div>
-                <p class="font-semibold">Dashboard</p>
-            </div>
+        <a href="/dashboard" class="{{ request()->is('dashboard') ? 'text-purple-700' : 'text-gray-700' }} justify-between font-normal hover:text-purple-700 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-purple-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full " wire:navigate>
+            Dashboard
         </a>
         <livewire:auth.logout />
         @else

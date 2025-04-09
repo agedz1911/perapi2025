@@ -1,9 +1,14 @@
-<ul class="menu w-full menu-horizontal rounded-box border">
+<ul class="menu w-full menu-horizontal rounded-box border border-gray-400">
     <li>
-        <a>
+        <a wire:navigate href="/dashboard" class="{{ request()->is('dashboard') ? 'text-purple-700' : 'text-gray-700' }}">
+            <i class="fa fa-home"></i>
+            Home Dashboard
+        </a>
+    </li>
+    <li>
+        <a wire:navigate href="/profile" class="{{ request()->is('profile') ? 'bg-purple-700 text-white' : 'text-gray-700' }}">
             <i class="fa fa-user"></i>
             Profile
-            <span class="badge badge-xs">99+</span>
         </a>
     </li>
     <li>
