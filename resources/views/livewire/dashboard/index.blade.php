@@ -13,6 +13,9 @@
             <p class="font-semibold">{{$user->name}}</p>
             <p class="font-semibold">{{$user->email}}</p>
         </div>
-        
+        <p>
+            Title: 
+            {{$profile->title ?? ''}}
+        </p>
     </section>
 </div>

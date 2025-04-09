@@ -30,6 +30,7 @@ class UserResource extends Resource
         return $form
             ->schema([
                 TextInput::make('name')
+                    ->label('Last Name')
                     ->required(),
                 TextInput::make('email')
                     ->required()
@@ -52,6 +53,7 @@ class UserResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name')
+                    ->label('Last Name')
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('email')
