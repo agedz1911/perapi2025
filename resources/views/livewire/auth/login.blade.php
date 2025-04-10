@@ -1,5 +1,4 @@
 <div class="w-full lg:w-11/12 h-screen flex justify-center items-center px-2">
-
     <div class="card w-full max-w-xl bg-base-100 card-md shadow-sm pt-2 pb-8 px-0 lg:px-10">
         <div class="card-body">
             <h2 class="text-center text-xl font-semibold uppercase">Sign In</h2>

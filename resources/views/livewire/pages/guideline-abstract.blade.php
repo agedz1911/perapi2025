@@ -20,9 +20,10 @@
                     <div>
                         @foreach ($guidelineAbstracts as $abstract)
                         <div class="collapse collapse-plus bg-base-100 border border-base-300">
-                            <input type="radio" name="my-accordion-3"  />
+                            <input type="radio" name="my-accordion-3" />
                             <div class="collapse-title font-semibold">{{ $abstract->title }}</div>
-                            <div class="collapse-content text-gray-500 text-sm">{!! str($abstract->description)->markdown()->sanitizeHtml() !!}</div>
+                            <div class="collapse-content text-gray-500 text-sm">{!!
+                                str($abstract->description)->markdown()->sanitizeHtml() !!}</div>
                         </div>
                         @endforeach
                     </div>
@@ -33,15 +34,36 @@
                     <div class="mb-4">
                         <h2 class="text-4xl font-semibold tracking-wide mb-2"> Online <span
                                 class="text-amber-500">Submission</span></h2>
-                        <p class="m-0 text-xs italic">*make sure the file complies with the guidelines.</p>
                     </div>
-                    <div class="w-full flex text-center">
-                        <a href="https://expo.virconex-id.com/abstract/perapi2025/index.php/upload_abstract" class="btn text-white bg-purple-700 hover:bg-[#9E1F63] w-full"><i  class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
-                        
+                    <div class="w-full flex flex-col">
+                        @if (Auth::check())
+                        <a href="#submit_abstract" class="btn text-white bg-purple-700 hover:bg-[#9E1F63] w-full"><i
+                                class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
+                        <p class="m-0 text-xs text-gray-500 italic">*make sure the file complies with the guidelines.</p>
+
+                        @else
+                        <a href="/login" wire:navigate class="btn btn-neutral w-full">Sign in</a>
+                        <p class="m-0 text-xs text-error italic">*please Sign in to submit abstract.</p>
+                        @endif
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal" role="dialog" id="submit_abstract">
+        <div class="modal-box w-11/12 max-w-5xl">
+            <a href="#" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">X</a>
+            <h3 class="text-lg font-bold">Abstract Submission Form</h3>
+            <div>
+                <livewire:form.submit-abstract>
+            </div>
+        </div>
+    </div>
+
+
+
     <x-section.footer />
 </div>

@@ -26,7 +26,7 @@ class Login extends Component
 
         if (Auth::attempt(['email' => $this->email, 'password' => $this->password,], $this->remember)) {
             session()->flash('message', 'Berhasil login.');
-            return redirect()->intended('/');
+            return redirect()->intended('/dashboard');
         } else {
             session()->flash('error', 'Email atau password salah.');
         }

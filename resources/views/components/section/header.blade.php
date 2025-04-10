@@ -12,10 +12,9 @@
                 </div>
             </div>
             <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                <li><a>Dashboard</a></li>
-                <li><a>
-                        <livewire:auth.logout />
-                    </a>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li>
+                    <livewire:auth.logout />
                 </li>
             </ul>
         </div>
