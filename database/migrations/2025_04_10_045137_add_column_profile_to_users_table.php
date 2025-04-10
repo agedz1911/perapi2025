@@ -11,10 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('profiles', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('user_id')->nullable()->constrained('users')->nullOnDelete();
-            $table->string('first_name')->nullable();
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('last_name')->nullable();
             $table->unsignedBigInteger('nik')->nullable();
             $table->string('title')->nullable();
             $table->string('title_specialist')->nullable();
@@ -26,8 +24,7 @@ return new class extends Migration
             $table->string('province')->nullable();
             $table->string('city')->nullable();
             $table->unsignedBigInteger('phone_number')->nullable();
-            $table->unsignedBigInteger('postal_code')->nullable();
-            $table->timestamps();
+            $table->integer('postal_code')->nullable();
         });
     }
 
@@ -36,6 +33,20 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('profiles');
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('last_name');
+            $table->dropColumn('nik');
+            $table->dropColumn('title');
+            $table->dropColumn('title_specialist');
+            $table->dropColumn('type');
+            $table->dropColumn('name_on_certificate');
+            $table->dropColumn('institution');
+            $table->dropColumn('address');
+            $table->dropColumn('country');
+            $table->dropColumn('province');
+            $table->dropColumn('city');
+            $table->dropColumn('phone_number');
+            $table->dropColumn('postal_code');
+        });
     }
 };

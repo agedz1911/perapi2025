@@ -26,6 +26,19 @@ class User extends Authenticatable implements FilamentUser
         'name',
         'email',
         'password',
+        'last_name',
+        'nik',
+        'title',
+        'title_specialist',
+        'type',
+        'name_on_certificate',
+        'institution',
+        'address',
+        'country',
+        'province',
+        'city',
+        'postal_code',
+        'phone_number',
     ];
 
     /**
@@ -49,11 +62,6 @@ class User extends Authenticatable implements FilamentUser
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
-    }
-
-    public function profile(): HasOne
-    {
-        return $this->hasOne(Profile::class);
     }
 
     public function canAccessPanel(Panel $panel): bool

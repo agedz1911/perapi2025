@@ -15,44 +15,44 @@
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <td>Full Name</td>
-                                    <td>{{$profile->title ?? ''}} {{$user->name}} {{$profile->first_name ?? ''}}, {{$profile->title_specialist ?? ''}}</td> 
+                                    <td>Full Name:</td>
+                                    <td>{{$user->title ?? ''}} {{$user->name}} {{$user->last_name ?? ''}}, {{$user->title_specialist ?? ''}}</td> 
                                 </tr>
                                 <tr>
-                                    <td>NIK</td>
-                                    <td>{{$profile->nik ?? ''}}</td> 
+                                    <td>NIK:</td>
+                                    <td>{{$user->nik ?? ''}}</td> 
                                 </tr>
                                 <tr>
-                                    <td>Name on Certificate</td>
-                                    <td>{{$profile->name_on_certificate ?? ''}}</td> 
+                                    <td>Name on Certificate:</td>
+                                    <td>{{$user->name_on_certificate ?? ''}}</td> 
                                 </tr>
                                 <tr>
-                                    <td>Institution</td>
-                                    <td>{{$profile->institution ?? ''}}</td> 
+                                    <td>Institution:</td>
+                                    <td>{{$user->institution ?? ''}}</td> 
                                 </tr>
                                 <tr>
-                                    <td>Address</td>
-                                    <td>{{$profile->address ?? ''}}</td> 
+                                    <td>Address:</td>
+                                    <td>{{$user->address ?? ''}}</td> 
                                 </tr>
                                 <tr>
-                                    <td>Country</td>
-                                    <td>{{$profile->country ?? ''}}</td> 
+                                    <td>Country:</td>
+                                    <td>{{$user->country ?? ''}}</td> 
                                 </tr>
                                 <tr>
-                                    <td>Province</td>
-                                    <td>{{$profile->province ?? ''}}</td> 
+                                    <td>Province:</td>
+                                    <td>{{$user->province ?? ''}}</td> 
                                 </tr>
                                 <tr>
-                                    <td>City</td>
-                                    <td>{{$profile->city ?? ''}}</td> 
+                                    <td>City:</td>
+                                    <td>{{$user->city ?? ''}}</td> 
                                 </tr>
                                 <tr>
-                                    <td>Postal Code</td>
-                                    <td>{{$profile->postal_code ?? ''}}</td> 
+                                    <td>Postal Code:</td>
+                                    <td>{{$user->postal_code ?? ''}}</td> 
                                 </tr>
                                 <tr>
-                                    <td>Phone Number</td>
-                                    <td>{{$profile->phone_number ?? ''}}</td> 
+                                    <td>Phone Number:</td>
+                                    <td>{{$user->phone_number ?? ''}}</td> 
                                 </tr>
                             </tbody>
                         </table>

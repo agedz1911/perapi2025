@@ -6,7 +6,9 @@ use App\Filament\Resources\UserResource\Pages;
 use App\Filament\Resources\UserResource\RelationManagers;
 use App\Models\User;
 use Filament\Forms;
+use Filament\Forms\Components\Radio;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Pages\Page;
@@ -27,11 +29,13 @@ class UserResource extends Resource
 
     public static function form(Form $form): Form
     {
+        $countries = countries();
         return $form
             ->schema([
                 TextInput::make('name')
-                    ->label('Last Name')
+                    ->label('First Name')
                     ->required(),
+                TextInput::make('last_name'),
                 TextInput::make('email')
                     ->required()
                     ->email()
@@ -44,7 +48,44 @@ class UserResource extends Resource
                 Select::make('role')
                     ->multiple()
                     ->relationship('roles', 'name')
-                    ->preload()
+                    ->preload(),
+                TextInput::make('nik')
+                    ->label('NIK')
+                    ->numeric(),
+                Select::make('type')
+                    ->options([
+                        'Specialist' => 'Specialist',
+                        'Resident' => 'Resident',
+                        'General Practitioner' => 'General Practitioner',
+                        'Student' => 'Student',
+                    ]),
+                Radio::make('title')
+                    ->options([
+                        'Prof.' => 'Prof.',
+                        'Dr.' => 'Dr.',
+                        'dr.' => 'dr.',
+                        'MD.' => 'MD.',
+                        'Mr.' => 'Mr.',
+                        'Ms.' => 'Ms.',
+                        'Mrs.' => 'Mrs.',
+                    ])
+                    ->inline()
+                    ->inlineLabel(false),
+                TextInput::make('title_specialist'),
+                TextInput::make('name_on_certificate'),
+                TextInput::make('institution'),
+                TextInput::make('phone_number')
+                    ->tel(),
+                Select::make('country')
+                    ->options(collect($countries)->mapWithKeys(function ($country) {
+                        return [$country['name'] => $country['name']];
+                    })->all())
+                    ->searchable(),
+                Textarea::make('address'),
+                TextInput::make('province'),
+                TextInput::make('city'),
+                TextInput::make('postal_code')
+                    ->numeric(),
             ]);
     }
 
@@ -53,11 +94,23 @@ class UserResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name')
-                    ->label('Last Name')
+                    ->label('First Name')
                     ->sortable()
                     ->searchable(),
+                TextColumn::make('last_name'),
                 TextColumn::make('email')
                     ->sortable(),
+                TextColumn::make('name_on_certificate'),
+                TextColumn::make('institution')
+                    ->searchable(),
+                TextColumn::make('country')
+                    ->sortable()
+                    ->searchable(),
+                TextColumn::make('city')
+                    ->searchable()
+                    ->sortable(),
+                TextColumn::make('phone_number')
+                    ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('roles.name'),
                 TextColumn::make('created_at')
                     ->toggleable(isToggledHiddenByDefault: true)
