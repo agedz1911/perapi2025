@@ -18,7 +18,7 @@
         </a>
     </li>
     <li>
-        <a>
+        <a wire:navigate href="/abstract-submission" class="{{ request()->is('abstract-submission') ? 'bg-purple-700 text-white' : 'text-gray-700' }}">
             Abstracts
             <span class="badge badge-xs badge-info">tes</span>
         </a>

@@ -37,7 +37,7 @@
                     </div>
                     <div class="w-full flex flex-col">
                         @if (Auth::check())
-                        <a href="#submit_abstract" class="btn text-white bg-purple-700 hover:bg-[#9E1F63] w-full"><i
+                        <a href="/abstract-submission" wire:navigate class="btn text-white bg-purple-700 hover:bg-[#9E1F63] w-full"><i
                                 class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
                         <p class="m-0 text-xs text-gray-500 italic">*make sure the file complies with the guidelines.</p>
 
@@ -51,19 +51,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Modal -->
-    <div class="modal" role="dialog" id="submit_abstract">
-        <div class="modal-box w-11/12 max-w-5xl">
-            <a href="#" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">X</a>
-            <h3 class="text-lg font-bold">Abstract Submission Form</h3>
-            <div>
-                <livewire:form.submit-abstract>
-            </div>
-        </div>
-    </div>
-
-
 
     <x-section.footer />
 </div>

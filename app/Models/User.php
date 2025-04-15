@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Filament\Panel;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Spatie\Permission\Traits\HasRoles;
 
@@ -68,5 +69,9 @@ class User extends Authenticatable implements FilamentUser
     {
         // return str_ends_with($this->email, 'a.saepuloh@pharma-pro.com');
         return User::where('email', $this->email)->exists();
+    }
+
+    public function submitAbstracts() : HasMany {
+        return $this->hasMany(SubmitAbstract::class);
     }
 }

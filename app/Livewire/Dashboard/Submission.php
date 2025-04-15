@@ -2,26 +2,24 @@
 
 namespace App\Livewire\Dashboard;
 
-use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
-use Livewire\Attributes\Title;
+use Livewire\Component;
 use Livewire\WithPagination;
 
-#[Title('Dashboard - The 28th InaPRAS')]
-class Index extends Component
+class Submission extends Component
 {
     use WithPagination;
-
     public $user;
     
     public function mount()
     {
-        $this->user = Auth::user();
+        $this->user =  Auth::user();
     }
+
     public function render()
     {
         $submitAbstracts = $this->user->submitAbstracts()->paginate(3);
-        return view('livewire.dashboard.index',[
+        return view('livewire.dashboard.submission', [
             'submitAbstracts' => $submitAbstracts,
         ]);
     }

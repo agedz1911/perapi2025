@@ -6,6 +6,7 @@ use App\Livewire\Auth\Logout;
 use App\Livewire\Auth\Register;
 use App\Livewire\Dashboard\Index;
 use App\Livewire\Dashboard\Profile;
+use App\Livewire\Dashboard\Submission;
 use App\Livewire\Pages\Accommodation;
 use App\Livewire\Pages\AtGlance;
 use App\Livewire\Pages\Committee;
@@ -43,4 +44,5 @@ Route::middleware('guest')->group(function() {
 Route::middleware('auth')->group(function() {
     Route::get('/dashboard', Index::class);
     Route::get('/profile', Profile::class);
+    Route::get('/abstract-submission', Submission::class);
 });
