@@ -7,6 +7,7 @@ use App\Filament\Resources\RegistrationResource\RelationManagers;
 use App\Models\Registration;
 use Filament\Forms;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
@@ -56,6 +57,7 @@ class RegistrationResource extends Resource
                     ->numeric(),
                 TextInput::make('onsite_reg')
                     ->numeric(),
+                Textarea::make('description'),
                 Toggle::make('is_Active')
                     ->default(true)
                     ->inline(),

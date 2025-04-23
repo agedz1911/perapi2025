@@ -9,12 +9,23 @@
     <section class="pt-10 pb-24 px-2 lg:px-5 bg-competition">
         <!-- name of each tab group should be unique -->
         <div class="tabs tabs-border justify-evenly">
-            <input type="radio" name="my_tabs_2" class="tab text-lg uppercase text-purple-700" aria-label="Indonesian Participant" checked="checked" />
+            <input type="radio" name="my_tabs_2" class="tab text-lg uppercase text-purple-700"
+                aria-label="Indonesian/MSPRS/ASPS/TSPAS/KSPRS/KSAPS/RSPRAS/TSPS Participant" checked="checked" />
             <div class="tab-content">
                 <div class="pb-6 text-gray-500">
-                    {{-- <span class="bg-amber-100 mt-5 text-amber-800 px-3 py-2 text-sm rounded-xl ">Indonesian Participants</span> --}}
+                    {{-- <span class="bg-amber-100 mt-5 text-amber-800 px-3 py-2 text-sm rounded-xl ">Indonesian
+                        Participants</span> --}}
                     @foreach ($uniqueLocals as $category)
                     <h2 class="uppercase font-semibold text-[#9E1F63] mb-2 mt-5">{{$category}}</h2>
+                    @if ($category === 'symposium')
+                    <p class="text-gray-700 mb-4">InaPRAS is pleased to invite members of our esteemed society partners
+                        (MSPRS-Malaysia/ASPS-USA/TSPAS-Taiwan/KSPRS-South Korea/KSAPS-South
+                        Korea/RSPRAS-Russia/TSPS-Turkey) to participate in the upcoming meeting. We are delighted to
+                        extend the same registration rate as local participants to our society partners as a gesture of
+                        our continued collaboration and shared commitment to advancing the field of plastic and
+                        reconstructive surgery.
+                    </p>
+                    @endif
                     <div class="relative overflow-x-auto shadow sm:rounded-lg ">
                         <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
                             <thead class=" text-white uppercase text-center bg-purple-900 ">
@@ -44,13 +55,16 @@
                                         {{$regLocal->title}}
                                     </th>
                                     <td class="px-6 py-4 text-center">
-                                        IDR {{$regLocal->early_bird_reg != 0 ? number_format($regLocal->early_bird_reg, 0, ',', '.') : 'Free'}}
+                                        IDR {{$regLocal->early_bird_reg != 0 ? number_format($regLocal->early_bird_reg,
+                                        0, ',', '.') : 'Free'}}
                                     </td>
                                     <td class="px-6 py-4 text-center">
-                                        IDR {{$regLocal->normal_reg != 0 ? number_format($regLocal->normal_reg, 0, ',', '.') : 'Free'}}
+                                        IDR {{$regLocal->normal_reg != 0 ? number_format($regLocal->normal_reg, 0, ',',
+                                        '.') : 'Free'}}
                                     </td>
                                     <td class="px-6 py-4 text-center">
-                                        IDR {{$regLocal->onsite_reg != 0 ? number_format($regLocal->onsite_reg, 0, ',', '.'): 'Free'}}
+                                        IDR {{$regLocal->onsite_reg != 0 ? number_format($regLocal->onsite_reg, 0, ',',
+                                        '.'): 'Free'}}
                                     </td>
                                 </tr>
                                 @endif
@@ -58,17 +72,21 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/perapi2025/" class="bg-amber-500 text-white hover:bg-purple-800 p-3 rounded-xl mb-3 float-end"><i class="fa-solid fa-list mx-3"></i>Register Now!</a>
+                            <a href="https://expo.virconex-id.com/registration/perapi2025/"
+                                class="bg-amber-500 text-white hover:bg-purple-800 p-3 rounded-xl mb-3 float-end"><i
+                                    class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
                     </div>
                     @endforeach
                 </div>
             </div>
 
-            <input type="radio" name="my_tabs_2" class="tab uppercase text-lg text-purple-700 " aria-label="Foreign Participant" />
+            <input type="radio" name="my_tabs_2" class="tab uppercase text-lg text-purple-700 "
+                aria-label="Foreign Participant" />
             <div class="tab-content">
                 <div class="pb-6 text-gray-500">
-                    {{-- <span class="bg-amber-100 text-amber-800 px-3 py-2 text-sm rounded-xl mb-3">Foreign Participants</span> --}}
+                    {{-- <span class="bg-amber-100 text-amber-800 px-3 py-2 text-sm rounded-xl mb-3">Foreign
+                        Participants</span> --}}
                     @foreach ($uniqueForeigns as $category)
                     <h2 class="uppercase font-semibold text-[#9E1F63] mb-2 mt-5">{{$category}}</h2>
                     <div class="relative overflow-x-auto shadow sm:rounded-lg mt-5">
@@ -114,7 +132,9 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/perapi2025/" class="bg-amber-500 text-white hover:bg-purple-800 p-3 rounded-xl mb-3 float-end"><i class="fa-solid fa-list mx-3"></i>Register Now!</a>
+                            <a href="https://expo.virconex-id.com/registration/perapi2025/"
+                                class="bg-amber-500 text-white hover:bg-purple-800 p-3 rounded-xl mb-3 float-end"><i
+                                    class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
                     </div>
                     @endforeach
