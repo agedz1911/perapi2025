@@ -35,7 +35,7 @@
     </section>
 
     <section
-        class="lg:pb-28 pb-20  pt-0 lg:-mt-14 grid grid-cols-1 lg:grid-cols-2 px-3 gap-3 border-b-2 border-dashed border-gray-400">
+        class="lg:pb-28 pb-20 pt-0 lg:-mt-14 flex flex-col lg:flex-row px-3 gap-3 border-b-2 border-dashed border-gray-400">
         <div class="">
             <!-- Countdown -->
             <div
@@ -119,17 +119,36 @@
             <div class="grid gap-4">
                 <div class="bg-gray-200 rounded-lg place-items-center place-content-center">
                     <img src="assets/images/logo/logo.png" class="max-w-full h-auto" alt="">
-                </div>
-                <div class="bg-gray-200 rounded-lg place-items-center place-content-start">
                     <img src="assets/images/logo/logo-event.png" class="max-w-full h-auto" alt="">
                 </div>
+                {{-- <div class="bg-gray-200 rounded-lg place-items-center place-content-start">
+                    <img src="assets/images/logo/logo-event.png" class="max-w-full h-auto" alt="">
+                </div> --}}
             </div>
-            <div class="grid gap-4">
-                <div class="relative">
-                    <img class="h-full object-cover max-w-full rounded-2xl"
-                        src="assets/images/medan/landmark.webp" alt="">
-                    <div class="absolute inset-0 bg-slate-950/50"></div>
-                </div>
+            <div class="grid gap-4 content-center">
+                <livewire:section.flyer />
+                {{-- <div class="carousel w-full shadow-md rounded-2xl">
+                    <div id="slide1" class="carousel-item relative w-full ease-in-out duration-300 h-full object-cover">
+                        <figure>
+                            <img src="assets/images/medan/landmark.webp" alt=""
+                                class="h-full object-cover max-w-full rounded-2xl" />
+                        </figure>
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#" class="btn btn-circle btn-secondary btn-outline ">❮</a>
+                            <a href="#" class="btn btn-circle btn-secondary btn-outline">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full ease-in-out duration-300">
+                        <figure>
+                            <img src="assets/images/001-flyer.jpg" alt=""
+                                class="h-full object-cover max-w-full rounded-2xl" />
+                        </figure>
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#" class="btn btn-circle btn-secondary btn-outline ">❮</a>
+                            <a href="#" class="btn btn-circle btn-secondary btn-outline">❯</a>
+                        </div>
+                    </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -228,7 +247,62 @@
                             </div>
                         </div>
                         @endforeach
-                        
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 border-t pt-5">
+                    <div class="order-2 p-2">
+                        <div class="grid grid-cols-1 place-items-center gap-5">
+                            <div class="lg:w-2/3 w-full max-w-sm flex flex-col items-center">
+                                <div class="image-welcome">
+                                    <img src="assets/images/p-teddy-ohp.png" alt="faq-general-image" class="w-60">
+                                </div>
+                                <div class="p-4 rounded-lg bg-amber-500 w-full">
+                                    <div class="ps-4 border-s border-white border-spacing-7">
+                                        <p class="text-gray-200 text-xs italic">" President of the 7th Congress of
+                                            APFSRM 2026
+                                            "</p>
+                                        <h6 class="font-semibold">Theddeus O.H. Prasetyono, M.D., PhD., FICS</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 p-2">
+                        <div class="px-2 lg:pl-8">
+                            <div class="pb-4 text-justify flex flex-col gap-2 text-gray-300">
+
+                                <p>Dear Esteemed Colleagues and Distinguished Guests,</p>
+                                <p>
+                                    With heartfelt enthusiasm, we extend our warmest welcome to you on behalf of the
+                                    28th Annual Scientific Meeting of the Indonesian Association of Plastic
+                                    Reconstructive and Aesthetic Surgeons (InaPRAS).</p>
+                                <p>Through collaboration, groundbreaking innovation, and advancements in medical
+                                    technology, we have the power to push the boundaries of plastic surgery and
+                                    transform the lives of countless patients. We are honored to bring together leading
+                                    experts, dedicated clinicians, and visionary researchers in the vibrant city of
+                                    Medan, Indonesia, from July 30th to August 2nd, 2025, at the JW Marriott Hotel
+                                    Medan, North Sumatra.</p>
+                                <p>InaPRAS has evolved into a premier platform for the exchange of pioneering scientific
+                                    discoveries and the introduction of cutting-edge innovations in plastic surgery</p>
+                                <p>Our dedicated organizing committee is diligently curating a high-quality scientific
+                                    program, themed Aesthetics and Beyond. Quality programs will include Tea Time Talks,
+                                    Aesthetic Track, General Track, and Nusantara Track. What unique in our program is
+                                    the wide variety of plastic surgery disciplines which will be contained in the form
+                                    of Live Surgery, Anatomical Dissection, various Master Courses, Instructional
+                                    Courses, and Master Classes. We also invite all delegates to submit their scientific
+                                    works for the Oral Free Paper, E-Poster, and Research Proposal Competitions. Those
+                                    sessions will be also complemented by memorable social activities to ensure a truly
+                                    enriching and unforgettable conference experience.</p>
+                                <p>Together, we will shape the future of plastic surgery and make a lasting impact on
+                                    the lives of many. As a united community, let us forge new paths, spark innovation,
+                                    and redefine the future of patient care in plastic surgery.</p>
+                                <p>Medan is easily accessible via direct flights from major cities across Asia and
+                                    offers both visa-free and visa-on-arrival options for your convenience.</p>
+                                <p>Join us in this inspiring journey to lead and innovate</p>
+                                <p>Warm regards,</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -346,4 +420,44 @@
       });
     });
 
+    let slideIndex = 1;
+    // Fungsi untuk menampilkan slide
+    function showSlides(n) {
+        let slides = document.getElementsByClassName("carousel-item");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+    // Fungsi untuk memindahkan slide ke depan atau ke belakang
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    // Fungsi untuk memindahkan slide secara otomatis
+    setInterval(function() {
+        plusSlides(1);
+    }, 10000); // rotate every 10 seconds
+    // Inisialisasi slide
+    showSlides(slideIndex);
+    // Add event listeners to next and previous buttons
+    let nextButtons = document.querySelectorAll('.btn-circle:nth-child(2)');
+    let prevButtons = document.querySelectorAll('.btn-circle:nth-child(1)');
+    nextButtons.forEach((button, index) => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            plusSlides(1);
+        });
+    });
+    prevButtons.forEach((button, index) => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            plusSlides(-1);
+        });
+    });
 </script>
