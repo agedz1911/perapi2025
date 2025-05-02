@@ -43,7 +43,7 @@ class Schedule extends Component
             })
             ->get();
         $uniqCategories = $atglances->pluck('category_sesi')->unique();
-        $uniqDates = $atglances->pluck('date')->unique();
+        $uniqDates = $atglances->pluck('date')->unique()->sort();
         return view('livewire.pages.schedule', [
             'atglances' => $atglances,
             'uniqCategories' => $uniqCategories,

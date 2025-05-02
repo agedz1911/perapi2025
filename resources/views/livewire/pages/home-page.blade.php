@@ -127,28 +127,6 @@
             </div>
             <div class="grid gap-4 content-center">
                 <livewire:section.flyer />
-                {{-- <div class="carousel w-full shadow-md rounded-2xl">
-                    <div id="slide1" class="carousel-item relative w-full ease-in-out duration-300 h-full object-cover">
-                        <figure>
-                            <img src="assets/images/medan/landmark.webp" alt=""
-                                class="h-full object-cover max-w-full rounded-2xl" />
-                        </figure>
-                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                            <a href="#" class="btn btn-circle btn-secondary btn-outline ">❮</a>
-                            <a href="#" class="btn btn-circle btn-secondary btn-outline">❯</a>
-                        </div>
-                    </div>
-                    <div id="slide2" class="carousel-item relative w-full ease-in-out duration-300">
-                        <figure>
-                            <img src="assets/images/001-flyer.jpg" alt=""
-                                class="h-full object-cover max-w-full rounded-2xl" />
-                        </figure>
-                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                            <a href="#" class="btn btn-circle btn-secondary btn-outline ">❮</a>
-                            <a href="#" class="btn btn-circle btn-secondary btn-outline">❯</a>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>

@@ -5,7 +5,7 @@
             <h2 class="text-white uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Program at Glance</h2>
         </div>
     </section>
-    
+
     <section class="pt-10 pb-24 px-2 lg:px-5 bg-competition">
         <!-- name of each tab group should be unique -->
         <div class="tabs tabs-border justify-evenly">
@@ -62,8 +62,8 @@
                                     <p><span class="text-xs font-semibold">
                                             07.00 - 11.00
                                         </span> <br>
-                                        MC 2
-                                        MASTER COURSE: MANDIBULAR FRACTURE MANAGEMENT <br>
+                                        MC 1
+                                        MASTER COURSE: ULTRASOUND FOR AESTHETIC INJECTABLES AND FOR GRAFTING <br>
                                         <span class="italic mt-1 text-purple-700">
                                             Washington
                                         </span>
@@ -73,9 +73,8 @@
                                     <p><span class="text-xs font-semibold">
                                             07.00 - 11.00
                                         </span> <br>
-                                        MC 3
-                                        MASTER COURSE:
-                                        FAT GRAFTING FOR TISSUE REGENERATION-REJUVENATION <br>
+                                        MC 2
+                                        MASTER COURSE: MANDIBULAR FRACTURE MANAGEMENT <br>
                                         <span class="italic text-purple-700">
                                             New York
                                         </span>
@@ -85,8 +84,9 @@
                                     <p><span class="text-xs font-semibold">
                                             07.00 - 11.00
                                         </span><br>
-                                        MC 4
-                                        MASTER COURSE LIPO-ABDOMINOPLASTY <br>
+                                        MC 3
+                                        MASTER COURSE:
+                                        FAT GRAFTING FOR TISSUE REGENERATION-REJUVENATION <br>
                                     <p class="text-purple-700 italic">
                                         Oregon
                                     </p>
@@ -96,9 +96,8 @@
                                     <p><span class="font-semibold text-xs">
                                             07.00 - 11.00
                                         </span> <br>
-                                        MC 5
-                                        MASTER COURSE BREAST SURGERY: AUGMENTATION – MASTOPEXY
-                                        by INFION <br>
+                                        MC 4
+                                        MASTER COURSE LIPO-ABDOMINOPLASTY <br>
                                         <span class="italic text-purple-700">
                                             Matyland
                                         </span>
@@ -108,8 +107,9 @@
                                     <p><span class="text-xs font-semibold">
                                             07.00 - 11.00
                                         </span><br>
-                                        IC 5
-                                        INSTRUCTIONAL COURSE FOR GENERAL PRACTICE: ALTERNATIVE BSS <br>
+                                        IC 1
+                                        INSTRUCTIONAL COURSE:
+                                        NEUROTOXIN FOR FACIAL AESTHETICS <br>
                                         <span class="italic text-purple-700">
                                             Florida
                                         </span>
@@ -119,8 +119,9 @@
                                     <p><span class="text-xs font-semibold">
                                             07.00 - 11.00
                                         </span><br>
-                                        MC 1
-                                        MASTER COURSE: ULTRASOUND FOR AESTHETIC INJECTABLES AND FOR GRAFTING <br>
+                                        MC 5
+                                        MASTER COURSE BREAST SURGERY: AUGMENTATION – MASTOPEXY
+                                        by INFION <br>
                                         <span class="italic text-purple-700">
                                             California
                                         </span>
@@ -150,16 +151,15 @@
                                             13.00 - 17.00
                                         </span><br>
                                         CD 2
-                                        MASTER COURSE: CADAVERIC FLAP DISSECTION
+                                        MASTER COURSE: CADAVERIC PERFORATOR FLAP DISSECTION
                                     </p>
                                 </td>
                                 <td class="h-24 w-12 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
                                             13.00 - 16.00
                                         </span> <br>
-                                        IC 4
-                                        MASTER COURSE AND VIDEO SURGERY DEMONSTRATION ON HAIR TRANSPLANTATION &
-                                        REGENERATION <br>
+                                        MC 6
+                                        MASTER COURSE AND VIDEO SURGERY DEMONSTRATION ON HAIR TRANSPLANTATION & REGENERATION <br>
                                         <span class="italic text-purple-700">
                                             Washington
                                         </span>
@@ -169,9 +169,10 @@
                                     <p><span class="text-xs font-semibold">
                                             13.00 - 16.00
                                         </span> <br>
-                                        IC 1
+                                        IC 2
                                         INSTRUCTIONAL COURSE:
-                                        NEUROTOXIN FOR FACIAL AESTHETICS <br>
+                                        THREADS FOR FACIAL AESTHETICS
+                                        <br>
                                         <span class="italic text-purple-700">
                                             New York
                                         </span>
@@ -181,9 +182,9 @@
                                     <p><span class="font-semibold text-xs">
                                             13.00 - 16.00
                                         </span> <br>
-                                        IC 2
+                                        IC 3
                                         INSTRUCTIONAL COURSE:
-                                        THREADS FOR FACIAL AESTHETICS <br>
+                                        LASER FOR AESTHETICS <br>
                                         <span class="italic text-purple-700">
                                             Oregon
                                         </span>
@@ -193,9 +194,8 @@
                                     <p><span class="text-xs font-semibold">
                                             13.00 - 16.00
                                         </span> <br>
-                                        IC 3
-                                        INSTRUCTIONAL COURSE:
-                                        LASER FOR AESTHETICS <br>
+                                        IC 4
+                                        INSTRUCTIONAL COURSE PLASTIC SURGERY MODE on BASIC SURGICAL SKILL for GENERAL PRACTICE <br>
                                         <span class="italic text-purple-700">
                                             Matyland
                                         </span>
@@ -205,8 +205,7 @@
                                     <p><span class="text-xs font-semibold">
                                             13.00 - 16.00
                                         </span> <br>
-                                        IC 6
-                                        INSTRUCTIONAL COURSE FOR GENERAL PRACTICE: WOUND CARE FOR CLINICIANS <br>
+                                        Collegium Meeting <br>
                                         <span class="italic text-purple-700">
                                             Florida
                                         </span>
@@ -216,7 +215,9 @@
                                     <p><span class="text-xs font-semibold">
                                             13.00-16.00
                                         </span><br>
-                                        Collegium Meeting <br>
+                                        IC 5
+                                        INSTRUCTIONAL COURSE FOR GENERAL PRACTICE: WOUND CARE FOR CLINICIANS
+                                        by INFIONs <br>
                                         <span class="italic text-purple-700">
                                             California
                                         </span>
@@ -456,7 +457,8 @@
                                     <p><span class="font-semibold">
                                             14.30 - 15.30
                                         </span><br>
-                                        AESTHETIC TRACK 6
+                                        Satellite Sponsor
+                                        by INFION
                                         <span class="italic text-purple-700"> <br>
                                             New York
                                         </span>
@@ -508,7 +510,7 @@
                                     <p><span class="text-xs font-semibold">
                                             16.00 - 17.00
                                         </span><br>
-                                        AESTHETIC TRACK 7 <br>
+                                        AESTHETIC TRACK 6 <br>
                                         <span class="italic text-purple-700">
                                             Ballroom
                                         </span>
@@ -518,7 +520,7 @@
                                     <p><span class="font-semibold">
                                             16.00 - 17.00
                                         </span><br>
-                                        AESTHETIC TRACK 8
+                                        AESTHETIC TRACK 7
                                         <span class="italic text-purple-700"> <br>
                                             Washington
                                         </span>
@@ -589,8 +591,8 @@
                                     <p><span class="text-xs font-semibold">
                                             07.00 - 08.00
                                         </span><br>
-                                        MASTER CLASS <br>
-                                        UNIQUE OFFICE BASED PROCEDURES<br>
+                                        MASTER CLASS 1<br>
+                                        BLEPHAROPLASTY MIDFACE ADDED<br>
                                         <span class="italic text-purple-700">
                                             Washington
                                         </span>
@@ -600,8 +602,8 @@
                                     <p><span class="text-xs font-semibold">
                                             07.00 - 08.00
                                         </span><br>
-                                        MASTER CLASS <br>
-                                        BLEPHAROPLASTY MIDFACE ADDED<br>
+                                        MASTER CLASS 2<br>
+                                        MANUSCRIPT WRITING<br>
                                         <span class="italic text-purple-700">
                                             New York
                                         </span>
@@ -611,8 +613,10 @@
                                     <p><span class="text-xs font-semibold">
                                             07.00 - 08.00
                                         </span><br>
-                                        MASTER CLASS <br>
-                                        MANUSCRIPT WRITING<br>
+                                        MASTER CLASS 3<br>
+                                        CRANIOFACIAL SURGERY: LOCKING PLATES BUT AFFORDABLE
+                                        FLORIDA
+                                        by INFION<br>
                                         <span class="italic text-purple-700">
                                             Florida
                                         </span>
@@ -811,7 +815,7 @@
                                     <p><span class="font-semibold">
                                             14.30 - 15..30
                                         </span><br>
-                                        FREE PAPER 6
+                                        GENERAL TRACK 2
                                         <span class="italic text-purple-700"> <br>
                                             Florida
                                         </span>
@@ -831,7 +835,7 @@
                                     <p><span class="text-xs font-semibold">
                                             14.30 - 15..30
                                         </span> <br>
-                                        FREE PAPER 7<br>
+                                        FREE PAPER 6<br>
                                         <span class="italic text-purple-700">
                                             Matyland
                                         </span>
@@ -905,7 +909,7 @@
                                     <p><span class="text-xs font-semibold">
                                             08.00 - 09.00
                                         </span><br>
-                                        GENERAL TRACK 2 <br>
+                                        GENERAL TRACK 3 <br>
                                         <span class="italic text-purple-700">
                                             Ballroom
                                         </span>
@@ -915,7 +919,7 @@
                                     <p><span class="font-semibold">
                                             08.00 - 09.00
                                         </span><br>
-                                        GENERAL TRACK 3
+                                        GENERAL TRACK 4
                                         <span class="italic text-purple-700"> <br>
                                             Washington
                                         </span>
@@ -925,7 +929,7 @@
                                     <p><span class="font-semibold">
                                             08.00 - 09.00
                                         </span><br>
-                                        GENERAL TRACK 4
+                                        GENERAL TRACK 5
                                         <span class="italic text-purple-700"> <br>
                                             New York
                                         </span>
@@ -951,7 +955,7 @@
                                     <p><span class="text-xs font-semibold">
                                             09.00 - 10.00
                                         </span><br>
-                                        GENERAL TRACK 5 <br>
+                                        GENERAL TRACK 6 <br>
                                         <span class="italic text-purple-700">
                                             Ballroom
                                         </span>
@@ -1022,7 +1026,7 @@
                                     <p><span class="text-xs font-semibold">
                                             13.00 -14.00
                                         </span><br>
-                                        GENERAL TRACK 6 <br>
+                                        GENERAL TRACK 7 <br>
                                         <span class="italic text-purple-700">
                                             Ballroom
                                         </span>
@@ -1044,7 +1048,7 @@
                                     <p><span class="text-xs font-semibold">
                                             14.00 - 15.00
                                         </span><br>
-                                        GENERAL TRACK 7 <br>
+                                        GENERAL TRACK 8 <br>
                                         <span class="italic text-purple-700">
                                             Ballroom
                                         </span>

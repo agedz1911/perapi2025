@@ -19,7 +19,8 @@
                 <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content">
                     <!-- Page content here -->
-                    <label for="my-drawer-4" class="drawer-button btn bg-purple-700 hover:bg-indigo-600 text-white rounded-lg px-3"><i
+                    <label for="my-drawer-4"
+                        class="drawer-button btn bg-purple-700 hover:bg-indigo-600 text-white rounded-lg px-3"><i
                             class="fa-solid fa-filter"></i> Filter</label>
                 </div>
                 <div class="drawer-side">
@@ -103,8 +104,15 @@
                         {{\Carbon\Carbon::parse($date)->format('l, d F')}}</h2>
                 </div>
                 @foreach ($uniqCategories as $item)
+                @if (
+                    !($date == '2025-07-30' && ($item == 'Symposium' || $item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster' || $item == 'Master Class' || $item == 'Video Parade')) && 
+                    !($date == '2025-07-31' && ($item == 'Workshop' || $item == 'Master Class' || $item == 'Video Parade')) && 
+                    !($date == '2025-08-01' && ($item == 'Workshop' || $item == 'Research Proposal')) && 
+                    !($date == '2025-08-02' && ($item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster' || $item == 'Master Class'))
+                )
                 <p class="font-semibold tracking-wider my-5"><i
                         class="fa fa-angle-right text-sm text-purple-700 font-semibold"></i> {{$item}}</p>
+                @endif
                 @foreach ($atglances as $atglance)
                 @if ($atglance->category_sesi == $item && $atglance->date == $date)
 
