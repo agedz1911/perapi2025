@@ -140,7 +140,7 @@
                                     <p><span class="text-xs font-semibold">
                                             13.00 - 19.00
                                         </span> <br>
-                                        LC 3
+                                        LS 3
                                         LIVE SURGERY IN DEEP PLANE FACELIFT
                                     </p>
                                 </td>
@@ -396,7 +396,8 @@
                                     <p><span class="font-semibold">
                                             13.30 - 14.30
                                         </span><br>
-                                        AESTHETIC TRACK 3
+                                        Satellite Sponsor
+                                        by INFION
                                         <span class="italic text-purple-700"> <br>
                                             New York
                                         </span>
@@ -437,7 +438,7 @@
                                     <p><span class="text-xs font-semibold">
                                             14.30 - 15.30
                                         </span><br>
-                                        AESTHETIC TRACK 4 <br>
+                                        AESTHETIC TRACK 3 <br>
                                         <span class="italic text-purple-700">
                                             Ballroom
                                         </span>
@@ -447,7 +448,7 @@
                                     <p><span class="font-semibold">
                                             14.30 - 15.30
                                         </span><br>
-                                        AESTHETIC TRACK 5
+                                        AESTHETIC TRACK 4
                                         <span class="italic text-purple-700"> <br>
                                             Washington
                                         </span>
@@ -457,8 +458,7 @@
                                     <p><span class="font-semibold">
                                             14.30 - 15.30
                                         </span><br>
-                                        Satellite Sponsor
-                                        by INFION
+                                        AESTHETIC TRACK 5
                                         <span class="italic text-purple-700"> <br>
                                             New York
                                         </span>

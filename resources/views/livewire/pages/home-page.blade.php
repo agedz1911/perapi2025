@@ -36,14 +36,15 @@
 
     <section
         class="lg:pb-28 pb-20 pt-0 lg:-mt-14 flex flex-col lg:flex-row px-3 gap-3 border-b-2 border-dashed border-gray-400">
-        <div class="">
-            <!-- Countdown -->
+        <div class="w-full max-w-md">
+
             <div
                 class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
                 <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                     <img src="assets/images/mockup.png" class=" h-[156px] md:h-[278px] w-full rounded-lg relative"
                         alt="">
                     <div class="w-full absolute bottom-1 lg:bottom-4 text-center grid justify-items-center gap-0">
+                        <a href="/download/announcement.pdf" target="_blank" class="btn btn-primary rounded-lg">Download Announcement</a>
                         <div id="countdown" class="flex gap-3 w-full lg:gap-8 rounded-lg bg-black/50 mt-1">
                             <div class="m-auto py-2 lg:py-4 ">
                                 <span id="days" class="font-bold mb-0 text-2xl lg:text-4xl text-amber-500"></span><br>
@@ -67,9 +68,11 @@
                                 <small class="text-white text-xs">Seconds</small>
                             </div>
                         </div>
+
                         <a href="/registration" wire:navigate
                             class="hover:text-indigo-700 mt-2 text-white bg-gradient-to-br from-amber-300 to-[#f6921e] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center uppercase">Join
                             Now !</a>
+
                     </div>
                 </div>
             </div>
@@ -115,9 +118,9 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 relative">
             <div class="grid gap-4">
-                <div class="bg-gray-200 rounded-lg place-items-center place-content-center">
+                <div class="bg-gray-200 rounded-lg place-items-center place-content-start">
                     <img src="assets/images/logo/logo.png" class="max-w-full h-auto" alt="">
                     <img src="assets/images/logo/logo-event.png" class="max-w-full h-auto" alt="">
                 </div>
@@ -307,8 +310,6 @@
                             <p class="pb-5 m-0 text-sm">Putri Hijau No.10, Kesawan, Kec. Medan Baru,
 
                                 Medan City, North Sumatra</p>
-                            <!-- <h5 class="text-white pb-2">RECEPTION INFO:</h5>
-                                    <p class="pb-5 m-0">Booking: (+62) 1919-2020</p> -->
                             <a class="hover:text-amber-400">Get Directions</a>
                         </div>
                     </div>
@@ -316,6 +317,47 @@
                 <div class="lg:w-2/3 w-full px-1">
                     <iframe class="rounded-lg w-full h-full"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.960159465498!2d98.67325207477667!3d3.596605750239572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131c3f6c8d037%3A0x54771c0e776d21fe!2sJW%20Marriott%20Hotel%20Medan!5e0!3m2!1sid!2sid!4v1741591719972!5m2!1sid!2sid"></iframe>
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-5 mt-3">
+                <div class="lg:w-2/3 w-full px-1">
+                    <iframe class="rounded-lg w-full h-full"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.089071882656!2d98.65698617477668!3d3.566973150442587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312fd8fc9af15d%3A0x3712a827aaac1148!2sFakultas%20Kedokteran%20-%20Universitas%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1746521738922!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+                <div class="lg:w-1/3 w-full">
+                    <div
+                        class="py-10 px-4 text-white rounded-lg shadow-md bg-gradient-to-tr from-indigo-900 to-purple-900">
+                        <div class="">
+                            <h5 class="text-amber-400 pb-2 tracking-wide font-semibold">EVENT VENUE:</h5>
+                            <p class="pb-5 m-0 text-sm">Faculty of Medicine,North Sumatra University</p>
+                            <h5 class="text-amber-400 pb-2 tracking-wide font-semibold">ADDRESS:</h5>
+                            <p class="pb-5 m-0 text-sm">Jl. Dr. Mansyur No.5, Padang Bulan, Kec. Medan Baru,
+
+                                Medan City, North Sumatra</p>
+                            <a class="hover:text-amber-400">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-5 mt-3">
+                <div class="lg:w-1/3 w-full">
+                    <div
+                        class="py-10 px-4 text-white rounded-lg shadow-md bg-gradient-to-tr from-indigo-900 to-purple-900">
+                        <div class="">
+                            <h5 class="text-amber-400 pb-2 tracking-wide font-semibold">EVENT VENUE:</h5>
+                            <p class="pb-5 m-0 text-sm">Setiabudi Hospital Medan</p>
+                            <h5 class="text-amber-400 pb-2 tracking-wide font-semibold">ADDRESS:</h5>
+                            <p class="pb-5 m-0 text-sm">Jl.Mesjid No.3, Tj. Rejo, Kec. Medan Sunggal,
+                                Medan City, North Sumatra</p>
+                            <a class="hover:text-amber-400">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-2/3 w-full px-1">
+                    <iframe class="rounded-lg w-full h-full"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.0617694041757!2d98.64080877477662!3d3.573269550399568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312fced889a417%3A0xb1b67b3faf8c91e1!2sRumah%20Sakit%20Setiabudi%20(Orthopaedic%2C%20Spine%20and%20Surgery)!5e0!3m2!1sid!2sid!4v1746521880461!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
                 </div>
             </div>
 
@@ -383,19 +425,19 @@
         setInterval(updateCountdown, 1000);
         let valueDisplays = document.querySelectorAll(".num");
         let interval = 4000;
-    
-      valueDisplays.forEach((valueDisplay) => {
-          let startValue = 0;
-          let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-          let duration = Math.floor(interval / endValue);
-          let counter = setInterval(function() {
-              startValue += 1;
-              valueDisplay.textContent = startValue;
-              if (startValue == endValue) {
-                  clearInterval(counter);
-              }
-          }, duration);
-      });
+
+        valueDisplays.forEach((valueDisplay) => {
+            let startValue = 0;
+            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let duration = Math.floor(interval / endValue);
+            let counter = setInterval(function() {
+                startValue += 1;
+                valueDisplay.textContent = startValue;
+                if (startValue == endValue) {
+                    clearInterval(counter);
+                }
+            }, duration);
+        });
     });
 
     let slideIndex = 1;
