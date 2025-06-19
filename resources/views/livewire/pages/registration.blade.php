@@ -82,7 +82,7 @@
             </div>
 
             <input type="radio" name="my_tabs_2" class="tab uppercase text-lg text-purple-700 "
-                aria-label="Foreign Participant" />
+                aria-label="International Participant" />
             <div class="tab-content">
                 <div class="pb-6 text-gray-500">
                     {{-- <span class="bg-amber-100 text-amber-800 px-3 py-2 text-sm rounded-xl mb-3">Foreign

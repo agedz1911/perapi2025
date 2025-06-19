@@ -97,7 +97,7 @@
 
                     <input type="radio" name="my_tabs_2"
                         class="tab uppercase tracking-wider  text-lg text-purple-700 hover:text-[#9E1F63]"
-                        aria-label="Foreign faculties" />
+                        aria-label="International faculties" />
                     <div class="tab-content border-base-300 bg-purple-50 p-5 rounded-lg">
                         {{-- @dd($indofaculties) --}}
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">

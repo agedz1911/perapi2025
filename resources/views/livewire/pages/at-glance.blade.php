@@ -40,7 +40,7 @@
                                     <p><span class="font-semibold">
                                             07.00 - 11.00
                                         </span><br>
-                                        LS 3 <br>
+                                        LS 2 <br>
                                         LIVE SURGERY ON OFFICE BASED SURGERY:
                                     <ul>
                                         <li>- PENILE AMPLIFICATION</li>
@@ -225,7 +225,7 @@
                                 </td>
                                 <td class="h-24 w-12 ">
                                     <p><span class="text-xs font-semibold">
-                                            15.00-18.00
+                                            18.30-22.00
                                         </span> <br>
                                         PERAPI BOWL <br>
                                         <span class="italic text-purple-700">
@@ -386,7 +386,7 @@
                                     <p><span class="font-semibold">
                                             13.30 - 14.30
                                         </span><br>
-                                        AESTHETIC TRACK 2
+                                        SATELLITE SPONSOR by KALBE
                                         <span class="italic text-purple-700"> <br>
                                             Washington
                                         </span>
@@ -438,7 +438,7 @@
                                     <p><span class="text-xs font-semibold">
                                             14.30 - 15.30
                                         </span><br>
-                                        AESTHETIC TRACK 3 <br>
+                                        AESTHETIC TRACK 2 <br>
                                         <span class="italic text-purple-700">
                                             Ballroom
                                         </span>
@@ -448,7 +448,7 @@
                                     <p><span class="font-semibold">
                                             14.30 - 15.30
                                         </span><br>
-                                        AESTHETIC TRACK 4
+                                        AESTHETIC TRACK 3
                                         <span class="italic text-purple-700"> <br>
                                             Washington
                                         </span>
@@ -458,7 +458,7 @@
                                     <p><span class="font-semibold">
                                             14.30 - 15.30
                                         </span><br>
-                                        AESTHETIC TRACK 5
+                                        VIDEO PARADE 1
                                         <span class="italic text-purple-700"> <br>
                                             New York
                                         </span>
@@ -510,17 +510,27 @@
                                     <p><span class="text-xs font-semibold">
                                             16.00 - 17.00
                                         </span><br>
-                                        AESTHETIC TRACK 6 <br>
+                                        AESTHETIC TRACK 4 <br>
                                         <span class="italic text-purple-700">
                                             Ballroom
                                         </span>
                                     </p>
                                 </td>
-                                <td colspan="2" class="bg-amber-500/50 border-r border-gray-300">
+                                <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="font-semibold">
                                             16.00 - 17.00
                                         </span><br>
-                                        AESTHETIC TRACK 7
+                                        AESTHETIC TRACK 5
+                                        <span class="italic text-purple-700"> <br>
+                                            Washington
+                                        </span>
+                                    </p>
+                                </td>
+                                <td class="bg-amber-500/50 border-r border-gray-300">
+                                    <p><span class="font-semibold">
+                                            16.00 - 17.00
+                                        </span><br>
+                                        AESTHETIC TRACK 6
                                         <span class="italic text-purple-700"> <br>
                                             Washington
                                         </span>
@@ -674,7 +684,7 @@
                                     <p><span class="text-xs font-semibold">
                                             09.00 - 10.00
                                         </span> <br>
-                                        VIDEO PARADE 1 <br>
+                                        VIDEO PARADE 2 <br>
                                         <span class="italic mt-1 text-purple-700">
                                             California
                                         </span>
@@ -773,7 +783,7 @@
                                     <p><span class="text-xs font-semibold">
                                             13.30 - 14.30
                                         </span> <br>
-                                        VIDEO PARADE 2 <br>
+                                        VIDEO PARADE 3 <br>
                                         <span class="italic mt-1 text-purple-700">
                                             California
                                         </span>
@@ -825,7 +835,7 @@
                                     <p><span class="text-xs font-semibold">
                                             14.30 - 15..30
                                         </span> <br>
-                                        VIDEO PARADE 3 <br>
+                                        VIDEO PARADE 4 <br>
                                         <span class="italic mt-1 text-purple-700">
                                             California
                                         </span>
@@ -904,6 +914,7 @@
                         </thead>
                         <tbody class="text-center text-sm">
 
+                            
                             <tr>
                                 <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
@@ -919,53 +930,26 @@
                                     <p><span class="font-semibold">
                                             08.00 - 09.00
                                         </span><br>
-                                        GENERAL TRACK 4
+                                        NUSANTARA TRACK 10 <br>
                                         <span class="italic text-purple-700"> <br>
                                             Washington
                                         </span>
                                     </p>
                                 </td>
-                                <td class="bg-amber-500/50 border-r border-gray-300">
-                                    <p><span class="font-semibold">
-                                            08.00 - 09.00
-                                        </span><br>
-                                        GENERAL TRACK 5
-                                        <span class="italic text-purple-700"> <br>
-                                            New York
-                                        </span>
-                                    </p>
-                                </td>
-                                <td class="bg-amber-500/50 border-r border-gray-300">
-                                    <p><span class="text-xs font-semibold">
-                                            08.00 - 09.00
-                                        </span> <br>
-                                        VIDEO PARADE 4<br>
-                                        <span class="italic mt-1 text-purple-700">
-                                            California
-                                        </span>
-                                    </p>
-                                </td>
+
+                                
                                 <td rowspan="8" class="bg-base-300 border-r border-gray-300">
                                     <p>EXHIBITION
                                     </p>
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2" class="bg-amber-500/50 border-r border-gray-300">
-                                    <p><span class="text-xs font-semibold">
-                                            09.00 - 10.00
-                                        </span><br>
-                                        GENERAL TRACK 6 <br>
-                                        <span class="italic text-purple-700">
-                                            Ballroom
-                                        </span>
-                                    </p>
-                                </td>
+                            
                                 <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="font-semibold">
                                             09.00 - 10.00
                                         </span><br>
-                                        NUSANTARA TRACK 10
+                                        GENERAL TRACK 4
                                         <span class="italic text-purple-700"> <br>
                                             Washington
                                         </span>
@@ -976,7 +960,7 @@
                                     <p><span class="text-xs font-semibold">
                                             09.00 - 10.00
                                         </span> <br>
-                                        VIDEO PARADE 5<br>
+                                       VIDEO PARADE 5<br>
                                         <span class="italic mt-1 text-purple-700">
                                             California
                                         </span>
@@ -985,7 +969,7 @@
                             </tr>
 
                             <tr>
-                                <td colspan="4" class="bg-yellow-400/80">
+                                <td colspan="2" class="bg-yellow-400/80">
                                     <p><span class="text-xs font-semibold">
                                             10.00 - 11.00
                                         </span><br>
@@ -998,7 +982,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="4" class="bg-green-400/30">
+                                <td colspan="2" class="bg-green-400/30">
                                     <p><span class="text-xs font-semibold">
                                             11.00 - 12.00
                                         </span><br>
@@ -1010,7 +994,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="4" class="bg-purple-400/80">
+                                <td colspan="2" class="bg-purple-400/80">
                                     <p><span class="text-xs font-semibold">
                                             12.00 - 13.00
                                         </span><br>
@@ -1022,17 +1006,17 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2" class="bg-amber-500/50 border-r border-gray-300">
+                                <td  class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
                                             13.00 -14.00
                                         </span><br>
-                                        GENERAL TRACK 7 <br>
+                                        GENERAL TRACK 5 <br>
                                         <span class="italic text-purple-700">
                                             Ballroom
                                         </span>
                                     </p>
                                 </td>
-                                <td colspan="2" class="bg-amber-500/50 border-r border-gray-300">
+                                <td  class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="font-semibold">
                                             13.00 -14.00
                                         </span><br>
@@ -1044,17 +1028,17 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2" class="bg-amber-500/50 border-r border-gray-300">
+                                <td  class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
                                             14.00 - 15.00
                                         </span><br>
-                                        GENERAL TRACK 8 <br>
+                                        GENERAL TRACK 6 <br>
                                         <span class="italic text-purple-700">
                                             Ballroom
                                         </span>
                                     </p>
                                 </td>
-                                <td colspan="2" class="bg-amber-500/50 border-r border-gray-300">
+                                <td  class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="font-semibold">
                                             14.00 - 15.00
                                         </span><br>
@@ -1066,7 +1050,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="4" class="bg-red-400/80">
+                                <td colspan="2" class="bg-red-400/80">
                                     <p><span class="text-xs font-semibold">
                                             15.00 - 15.30
                                         </span><br>

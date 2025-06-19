@@ -134,9 +134,9 @@
         </div>
     </section>
 
-    <section class="py-28 px-2">
-        <div class="w-full max-w-3xl mx-auto">
-            <div class="text-center pb-6 m-auto">
+    <section class="py-28 px-2 lg:px-7 flex flex-wrap justify-between">
+        <div class="w-full max-w-xl">
+            <div class="text-center pb-6">
                 <p class="mb-1 font-semibold tracking-wide">28<sup>th</sup> InaPRAS</p>
                 <h2 class="mb-1 text-4xl font-semibold uppercase tracking-wide">important <span
                         class="text-amber-500 ">Dates</span></h2>
@@ -145,6 +145,16 @@
                 <livewire:section.important-date />
             </div>
         </div>
+        <div class="w-full max-w-md">
+            <div class="mockup-window bg-[#92278F] border border-base-100 shadow-md">
+                <video class="rounded-lg" controls>
+                    <source src="download/teaser.mp4" type="video/mp4">
+                    <source src="download/teaser.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
     </section>
 
     <section class="text-white feature relative z-0 start-0 py-28">
@@ -357,7 +367,7 @@
                 <div class="lg:w-2/3 w-full px-1">
                     <iframe class="rounded-lg w-full h-full"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.0617694041757!2d98.64080877477662!3d3.573269550399568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312fced889a417%3A0xb1b67b3faf8c91e1!2sRumah%20Sakit%20Setiabudi%20(Orthopaedic%2C%20Spine%20and%20Surgery)!5e0!3m2!1sid!2sid!4v1746521880461!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
+
                 </div>
             </div>
 
