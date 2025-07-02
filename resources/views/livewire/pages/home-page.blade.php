@@ -249,8 +249,7 @@
                                 </div>
                                 <div class="p-4 rounded-lg bg-amber-500 w-full">
                                     <div class="ps-4 border-s border-white border-spacing-7">
-                                        <p class="text-gray-200 text-xs italic">" President of the 7th Congress of
-                                            APFSRM 2026
+                                        <p class="text-gray-200 text-xs italic">" Patron - Scientific Committee Chair
                                             "</p>
                                         <h6 class="font-semibold">Theddeus O.H. Prasetyono, M.D., PhD., FICS</h6>
                                     </div>
