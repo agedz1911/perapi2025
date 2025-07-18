@@ -40,13 +40,15 @@
                                     <p><span class="font-semibold">
                                             07.00 - 11.00
                                         </span><br>
-                                        LS 2 <br>
-                                        LIVE SURGERY ON OFFICE BASED SURGERY:
-                                    <ul>
-                                        <li>- PENILE AMPLIFICATION</li>
-                                        <li>- GYNECOMASTIA</li>
-                                        <li>- MALE BALDNESS REJUVENATION</li>
-                                    </ul>
+                                        LMC 1 <br>
+                                        MASTER COURSE: ULTRASOUND FOR AESTHETIC INJECTABLES AND FOR GRAFTING
+                                        <br>
+                                        &
+                                        <br>
+                                        MC 3 <br>
+                                        MASTER COURSE: <br>
+                                        FAT GRAFTING FOR TISSUE REGENERATION-REJUVENATIONS REJUVENATION</li>
+                                        </ul>
                                     </p>
                                 </td>
                                 <td class=" border-r border-gray-300">
@@ -62,8 +64,8 @@
                                     <p><span class="text-xs font-semibold">
                                             07.00 - 11.00
                                         </span> <br>
-                                        MC 1
-                                        MASTER COURSE: ULTRASOUND FOR AESTHETIC INJECTABLES AND FOR GRAFTING <br>
+                                        MC 2
+                                        MASTER COURSE: MANDIBULAR FRACTURE MANAGEMENT <br>
                                         <span class="italic mt-1 text-purple-700">
                                             Washington
                                         </span>
@@ -71,54 +73,23 @@
                                 </td>
                                 <td class=" border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
-                                            07.00 - 11.00
+                                            13.00 - 16.00
                                         </span> <br>
-                                        MC 2
-                                        MASTER COURSE: MANDIBULAR FRACTURE MANAGEMENT <br>
+                                        IC 4
+                                        INSTRUCTIONAL COURSE PLASTIC SURGERY MODE on BASIC SURGICAL SKILL for GENERAL PRACTICT <br>
                                         <span class="italic text-purple-700">
                                             New York
                                         </span>
                                     </p>
                                 </td>
                                 <td class=" border-r border-gray-300">
-                                    <p><span class="text-xs font-semibold">
-                                            07.00 - 11.00
-                                        </span><br>
-                                        MC 3
-                                        MASTER COURSE:
-                                        FAT GRAFTING FOR TISSUE REGENERATION-REJUVENATION <br>
-                                    <p class="text-purple-700 italic">
-                                        Oregon
-                                    </p>
-                                    </p>
+
+
                                 </td>
                                 <td class=" border-r border-gray-300">
                                     <p><span class="font-semibold text-xs">
                                             07.00 - 11.00
                                         </span> <br>
-                                        MC 4
-                                        MASTER COURSE LIPO-ABDOMINOPLASTY <br>
-                                        <span class="italic text-purple-700">
-                                            Matyland
-                                        </span>
-                                    </p>
-                                </td>
-                                <td class=" border-r border-gray-300">
-                                    <p><span class="text-xs font-semibold">
-                                            07.00 - 11.00
-                                        </span><br>
-                                        IC 1
-                                        INSTRUCTIONAL COURSE:
-                                        NEUROTOXIN FOR FACIAL AESTHETICS <br>
-                                        <span class="italic text-purple-700">
-                                            Florida
-                                        </span>
-                                    </p>
-                                </td>
-                                <td class=" border-r border-gray-300">
-                                    <p><span class="text-xs font-semibold">
-                                            07.00 - 11.00
-                                        </span><br>
                                         MC 5
                                         MASTER COURSE BREAST SURGERY: AUGMENTATION – MASTOPEXY
                                         by INFION <br>
@@ -127,6 +98,7 @@
                                         </span>
                                     </p>
                                 </td>
+
                                 <td class=" ">
 
                                 </td>
@@ -167,35 +139,10 @@
                                 </td>
                                 <td class="h-24 w-12 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
-                                            13.00 - 16.00
+                                            13.00 - 15.00
                                         </span> <br>
-                                        IC 2
-                                        INSTRUCTIONAL COURSE:
-                                        THREADS FOR FACIAL AESTHETICS
+                                        Collegium Meeting
                                         <br>
-                                        <span class="italic text-purple-700">
-                                            New York
-                                        </span>
-                                    </p>
-                                </td>
-                                <td class="h-24 w-12 border-r border-gray-300">
-                                    <p><span class="font-semibold text-xs">
-                                            13.00 - 16.00
-                                        </span> <br>
-                                        IC 3
-                                        INSTRUCTIONAL COURSE:
-                                        LASER FOR AESTHETICS <br>
-                                        <span class="italic text-purple-700">
-                                            Oregon
-                                        </span>
-                                    </p>
-                                </td>
-                                <td class="h-24 w-12 border-r border-gray-300">
-                                    <p><span class="text-xs font-semibold">
-                                            13.00 - 16.00
-                                        </span> <br>
-                                        IC 4
-                                        INSTRUCTIONAL COURSE PLASTIC SURGERY MODE on BASIC SURGICAL SKILL for GENERAL PRACTICE <br>
                                         <span class="italic text-purple-700">
                                             Matyland
                                         </span>
@@ -203,36 +150,47 @@
                                 </td>
                                 <td class="h-24 w-12 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
-                                            13.00 - 16.00
-                                        </span> <br>
-                                        Collegium Meeting <br>
-                                        <span class="italic text-purple-700">
-                                            Florida
-                                        </span>
+                                            07.00 - 13.00
+                                        </span><br>
+                                        IC 1 <br>
+                                        INSTRUCTIONAL COURSE:
+                                        NEUROTOXIN FOR FACIAL AESTHETICS
+                                        <br>
+                                        &
+                                        <br>
+                                        IC 2 <br>
+                                        INSTRUCTIONAL COURSE:
+                                        THREADS FOR FACIAL AESTHETICS
+                                    </p>
+                                    <p class="text-purple-700 italic">
+                                        Florida
                                     </p>
                                 </td>
                                 <td class="h-24 w-12 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
-                                            13.00-16.00
-                                        </span><br>
-                                        IC 5
+                                            13.00 - 16.00
+                                        </span> <br>
+                                        IC 5 <br>
                                         INSTRUCTIONAL COURSE FOR GENERAL PRACTICE: WOUND CARE FOR CLINICIANS
-                                        by INFIONs <br>
+                                        by INFION <br>
                                         <span class="italic text-purple-700">
                                             California
                                         </span>
                                     </p>
                                 </td>
-                                <td class="h-24 w-12 ">
+                                <td class="h-24 w-12 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
-                                            18.30-22.00
+                                            18.30 - 22.00
+
                                         </span> <br>
-                                        PERAPI BOWL <br>
+                                        PERAPI BOWL
+                                        <br>
                                         <span class="italic text-purple-700">
                                             Ballroom
                                         </span>
                                     </p>
                                 </td>
+
                             </tr>
                         </tbody>
                     </table>
@@ -374,7 +332,7 @@
                             <tr>
                                 <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
-                                            13.30-14.30
+                                            14.00-14.60
                                         </span><br>
                                         AESTHETIC TRACK 1 <br>
                                         <span class="italic text-purple-700">
@@ -384,7 +342,7 @@
                                 </td>
                                 <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="font-semibold">
-                                            13.30 - 14.30
+                                            14.00 - 16.30
                                         </span><br>
                                         SATELLITE SPONSOR by KALBE
                                         <span class="italic text-purple-700"> <br>
@@ -394,7 +352,7 @@
                                 </td>
                                 <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="font-semibold">
-                                            13.30 - 14.30
+                                            14.00 - 16.30
                                         </span><br>
                                         Satellite Sponsor
                                         by INFION
@@ -405,7 +363,7 @@
                                 </td>
                                 <td class="bg-blue-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
-                                            13.30 - 14.30
+                                            14.00 - 16.30
                                         </span> <br>
                                         FREE PAPER 1 <br>
                                         <span class="italic mt-1 text-purple-700">
@@ -415,7 +373,7 @@
                                 </td>
                                 <td class="bg-blue-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
-                                            13.30 - 14.30
+                                            14.00 - 16.30
                                         </span> <br>
                                         RESEARCH PROPOSAL 1 <br>
                                         <span class="italic text-purple-700">
@@ -426,7 +384,7 @@
 
                                 <td class="bg-base-200 border-r border-gray-300">
                                     <p><span class="font-semibold text-xs">
-                                            13.30 - 14.30
+                                            14.00 - 16.30
                                         </span> <br>
                                         E-Poster
                                     </p>
@@ -530,7 +488,7 @@
                                     <p><span class="font-semibold">
                                             16.00 - 17.00
                                         </span><br>
-                                        AESTHETIC TRACK 6
+                                        VIDEO PARADE 2
                                         <span class="italic text-purple-700"> <br>
                                             Washington
                                         </span>
@@ -680,26 +638,17 @@
                                         </span>
                                     </p>
                                 </td>
-                                <td class="bg-blue-500/50 border-r border-gray-300">
+                                <td colspan="2" class="bg-blue-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
                                             09.00 - 10.00
                                         </span> <br>
-                                        VIDEO PARADE 2 <br>
+                                        NUSANTARA TRACK 7 <br>
                                         <span class="italic mt-1 text-purple-700">
                                             California
                                         </span>
                                     </p>
                                 </td>
-                                <td class="bg-blue-500/50 border-r border-gray-300">
-                                    <p><span class="text-xs font-semibold">
-                                            09.00 - 10.00
-                                        </span> <br>
-                                        FREE PAPER 4 <br>
-                                        <span class="italic text-purple-700">
-                                            Matyland
-                                        </span>
-                                    </p>
-                                </td>
+                               
 
                                 <td class="bg-base-200 border-r border-gray-300">
                                     <p><span class="font-semibold text-xs">
@@ -728,7 +677,7 @@
                                     <p><span class="text-xs font-semibold">
                                             11.00 - 12.00
                                         </span><br>
-                                        LUNCH SYMPOSIUM<br>
+                                        LUNCH SYMPOSIUM by DARYA VARIA<br>
                                         <span class="italic text-purple-700">
                                             Ballroom
                                         </span>
@@ -738,7 +687,20 @@
                             <tr>
                                 <td colspan="6" class="bg-amber-700/70 text-white">
                                     <p><span class="text-xs font-semibold">
-                                            12.00 - 13.30
+                                            12.00 - 12.30
+                                        </span><br>
+                                        Special Session  <br>
+                                        <span class="italic text-purple-700">
+                                           Ballroom
+                                        </span>
+                                    </p>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="bg-amber-700/70 text-white">
+                                    <p><span class="text-xs font-semibold">
+                                            12.30 - 14.00
                                         </span><br>
                                         FRIDAY PRAYING & LUNCH BREAK <br>
                                         <span class="italic text-purple-700">
@@ -751,9 +713,9 @@
                             <tr>
                                 <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
-                                            13.30 - 14.30
+                                            14.00 - 15.00
                                         </span><br>
-                                        NUSANTARA TRACK 7 <br>
+                                        GENERAL TRACK 1 <br>
                                         <span class="italic text-purple-700">
                                             Washington
                                         </span>
@@ -761,7 +723,7 @@
                                 </td>
                                 <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="font-semibold">
-                                            13.30 - 14.30
+                                            14.00 - 15.00
                                         </span><br>
                                         NUSANTARA TRACK 8
                                         <span class="italic text-purple-700"> <br>
@@ -771,17 +733,17 @@
                                 </td>
                                 <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="font-semibold">
-                                            13.30 - 14.30
+                                            14.00 - 15.00
                                         </span><br>
                                         NUSANTARA TRACK 9
                                         <span class="italic text-purple-700"> <br>
-                                            Florida
+                                            Matyland
                                         </span>
                                     </p>
                                 </td>
-                                <td class="bg-blue-500/50 border-r border-gray-300">
+                                <td colspan="2" class="bg-blue-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
-                                            13.30 - 14.30
+                                            14.00 - 15.00
                                         </span> <br>
                                         VIDEO PARADE 3 <br>
                                         <span class="italic mt-1 text-purple-700">
@@ -789,16 +751,7 @@
                                         </span>
                                     </p>
                                 </td>
-                                <td class="bg-blue-500/50 border-r border-gray-300">
-                                    <p><span class="text-xs font-semibold">
-                                            13.30 - 14.30
-                                        </span> <br>
-                                        FREE PAPER 5 <br>
-                                        <span class="italic text-purple-700">
-                                            Matyland
-                                        </span>
-                                    </p>
-                                </td>
+                                
 
                                 <td class="bg-base-200 border-r border-gray-300">
                                     <p><span class="font-semibold text-xs">
@@ -812,9 +765,9 @@
                             <tr>
                                 <td colspan="2" class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
-                                            14.30 - 15..30
+                                            15.00 - 16.00
                                         </span><br>
-                                        GENERAL TRACK 1 <br>
+                                        AESTHETIC TRACK 6 <br>
                                         <span class="italic text-purple-700">
                                             Washington
                                         </span>
@@ -823,17 +776,17 @@
 
                                 <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="font-semibold">
-                                            14.30 - 15..30
+                                            15.00 - 16.00
                                         </span><br>
                                         GENERAL TRACK 2
                                         <span class="italic text-purple-700"> <br>
-                                            Florida
+                                            New York
                                         </span>
                                     </p>
                                 </td>
-                                <td class="bg-blue-500/50 border-r border-gray-300">
+                                <td colspan="2" class="bg-blue-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
-                                            14.30 - 15..30
+                                            15.00 - 16.00
                                         </span> <br>
                                         VIDEO PARADE 4 <br>
                                         <span class="italic mt-1 text-purple-700">
@@ -841,16 +794,7 @@
                                         </span>
                                     </p>
                                 </td>
-                                <td class="bg-blue-500/50 border-r border-gray-300">
-                                    <p><span class="text-xs font-semibold">
-                                            14.30 - 15..30
-                                        </span> <br>
-                                        FREE PAPER 6<br>
-                                        <span class="italic text-purple-700">
-                                            Matyland
-                                        </span>
-                                    </p>
-                                </td>
+                                
 
                                 <td class="bg-base-200 border-r border-gray-300">
                                     <p><span class="font-semibold text-xs">
@@ -864,7 +808,7 @@
                             <tr>
                                 <td colspan="6" class="bg-purple-700/50 text-white">
                                     <p><span class="font-semibold text-xs">
-                                            15.30 - 16.00
+                                            16.00 - 16.30
                                         </span>
                                         <br>
                                         BISONO ORATION <br>
@@ -875,7 +819,7 @@
                             <tr>
                                 <td colspan="6" class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
-                                            16.00
+                                            16.30
                                         </span><br>
                                         COFFEE BREAK <br>
                                         <span class="italic text-purple-700">
@@ -914,7 +858,7 @@
                         </thead>
                         <tbody class="text-center text-sm">
 
-                            
+
                             <tr>
                                 <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
@@ -937,14 +881,14 @@
                                     </p>
                                 </td>
 
-                                
+
                                 <td rowspan="8" class="bg-base-300 border-r border-gray-300">
                                     <p>EXHIBITION
                                     </p>
                                 </td>
                             </tr>
                             <tr>
-                            
+
                                 <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="font-semibold">
                                             09.00 - 10.00
@@ -960,7 +904,7 @@
                                     <p><span class="text-xs font-semibold">
                                             09.00 - 10.00
                                         </span> <br>
-                                       VIDEO PARADE 5<br>
+                                        VIDEO PARADE 5<br>
                                         <span class="italic mt-1 text-purple-700">
                                             California
                                         </span>
@@ -1006,7 +950,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td  class="bg-amber-500/50 border-r border-gray-300">
+                                <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
                                             13.00 -14.00
                                         </span><br>
@@ -1016,7 +960,7 @@
                                         </span>
                                     </p>
                                 </td>
-                                <td  class="bg-amber-500/50 border-r border-gray-300">
+                                <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="font-semibold">
                                             13.00 -14.00
                                         </span><br>
@@ -1028,7 +972,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td  class="bg-amber-500/50 border-r border-gray-300">
+                                <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="text-xs font-semibold">
                                             14.00 - 15.00
                                         </span><br>
@@ -1038,7 +982,7 @@
                                         </span>
                                     </p>
                                 </td>
-                                <td  class="bg-amber-500/50 border-r border-gray-300">
+                                <td class="bg-amber-500/50 border-r border-gray-300">
                                     <p><span class="font-semibold">
                                             14.00 - 15.00
                                         </span><br>
