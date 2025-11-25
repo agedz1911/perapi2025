@@ -1,51 +1,37 @@
-document.addEventListener("livewire:navigated", function () {
-    document.getElementById("hamburger").addEventListener("click", function () {
-        document.getElementById("offcanvas-menu").classList.add("show");
-    });
+window.onscroll = function () {
+    scrollFunction();
+    const navbar = document.getElementById("navbar");
+    if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+    ) {
+        navbar.classList.add("bg-[#273691]");
+        navbar.classList.add("top-0");
+        navbar.classList.remove("bg-transparent");
+    } else {
+        navbar.classList.add("bg-transparent");
+        navbar.classList.remove("bg-[#273691]");
+        navbar.classList.remove("top-0");
+    }
+};
 
-    document
-        .getElementById("close-menu")
-        .addEventListener("click", function () {
-            document.getElementById("offcanvas-menu").classList.remove("show");
-        });
-
-    document.addEventListener("click", function (event) {
-        var offcanvasMenu = document.getElementById("offcanvas-menu");
-        var hamburger = document.getElementById("hamburger");
-        var closeMenu = document.getElementById("close-menu");
-
+function scrollFunction() {
+    var mybutton = document.getElementById("back-to-top");
+    if (mybutton != null) {
         if (
-            !offcanvasMenu.contains(event.target) &&
-            !hamburger.contains(event.target) &&
-            !closeMenu.contains(event.target)
+            document.body.scrollTop > 500 ||
+            document.documentElement.scrollTop > 500
         ) {
-            offcanvasMenu.classList.remove("show");
-        }
-    });
-
-    // back to top
-    let mybutton = document.getElementById("back-to-top");
-    window.onscroll = function () {
-        scrollFunction();
-    };
-
-    function scrollFunction() {
-        if (mybutton != null) {
-            if (
-                document.body.scrollTop > 500 ||
-                document.documentElement.scrollTop > 500
-            ) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
+            mybutton.classList.add("opacity-100");
+            mybutton.classList.remove("opacity-0");
+        } else {
+            mybutton.classList.add("opacity-0");
+            mybutton.classList.remove("opacity-100");
         }
     }
-});
+}
 
 function topFunction() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-    });
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }

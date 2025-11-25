@@ -1,4 +1,4 @@
-<div class="w-full lg:w-11/12">
+<div class="">
     <section class="breadcrumbs relative pb-0">
         <div class="absolute inset-0 bg-gradient-to-b from-[#470858]/80 to-[#9E1F63]/30"></div>
         <div class="py-16 lg:py-28 text-center relative">
@@ -648,7 +648,7 @@
                                         </span>
                                     </p>
                                 </td>
-                               
+
 
                                 <td class="bg-base-200 border-r border-gray-300">
                                     <p><span class="font-semibold text-xs">
@@ -689,13 +689,13 @@
                                     <p><span class="text-xs font-semibold">
                                             12.00 - 12.30
                                         </span><br>
-                                        Special Session  <br>
+                                        Special Session <br>
                                         <span class="italic text-purple-700">
-                                           Ballroom
+                                            Ballroom
                                         </span>
                                     </p>
                                 </td>
-                                
+
                             </tr>
                             <tr>
                                 <td colspan="6" class="bg-amber-700/70 text-white">
@@ -751,7 +751,7 @@
                                         </span>
                                     </p>
                                 </td>
-                                
+
 
                                 <td class="bg-base-200 border-r border-gray-300">
                                     <p><span class="font-semibold text-xs">
@@ -794,7 +794,7 @@
                                         </span>
                                     </p>
                                 </td>
-                                
+
 
                                 <td class="bg-base-200 border-r border-gray-300">
                                     <p><span class="font-semibold text-xs">
@@ -1011,6 +1011,4 @@
             </div>
         </div>
     </section>
-
-    <x-section.footer />
 </div>

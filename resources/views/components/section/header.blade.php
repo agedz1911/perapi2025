@@ -1,28 +1,83 @@
-<!-- Mobile Header -->
-<div class="lg:hidden bg-white flex justify-between items-center p-4 shadow-md sticky top-0 z-50">
-    <img src="assets/images/logo/logo-event.png" class="w-full max-w-52" />
-    <button id="hamburger" class="text-gray-700 focus:outline-none">
-        <i class="fa-solid fa-bars text-2xl hover:text-purple-700 hover:scale-110"></i>
-    </button>
-</div>
-<!-- Offcanvas Menu -->
-<div id="offcanvas-menu" class="fixed bg-white top-0 left-0 w-4/5 h-full p-8 offcanvas lg:hidden z-50">
-    <button id="close-menu" class="text-gray-700 focus:outline-none mb-4">
-        <i class="fa-solid fa-x text-2xl hover:text-purple-700 hover:scale-110"></i>
-    </button>
-    <div class="mb-8">
-        <img src="assets/images/logo/logo-event.png" class="w-full max-w-xs" />
+<!-- Header -->
+<header class="bg-gradient-to-r from-[#0E58A8] via-[#273691] to-[#A93E89] hidden lg:block text-white text-sm py-2">
+    <div class="mx-auto flex justify-between items-center px-4">
+        <div>
+            <span>
+                More Information <i class="fa fa-angle-right text-xs"></i>
+            </span>
+            <span class="ml-4 hover:underline">
+                <a href="mailto:rejaselindo-apastb@pharma-pro.com ">
+                    rejaselindo-apastb@pharma-pro.com
+                </a>
+            </span>
+        </div>
+        <div>
+            <span class="text-xs">
+                Contact Us On:
+            </span>
+            <a class="btn btn-sm shadow-none" href="mailto:rejaselindo-apastb@pharma-pro.com ">
+                <i class="fa fa-envelope">
+                </i>
+            </a>
+            <a class="btn btn-sm shadow-none" href="https://wa.me/+6281319135153" target="_blankx`">
+                <i class="fa fa-whatsapp text-green-600">
+                </i>
+            </a>
+            <a class="btn btn-sm shadow-none" href="#">
+                <i class="fa fa-instagram text-rose-400">
+                </i>
+            </a>
+        </div>
     </div>
-    <x-section.menu-mobile />
-    <h4 class="mt-8 mb-2 text-gray-600 text-base font-normal">Get in touch with us</h4>
-    <x-section.contact-icon-m />
-</div>
-<!-- Sidebar -->
-<div class="w-1/5 bg-white shadow-lg border-r border-purple-50 p-8 hidden lg:block sticky top-0 h-screen">
-    <div class="mb-10">
-        <img src="assets/images/logo/logo-event.png" class="w-full max-w-sm" />
+</header>
+<!-- Navigation -->
+<nav id="navbar"
+    class="w-full py-2 bg-transparent z-20 shadow-lg sticky lg:shadow-none lg:fixed transition-colors duration-300">
+    <div class="drawer">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <img src="assets/images/logo/logo.png" class="h-full max-h-12" alt="Logo" />
+                </div>
+                <div class="navbar-center hidden lg:flex py-2">
+                    <x-section.menu />
+                </div>
+                <div class="navbar-end">
+                    <div onclick="contact.showModal()"
+                        class="btn lg:btn-outline rounded-lg lg:border-white lg:text-white/80 lg:hover:text-gray-900 shadow-none">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Contact
+                    </div>
+                    <div class="flex-none lg:hidden">
+                        <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+                            <i class="fa fa-bars text-2xl"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="drawer-side">
+            <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+            <ul class="bg-base-200 min-h-full w-80 p-4">
+                <!-- Sidebar content here -->
+                <img src="assets/images/logo/logo-04.png" class="w-full mb-5 max-w-sm" />
+                <x-section.menu-mobile />
+            </ul>
+        </div>
     </div>
-    <x-section.menu />
-    <h4 class="mt-8 mb-2 text-gray-600 text-base font-normal">Get in touch with us</h4>
-    <x-section.contact-icon />
-</div>
+
+    <dialog id="contact" class="modal">
+        <div class="modal-box w-full max-w-5xl">
+            <div class="flex justify-center">
+                <x-section.contact-icon />
+            </div>
+        </div>
+        <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+            </form>
+        </div>
+    </dialog>
+</nav>

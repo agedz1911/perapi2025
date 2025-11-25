@@ -1,4 +1,4 @@
-<div class="w-full lg:w-11/12 bg-base-100">
+<div class="">
     <section class="breadcrumbs relative pb-0">
         <div class="absolute inset-0 bg-gradient-to-b from-[#470858]/80 to-[#9E1F63]/30"></div>
         <div class="py-16 lg:py-28 text-center relative">
@@ -81,7 +81,4 @@
             
         </div>
     </section>
-
-    <x-section.footer />
-
 </div>

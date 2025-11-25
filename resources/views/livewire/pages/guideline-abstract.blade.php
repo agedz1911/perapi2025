@@ -1,4 +1,4 @@
-<div class="w-full lg:w-11/12">
+<div class="">
     <section class="breadcrumbs relative pb-0">
         <div class="absolute inset-0 bg-gradient-to-b from-[#470858]/80 to-[#9E1F63]/30"></div>
         <div class="py-16 lg:py-28 text-center relative">
@@ -20,7 +20,7 @@
                     <div>
                         @foreach ($guidelineAbstracts as $abstract)
                         <div class="collapse collapse-plus bg-base-100 border border-base-300">
-                            <input type="radio" name="my-accordion-3"  />
+                            <input type="radio" name="my-accordion-3" />
                             <div class="collapse-title font-semibold">{{ $abstract->title }}</div>
                             <div class="collapse-content text-gray-500 text-sm">{!! str($abstract->description)->markdown()->sanitizeHtml() !!}</div>
                         </div>
@@ -36,12 +36,12 @@
                         <p class="m-0 text-xs italic">*make sure the file complies with the guidelines.</p>
                     </div>
                     <div class="w-full flex text-center">
-                        <a href="https://expo.virconex-id.com/abstract/perapi2025/index.php/upload_abstract" class="btn text-white bg-purple-700 hover:bg-[#9E1F63] w-full"><i  class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
-                        
+                        <a href="https://expo.virconex-id.com/abstract/perapi2025/index.php/upload_abstract" class="btn text-white bg-purple-700 hover:bg-[#9E1F63] w-full"><i class="fa-solid fa-upload me-1"></i> Submit Abstract</a>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <x-section.footer />
+
 </div>

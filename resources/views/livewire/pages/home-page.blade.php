@@ -1,4 +1,4 @@
-<div class="w-full lg:w-11/12">
+<div class="relative">
     <section class="lg:min-h-screen banner relative pb-16 lg:pb-28">
         <div class="absolute inset-0 bg-gradient-to-b from-[#470858]/80 to-[#92278F]/10"></div>
         <div class="flex items-center justify-center relative pt-10 md:pt-14 lg:pt-32">
@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <div
+        <!-- <div
             class="absolute wave block md:hidden lg:block overflow-hidden w-full z-0 left-0 leading-none bottom-[-1px]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"
                 class="block position-relative">
@@ -31,7 +31,7 @@
           c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3
           c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"></path>
             </svg>
-        </div>
+        </div> -->
     </section>
 
     <section
@@ -399,7 +399,6 @@
             </div>
         </div>
     </section>
-    <x-section.footer />
 </div>
 
 <script>

@@ -7,7 +7,7 @@
 
     <title>{{ $title ?? 'PERAPI' }}</title>
     <meta name="description"
-        content="28 Annual Scientific Meeting Indonesian Association of Plastic Reconstructive and Aesthetic Surgeons" />
+        content="The 29th Annual Scientific Meeting of Indonesian Association of Plastic Reconstructive and Aesthetic Surgeons" />
     <meta name="keywords" content="plastic surgery, aesthetic, reconstructive, beauty, aesthetic education," />
     <meta name="author" content="AV-PRO" />
 
@@ -34,7 +34,7 @@
 
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJSCNFEWXC"></script>
+    {{-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJSCNFEWXC"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -44,16 +44,16 @@
         gtag('js', new Date());
 
         gtag('config', 'G-FJSCNFEWXC');
-    </script>
+    </script> --}}
 
 </head>
 
 
 <body>
-
-    <div class="flex flex-col lg:flex-row">
+    <div class="">
         <x-section.header />
         {{ $slot }}
+        <x-section.footer />
     </div>
     <!-- Back-to-top Button start -->
     <button onclick="topFunction()" id="back-to-top"
