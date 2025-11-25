@@ -43,9 +43,10 @@
                 <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
                     <img src="assets/images/mockup.png" class=" h-[156px] md:h-[278px] w-full rounded-lg relative"
                         alt="">
-                    <div class="w-full absolute bottom-1 lg:bottom-4 text-center grid justify-items-center gap-0">
-                        <a href="/download/announcement.pdf" target="_blank" class="btn btn-primary rounded-lg">Download Announcement</a>
-                        <div id="countdown" class="flex gap-3 w-full lg:gap-8 rounded-lg bg-black/50 mt-1">
+                    <div class="w-full absolute bottom-1 lg:bottom-3 text-center grid justify-items-center gap-0">
+                        {{-- <a href="/download/announcement.pdf" target="_blank"
+                            class="btn btn-primary rounded-lg">Download Announcement</a> --}}
+                        {{-- <div id="countdown" class="flex gap-3 w-full lg:gap-8 rounded-lg bg-black/50 mt-1">
                             <div class="m-auto py-2 lg:py-4 ">
                                 <span id="days" class="font-bold mb-0 text-2xl lg:text-4xl text-amber-500"></span><br>
                                 <small class="text-white text-xs">Days</small>
@@ -67,11 +68,18 @@
                                     class="font-bold mb-0 text-2xl lg:text-4xl text-amber-500"></span><br>
                                 <small class="text-white text-xs">Seconds</small>
                             </div>
+                        </div> --}}
+                        <div class="gap-3 w-full lg:gap-8 rounded-lg bg-black/50 mt-1 px-5 ">
+                            <h4 class="mb-4 text-lg lg:text-xl text-amber-500 animate-pulse hover:animate-none">Dear Esteemed Faculty and Participants,
+                            </h4>
+                            <p class="text-white animate-pulse hover:animate-none">Thank you for your participation and contributions to this year’s congress.
+                                The documentation for the 28<sup>th</sup> InaPRAS is now accessible via this link:</p>
                         </div>
 
-                        <a href="/registration" wire:navigate
-                            class="hover:text-indigo-700 mt-2 text-white bg-gradient-to-br from-amber-300 to-[#f6921e] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center uppercase">Join
-                            Now !</a>
+                        <a href="https://drive.google.com/drive/folders/1IGarNeUZWnXNJbpzyzhKhPdpGPijpxfK?usp=share_link" target="_blank"
+                            class="hover:text-indigo-700 mt-2 text-white bg-gradient-to-br from-amber-300 to-[#f6921e] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center uppercase">Documentation
+                        
+                        <i class="fa fa-camera"></i></a>
 
                     </div>
                 </div>
@@ -331,7 +339,9 @@
             <div class="flex flex-col lg:flex-row gap-5 mt-3">
                 <div class="lg:w-2/3 w-full px-1">
                     <iframe class="rounded-lg w-full h-full"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.089071882656!2d98.65698617477668!3d3.566973150442587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312fd8fc9af15d%3A0x3712a827aaac1148!2sFakultas%20Kedokteran%20-%20Universitas%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1746521738922!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.089071882656!2d98.65698617477668!3d3.566973150442587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312fd8fc9af15d%3A0x3712a827aaac1148!2sFakultas%20Kedokteran%20-%20Universitas%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1746521738922!5m2!1sid!2sid"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 </div>
                 <div class="lg:w-1/3 w-full">
@@ -365,7 +375,9 @@
                 </div>
                 <div class="lg:w-2/3 w-full px-1">
                     <iframe class="rounded-lg w-full h-full"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.0617694041757!2d98.64080877477662!3d3.573269550399568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312fced889a417%3A0xb1b67b3faf8c91e1!2sRumah%20Sakit%20Setiabudi%20(Orthopaedic%2C%20Spine%20and%20Surgery)!5e0!3m2!1sid!2sid!4v1746521880461!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.0617694041757!2d98.64080877477662!3d3.573269550399568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312fced889a417%3A0xb1b67b3faf8c91e1!2sRumah%20Sakit%20Setiabudi%20(Orthopaedic%2C%20Spine%20and%20Surgery)!5e0!3m2!1sid!2sid!4v1746521880461!5m2!1sid!2sid"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 </div>
             </div>
@@ -410,7 +422,7 @@
         const currentTime = new Date();
 
         // Set new date 30 days from now
-        const targetTime = new Date(2025, 8, 25, 8, 0, 0);
+        const targetTime = new Date("July 30, 2025 08:37:52").getTime();
 
         // Update countdown time
         function updateCountdown() {
