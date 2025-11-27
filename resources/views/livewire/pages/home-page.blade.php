@@ -1,29 +1,8 @@
 <div class="relative">
     <section class="lg:min-h-screen banner relative pb-16 lg:pb-28">
-        <div class="absolute inset-0 bg-gradient-to-b from-[#470858]/80 to-[#92278F]/10"></div>
-        <div class="flex items-center justify-center relative pt-10 md:pt-14 lg:pt-32">
-            <div class="text-center max-w-5xl w-full mx-auto px-1">
-                <div class="flex flex-col items-center w-full">
-                    <!-- <img src="assets/images/logo/logo.png" class="w-32 md:w-44" alt=""> -->
-                    <img src="assets/images/logo/logo-event-light.png" class="w-1/2" alt="">
-                </div>
-                <!-- <h1 class="md:text-6xl text-3xl font-bold text-white mt-2 md:mt-5 lg:mt-10">28<sup>th</sup> InaPRAS</h1>
-                <p class="text-white font-normal mt-2">Annual Scientific Meeting of the Indonesian Association of Plastic Reconstructive and Aesthetic Surgeons</p> -->
-                <h3 class="text-yellow-400 font-semibold text-xl md:text-3xl italic mt-2 md:mt-5 lg:mt-7 ">" Aesthetics
-                    and Beyond "</h3>
-                <p class="text-slate-100 mt-4">July 30<sup>th</sup> – August 2<sup>nd</sup>, 2025 <br> JW Marriot Hotel,
-                    Medan, North Sumatra</p>
-                <div class="mt-10">
-                    <button
-                        class=" text-white bg-gradient-to-br from-amber-300 to-[#f6921e] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-amber-300 dark:focus:ring-amber-800 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center">Read
-                        More <i class="fa-solid fa-angles-right text-xs"></i></button>
-                    <a href="/registration" wire:navigate
-                        class="text-white hover:text-white border border-white hover:bg-amber-400 hover:border-amber-400 focus:ring-4 focus:outline-none focus:ring-amber-300 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center  dark:border-amber-400 dark:text-amber-400 dark:hover:text-white dark:hover:bg-amber-500 dark:focus:ring-amber-300"><i
-                            class="fa-solid fa-pen-to-square"></i> Regiter Now </a>
-                </div>
-            </div>
-        </div>
-        <!-- <div
+        <div class="absolute inset-0 bg-gradient-to-b from-[#7F3F80]/10 to-[#3C194F]/90"></div>
+        <livewire:section.slideshow />
+        <div
             class="absolute wave block md:hidden lg:block overflow-hidden w-full z-0 left-0 leading-none bottom-[-1px]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"
                 class="block position-relative">
@@ -31,101 +10,12 @@
           c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3
           c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"></path>
             </svg>
-        </div> -->
+        </div>
     </section>
 
     <section
         class="lg:pb-28 pb-20 pt-0 lg:-mt-14 flex flex-col lg:flex-row px-3 gap-3 border-b-2 border-dashed border-gray-400">
-        <div class="w-full max-w-md">
-
-            <div
-                class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                    <img src="assets/images/mockup.png" class=" h-[156px] md:h-[278px] w-full rounded-lg relative"
-                        alt="">
-                    <div class="w-full absolute bottom-1 lg:bottom-3 text-center grid justify-items-center gap-0">
-                        {{-- <a href="/download/announcement.pdf" target="_blank"
-                            class="btn btn-primary rounded-lg">Download Announcement</a> --}}
-                        {{-- <div id="countdown" class="flex gap-3 w-full lg:gap-8 rounded-lg bg-black/50 mt-1">
-                            <div class="m-auto py-2 lg:py-4 ">
-                                <span id="days" class="font-bold mb-0 text-2xl lg:text-4xl text-amber-500"></span><br>
-                                <small class="text-white text-xs">Days</small>
-                            </div>
-
-                            <div class=" m-auto py-2 lg:py-4">
-                                <span id="hours" class="font-bold mb-0 text-2xl lg:text-4xl text-amber-500"></span><br>
-                                <small class="text-white text-xs">Hours</small>
-                            </div>
-
-                            <div class=" m-auto py-2 lg:py-4">
-                                <span id="minutes"
-                                    class="font-bold mb-0 text-2xl lg:text-4xl text-amber-500"></span><br>
-                                <small class="text-white text-xs">Minutes</small>
-                            </div>
-
-                            <div class=" m-auto py-2 lg:py-4">
-                                <span id="seconds"
-                                    class="font-bold mb-0 text-2xl lg:text-4xl text-amber-500"></span><br>
-                                <small class="text-white text-xs">Seconds</small>
-                            </div>
-                        </div> --}}
-                        <div class="gap-3 w-full lg:gap-8 rounded-lg bg-black/50 mt-1 px-5 ">
-                            <h4 class="mb-4 text-lg lg:text-xl text-amber-500 animate-pulse hover:animate-none">Dear Esteemed Faculty and Participants,
-                            </h4>
-                            <p class="text-white animate-pulse hover:animate-none">Thank you for your participation and contributions to this year’s congress.
-                                The documentation for the 28<sup>th</sup> InaPRAS is now accessible via this link:</p>
-                        </div>
-
-                        <a href="https://drive.google.com/drive/folders/1IGarNeUZWnXNJbpzyzhKhPdpGPijpxfK?usp=share_link" target="_blank"
-                            class="hover:text-indigo-700 mt-2 text-white bg-gradient-to-br from-amber-300 to-[#f6921e] hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 md:px-10 lg:py-3.5 py-2.5 text-center uppercase">Documentation
-                        
-                        <i class="fa fa-camera"></i></a>
-
-                    </div>
-                </div>
-            </div>
-            <div
-                class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-                <div
-                    class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800">
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row lg:justify-start justify-center items-center gap-3 mt-5">
-                <div
-                    class="z-30 hover:cursor-pointer max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100">
-                    <div class="flex items-center">
-                        <div class="shrink-0 bg-amber-500 py-3 px-4 rounded-full">
-                            <i class="fa fa-calendar-o text-4xl text-white"></i>
-                        </div>
-                        <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-medium  truncate">
-                                Thursday to Saturday
-                            </p>
-                            <p class="text-sm text-gray-500 truncate">
-                                July 31<sup>st</sup> - August 2<sup>nd</sup>, 2025
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="z-30 hover:cursor-pointer max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100">
-                    <div class="flex items-center px-5">
-                        <div class="shrink-0 bg-amber-500 py-3 px-4 rounded-full">
-                            <i class="fa fa-map-marker text-4xl text-white"></i>
-                        </div>
-                        <div class="flex-1 min-w-0 ms-4">
-                            <p class="text-sm font-medium  truncate ">
-                                JW Marriot Hotel Medan
-                            </p>
-                            <p class="text-sm text-gray-500 truncate">
-                                Medan, North Sumatra
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
         <div class="grid grid-cols-1 md:grid-cols-2 gap-2 relative">
             <div class="grid gap-4">
                 <div class="bg-gray-200 rounded-lg place-items-center place-content-start">
@@ -457,47 +347,6 @@
                     clearInterval(counter);
                 }
             }, duration);
-        });
-    });
-
-    let slideIndex = 1;
-    // Fungsi untuk menampilkan slide
-    function showSlides(n) {
-        let slides = document.getElementsByClassName("carousel-item");
-        if (n > slides.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = slides.length
-        }
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slideIndex - 1].style.display = "block";
-    }
-    // Fungsi untuk memindahkan slide ke depan atau ke belakang
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-    // Fungsi untuk memindahkan slide secara otomatis
-    setInterval(function() {
-        plusSlides(1);
-    }, 10000); // rotate every 10 seconds
-    // Inisialisasi slide
-    showSlides(slideIndex);
-    // Add event listeners to next and previous buttons
-    let nextButtons = document.querySelectorAll('.btn-circle:nth-child(2)');
-    let prevButtons = document.querySelectorAll('.btn-circle:nth-child(1)');
-    nextButtons.forEach((button, index) => {
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            plusSlides(1);
-        });
-    });
-    prevButtons.forEach((button, index) => {
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            plusSlides(-1);
         });
     });
 </script>

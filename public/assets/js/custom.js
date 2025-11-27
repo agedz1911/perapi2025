@@ -5,12 +5,12 @@ window.onscroll = function () {
         document.body.scrollTop > 50 ||
         document.documentElement.scrollTop > 50
     ) {
-        navbar.classList.add("bg-[#273691]");
+        navbar.classList.add("bg-[#3C194F]");
         navbar.classList.add("top-0");
         navbar.classList.remove("bg-transparent");
     } else {
         navbar.classList.add("bg-transparent");
-        navbar.classList.remove("bg-[#273691]");
+        navbar.classList.remove("bg-[#3C194F]");
         navbar.classList.remove("top-0");
     }
 };

@@ -1,13 +1,13 @@
 <!-- Header -->
-<header class="bg-gradient-to-r from-[#0E58A8] via-[#273691] to-[#A93E89] hidden lg:block text-white text-sm py-2">
+<header class="bg-gradient-to-l from-[#3C194F] via-[#3C194F] to-[#A93E89] hidden lg:block text-white text-sm py-2">
     <div class="mx-auto flex justify-between items-center px-4">
         <div>
             <span>
                 More Information <i class="fa fa-angle-right text-xs"></i>
             </span>
             <span class="ml-4 hover:underline">
-                <a href="mailto:rejaselindo-apastb@pharma-pro.com ">
-                    rejaselindo-apastb@pharma-pro.com
+                <a href="mailto:apras-inapras2026@pharma-pro.com ">
+                    apras-inapras2026@pharma-pro.com
                 </a>
             </span>
         </div>
@@ -15,11 +15,11 @@
             <span class="text-xs">
                 Contact Us On:
             </span>
-            <a class="btn btn-sm shadow-none" href="mailto:rejaselindo-apastb@pharma-pro.com ">
+            <a class="btn btn-sm shadow-none" href="mailto:apras-inapras2026@pharma-pro.com ">
                 <i class="fa fa-envelope">
                 </i>
             </a>
-            <a class="btn btn-sm shadow-none" href="https://wa.me/+6281319135153" target="_blankx`">
+            <a class="btn btn-sm shadow-none" href="https://wa.me/+628111609822" target="_blankx`">
                 <i class="fa fa-whatsapp text-green-600">
                 </i>
             </a>
