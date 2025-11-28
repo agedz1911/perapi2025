@@ -38,7 +38,7 @@
         <div class="drawer-content flex flex-col">
             <div class="navbar">
                 <div class="navbar-start">
-                    <img src="assets/images/logo/logo.png" class="h-full max-h-12" alt="Logo" />
+                    <!-- <img src="assets/images/logo/logo.png" class="h-full max-h-12" alt="Logo" /> -->
                 </div>
                 <div class="navbar-center hidden lg:flex py-2">
                     <x-section.menu />
@@ -61,7 +61,7 @@
             <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
             <ul class="bg-base-200 min-h-full w-80 p-4">
                 <!-- Sidebar content here -->
-                <img src="assets/images/logo/logo-04.png" class="w-full mb-5 max-w-sm" />
+                <!-- <img src="assets/images/logo/logo.png" class="w-full mb-5 max-w-sm" /> -->
                 <x-section.menu-mobile />
             </ul>
         </div>

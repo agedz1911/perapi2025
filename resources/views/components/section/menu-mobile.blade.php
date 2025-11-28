@@ -50,10 +50,6 @@
                 class="{{ request()->is('visiting') ? 'text-purple-700' : 'text-gray-700' }} justify-between font-normal hover:text-purple-700 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-purple-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Venue
                 <i class="fa-solid fa-angle-right"></i></a>
         </li>
-        <li>
-            <a href="https://drive.google.com/drive/folders/1IGarNeUZWnXNJbpzyzhKhPdpGPijpxfK?usp=share_link" target="_blank"
-                class="{{ request()->is('visiting') ? 'text-purple-700' : 'text-gray-700' }} justify-between font-normal hover:text-purple-700 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-purple-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Gallery Documentation
-                <i class="fa-solid fa-angle-right"></i></a>
-        </li>
+        
     </ul>
 </nav>

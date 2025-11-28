@@ -1,6 +1,6 @@
 <div class="">
-    <section class="breadcrumbs relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-b from-[#470858]/80 to-[#9E1F63]/30"></div>
+    <section class=" relative pb-0">
+        <div class="absolute inset-0 bg-gradient-to-l from-[#3C194F] via-[#3C194F] to-[#A93E89]"></div>
 
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="text-white uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Organizing Committee

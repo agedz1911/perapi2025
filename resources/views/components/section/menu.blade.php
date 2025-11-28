@@ -9,10 +9,10 @@
             class="{{ request()->is('organizing-committee') || request()->is('faculties') || request()->is('welcome-messages') ? 'text-[#F9C20A]' : 'text-white' }} hover:cursor-pointer hover:text-amber-500">
             Congress Information <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
-            <li>
+            <!-- <li>
                 <a href="/welcome-messages" wire:navigate
                     class="{{ request()->is('welcome-messages') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500 ">Welcome Messages <i class="fa-solid fa-angle-right"></i></a>
-            </li>
+            </li> -->
             <li>
                 <a href="/organizing-committee" wire:navigate
                     class="{{ request()->is('organizing-committee') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500 ">Organizing

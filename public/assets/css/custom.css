@@ -6,7 +6,7 @@
 -----------------------------------------------------------------*/
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #fef7ff;
+    /* background-color: #fef7ff; */
 }
 .offcanvas {
     transform: translateX(-100%);

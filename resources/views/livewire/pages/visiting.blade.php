@@ -1,6 +1,6 @@
 <div class="w-full">
-    <section class="breadcrumbs relative pb-0">
-        <div class="absolute inset-0 bg-gradient-to-b from-[#0059A8]/10 to-[#0059A8]/80"></div>
+    <section class=" relative pb-0">
+        <div class="absolute inset-0 bg-gradient-to-l from-[#3C194F] via-[#3C194F] to-[#A93E89]"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="text-white uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Visiting</h2>
         </div>
@@ -73,10 +73,10 @@
 
 
             <div class="pt-10 lg:pt-20">
-                <h4 class="text-xl font-semibold tracking-wide text-green-950 mb-5">Top Reasons to Visit Bali</h4>
+                <h4 class="text-xl font-semibold tracking-wide text-violet-950 mb-5">Top Reasons to Visit Bali</h4>
                 <!-- name of each tab group should be unique -->
                 <div class="tabs tabs-border justify-center gap-3 text-gray-500">
-                    <input type="radio" name="my_tabs_2" class="tab text-green-700 hover:text-[#0a3542]"
+                    <input type="radio" name="my_tabs_2" class="tab text-violet-700 hover:text-[#0a3542]"
                         aria-label="It's sunny all year!" checked="checked" />
                     <div class="tab-content border-base-300 bg-base-100 p-10 text-base">
                         <div class="flex flex-col lg:flex-row gap-5">
@@ -98,7 +98,7 @@
                         </div>
                     </div>
 
-                    <input type="radio" name="my_tabs_2" class="tab text-green-700 hover:text-[#0a3542]"
+                    <input type="radio" name="my_tabs_2" class="tab text-violet-700 hover:text-[#0a3542]"
                         aria-label="Stunning beaches" />
                     <div class="tab-content border-base-300 bg-base-100 p-10">
                         <div class="flex flex-col lg:flex-row gap-5">
@@ -127,7 +127,7 @@
                         </div>
                     </div>
 
-                    <input type="radio" name="my_tabs_2" class="tab text-green-700 hover:text-[#0a3542]"
+                    <input type="radio" name="my_tabs_2" class="tab text-violet-700 hover:text-[#0a3542]"
                         aria-label="Bali's unique culture" />
                     <div class="tab-content border-base-300 bg-base-100 p-10">
                         <div class="flex flex-col lg:flex-row gap-5">
@@ -147,7 +147,7 @@
                         </div>
                     </div>
 
-                    <input type="radio" name="my_tabs_2" class="tab text-green-700 hover:text-[#0a3542]"
+                    <input type="radio" name="my_tabs_2" class="tab text-violet-700 hover:text-[#0a3542]"
                         aria-label="The warmth of the people" />
                     <div class="tab-content border-base-300 bg-base-100 p-10">
                         <div class="flex flex-col lg:flex-row gap-5">
@@ -166,7 +166,7 @@
                         </div>
                     </div>
 
-                    <input type="radio" name="my_tabs_2" class="tab text-green-700 hover:text-[#0a3542]"
+                    <input type="radio" name="my_tabs_2" class="tab text-violet-700 hover:text-[#0a3542]"
                         aria-label="Authentic Cuisine" />
                     <div class="tab-content border-base-300 bg-base-100 p-10">
                         <div class="flex flex-col lg:flex-row gap-5">
