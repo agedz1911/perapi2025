@@ -7,14 +7,14 @@
 
     <title>{{ $title ?? 'PERAPI' }}</title>
     <meta name="description"
-        content="The 29th Annual Scientific Meeting of Indonesian Association of Plastic Reconstructive and Aesthetic Surgeons" />
+        content="APRAS InaPRAS 2026" />
     <meta name="keywords" content="plastic surgery, aesthetic, reconstructive, beauty, aesthetic education," />
     <meta name="author" content="AV-PRO" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <!-- favicon -->
-    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@400;700&display=swap"
@@ -35,17 +35,9 @@
 </head>
 
 <body>
-    <div class="">
-        <x-section.header />
-        {{ $slot }}
-        <x-section.footer />
-    </div>
-    <!-- Back-to-top Button start -->
-    <button onclick="topFunction()" id="back-to-top"
-        class="btn btn-circle btn-warning btn-outline  z-40 fixed right-5 md:right-10 bottom-10 over:-translate-y-1 hover:scale-105"><i
-            class="fa-solid hover:text-white hover:scale-125 fa-arrow-up"></i></button>
-    <!-- Back-to-top Button end -->
+    {{ $slot }}
 
-    <script src="../assets/js/custom.js" ></script>
+    <script src="assets/js/custom.js"></script>
 </body>
+
 </html>

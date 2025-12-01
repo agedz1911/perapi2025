@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $title ?? 'PERAPI' }}</title>
+    <title>{{ $title ?? 'APRAS 2026' }}</title>
     <meta name="description"
-        content="The 29th Annual Scientific Meeting of Indonesian Association of Plastic Reconstructive and Aesthetic Surgeons" />
+        content="APRAS 2026" />
     <meta name="keywords" content="plastic surgery, aesthetic, reconstructive, beauty, aesthetic education," />
     <meta name="author" content="AV-PRO" />
 
@@ -36,7 +36,7 @@
 
 <body>
     <div class="">
-        <x-section.header />
+        <x-section.header-apras />
         {{ $slot }}
         <x-section.footer />
     </div>
@@ -46,6 +46,7 @@
             class="fa-solid hover:text-white hover:scale-125 fa-arrow-up"></i></button>
     <!-- Back-to-top Button end -->
 
-    <script src="../assets/js/custom.js" ></script>
+    <script src="../assets/js/custom.js"></script>
 </body>
+
 </html>

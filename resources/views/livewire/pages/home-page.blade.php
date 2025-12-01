@@ -59,14 +59,14 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 align-items-center">
                     <div class="flex flex-col gap-4">
                         <div class="rounded-xl bg-white shadow-lg">
-                            <img src="assets/images/bali/5.jpg" class="w-full rounded-xl sepia-50" alt="bali 1">
+                            <img src="../assets/images/bali/5.jpg" class="w-full rounded-xl sepia-50" alt="bali 1">
                         </div>
                         <div class="rounded-xl bg-white shadow-lg">
-                            <img src="assets/images/bali/6.jpg" class="w-full rounded-xl" alt="bali 2">
+                            <img src="../assets/images/bali/6.jpg" class="w-full rounded-xl" alt="bali 2">
                         </div>
                     </div>
                     <div class="rounded-xl bg-white shadow-lg">
-                        <img src="assets/images/bali/4.jpg" class="w-full rounded-xl object-cover h-full sepia-50" alt="bali 3">
+                        <img src="../assets/images/bali/4.jpg" class="w-full rounded-xl object-cover h-full sepia-50" alt="bali 3">
                     </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@
                                     class="w-full justify-center lg:flex-row flex flex-col items-center lg:items-end gap-2">
                                     <div class="avatar">
                                         <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
-                                            assets/images/speaker.png"}}" alt="{{$welcomeMessage->name}}"
+                                            ../assets/images/speaker.png"}}" alt="{{$welcomeMessage->name}}"
                                             class="w-full max-w-52 shadow-lg rounded-lg ">
                                     </div>
                                     <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
@@ -238,13 +238,13 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 mt-5 justify-items-center">
 
                 <div class="w-full max-w-sm">
-                    <a><img src="assets/images/bali/1.jpg" class="w-full rounded-xl shadow-md" alt="bndcc bali "></a>
+                    <a><img src="../assets/images/bali/1.jpg" class="w-full rounded-xl shadow-md" alt="bndcc bali "></a>
                 </div>
                 <div class="w-full max-w-sm">
-                    <a><img src="assets/images/bali/2.jpg" class="w-full rounded-xl shadow-md" alt="bndcc bali "></a>
+                    <a><img src="../assets/images/bali/2.jpg" class="w-full rounded-xl shadow-md" alt="bndcc bali "></a>
                 </div>
                 <div class="w-full max-w-sm">
-                    <a><img src="assets/images/bali/3.jpg" class="w-full rounded-xl shadow-md" alt="bndcc bali "></a>
+                    <a><img src="../assets/images/bali/3.jpg" class="w-full rounded-xl shadow-md" alt="bndcc bali "></a>
                 </div>
             </div>
         </div>

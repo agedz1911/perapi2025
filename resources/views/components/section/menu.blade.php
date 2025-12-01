@@ -1,6 +1,6 @@
 <ul class="flex gap-6 uppercase">
     <li>
-        <a href="/" wire:navigate
+        <a href="{{route('index')}}" wire:navigate
             class="{{ request()->is('/') ? 'text-[#F9C20A]' : 'text-white' }} hover:text-amber-500 hover:underline ">Home
         </a>
     </li>
@@ -14,7 +14,7 @@
                     class="{{ request()->is('welcome-messages') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500 ">Welcome Messages <i class="fa-solid fa-angle-right"></i></a>
             </li> -->
             <li>
-                <a href="/organizing-committee" wire:navigate
+                <a href="{{route('organizing-committee-inapras')}}" wire:navigate
                     class="{{ request()->is('organizing-committee') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500 ">Organizing
                     Committee <i class="fa-solid fa-angle-right"></i></a>
             </li>
