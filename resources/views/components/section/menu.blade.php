@@ -32,7 +32,7 @@
             Scientific Program <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
             <li>
-                <a href="/program-at-glance" wire:navigate
+                <a href="#" wire:navigate
                     class="{{ request()->is('program-at-glance') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500">Program
                     at Glance <i class="fa-solid fa-angle-right"></i></a>
             </li>
@@ -45,7 +45,7 @@
 
 
     <li>
-        <a href="/registration" wire:navigate
+        <a href="#" wire:navigate
             class="{{ request()->is('registration') ? 'text-[#F9C20A]' : 'text-white' }} hover:text-amber-500 hover:underline">Registration
         </a>
     </li>

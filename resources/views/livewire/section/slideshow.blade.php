@@ -12,9 +12,9 @@
                     interval: null 
                 }" x-init="interval = setInterval(() => { 
                     currentSlide = (currentSlide + 1) % totalSlides;
-                }, 10000)" @mouseenter="clearInterval(interval)" @mouseleave="interval = setInterval(() => { 
+                }, 7000)" @mouseenter="clearInterval(interval)" @mouseleave="interval = setInterval(() => { 
                     currentSlide = (currentSlide + 1) % totalSlides;
-                }, 10000)">
+                }, 7000)">
                     <div class="flex transition-transform duration-500 ease-in-out h-full"
                         :style="'transform: translateX(-' + (currentSlide * 100) + '%)'">
                         @foreach ($heros as $index => $hero)
@@ -41,9 +41,9 @@
                     <button
                         class="btn btn-warning text-white shadow-none rounded-lg btn-lg text-sm">Read
                         More <i class="fa-solid fa-angles-right text-xs"></i></button>
-                    <a href="/registration" wire:navigate
+                    <button 
                         class="btn btn-warning btn-outline shadow-none rounded-lg btn-lg text-sm hover:text-white"><i
-                            class="fa-solid fa-pen-to-square"></i> Regiter Now </a>
+                            class="fa-solid fa-pen-to-square"></i> Regiter Now </button>
                 </div>
             </div>
         </div>

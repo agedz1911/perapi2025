@@ -4,12 +4,43 @@
         <livewire:section.slideshow />
         <div
             class="absolute wave block md:hidden lg:block overflow-hidden w-full z-0 left-0 leading-none bottom-[-1px]">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"
-                class="block position-relative">
-                <path class="fill-[#fef7ff] translate-middle-y" d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3
-          c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3
-          c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path class="fill-white translate-middle-y" d="M0,64L80,80C160,96,320,128,480,165.3C640,203,800,245,960,256C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
             </svg>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path class="fill-white translate-middle-y" d="M0,128L720,288L1440,64L1440,320L720,320L0,320Z"></path>
+            </svg> -->
+        </div>
+    </section>
+
+    <section class="px-2 -mt-10 lg:-mt-36 lg:px-7 pb-24 ">
+        <div id="countdown" class="flex flex-wrap justify-center md:flex-row w-full lg:justify-start mx-auto gap-4">
+            <div class="text-center card bg-gradient-to-t from-[#7f3f80] to-[#3c194f] rounded-2xl w-40">
+                <div class="card-body ">
+                    <span id="days" class="font-bold text-white mb-0 text-2xl lg:text-4xl"></span><br>
+                    <small class="text-white mt-0 text-xs">Days</small>
+                </div>
+            </div>
+
+            <div class="text-center card bg-gradient-to-t from-[#7f3f80] to-[#3c194f] rounded-2xl w-40">
+                <div class="card-body">
+                    <span id="hours" class="font-bold text-white mb-0 text-2xl lg:text-4xl"></span><br>
+                    <small class="text-white mt-0 text-xs">Hours</small>
+                </div>
+            </div>
+            <div class="text-center card bg-gradient-to-t from-[#7f3f80] to-[#3c194f] rounded-2xl w-40">
+                <div class="card-body">
+                    <span id="minutes" class="font-bold text-white mb-0 text-2xl lg:text-4xl"></span><br>
+                    <small class="text-white mt-0 text-xs">Minutes</small>
+                </div>
+            </div>
+
+            <div class="text-center card bg-gradient-to-t from-[#7f3f80] to-[#3c194f] rounded-2xl w-40">
+                <div class="card-body">
+                    <span id="seconds" class="font-bold text-white mb-0 text-2xl lg:text-4xl"></span><br>
+                    <small class="text-white mt-0 text-xs">Seconds</small>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -219,3 +250,63 @@
         </div>
     </section>
 </div>
+
+<script>
+    document.addEventListener('livewire:navigated', function() {
+        const days = document.getElementById('days');
+        const hours = document.getElementById('hours');
+        const minutes = document.getElementById('minutes');
+        const seconds = document.getElementById('seconds');
+
+        // Check if all elements are found
+        const elementsExist = days && hours && minutes && seconds;
+
+        // If any element is missing, log a warning and return
+        if (!elementsExist) {
+            console.warn('One or more countdown elements not found.');
+            return;
+        }
+
+        // Get current date and time
+        const currentTime = new Date();
+
+        // Set new date 30 days from now
+        const targetTime = new Date(2026, 9, 2, 8, 0, 0);
+
+        // Update countdown time
+        function updateCountdown() {
+            const currentTime = new Date();
+            const diff = targetTime - currentTime;
+
+            const d = Math.floor(diff / 1000 / 60 / 60 / 24);
+            const h = Math.floor((diff / 1000 / 60 / 60) % 24);
+            const m = Math.floor((diff / 1000 / 60) % 60);
+            const s = Math.floor((diff / 1000) % 60);
+
+            // Update elements if they exist
+            if (days) days.innerHTML = d;
+            if (hours) hours.innerHTML = h < 10 ? '0' + h : h;
+            if (minutes) minutes.innerHTML = m < 10 ? '0' + m : m;
+            if (seconds) seconds.innerHTML = s < 10 ? '0' + s : s;
+        }
+
+        // Call updateCountdown initially and set it to run every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        let valueDisplays = document.querySelectorAll(".num");
+        let interval = 4000;
+
+        valueDisplays.forEach((valueDisplay) => {
+            let startValue = 0;
+            let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+            let duration = Math.floor(interval / endValue);
+            let counter = setInterval(function() {
+                startValue += 1;
+                valueDisplay.textContent = startValue;
+                if (startValue == endValue) {
+                    clearInterval(counter);
+                }
+            }, duration);
+        });
+    });
+</script>

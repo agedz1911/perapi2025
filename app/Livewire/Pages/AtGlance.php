@@ -9,7 +9,7 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 
-#[Title('Program at Glance - The 28th InaPRAS')]
+#[Title('Program at Glance - APRAS InaPRAS 2026')]
 class AtGlance extends Component
 {
     public $search;

@@ -15,9 +15,7 @@
         </a>
         <div class="flex flex-col items-center w-full max-w-4xl m-auto">
             <div class="border-b border-white m-auto mb-6 w-full max-w-2xl">
-                <!-- <p class=" mb-0">28<sup>th</sup> Annual Scientific Meeting of the Indonesian Association of Plastic Reconstructive and Aesthetic Surgeons</p>
-                 <p class="text-white-50 mb-6">Organized by: <span> Indonesian Urological Association (InaUA)</span></p> -->
-
+            
                 <p class="mb-0 mt-6">Secretariat</p>
                 <p>Komplek Duta Merlin Blok C 35-36. <br> Jl. Gajah Mada 3 – 5,
                     Jakarta 10130, Indonesia</p>
@@ -53,11 +51,11 @@
             </div>
             <div class="pb-10 mt-4">
                 <ul class="p-0 m-0 flex flex-row flex-wrap gap-4 lg:gap-6 justify-center">
-                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a href="/submission" wire:navigate>Submission</a></li>
+                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a href="#" wire:navigate>Submission</a></li>
                     <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a href="/organizing-committee" wire:navigate>Committee</a></li>
-                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a wire:navigate href="/faculties">Faculties</a></li>
-                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a wire:navigate href="/scientific-schedule">Schedule</a></li>
-                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a wire:navigate href="/registration">Registration</a></li>
+                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a wire:navigate href="#">Faculties</a></li>
+                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a wire:navigate href="#">Schedule</a></li>
+                    <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a wire:navigate href="#">Registration</a></li>
                     <li class="text-sm font-normal hover:text-amber-400 hover:underline"><a wire:navigate href="/visiting">Venue</a></li>
                 </ul>
             </div>

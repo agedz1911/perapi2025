@@ -44,9 +44,9 @@
                         <button onclick="electric.showModal()"
                             class="font-semibold hover:text-violet-900 hover:cursor-pointer hover:underline">Electric
                             Current </button><i class="fa fa-arrows-up-down"></i>
-                        <button
+                        <a href="#bndcc"
                             class="font-semibold hover:text-violet-900 hover:cursor-pointer hover:underline">Conference
-                            Venue </button>
+                            Venue </a>
                     </div>
 
                     <dialog id="flight" class="modal">
@@ -235,7 +235,7 @@
         </div>
     </section>
 
-    <section class="pb-24 ">
+    <section id="bndcc" class="pb-24 ">
         <div class="px-2 lg:px-5">
             <p class="mb-1 text-violet-900">Conference Venue</p>
             <h2 class="mb-1 text-xl font-extrabold tracking-wide">Bali Nusa Dua Convention Center (BNDCC)</h2>

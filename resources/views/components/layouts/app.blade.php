@@ -46,6 +46,6 @@
             class="fa-solid hover:text-white hover:scale-125 fa-arrow-up"></i></button>
     <!-- Back-to-top Button end -->
 
-    <script src="assets/js/custom.js" data-navigate-once></script>
+    <script src="assets/js/custom.js" ></script>
 </body>
 </html>
