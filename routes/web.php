@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\Api\AtGlanceController;
+use App\Livewire\Apras\Committee as AprasCommittee;
 use App\Livewire\Apras\Home;
+use App\Livewire\Apras\Visiting as AprasVisiting;
 use App\Livewire\Pages\Accommodation;
 use App\Livewire\Pages\AtGlance;
 use App\Livewire\Pages\Committee;
@@ -39,4 +41,7 @@ Route::prefix('inapras')->group(function () {
 
 Route::prefix('apras')->group(function () {
     Route::get('/home', Home::class)->name('home-apras');
+    Route::get('/vising', AprasVisiting::class)->name('visiting-apras');
+    Route::get('/organizing-committee', AprasCommittee::class)->name('organizing-committee-apras');
+    Route::get('/accommodation', App\Livewire\Apras\Accommodation::class)->name('accommodation-apras');
 });

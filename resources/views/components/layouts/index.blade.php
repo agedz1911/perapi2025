@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $title ?? 'PERAPI' }}</title>
+    <title>{{ $title ?? 'APRAS InaPRAS 2026' }}</title>
     <meta name="description"
         content="APRAS InaPRAS 2026" />
     <meta name="keywords" content="plastic surgery, aesthetic, reconstructive, beauty, aesthetic education," />

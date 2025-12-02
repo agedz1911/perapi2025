@@ -13,7 +13,7 @@ class HomePage extends Component
 {
     public function render()
     {
-        $welcomeMessages = WelcomeMessage::all();
+        $welcomeMessages = WelcomeMessage::where('is_active', true)->get();
         $sponsors = Sponsor::where('is_Active', true)->orderBy('company', 'asc')->take(10)->get();
         return view('livewire.pages.home-page', ['sponsors' => $sponsors, 'welcomeMessages' => $welcomeMessages]);
     }

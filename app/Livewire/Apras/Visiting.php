@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Livewire\Pages;
+namespace App\Livewire\Apras;
 
+use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-#[Title('Venue - InaPRAS 2026')]
+#[Title('Venue - APRAS 2026')]
+#[Layout('components.layouts.apras')]
 class Visiting extends Component
 {
     public $currentSlide = 1;
@@ -29,6 +31,6 @@ class Visiting extends Component
 
     public function render()
     {
-        return view('livewire.pages.visiting');
+        return view('livewire.apras.visiting');
     }
 }

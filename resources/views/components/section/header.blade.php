@@ -38,7 +38,7 @@
         <div class="drawer-content flex flex-col">
             <div class="navbar">
                 <div class="navbar-start">
-                    <a href="{{route('home-inapras')}}" wire:navigate>
+                    <a href="{{route('index')}}" wire:navigate>
                         <img src="../assets/images/logo/logo.png" class="h-full max-h-12" alt="Logo" />
                     </a>
                 </div>

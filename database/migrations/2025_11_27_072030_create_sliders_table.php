@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('date_event')->nullable();
             $table->string('theme_event')->nullable();
             $table->string('venue')->nullable();
+            $table->string('category')->nullable();
             $table->text('description')->nullable();
             $table->string('logo')->nullable();
             $table->boolean('is_active');

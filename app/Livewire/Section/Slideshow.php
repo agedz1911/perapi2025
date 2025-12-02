@@ -9,8 +9,12 @@ class Slideshow extends Component
 {
     public function render()
     {
-        $heros = Slider::where('is_active', true)->get();
-        return view('livewire.section.slideshow', ['heros' => $heros]
+        $heros = Slider::where('is_active', true)->where('category', 'inapras')->get();
+        return view(
+            'livewire.section.slideshow',
+            [
+                'heros' => $heros,
+            ]
         );
     }
 }

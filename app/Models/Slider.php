@@ -15,6 +15,7 @@ class Slider extends Model
         'description',
         'logo',
         'is_active',
+        'category'
     ];
     
 }

@@ -115,13 +115,16 @@
                 </div>
             </div>
             <div class="mt-10 mb-6 px-4">
+                @if ($welcomeMessages->count() > 0)
                 <h2 class="text-4xl text-center mb-5 text-white font-semibold uppercase">Welcome <span
-                        class="text-[#F9C20A]">message
-                    </span></h2>
+                    class="text-[#F9C20A]">message
+                </span></h2>
+                @endif
                 @foreach ($welcomeMessages as $welcomeMessage)
                 @if ($loop->even)
                 <div class="card shadow-lg bg-transparent border border-white border-opacity-25 w-full mb-5">
                     <div class="card-body">
+
                         <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-stretch">
                             <div class="order-2 lg:order-1 p-2">
                                 <div
@@ -271,7 +274,7 @@
         const currentTime = new Date();
 
         // Set new date 30 days from now
-        const targetTime = new Date(2026, 9, 2, 8, 0, 0);
+        const targetTime = new Date(2026, 9, 3, 8, 0, 0);
 
         // Update countdown time
         function updateCountdown() {

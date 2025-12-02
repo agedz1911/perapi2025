@@ -46,6 +46,12 @@ class SliderResource extends Resource
                     ->imageEditor()
                     ->storeFileNamesIn('attachment_file_names')
                     ->directory('Slider'),
+                Forms\Components\Select::make('category')
+                    ->options([
+                        'apras' => 'apras',
+                        'inapras' => 'inapras',
+                    ])
+                    ->required(),
                 Forms\Components\Toggle::make('is_active')
                     ->inline()
                     ->default(true)
@@ -74,6 +80,9 @@ class SliderResource extends Resource
                     ->limit(50)
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('logo')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('category')
+                    ->sortable()
                     ->searchable(),
                 Tables\Columns\ToggleColumn::make('is_active'),
                 Tables\Columns\TextColumn::make('created_at')

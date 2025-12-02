@@ -1,6 +1,6 @@
 <div class="grid grid-cols-1 md:grid-cols-2">
     <div class="hero md:min-h-screen feature">
-        <div class="hero-overlay"></div>
+        <div class="hero-overlay opacity-25"></div>
         <div class="hero-content w-full">
             <a href="{{route('home-apras')}}" wire:navigate class="hover-3d my-12 mx-2 cursor-pointer w-full">
                 <!-- content -->
@@ -24,9 +24,9 @@
                             <button
                                 class="btn btn-warning text-white shadow-none rounded-lg btn-lg text-sm">Read
                                 More <i class="fa-solid fa-angles-right text-xs"></i></button>
-                            <button
+                            {{-- <button
                                 class="btn btn-warning btn-outline shadow-none rounded-lg btn-lg text-sm hover:text-white"><i
-                                    class="fa-solid fa-globe"></i> Visit Site </button>
+                                    class="fa-solid fa-globe"></i> Visit Site </button> --}}
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
         </div>
     </div>
     <div class="hero md:min-h-screen banner">
-        <div class="hero-overlay"></div>
+        <div class="hero-overlay opacity-25"></div>
         <a href="{{route('home-inapras')}}" wire:navigate class="hover-3d my-12 mx-2 cursor-pointer">
             <!-- content -->
             <div class="card w-full rounded-2xl max-w-2xl bg-[#3C194F] bg-[radial-gradient(circle_at_bottom_left,#ffffff04_35%,transparent_36%),radial-gradient(circle_at_top_right,#ffffff04_35%,transparent_36%)] bg-size-[4.95em_4.95em]">
@@ -67,9 +67,9 @@
                         <button
                             class="btn btn-warning text-white shadow-none rounded-lg btn-lg text-sm">Read
                             More <i class="fa-solid fa-angles-right text-xs"></i></button>
-                        <button
+                        {{-- <button
                             class="btn btn-warning btn-outline shadow-none rounded-lg btn-lg text-sm hover:text-white"><i
-                                class="fa-solid fa-globe"></i> Visit Site </button>
+                                class="fa-solid fa-globe"></i> Visit Site </button> --}}
                     </div>
                 </div>
             </div>

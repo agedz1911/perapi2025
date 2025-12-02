@@ -38,12 +38,12 @@
         <div class="drawer-content flex flex-col">
             <div class="navbar">
                 <div class="navbar-start">
-                    <a href="{{route('home-inapras')}}" wire:navigate>
+                    <a href="{{route('index')}}" wire:navigate>
                         <img src="../assets/images/logo/logo-apras.png" class="h-full max-h-12" alt="Logo" />
                     </a>
                 </div>
                 <div class="navbar-center hidden lg:flex py-2">
-                    <x-section.menu />
+                    <x-section.menu-apras />
                 </div>
                 <div class="navbar-end">
                     <div onclick="contact.showModal()"
@@ -64,7 +64,7 @@
             <ul class="bg-base-200 min-h-full w-80 p-4">
                 <!-- Sidebar content here -->
                 <!-- <img src="assets/images/logo/logo.png" class="w-full mb-5 max-w-sm" /> -->
-                <x-section.menu-mobile />
+                <x-section.menu-mobile-apras />
             </ul>
         </div>
     </div>
