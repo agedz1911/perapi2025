@@ -78,7 +78,7 @@
         <div class="relative">
             <div class="w-full max-w-6xl mx-auto border-b border-white border-opacity-35">
                 <div class="mb-16">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
                         <div class="w-full border-e border-opacity-35 border-white ">
                             <div class="border-b border-opacity-25 border-white md:border-b-0 text-center py-5 px-2">
                                 <h1 class="text-[#F9C20A] m-0 text-4xl md:text-5xl font-semibold"><span class="num"

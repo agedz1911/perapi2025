@@ -2,7 +2,7 @@
     <div class="hero md:min-h-screen feature">
         <div class="hero-overlay opacity-25"></div>
         <div class="hero-content w-full">
-            <a href="{{route('home-apras')}}" wire:navigate class="hover-3d my-12 mx-2 cursor-pointer w-full">
+            <a href="#" wire:navigate class="hover-3d my-12 mx-2 cursor-pointer w-full">
                 <!-- content -->
                 <div class="card rounded-2xl w-full max-w-2xl bg-[#3C194F] bg-[radial-gradient(circle_at_bottom_left,#ffffff04_35%,transparent_36%),radial-gradient(circle_at_top_right,#ffffff04_35%,transparent_36%)] bg-size-[4.95em_4.95em]">
                     <div class="card-body">
@@ -21,10 +21,11 @@
                             </p>
                         </div>
                         <div class="mt-10 flex justify-center gap-4 lg:justify-start">
-                            <button
+                            <p class="text-white text-lg italic">*we are available soon</p>
+                            {{-- <button
                                 class="btn btn-warning text-white shadow-none rounded-lg btn-lg text-sm">Read
                                 More <i class="fa-solid fa-angles-right text-xs"></i></button>
-                            {{-- <button
+                            <button
                                 class="btn btn-warning btn-outline shadow-none rounded-lg btn-lg text-sm hover:text-white"><i
                                     class="fa-solid fa-globe"></i> Visit Site </button> --}}
                         </div>
@@ -55,7 +56,7 @@
                     </div>
                     <div>
                         <h1 class="text-2xl text-white lg:text-3xl font-semibold text-center lg:text-start">
-                            The 29th Annual Scientific Meeting of Indonesian Association of Plastic Reconstructive and Aesthetic Surgeons 
+                            The 29th Annual Scientific Meeting of Indonesian Association of Plastic Reconstructive and Aesthetic Surgeons
                         </h1>
                         <p class="text-[#F9C20A] mt-4 text-center lg:text-start">
                             September 3 - 5, 2026
@@ -67,9 +68,9 @@
                         <button
                             class="btn btn-warning text-white shadow-none rounded-lg btn-lg text-sm">Read
                             More <i class="fa-solid fa-angles-right text-xs"></i></button>
-                        {{-- <button
+                        <button
                             class="btn btn-warning btn-outline shadow-none rounded-lg btn-lg text-sm hover:text-white"><i
-                                class="fa-solid fa-globe"></i> Visit Site </button> --}}
+                                class="fa-solid fa-globe"></i> Visit Site </button>
                     </div>
                 </div>
             </div>
