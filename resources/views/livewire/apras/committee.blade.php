@@ -27,7 +27,7 @@
                             {{ $committee->name }}
                         </h2>
                         @if ($committee->title != null)
-                        <div class="badge bg-[#A93E89] text-white mt-0">{{ $committee->title }}</div>
+                        <div class="badge bg-[#A93E89] text-xs text-white mt-0">{{ $committee->title }}</div>
                         @endif
                     </div>
                 </div>
