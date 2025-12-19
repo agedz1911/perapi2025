@@ -13,6 +13,7 @@ use App\Livewire\Pages\HomePage;
 use App\Livewire\Pages\Index;
 use App\Livewire\Pages\Registration;
 use App\Livewire\Pages\Schedule;
+use App\Livewire\Pages\SocialProgram;
 use App\Livewire\Pages\Topics;
 use App\Livewire\Pages\Visiting;
 use App\Livewire\Section\Sponsor;
@@ -23,6 +24,7 @@ Route::get('/test', function () {
 });
 
 Route::get('/', Index::class)->name('index');
+Route::get('/accommodation', Accommodation::class)->name('accommodation-inapras');
 
 Route::prefix('inapras')->group(function () {
     Route::get('/home', HomePage::class)->name('home-inapras');
@@ -32,10 +34,10 @@ Route::prefix('inapras')->group(function () {
     Route::get('/registration', Registration::class)->name('registration-inapras');
     Route::get('/submission', GuidelineAbstract::class)->name('submission-inapras');
     Route::get('/faculties', Faculty::class)->name('faculties-inapras');
-    Route::get('/accommodation', Accommodation::class)->name('accommodation-inapras');
     Route::get('/sponsors', Sponsor::class)->name('sponsors-inapras');
     Route::get('/visiting', Visiting::class)->name('visiting-inapras');
     Route::get('/topics', Topics::class)->name('topics-inapras');
+    Route::get('/social-program', SocialProgram::class)->name('tour-inapras');
 });
 
 

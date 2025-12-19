@@ -9,7 +9,7 @@
     <section class="pt-10 pb-24 px-2 lg:px-5">
         <div class="text-center md:text-start mb-5">
             <h2 class="mb-3 uppercase text-4xl tracking-wide font-bold">Hotel <span class="text-[#F9C20A]">Reservation</span></h2>
-            <p class="text-gray-500">The organizers of the InaPRAS congress have secured competitive rates at a variety of
+            <p class="text-gray-500">The organizers of the APRAS and InaPRAS congress have secured competitive rates at a variety of
                 hotels near the Bali Nusa Dua Convention Center to accommodate delegates
                 with different budgets and preferences. Hotel reservations will open and are subject
                 to availability. It is advisable to book your preferred hotel as soon as possible

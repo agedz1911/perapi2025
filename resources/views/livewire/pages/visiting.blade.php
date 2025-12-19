@@ -6,7 +6,7 @@
         </div>
     </section>
 
-    <section class="pb-24 pt-10">
+    <section class="pb-24 pt-10" id="bali">
         <div class="px-2 lg:px-5">
             <div class="flex gap-2 flex-wrap justify-between w-full items-end">
                 <div class="w-full max-w-xl pb-2">
@@ -306,7 +306,7 @@
         </div>
     </section>
 
-    <section id="bndcc" class="pb-24 ">
+    <section id="bndcc" class="pb-24 " id="venue">
         <div class="px-2 lg:px-5">
             <p class="mb-1 text-violet-900">Conference Venue</p>
             <h2 class="mb-1 text-xl font-extrabold tracking-wide">Bali Nusa Dua Convention Center (BNDCC)</h2>
