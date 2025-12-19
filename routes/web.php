@@ -24,7 +24,6 @@ Route::get('/test', function () {
 });
 
 Route::get('/', Index::class)->name('index');
-Route::get('/accommodation', Accommodation::class)->name('accommodation-inapras');
 
 Route::prefix('inapras')->group(function () {
     Route::get('/home', HomePage::class)->name('home-inapras');
@@ -35,6 +34,7 @@ Route::prefix('inapras')->group(function () {
     Route::get('/submission', GuidelineAbstract::class)->name('submission-inapras');
     Route::get('/faculties', Faculty::class)->name('faculties-inapras');
     Route::get('/sponsors', Sponsor::class)->name('sponsors-inapras');
+    Route::get('/accommodation', Accommodation::class)->name('accommodation-inapras');
     Route::get('/visiting', Visiting::class)->name('visiting-inapras');
     Route::get('/topics', Topics::class)->name('topics-inapras');
     Route::get('/social-program', SocialProgram::class)->name('tour-inapras');
