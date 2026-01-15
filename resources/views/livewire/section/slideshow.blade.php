@@ -2,7 +2,7 @@
     <div class="hero bg-transparent min-h-screen ">
         <div class="hero-content flex-col lg:flex-row w-full justify-around">
             <div class="px-1 order-2 lg:order-2">
-                <img src="../assets/images/banner.png" class="w-full max-w-lg" />
+                {{-- <img src="../assets/images/banner.png" class="w-full max-w-lg" /> --}}
                 <livewire:section.flyer />
             </div>
             <div class="px-1 order-1 lg:order-1 w-full max-w-xl">

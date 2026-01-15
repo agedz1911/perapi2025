@@ -50,12 +50,12 @@
         </a>
     </li>
     <li>
-        <a href="#" wire:navigate
+        <a href="{{route('accommodation-apras')}}" wire:navigate
             class="{{ request()->is('apras/accommodation') ? 'text-[#F9C20A]' : 'text-white' }} hover:text-amber-500 hover:underline">Accommodation
         </a>
     </li>
     <li>
-        <a href="#" wire:navigate
+        <a href="{{route('submission-apras')}}" wire:navigate
             class="{{ request()->is('apras/submission') ? 'text-[#F9C20A]' : 'text-white' }} hover:text-amber-500 hover:underline">Submission
         </a>
     </li>

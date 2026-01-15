@@ -1,5 +1,5 @@
 <div>
-    @if ($hasActiveFlyers)
+    @if ($flyers && $flyers->isNotEmpty())
     <div class="carousel w-full shadow-md rounded-2xl" x-data="{ 
          currentSlide: 0, 
          totalSlides: {{ count($flyers) }},

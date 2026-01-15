@@ -55,7 +55,7 @@
         </a>
     </li>
     <li>
-        <a href="#" wire:navigate
+        <a href="{{route('submission-inapras')}}" wire:navigate
             class="{{ request()->is('inapras/submission') ? 'text-[#F9C20A]' : 'text-white' }} hover:text-amber-500 hover:underline">Submission
         </a>
     </li>

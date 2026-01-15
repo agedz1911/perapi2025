@@ -12,7 +12,7 @@ class Flyer extends Component
         $flyers = ModelsFlyer::where('is_active', true)->get();
         return view('livewire.section.flyer', [
             'flyers' => $flyers,
-            'hasActiveFlyers' => $flyers->isNotEmpty()
+            // 'hasActiveFlyers' => $flyers->isNotEmpty()
         ]);
     }
 }

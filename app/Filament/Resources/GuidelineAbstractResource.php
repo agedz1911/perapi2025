@@ -31,9 +31,9 @@ class GuidelineAbstractResource extends Resource
                 Select::make('category')
                 ->native(false)
                 ->options([
-                    'Abstract Free Paper' => 'Abstract Free Paper',
-                    'Abstract Video' => 'Abstract Video',
-                    'Educative Video' => 'Educative Video'
+                    'All' => 'All',
+                    'Abstract InaPRAS' => 'Abstract InaPRAS',
+                    'Abstract APRAS' => 'Abstract APRAS',
                 ]),
                 // TextInput::make('category'),
                 MarkdownEditor::make('description'),
