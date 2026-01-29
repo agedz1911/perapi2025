@@ -197,7 +197,7 @@
                                 <div class="flex flex-col ">
                                     <div class="pr-2">
                                         <div class="pb-4  text-justify flex flex-col gap-2 text-gray-300">
-                                            <div class="line-clamp-6">
+                                            <div class="">
                                                 {!! str($welcomeMessage->description)->markdown()->sanitizeHtml() !!}
                                             </div>
                                             <a class="hover:underline hover:text-primary" href="/welcome-messages" wire:navigate>Read More...</a>
@@ -209,7 +209,7 @@
                     </div>
                 </div>
                 @else
-                <div class="card shadow-lg bg-transparent border border-white border-opacity-25 w-full mb-5">
+                {{-- <div class="card shadow-lg bg-transparent border border-white border-opacity-25 w-full mb-5">
                     <div class="card-body">
                         <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-stretch">
                             <div class="order-2 lg:order-2 p-2">
@@ -234,7 +234,7 @@
                                 <div class="flex flex-col ">
                                     <div class="pr-2">
                                         <div class="pb-4  text-justify flex flex-col gap-2 text-gray-300">
-                                            <div class="line-clamp-6">
+                                            <div class="">
                                                 {!! str($welcomeMessage->description)->markdown()->sanitizeHtml() !!}
                                             </div>
                                             <a class="hover:underline hover:text-warning" href="/welcome-messages" wire:navigate>Read More...</a>
@@ -244,7 +244,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 @endif
                 @endforeach
             </div>
