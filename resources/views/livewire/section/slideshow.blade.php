@@ -21,12 +21,13 @@
                         <div id="slide{{ $index + 1 }}"
                             class="carousel-item w-full ">
                             <div>
-                                <div class="flex text-start mb-4 w-full items-center lg:justify-start justify-center">
+                                <div class="flex flex-wrap text-start mb-4 w-full items-center lg:justify-start justify-center">
                                     <img src="{{asset('storage/' . $hero->logo)}}" alt="Logo" class="h-full max-h-16 mr-2" />
                                     <h1 class="lg:text-4xl text-2xl text-white font-semibold">{{$hero->title}}</h1>
                                 </div>
                                 <h1 class="text-2xl lg:text-3xl text-white text-center lg:text-start">{{$hero->subtitle}}
                                 </h1>
+                                <p class="italic text-center lg:text-start my-2 text-white text-lg">{{$hero->theme_event}}</p>
                                 <p class="text-[#F9C20A] mt-4 text-center lg:text-start">
                                     {{$hero->date_event}} <br> {{$hero->venue}}
                                 </p>

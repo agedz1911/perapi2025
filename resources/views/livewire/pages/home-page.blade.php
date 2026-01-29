@@ -5,7 +5,9 @@
         <div
             class="absolute wave block md:hidden lg:block overflow-hidden w-full z-0 left-0 leading-none bottom-[-1px]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path class="fill-white translate-middle-y" d="M0,64L80,80C160,96,320,128,480,165.3C640,203,800,245,960,256C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+                <path class="fill-white translate-middle-y"
+                    d="M0,64L80,80C160,96,320,128,480,165.3C640,203,800,245,960,256C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
             </svg>
             <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path class="fill-white translate-middle-y" d="M0,128L720,288L1440,64L1440,320L720,320L0,320Z"></path>
@@ -66,7 +68,8 @@
                         </div>
                     </div>
                     <div class="rounded-xl bg-white shadow-lg">
-                        <img src="../assets/images/bali/4.jpg" class="w-full rounded-xl object-cover h-full sepia-50" alt="bali 3">
+                        <img src="../assets/images/bali/4.jpg" class="w-full rounded-xl object-cover h-full sepia-50"
+                            alt="bali 3">
                     </div>
                 </div>
             </div>
@@ -117,17 +120,17 @@
             <div class="mt-10 mb-6 px-4">
                 @if ($welcomeMessages->count() > 0)
                 <h2 class="text-4xl text-center mb-5 text-white font-semibold uppercase">Welcome <span
-                    class="text-[#F9C20A]">message
-                </span></h2>
+                        class="text-[#F9C20A]">message
+                    </span></h2>
                 @endif
                 @foreach ($welcomeMessages as $welcomeMessage)
                 @if ($loop->even)
                 <div class="card shadow-lg bg-transparent border border-white border-opacity-25 w-full mb-5">
                     <div class="card-body">
 
-                        <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-stretch">
+                        <div class="grid grid-cols-1 md:grid-cols-2 justify-items-stretch">
                             <div class="order-2 lg:order-1 p-2">
-                                <div
+                                {{-- <div
                                     class="w-full justify-center lg:flex-row flex flex-col items-center lg:items-end gap-2">
                                     <div class="avatar">
                                         <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
@@ -141,6 +144,50 @@
                                             <h6 class="font-semibold text-black">{{$welcomeMessage->name}}</h6>
                                         </div>
                                     </div>
+                                </div> --}}
+                                <div
+                                    class="w-full justify-center mb-2 lg:flex-row flex flex-col items-center lg:items-end gap-2">
+                                    <div class="avatar">
+                                        <img src="{{asset('assets/images/teddy.jpg')}}" alt="Theddeus O.H Prasetyono"
+                                            class="w-full max-w-52 shadow-lg rounded-lg ">
+                                    </div>
+                                    <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
+                                        <div class="ps-4 border-s border-black   border-spacing-7">
+                                            <p class="text-black text-xs italic">" Chairperson The Inaugural Congress of
+                                                APRAS 2026, <br> Vice Chairperson, InaPRAS 2026
+                                                "</p>
+                                            <h6 class="font-semibold text-black">Prof. Theddeus O.H Prasetyono, MD, PhD
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-full justify-center mb-2 lg:flex-row flex flex-col items-center lg:items-end gap-2">
+                                    <div class="avatar">
+                                        <img src="{{asset('assets/images/bambang.jpg')}}" alt="Bambang Wicaksono, MD "
+                                            class="w-full max-w-52 shadow-lg rounded-lg ">
+                                    </div>
+                                    <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
+                                        <div class="ps-4 border-s border-black   border-spacing-7">
+                                            <p class="text-black text-xs italic">" Chairperson, InaPRAS 2026
+                                                "</p>
+                                            <h6 class="font-semibold text-black">Bambang Wicaksono, MD </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-full justify-center mb-2 lg:flex-row flex flex-col items-center lg:items-end gap-2">
+                                    <div class="avatar">
+                                        <img src="{{asset('assets/images/najat.jpg')}}" alt="Najatullah, MD"
+                                            class="w-full max-w-52 shadow-lg rounded-lg ">
+                                    </div>
+                                    <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
+                                        <div class="ps-4 border-s border-black   border-spacing-7">
+                                            <p class="text-black text-xs italic">" President, InaPRAS
+                                                "</p>
+                                            <h6 class="font-semibold text-black">Najatullah, MD </h6>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
@@ -151,7 +198,8 @@
                                             <div class="line-clamp-6">
                                                 {!! str($welcomeMessage->description)->markdown()->sanitizeHtml() !!}
                                             </div>
-                                            <a class="hover:underline hover:text-primary" href="/welcome-messages" wire:navigate>Read More...</a>
+                                            {{-- <a class="hover:underline hover:text-primary" href="/welcome-messages"
+                                                wire:navigate>Read More...</a> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -162,9 +210,9 @@
                 @else
                 <div class="card shadow-lg bg-transparent border border-white border-opacity-25 w-full mb-5">
                     <div class="card-body">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-stretch">
+                        <div class="grid grid-cols-1 md:grid-cols-2 justify-items-stretch">
                             <div class="order-2 lg:order-2 p-2">
-                                <div
+                                {{-- <div
                                     class="w-full justify-center lg:flex-row flex flex-col items-center lg:items-end gap-2">
                                     <div class="avatar">
                                         <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
@@ -178,6 +226,50 @@
                                             <h6 class="font-semibold text-black">{{$welcomeMessage->name}}</h6>
                                         </div>
                                     </div>
+                                </div> --}}
+                                <div
+                                    class="w-full justify-center mb-2 lg:flex-row flex flex-col items-center lg:items-end gap-2">
+                                    <div class="avatar">
+                                        <img src="{{asset('assets/images/teddy.jpg')}}" alt="Theddeus O.H Prasetyono"
+                                            class="w-full max-w-52 shadow-lg rounded-lg ">
+                                    </div>
+                                    <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
+                                        <div class="ps-4 border-s border-black   border-spacing-7">
+                                            <p class="text-black text-xs italic">" Chairperson The Inaugural Congress of
+                                                APRAS 2026, <br> Vice Chairperson, InaPRAS 2026
+                                                "</p>
+                                            <h6 class="font-semibold text-black">Prof. Theddeus O.H Prasetyono, MD, PhD
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-full justify-center mb-2 lg:flex-row flex flex-col items-center lg:items-end gap-2">
+                                    <div class="avatar">
+                                        <img src="{{asset('assets/images/bambang.jpg')}}" alt="Bambang Wicaksono, MD "
+                                            class="w-full max-w-52 shadow-lg rounded-lg ">
+                                    </div>
+                                    <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
+                                        <div class="ps-4 border-s border-black   border-spacing-7">
+                                            <p class="text-black text-xs italic">" Chairperson, InaPRAS 2026
+                                                "</p>
+                                            <h6 class="font-semibold text-black">Bambang Wicaksono, MD </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-full justify-center mb-2 lg:flex-row flex flex-col items-center lg:items-end gap-2">
+                                    <div class="avatar">
+                                        <img src="{{asset('assets/images/najat.jpg')}}" alt="Najatullah, MD"
+                                            class="w-full max-w-52 shadow-lg rounded-lg ">
+                                    </div>
+                                    <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
+                                        <div class="ps-4 border-s border-black   border-spacing-7">
+                                            <p class="text-black text-xs italic">" President, InaPRAS
+                                                "</p>
+                                            <h6 class="font-semibold text-black">Najatullah, MD </h6>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
@@ -188,10 +280,13 @@
                                             <div class="line-clamp-6">
                                                 {!! str($welcomeMessage->description)->markdown()->sanitizeHtml() !!}
                                             </div>
-                                            <a class="hover:underline hover:text-warning" href="/welcome-messages" wire:navigate>Read More...</a>
+                                            {{-- <a class="hover:underline hover:text-warning" href="/welcome-messages"
+                                                wire:navigate>Read More...</a> --}}
                                         </div>
                                     </div>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
@@ -200,7 +295,8 @@
                 @endforeach
             </div>
             {{-- <div class="flex justify-center">
-                <a href="/welcome-messages" wire:navigate class="btn btn-primary rounded-lg">Read All Welcome Message <i class="fa fa-angles-right"></i></a>
+                <a href="/welcome-messages" wire:navigate class="btn btn-primary rounded-lg">Read All Welcome Message <i
+                        class="fa fa-angles-right"></i></a>
             </div> --}}
         </div>
     </section>
