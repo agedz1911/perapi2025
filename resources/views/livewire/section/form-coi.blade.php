@@ -4,16 +4,33 @@
             <legend class="fieldset-legend">Conflict of Interest / Disclosure Statement Form</legend>
 
             <label class="label font-bold">Name</label>
-            <input type="text" class="input mb-2 w-full" placeholder="Your full name" />
+            <input type="text" wire:model="name" class="input mb-2 w-full" placeholder="Your full name" />
+            @error('name')
+            <span class="text-error text-sm">{{ $message }}</span>
+            @enderror
 
             <label class="label font-bold">Institution / Affiliation</label>
-            <input type="text" class="input mb-2 w-full" placeholder="Your institution" />
+            <input type="text" wire:model="institution" class="input mb-2 w-full" placeholder="Your institution" />
+            @error('institution')
+            <span class="text-error text-sm">{{ $message }}</span>
+            @enderror
 
             <label class="label font-bold">Email</label>
-            <input type="text" class="input mb-2 w-full" placeholder="Your email" />
+            <input type="text" wire:model="email" class="input mb-2 w-full" placeholder="Your email" />
+            @error('email')
+            <span class="text-error text-sm">{{ $message }}</span>
+            @enderror
 
-            <label class="label font-bold">Presentation title(s)</label>
-            <input type="text" class="input mb-2 w-full" placeholder="Your presentation title" />
+            <div>
+                <label class="label font-bold">Presentation title(s)</label>
+                @foreach($presentation_titles as $index => $title)
+                <input type="text" wire:model="presentation_titles.{{ $index }}" class="input mb-2 w-full" placeholder="Your presentation title" />
+                @error('presentation_titles.' . $index)
+                <span class="text-error text-sm">{{ $message }}</span>
+                @enderror
+                @endforeach
+                <button type="button" wire:click="addTitle" class="btn btn-warning btn-sm float-right"><i class="fa fa-add"></i> Add Another Title</button>
+            </div>
 
             <div class="mt-5">
                 <p class="font-semibold">Disclosure of Conflict of Interest</p>
@@ -24,7 +41,7 @@
                     <div class="card bg-base-300 rounded-box grid grow place-items-center py-4">
                         <div class="px-3">
                             <label class="label text-black">
-                                <input type="checkbox" checked="checked" class="checkbox" />
+                                <input type="checkbox" wire:model="no_conflict" wire:click="toggleNoConflict" class="checkbox" />
                                 I have no conflicts of interest to disclose
                             </label>
                             <p class="text-gray-500">If you have no conflict interest to disclose, please include following statement at your presentation slide right after the title slide Disclosure: The author(s) declare no conflict of interest related to the content of this presentation</p>
@@ -34,20 +51,35 @@
                     <div class="card bg-base-300 rounded-box grid grow place-items-center py-4">
                         <div class="px-3 text-gray-500">
                             <label class="label text-black">
-                                <input type="checkbox" checked="checked" class="checkbox" />
+                                <input type="checkbox" wire:model="has_conflict" wire:click="toggleHasConflict" class="checkbox" />
                                 I have the following conflicts of interest to disclose (please briefly describe):
                             </label>
-                            <input type="text" placeholder="describe here" class="input input-ghost w-full" />
+                            <input type="text" wire:model="conflict_description" placeholder="describe here" class="input input-ghost w-full" />
+                            @error('conflict_description')
+                            <span class="text-error text-sm">{{ $message }}</span>
+                            @enderror
                             <p>If you have conflict of interest to disclose please include following statement at your presentation slide right after the title slide Disclosure: The author(s) have the following conflict(s) of interest related to the content of this presentation: </p>
                             <div class="flex flex-wrap items-center">
                                 <p>[e.g., Consultant for </p>
-                                <input type="text" placeholder="type here" class="input input-sm input-ghost w-20" />
+                                <input wire:model="have_consultant" type="text" placeholder="type here" class="input input-sm input-ghost w-20" />
+                                @error('have_consultant')
+                                <span class="text-error text-sm">{{ $message }}</span>
+                                @enderror
                                 <p>/ Research grant from </p>
-                                <input type="text" placeholder="type here" class="input input-sm input-ghost w-20" />
+                                <input wire:model="have_research_grant" type="text" placeholder="type here" class="input input-sm input-ghost w-20" />
+                                @error('have_research_grant')
+                                <span class="text-error text-sm">{{ $message }}</span>
+                                @enderror
                                 <p>/ Speaker honorarium from </p>
-                                <input type="text" placeholder="type here" class="input input-sm input-ghost w-20" />
+                                <input wire:model="have_speaker_honorarium" type="text" placeholder="type here" class="input input-sm input-ghost w-20" />
+                                @error('have_speaker_honorarium')
+                                <span class="text-error text-sm">{{ $message }}</span>
+                                @enderror
                                 <p>/ Stock ownership in </p>
-                                <input type="text" placeholder="type here" class="input input-sm input-ghost w-20" />
+                                <input wire:model="have_ownership" type="text" placeholder="type here" class="input input-sm input-ghost w-20" />
+                                @error('have_ownership')
+                                <span class="text-error text-sm">{{ $message }}</span>
+                                @enderror
                                 <p>] </p>
                             </div>
                         </div>
@@ -67,7 +99,10 @@
 
             <button class="btn btn-warning" type="submit">Save</button>
         </fieldset>
-
-
     </form>
+
+    <!-- Flash message untuk feedback -->
+    @if(session()->has('message'))
+    <div class="alert alert-success mt-4">{{ session('message') }}</div>
+    @endif
 </div>

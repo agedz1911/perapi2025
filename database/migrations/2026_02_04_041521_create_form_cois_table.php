@@ -13,6 +13,17 @@ return new class extends Migration
     {
         Schema::create('form_cois', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('institution');
+            $table->string('email');
+            $table->json('presentation_titles'); // Menyimpan multiple titles sebagai JSON
+            $table->boolean('no_conflict')->default(true);
+            $table->boolean('has_conflict')->default(false);
+            $table->text('conflict_description')->nullable();
+            $table->string('have_consultant')->nullable();
+            $table->string('have_research_grant')->nullable();
+            $table->string('have_speaker_honorarium')->nullable();
+            $table->string('have_ownership')->nullable();
             $table->timestamps();
         });
     }
