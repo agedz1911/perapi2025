@@ -44,4 +44,21 @@
         </div>
     </section>
 
+    <section class="pt-10 pb-24 px-2 lg:px-5">
+        <div class="flex flex-wrap justify-between">
+            <div class="text-center md:text-start mb-5">
+                <p class="mb-0 uppercase text-lg text-amber-500">Conflict of Interest / Disclosure Statement</p>
+                
+            </div>
+            <div>
+                @if (Auth::check())
+                <button class="btn btn-sm btn-outline">Download Excel</button>
+                @endif
+            </div>
+        </div>
+        <div class="mx-2 md:mx-10">
+            <livewire:section.form-coi />
+        </div>
+    </section>
+
 </div>
