@@ -2,10 +2,12 @@
 
 namespace App\Livewire\Section;
 
+use App\Exports\FormCoiExport;
 use App\Models\FormCoi as ModelsFormCoi;
 use App\Models\User;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
+use Maatwebsite\Excel\Facades\Excel; 
 
 class FormCoi extends Component
 {
@@ -86,6 +88,11 @@ class FormCoi extends Component
 
         // Reset form setelah submit (opsional)
         $this->reset();
+    }
+
+    public function exportToExcel()
+    {
+        return Excel::download(new FormCoiExport, 'conflict_of_interest_data.xlsx');
     }
 
     public function render()

@@ -1,4 +1,9 @@
 <div>
+    <div class="float-end">
+        @if (Auth::check())
+        <button wire:click="exportToExcel" class="btn btn-sm btn-outline">Download Excel</button>
+        @endif
+    </div>
     <form wire:submit="save">
         <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-full border p-4">
             <legend class="fieldset-legend">Conflict of Interest / Disclosure Statement Form</legend>
