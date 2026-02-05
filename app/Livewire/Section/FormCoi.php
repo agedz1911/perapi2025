@@ -5,9 +5,10 @@ namespace App\Livewire\Section;
 use App\Exports\FormCoiExport;
 use App\Models\FormCoi as ModelsFormCoi;
 use App\Models\User;
+use Illuminate\Support\Facades\Http;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
-use Maatwebsite\Excel\Facades\Excel; 
+use Maatwebsite\Excel\Facades\Excel;
 
 class FormCoi extends Component
 {
@@ -22,6 +23,8 @@ class FormCoi extends Component
     public $have_research_grant = '';
     public $have_speaker_honorarium = '';
     public $have_ownership = '';
+
+    public $captcha;
 
     // Aturan validasi
     protected $rules = [
@@ -65,8 +68,29 @@ class FormCoi extends Component
     // Metode untuk submit form
     public function save()
     {
-        // Validasi data
-        $this->validate();
+        // Validasi CAPTCHA manual menggunakan properti $this->captcha
+        if (!$this->captcha) {
+            $this->addError('captcha', 'Please complete the CAPTCHA.');
+            return;
+        }
+
+        // Verifikasi dengan Google
+        $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
+            'secret' => env('RECAPTCHA_SECRET_KEY'),
+            'response' => $this->captcha,
+            'remoteip' => request()->ip(),
+        ]);
+
+        if (!$response->json()['success']) {
+            $this->addError('captcha', 'CAPTCHA verification failed. Please try again.');
+            // Reset CAPTCHA agar bisa dicoba lagi
+            $this->captcha = null;
+            $this->dispatch('reset-captcha'); // Dispatch event untuk reset widget
+            return;
+        }
+
+        // Jika CAPTCHA valid, lanjutkan validasi dan simpan
+        $this->validate(); // Validasi field lainnya
 
         // Simpan ke database (sesuaikan dengan model Anda)
         ModelsFormCoi::create([
@@ -83,10 +107,10 @@ class FormCoi extends Component
             'have_ownership' => $this->have_ownership,
         ]);
 
-        // Feedback sukses (opsional: redirect atau flash message)
+        // Feedback sukses
         session()->flash('message', 'Thank You, Conflict of Interest form submitted successfully!');
 
-        // Reset form setelah submit (opsional)
+        // Reset form setelah submit
         $this->reset();
     }
 

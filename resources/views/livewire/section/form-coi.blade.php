@@ -102,6 +102,16 @@
                 </div>
             </div>
 
+            <div class="mt-5">
+                <label class="label font-bold">CAPTCHA Verification</label>
+                <div class="mb-2">
+                    <div class="g-recaptcha" data-sitekey="{{ env('RECAPTCHA_SITE_KEY') }}" data-callback="onCaptchaSuccess" data-expired-callback="onCaptchaExpired"></div>
+                    @error('captcha')
+                    <span class="text-error text-sm">{{ $message }}</span>
+                    @enderror
+                </div>
+            </div>
+
             <button class="btn btn-warning" type="submit">Save</button>
         </fieldset>
     </form>
@@ -111,3 +121,22 @@
     <div class="alert alert-success mt-4">{{ session('message') }}</div>
     @endif
 </div>
+
+<script>
+    function onCaptchaSuccess(response) {
+        // Kirim nilai CAPTCHA ke properti Livewire
+        @this.set('captcha', response);
+    }
+
+    function onCaptchaExpired() {
+        // Reset properti jika CAPTCHA expired
+        @this.set('captcha', null);
+    }
+
+    // Listen untuk event reset dari Livewire
+    document.addEventListener('livewire:updated', () => {
+        @this.on('reset-captcha', () => {
+            grecaptcha.reset(); // Reset widget reCAPTCHA
+        });
+    });
+</script>
