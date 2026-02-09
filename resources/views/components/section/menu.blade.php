@@ -72,7 +72,7 @@
             </li>
             <li>
                 <a href="{{route('tour-inapras')}}" wire:navigate
-                    class="{{ request()->is('inapras/social-program') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500">Social Program <i class="fa-solid fa-angle-right"></i></a>
+                    class="{{ request()->is('inapras/social-program') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500">Tour <i class="fa-solid fa-angle-right"></i></a>
             </li>
     </div>
 </ul>

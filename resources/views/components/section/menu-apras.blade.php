@@ -59,9 +59,20 @@
             class="{{ request()->is('apras/submission') ? 'text-[#F9C20A]' : 'text-white' }} hover:text-amber-500 hover:underline">Submission
         </a>
     </li>
-    <li>
-        <a href="{{route('visiting-apras')}}" wire:navigate
-            class="{{ request()->is('apras/visiting') ? 'text-[#F9C20A]' : 'text-white' }} hover:text-amber-500 hover:underline">Venue
-        </a>
-    </li>
+    
+    <div class="dropdown dropdown-hover">
+        <div tabindex="0"
+            class="{{ request()->is('apras/visiting')  || request()->is('apras/social-program')  ? 'text-[#F9C20A]' : 'text-white' }} hover:cursor-pointer hover:text-amber-500">
+            Visiting <i class="fa-solid fa-angle-down"></i></div>
+        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
+            <li>
+                <a href="{{route('visiting-apras')}}" wire:navigate
+                    class="{{ request()->is('visiting') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500">
+                    Venue <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            <li>
+                <a href="{{route('tour-apras')}}" wire:navigate
+                    class="{{ request()->is('apras/social-program') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500">Tour <i class="fa-solid fa-angle-right"></i></a>
+            </li>
+    </div>
 </ul>
