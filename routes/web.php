@@ -45,6 +45,7 @@ Route::prefix('apras')->group(function () {
     Route::get('/home', Home::class)->name('home-apras');
     Route::get('/vising', AprasVisiting::class)->name('visiting-apras');
     Route::get('/organizing-committee', AprasCommittee::class)->name('organizing-committee-apras');
+    Route::get('/registration', App\Livewire\Apras\Registration::class)->name('registration-apras');
     Route::get('/accommodation', App\Livewire\Apras\Accommodation::class)->name('accommodation-apras');
     Route::get('/submission', App\Livewire\Apras\Submission::class)->name('submission-apras');
     Route::get('/social-program', SocialProgram::class)->name('tour-apras');

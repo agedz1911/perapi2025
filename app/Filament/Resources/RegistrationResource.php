@@ -30,6 +30,13 @@ class RegistrationResource extends Resource
     {
         return $form
             ->schema([
+                Select::make('reg_for')
+                    ->options([
+                        'inapras' => 'inapras',
+                        'apras' => 'apras',
+                        'both' => 'both',
+                    ])
+                    ->native(false),
                 Select::make('category_reg')
                     ->options([
                         'Symposium' => 'Symposium',
@@ -37,11 +44,8 @@ class RegistrationResource extends Resource
                         'CADAVERIC DISSECTION COURSE' => 'CADAVERIC DISSECTION COURSE',
                         'MASTER COURSES' => 'MASTER COURSES',
                         'INSTRUCTIONAL COURSES' => 'INSTRUCTIONAL COURSES',
-                        'PACKAGE REGISTRATION: PLASTIC SURGEON' => 'PACKAGE REGISTRATION: PLASTIC SURGEON',
-                        'PACKAGE REGISTRATION: OTHER SPECIALIST' => 'PACKAGE REGISTRATION: OTHER SPECIALIST',
-                        'PACKAGE REGISTRATION: GENERAL PRACTIONER (GP)' => 'PACKAGE REGISTRATION: GENERAL PRACTIONER (GP)',
-                        'PACKAGE REGISTRATION: RESIDENT' => 'PACKAGE REGISTRATION: RESIDENT',
                         'Master Class' => 'Master Class',
+                        'APRAS only' => 'APRAS only',
                     ])
                     ->native(false),
                 Select::make('wilayah_reg')

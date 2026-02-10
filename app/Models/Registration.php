@@ -13,6 +13,7 @@ class Registration extends Model
         'early_bird_reg',
         'normal_reg',
         'onsite_reg',
-        'is_Active'
+        'is_Active',
+        'reg_for'
     ];
 }

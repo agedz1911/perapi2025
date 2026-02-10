@@ -45,7 +45,7 @@
 
 
     <li>
-        <a href="#" wire:navigate
+        <a href="{{route('registration-apras')}}" wire:navigate
             class="{{ request()->is('apras/registration') ? 'text-[#F9C20A]' : 'text-white' }} hover:text-amber-500 hover:underline">Registration
         </a>
     </li>
