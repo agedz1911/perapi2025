@@ -4,8 +4,10 @@ namespace App\Livewire\Apras;
 
 use App\Models\RegInfo;
 use App\Models\Registration as ModelsRegistration;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Title('Registration - APRAS 2026')]
 class Registration extends Component
 {
     public $regInfos;
