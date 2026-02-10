@@ -64,7 +64,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/perapi2025/"
+                            <a href="https://expo.virconex-id.com/registration/apras-inapras2026"
                                 class="bg-amber-500 text-white hover:bg-purple-800 p-3 rounded-xl mb-3 float-end"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
@@ -124,7 +124,7 @@
                             </tbody>
                         </table>
                         <div class="relative mt-2">
-                            <a href="https://expo.virconex-id.com/registration/perapi2025/"
+                            <a href="https://expo.virconex-id.com/registration/apras-inapras2026"
                                 class="bg-amber-500 text-white hover:bg-purple-800 p-3 rounded-xl mb-3 float-end"><i
                                     class="fa-solid fa-list mx-3"></i>Register Now!</a>
                         </div>
