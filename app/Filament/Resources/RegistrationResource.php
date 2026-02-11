@@ -46,6 +46,7 @@ class RegistrationResource extends Resource
                         'INSTRUCTIONAL COURSES' => 'INSTRUCTIONAL COURSES',
                         'Master Class' => 'Master Class',
                         'APRAS only' => 'APRAS only',
+                        'InaPRAS only' => 'InaPRAS only',
                     ])
                     ->native(false),
                 Select::make('wilayah_reg')

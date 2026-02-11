@@ -11,7 +11,16 @@
             {{-- <span class="bg-amber-100 text-amber-800 px-3 py-2 text-sm rounded-xl mb-3">Foreign
                         Participants</span> --}}
             @foreach ($uniqueForeigns as $category)
-            <h2 class="uppercase font-semibold text-[#A93E89] mb-2 mt-5">{{$category}}</h2>
+            <h2 class="uppercase font-semibold text-[#A93E89] mt-5">{{$category}}</h2>
+            @if ($category === 'Symposium')
+            <p class="text-gray-700 mb-2">Inaugural Congress of APRAS - 29<sup>th</sup> InaPRAS <br>
+                2 - 4 September 2026
+            </p>
+            @elseif ($category === 'APRAS only')
+            <p class="text-gray-700 mb-2">Inaugural Congress of APRAS <br>
+                2 - 3 September 2026
+            </p>
+            @endif
             <div class="relative overflow-x-auto shadow sm:rounded-lg mt-5">
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
                     <thead class=" text-white uppercase text-center bg-[#A93E89] ">
