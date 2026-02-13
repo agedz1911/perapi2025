@@ -13,6 +13,8 @@ class Committee extends Model
         'category',
         'image',
         'no_urut',
-        'is_active'
+        'is_active',
+        'committee_for',
+        'sub_title',
     ];
 }

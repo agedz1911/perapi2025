@@ -48,7 +48,29 @@ class ScheduleSessionResource extends Resource
                 DatePicker::make('date')
                     ->native(false),
                 TextInput::make('time'),
-                TextInput::make('room'),
+                Select::make('room')
+                    ->options([
+                        'Pecatu 1&2' => 'Pecatu 1&2',
+                        'Pecatu 3&5' => 'Pecatu 3&5',
+                        'Mengwi 1&2' => 'Mengwi 1&2',
+                        'Mengwi 3&5' => 'Mengwi 3&5',
+                        'Mengwi 6&7' => 'Mengwi 6&7',
+                        'Mengwi 6' => 'Mengwi 6',
+                        'Mengwi 7' => 'Mengwi 7',
+                        'Mengwi 8' => 'Mengwi 8',
+                        'Legian 1' => 'Legian 1',
+                        'Legian 2' => 'Legian 2',
+                        'Legian 3' => 'Legian 3',
+                        'Legian 5' => 'Legian 5',
+                        'Legian 6' => 'Legian 6',
+                        'Legian 7' => 'Legian 7',
+                        'DAPS CLINIC' => 'DAPS CLINIC',
+                        'Bali International Hospital' => 'Bali International Hospital',
+                        'room 1' => 'room 1',
+                        'room 2' => 'room 2',
+                        'room 3' => 'room 3',
+                    ])
+                    ->native(false),
                 TextInput::make('moderator'),
                 Textarea::make('panelist'),
             ]);

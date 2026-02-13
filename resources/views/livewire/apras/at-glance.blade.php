@@ -1,4 +1,4 @@
-<div class="">
+<div>
     <section class=" relative pb-0">
         <div class="absolute inset-0 bg-gradient-to-l from-[#3C194F] via-[#3C194F] to-[#A93E89]"></div>
         <div class="py-16 lg:py-28 text-center relative">
@@ -7,8 +7,8 @@
     </section>
 
     <section class="pt-10 pb-24 px-2 lg:px-5 bg-competition">
-        {{-- <p>inapras</p> --}}
-        {{-- name of each tab group should be unique --}}
+        {{-- <p>apras</p> --}}
+        {{-- name of each tab group should be unique  --}}
         <div class="tabs tabs-border justify-evenly">
             <input type="radio" name="my_tabs_2" checked="checked"
                 class="tab uppercase tracking-wider text-[#440368] hover:text-[#9E1F63]"

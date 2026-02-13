@@ -1,15 +1,14 @@
 <?php
 
-namespace App\Livewire\Pages;
+namespace App\Livewire\Apras;
 
-use App\Models\atGlance as ModelsAtGlance;
 use App\Models\ScheduleSession;
-use App\Models\Time;
+use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
-
 #[Title('Program at Glance - APRAS InaPRAS 2026')]
+#[Layout('components.layouts.apras')]
 class AtGlance extends Component
 {
     public $atglances;
@@ -26,9 +25,8 @@ class AtGlance extends Component
         $this->empat = $this->atglances->where('date', '2026-09-04')->sortBy('no_urut');
         $this->lima = $this->atglances->where('date', '2026-09-05')->sortBy('no_urut');
     }
-
     public function render()
     {
-        return view('livewire.pages.at-glance');
+        return view('livewire.apras.at-glance');
     }
 }

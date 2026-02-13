@@ -16,7 +16,7 @@
             <div class="flex flex-wrap gap-5 justify-center mb-10">
                 @foreach ($committees as $committee)
                 @if ($committee->category == $category)
-                <div class="card bg-base-200 shadow-sm w-full max-w-xs">
+                <div class="card bg-base-200 shadow-sm w-full max-w-xs relative">
                     <figure class="avatar">
                         <img src="{{$committee->image ? asset('storage/' . $committee->image) : "
                                         ../assets/images/speaker-new.png"}}" alt="{{$committee->name}}"
@@ -26,8 +26,9 @@
                         <h2 class="card-title mb-0">
                             {{ $committee->name }}
                         </h2>
-                        @if ($committee->title != null)
-                        <div class="badge bg-[#A93E89] text-xs text-white mt-0">{{ $committee->title }}</div>
+                        <div class="absolute top-2 right-1 badge bg-[#3C194F] text-xs text-white mt-0">{{ $committee->title }}</div>
+                        @if ($committee->sub_title != null)
+                        <div class="badge bg-[#A93E89] text-xs text-white mt-0">{{ $committee->sub_title }}</div>
                         @endif
                     </div>
                 </div>

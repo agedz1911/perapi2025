@@ -7,6 +7,7 @@ use App\Filament\Resources\CommitteeResource\RelationManagers;
 use App\Models\Committee;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
@@ -32,6 +33,7 @@ class CommitteeResource extends Resource
                 TextInput::make('name'),
                 TextInput::make('title'),
                 TextInput::make('category'),
+                TextInput::make('sub_title'),
                 FileUpload::make('image')
                     ->maxSize(3072)
                     ->downloadable()
@@ -40,6 +42,13 @@ class CommitteeResource extends Resource
                     ->image()
                     ->imageEditor()
                     ->directory('Committee'),
+                Select::make('committee_for')
+                    ->options([
+                        'inapras' => 'inapras',
+                        'apras' => 'apras',
+                        'both' => 'both',
+                    ])
+                    ->native(false),
                 TextInput::make('no_urut')
                     ->numeric(),
                 Toggle::make('is_active')
