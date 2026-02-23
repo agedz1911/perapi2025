@@ -3,6 +3,7 @@
         <div class="absolute inset-0 bg-gradient-to-l from-[#3C194F] via-[#3C194F] to-[#A93E89]"></div>
         <div class="py-16 lg:py-28 text-center relative">
             <h2 class="text-white uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Submission</h2>
+            <p class="text-white text-sm italic font-semibold">“You Come Split Your Abstract in Two Events, And Get a Chance for Two Awards”</p>
         </div>
     </section>
 
