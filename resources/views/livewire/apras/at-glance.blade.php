@@ -29,7 +29,7 @@
                         <tbody>
                             <tr class="">
                                 <td class="align-top">
-                                    
+
                                     @foreach ($dua as $pecatu1tgl2)
                                     @if ($pecatu1tgl2->room == 'Pecatu 1&2')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -100,7 +100,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($dua as $mengwi1tgl2)
                                     @if ($mengwi1tgl2->room == 'Mengwi 1&2')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -171,7 +171,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($dua as $mengwi3tgl2)
                                     @if ($mengwi3tgl2->room == 'Mengwi 3&5')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -242,7 +242,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($dua as $mengwi6tgl2)
                                     @if ($mengwi6tgl2->room == 'Mengwi 6')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -313,7 +313,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($dua as $mengwi7tgl2)
                                     @if ($mengwi7tgl2->room == 'Mengwi 7')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -384,7 +384,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($dua as $mengwi8tgl2)
                                     @if ($mengwi8tgl2->room == 'Mengwi 8')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -469,25 +469,25 @@
                     <table class="table">
                         <thead>
                             <tr class=" mb-2">
-                                <th >Pecatu Hall 1 & 2</th>
-                                <th >Mengwi 1 & 2</th>
-                                <th >Mengwi 3 & 5</th>
-                                <th >Mengwi 6</th>
-                                <th >Mengwi 7</th>
-                                <th >Mengwi 8</th>
-                                <th >Pecatu Hall 3 & 5</th>
-                                <th >Legian 1</th>
-                                <th >Legian 2</th>
-                                <th >Legian 3</th>
-                                <th >Legian 5</th>
-                                <th >Legian 6</th>
-                                <th >Legian 7</th>
+                                <th>Pecatu Hall 1 & 2</th>
+                                <th>Mengwi 1 & 2</th>
+                                <th>Mengwi 3 & 5</th>
+                                <th>Mengwi 6</th>
+                                <th>Mengwi 7</th>
+                                <th>Mengwi 8</th>
+                                <th>Pecatu Hall 3 & 5</th>
+                                <th>Legian 1</th>
+                                <th>Legian 2</th>
+                                <th>Legian 3</th>
+                                <th>Legian 5</th>
+                                <th>Legian 6</th>
+                                <th>Legian 7</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="">
                                 <td class="align-top">
-                                    
+
                                     @foreach ($tiga as $pecatu1tgl3)
                                     @if ($pecatu1tgl3->room == 'Pecatu 1&2')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -558,7 +558,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($tiga as $mengwi11tgl3)
                                     @if ($mengwi11tgl3->room == 'Mengwi 1&2')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -629,7 +629,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($tiga as $mengwi3tgl3)
                                     @if ($mengwi3tgl3->room == 'Mengwi 3&5')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -700,7 +700,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($tiga as $mengwi6tgl3)
                                     @if ($mengwi6tgl3->room == 'Mengwi 6')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -771,7 +771,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($tiga as $mengwi7tgl3)
                                     @if ($mengwi7tgl3->room == 'Mengwi 7')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -842,7 +842,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($tiga as $mengwi8tgl3)
                                     @if ($mengwi8tgl3->room == 'Mengwi 8')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -913,7 +913,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($tiga as $pecatu3tgl3)
                                     @if ($pecatu3tgl3->room == 'Pecatu 3&5')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -984,7 +984,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($tiga as $legian1tgl3)
                                     @if ($legian1tgl3->room == 'Legian 1')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -1055,7 +1055,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($tiga as $legian2tgl3)
                                     @if ($legian2tgl3->room == 'Legian 2')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -1126,7 +1126,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($tiga as $legian3tgl3)
                                     @if ($legian3tgl3->room == 'Legian 3')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -1197,7 +1197,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($tiga as $legian5tgl3)
                                     @if ($legian5tgl3->room == 'Legian 5')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -1268,7 +1268,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($tiga as $legian6tgl3)
                                     @if ($legian6tgl3->room == 'Legian 6')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -1339,7 +1339,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($tiga as $legian7tgl3)
                                     @if ($legian7tgl3->room == 'Legian 7')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -1435,7 +1435,7 @@
                         <tbody>
                             <tr class="">
                                 <td class="align-top">
-                                    
+
                                     @foreach ($empat as $pecatu3tgl4)
                                     @if ($pecatu3tgl4->room == 'Pecatu 3&5')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -1506,7 +1506,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($empat as $mengwi13tgl4)
                                     @if ($mengwi13tgl4->room == 'Mengwi 1&2')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -1577,7 +1577,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($empat as $mengwi3tgl4)
                                     @if ($mengwi3tgl4->room == 'Mengwi 3&5')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -1648,7 +1648,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($empat as $mengwi6tgl4)
                                     @if ($mengwi6tgl4->room == 'Mengwi 6&7')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -1750,7 +1750,7 @@
                         <tbody>
                             <tr class="">
                                 <td class="align-top">
-                                    
+
                                     @foreach ($lima as $mengwi1tgl5)
                                     @if ($mengwi1tgl5->room == 'Mengwi 1&2')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -1821,7 +1821,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($lima as $mengwi3tgl5)
                                     @if ($mengwi3tgl5->room == 'Mengwi 3&5')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -1892,7 +1892,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($lima as $mengwi6tgl5)
                                     @if ($mengwi6tgl5->room == 'Mengwi 6&7')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -1963,7 +1963,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($lima as $mengwi8tgl5)
                                     @if ($mengwi8tgl5->room == 'Mengwi 8')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -2034,7 +2034,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($lima as $dapstgl5)
                                     @if ($dapstgl5->room == 'DAPS CLINIC')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -2105,7 +2105,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($lima as $room1tgl5)
                                     @if ($room1tgl5->room == 'room 1')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -2176,7 +2176,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($lima as $room2tgl5)
                                     @if ($room2tgl5->room == 'room 2')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -2247,7 +2247,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($lima as $room3tgl5)
                                     @if ($room3tgl5->room == 'room 3')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -2318,7 +2318,7 @@
                                     @endforeach
                                 </td>
                                 <td class="align-top">
-                                    
+
                                     @foreach ($lima as $bihtgl5)
                                     @if ($bihtgl5->room == 'Bali International Hospital')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
@@ -2394,6 +2394,12 @@
                     </table>
                 </div>
             </div>
+        </div>
+        <div class="mt-10">
+            <p class="text-sm text-error italic">
+                Note: <br>
+                The scientific schedule is provisional and may be adjusted as required.
+            </p>
         </div>
     </section>
 </div>

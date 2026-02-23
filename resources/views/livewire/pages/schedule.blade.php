@@ -101,14 +101,15 @@
                 @foreach ($uniqDates as $date)
                 <div class="text-center lg:text-start border-t border-dashed pt-2">
                     <h2 class="text-lg font-semibold uppercase text-[#92278F] tracking-wider">
-                        {{\Carbon\Carbon::parse($date)->format('l, d F')}}</h2>
+                        {{\Carbon\Carbon::parse($date)->format('l, d F')}}
+                    </h2>
                 </div>
                 @foreach ($uniqCategories as $item)
                 @if (
-                    !($date == '2025-07-30' && ($item == 'Symposium' || $item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster' || $item == 'Master Class' || $item == 'Video Parade')) && 
-                    !($date == '2025-07-31' && ($item == 'Workshop' || $item == 'Master Class' || $item == 'Video Parade')) && 
-                    !($date == '2025-08-01' && ($item == 'Workshop' || $item == 'Research Proposal')) && 
-                    !($date == '2025-08-02' && ($item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster' || $item == 'Master Class'))
+                !($date == '2025-07-30' && ($item == 'Symposium' || $item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster' || $item == 'Master Class' || $item == 'Video Parade')) &&
+                !($date == '2025-07-31' && ($item == 'Workshop' || $item == 'Master Class' || $item == 'Video Parade')) &&
+                !($date == '2025-08-01' && ($item == 'Workshop' || $item == 'Research Proposal')) &&
+                !($date == '2025-08-02' && ($item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster' || $item == 'Master Class'))
                 )
                 <p class="font-semibold tracking-wider my-5"><i
                         class="fa fa-angle-right text-sm text-purple-700 font-semibold"></i> {{$item}}</p>
@@ -162,6 +163,12 @@
                 @endforeach
                 @endforeach
             </div>
+        </div>
+        <div class="mt-10">
+            <p class="text-sm text-error italic">
+                Note: <br>
+                The scientific schedule is provisional and may be adjusted as required.
+            </p>
         </div>
     </section>
 </div>
