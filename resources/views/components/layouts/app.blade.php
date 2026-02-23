@@ -40,13 +40,26 @@
         {{ $slot }}
         <x-section.footer />
     </div>
+    <div class="fixed z-40 bottom-1/2 right-2">
+        <a href="https://apras2026bali.org/apras/home" class="flex rounded-full items-center btn-sm btn btn-warning hover:scale-105 transition-all duration-300 ease-in-out animate-pulse hover:animate-none">
+            <i class="fa fa-globe animate-bounce"></i>
+            <!-- Text -->
+            <span class="text-sm font-extrabold tracking-wide">
+                Go to APRAS Website
+            </span>
+        </a>
+    </div>
+
     <!-- Back-to-top Button start -->
     <button onclick="topFunction()" id="back-to-top"
         class="btn btn-circle btn-warning btn-outline  z-40 fixed right-5 md:right-10 bottom-10 over:-translate-y-1 hover:scale-105"><i
             class="fa-solid hover:text-white hover:scale-125 fa-arrow-up"></i></button>
     <!-- Back-to-top Button end -->
 
-    <script src="../assets/js/custom.js" ></script>
+    <script src="../assets/js/custom.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
 </body>
+
 </html>

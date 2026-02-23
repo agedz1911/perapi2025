@@ -46,6 +46,16 @@
             class="fa-solid hover:text-white hover:scale-125 fa-arrow-up"></i></button>
     <!-- Back-to-top Button end -->
 
+    <div class="fixed z-40 bottom-1/2 right-2">
+        <a href="https://pitperapi.org/inapras/home" class="flex rounded-full items-center btn-sm btn btn-warning hover:scale-105 transition-all duration-300 ease-in-out animate-pulse hover:animate-none">
+            <i class="fa fa-globe animate-bounce"></i>
+            <!-- Text -->
+            <span class="text-sm font-extrabold tracking-wide">
+                Go to InaPRAS Website
+            </span>
+        </a>
+    </div>
+
     <script src="../assets/js/custom.js"></script>
 </body>
 
