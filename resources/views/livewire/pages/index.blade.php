@@ -1,7 +1,7 @@
 <div class="relative">
     <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="absolute w-full top-5 md:top-14 left-0 right-0 mx-auto z-10">
-            <p class="text-center md:text-4xl text-white font-semibold animate-bounce">One Inspiring Destination. Two Distinct Congresses</p>
+            <p class="text-center md:text-4xl text-white font-semibold">Two Independent Congresses, One Extraordinary Experiences</p>
         </div>
         <div class="hero md:min-h-screen feature">
             <div class="hero-overlay opacity-25"></div>
