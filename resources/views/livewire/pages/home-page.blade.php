@@ -154,7 +154,7 @@
                                     <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
                                         <div class="ps-4 border-s border-black   border-spacing-7">
                                             <p class="text-black text-xs italic">" Chairperson The Inaugural Congress of
-                                                APRAS 2026, <br> Vice Chairperson, InaPRAS 2026
+                                                APRAS 2026, <br> Vice Chairperson, 29th InaPRAS 2026
                                                 "</p>
                                             <h6 class="font-semibold text-black">Prof. Theddeus O.H Prasetyono, MD, PhD
                                             </h6>
@@ -169,7 +169,7 @@
                                     </div>
                                     <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
                                         <div class="ps-4 border-s border-black   border-spacing-7">
-                                            <p class="text-black text-xs italic">" Chairperson, InaPRAS 2026
+                                            <p class="text-black text-xs italic">" Chairperson, 29th InaPRAS 2026
                                                 "</p>
                                             <h6 class="font-semibold text-black">Bambang Wicaksono, MD </h6>
                                         </div>
