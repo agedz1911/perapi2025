@@ -20,16 +20,19 @@
                         <div class="flex transition-transform duration-500 ease-in-out h-full"
                             :style="'transform: translateX(-' + (currentSlide * 100) + '%)'">
                             @foreach ($heros as $index => $hero)
-                            <div id="slide{{ $index + 1 }}"
-                                class="carousel-item w-full ">
+                            <div id="slide{{ $index + 1 }}" class="carousel-item w-full ">
                                 <div>
-                                    <div class="flex flex-wrap text-start mb-4 w-full items-center lg:justify-start justify-center">
-                                        <img src="{{asset('storage/' . $hero->logo)}}" alt="Logo" class="h-full max-h-16 mr-2" />
+                                    <div
+                                        class="flex flex-wrap text-start mb-4 w-full items-center lg:justify-start justify-center">
+                                        <img src="{{asset('storage/' . $hero->logo)}}" alt="Logo"
+                                            class="h-full max-h-16 mr-2" />
                                         <h1 class="lg:text-4xl text-2xl text-white font-semibold">{{$hero->title}}</h1>
                                     </div>
-                                    <h1 class="text-2xl lg:text-3xl text-white text-center lg:text-start">{{$hero->subtitle}}
+                                    <h1 class="text-2xl lg:text-3xl text-white text-center lg:text-start">
+                                        {{$hero->subtitle}}
                                     </h1>
-                                    <p class="italic my-2 text-center lg:text-start text-white text-lg">{{$hero->theme_event}}</p>
+                                    <p class="italic my-2 text-center lg:text-start text-white text-lg">
+                                        {{$hero->theme_event}}</p>
                                     <p class="text-[#F9C20A] mt-4 text-center lg:text-start">
                                         {{$hero->date_event}} <br> {{$hero->venue}}
                                     </p>
@@ -41,8 +44,7 @@
                         </div>
                     </div>
                     <div class="mt-10 flex justify-center gap-4 lg:justify-start">
-                        <button
-                            class="btn btn-warning text-white shadow-none rounded-lg btn-lg text-sm">Read
+                        <button class="btn btn-warning text-white shadow-none rounded-lg btn-lg text-sm">Read
                             More <i class="fa-solid fa-angles-right text-xs"></i></button>
                         <button
                             class="btn btn-warning btn-outline shadow-none rounded-lg btn-lg text-sm hover:text-white"><i
@@ -54,7 +56,9 @@
         <div
             class="absolute wave block md:hidden lg:block overflow-hidden w-full z-0 left-0 leading-none bottom-[-1px]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path class="fill-white translate-middle-y" d="M0,64L80,80C160,96,320,128,480,165.3C640,203,800,245,960,256C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+                <path class="fill-white translate-middle-y"
+                    d="M0,64L80,80C160,96,320,128,480,165.3C640,203,800,245,960,256C1120,267,1280,245,1360,234.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
             </svg>
             <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path class="fill-white translate-middle-y" d="M0,128L720,288L1440,64L1440,320L720,320L0,320Z"></path>
@@ -101,7 +105,20 @@
                             class="text-[#F9C20A]">Dates</span></h2>
                 </div>
                 <div class="w-full pt-5">
-                    <livewire:section.important-date />
+                    <ul class="flex flex-col gap-2">
+                        @foreach ($importantDates as $date)
+                        <li class="border-b border-violet-900 pb-3">
+                            <a href="javascript:void" class="justify-between font-normal hover:text-[#7F3F80] ">
+                                {{$date->title}} : {{
+                                $date->date_end
+                                ? \Carbon\Carbon::parse($date->date)->format('l, d F') . ' - ' .
+                                \Carbon\Carbon::parse($date->date_end)->format('l, d F, Y')
+                                : \Carbon\Carbon::parse($date->date)->format('l, d F, Y')
+                                }}
+                            </a>
+                        </li>
+                        @endforeach
+                    </ul>
                 </div>
             </div>
             <div class="w-full px-3">
@@ -115,7 +132,8 @@
                         </div>
                     </div>
                     <div class="rounded-xl bg-white shadow-lg">
-                        <img src="../assets/images/bali/4.jpg" class="w-full rounded-xl object-cover h-full sepia-50" alt="bali 3">
+                        <img src="../assets/images/bali/4.jpg" class="w-full rounded-xl object-cover h-full sepia-50"
+                            alt="bali 3">
                     </div>
                 </div>
             </div>
@@ -200,7 +218,8 @@
                                             <div class="">
                                                 {!! str($welcomeMessage->description)->markdown()->sanitizeHtml() !!}
                                             </div>
-                                            <a class="hover:underline hover:text-primary" href="/welcome-messages" wire:navigate>Read More...</a>
+                                            <a class="hover:underline hover:text-primary" href="/welcome-messages"
+                                                wire:navigate>Read More...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -237,7 +256,8 @@
                                             <div class="">
                                                 {!! str($welcomeMessage->description)->markdown()->sanitizeHtml() !!}
                                             </div>
-                                            <a class="hover:underline hover:text-warning" href="/welcome-messages" wire:navigate>Read More...</a>
+                                            <a class="hover:underline hover:text-warning" href="/welcome-messages"
+                                                wire:navigate>Read More...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -249,7 +269,8 @@
                 @endforeach
             </div>
             {{-- <div class="flex justify-center">
-                <a href="/welcome-messages" wire:navigate class="btn btn-primary rounded-lg">Read All Welcome Message <i class="fa fa-angles-right"></i></a>
+                <a href="/welcome-messages" wire:navigate class="btn btn-primary rounded-lg">Read All Welcome Message <i
+                        class="fa fa-angles-right"></i></a>
             </div> --}}
         </div>
     </section>

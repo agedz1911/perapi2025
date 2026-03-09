@@ -7,9 +7,18 @@ use Livewire\Component;
 
 class ImportantDate extends Component
 {
+    public $importantDates;
+
+    public function mount()
+    {
+        $this->importantDates = ModelsImportantDate::where('is_active', true)
+            ->where('category', 'inapras')
+            ->orderBy('no_urut')
+            ->get();
+    }
+
     public function render()
     {
-        $importantDates = ModelsImportantDate::where('is_active', true)->orderBy('no_urut', 'asc')->get();
-        return view('livewire.section.important-date', ['importantDates' => $importantDates]);
+        return view('livewire.section.important-date');
     }
 }

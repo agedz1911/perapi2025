@@ -12,6 +12,7 @@ class ImportantDate extends Model
         'date',
         'date_end',
         'no_urut',
-        'is_active'
+        'is_active',
+        'category'
     ];
 }

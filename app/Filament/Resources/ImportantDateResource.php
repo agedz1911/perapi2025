@@ -7,6 +7,7 @@ use App\Filament\Resources\ImportantDateResource\RelationManagers;
 use App\Models\ImportantDate;
 use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Form;
@@ -35,6 +36,12 @@ class ImportantDateResource extends Resource
                     ->native(false),
                 TextInput::make('no_urut')
                     ->numeric(),
+                Select::make('category')
+                    ->options([
+                        'inapras' => 'inapras',
+                        'apras' => 'apras'
+                    ])
+                    ->native(false),
                 Toggle::make('is_active')
                     ->default(true)
             ]);
@@ -50,6 +57,7 @@ class ImportantDateResource extends Resource
                 TextColumn::make('date_end')
                     ->date(),
                 TextColumn::make('no_urut'),
+                TextColumn::make('category'),
                 IconColumn::make('is_active')
                     ->boolean()
             ])
