@@ -25,21 +25,26 @@
                         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
                             @foreach ($indofaculties as $indo)
                             <div class="card bg-base-100 shadow-sm ">
-                                <figure class="relative">
+                                <figure class="">
                                     <img src="{{$indo->image ? asset('storage/' . $indo->image) : "
                                         assets/images/speaker.png"}}" alt="{{$indo->name}}"
                                         class="w-full h-full max-h-72 object-cover rounded">
-                                    <button onclick="my_modal_{{$loop->index}}.showModal()"
-                                        class="btn bg-purple-700 text-white hover:bg-[#d02ec5] btn-xs rounded-xl absolute right-0 top-1">
-                                        <i class="fa fa-info-circle text-green-400"></i> Read more..
-                                    </button>
+
                                 </figure>
-                                <div class="card-body text-center pt-2">
+                                <div class="card-body pt-2">
                                     <h2 onclick="my_modal_{{$loop->index}}.showModal()"
-                                        class="text-xl font-semibold text-amber-500 hover:text-purple-700 hover:cursor-pointer">
+                                        class="text-xl text-center font-semibold text-amber-500 hover:text-purple-700 hover:cursor-pointer">
                                         {{$indo->name}}
                                     </h2>
-                                    <p>{{$indo->description}}</p>
+                                    <p class="text-center">{{$indo->description}}</p>
+                                    <div class="text-end">
+                                        <button onclick="my_modal_{{$loop->index}}.showModal()" class="btn btn-sm btn-warning">
+                                            <i class=""></i> Schedule Details
+                                        </button>
+                                        <button class="btn btn-sm">
+                                            <i class=""></i> Submit Abstract
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
 

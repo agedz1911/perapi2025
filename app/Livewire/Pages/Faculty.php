@@ -50,11 +50,11 @@ class Faculty extends Component
         }
         $indofaculties = $queryIndo
             ->orderBy('name', 'asc')
-            ->get();
+            ->paginate(10);
 
         $foreignfaculties = $queryForeign
             ->orderBy('name', 'asc')
-            ->get();
+            ->paginate(10);
 
         return view('livewire.pages.faculty', ['indofaculties' => $indofaculties, 'foreignfaculties' => $foreignfaculties]);
     }

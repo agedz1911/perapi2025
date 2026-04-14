@@ -7,6 +7,8 @@ use App\Filament\Resources\FacultyResource\RelationManagers;
 use App\Models\Faculty;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Repeater;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -33,26 +35,54 @@ class FacultyResource extends Resource
 
         return $form
             ->schema([
-                TextInput::make('name'),
-                Select::make('country')
-                    ->options(collect($countries)->mapWithKeys(function ($country) {
-                        return [$country['name'] => $country['name']];
-                    })->all())
-                    ->searchable(),
-                FileUpload::make('image')
-                    ->maxSize(3072)
-                    ->downloadable()
-                    ->reorderable()
-                    ->panelLayout('grid')
-                    ->image()
-                    ->imageEditor()
-                    ->directory('Faculty'),
-                Textarea::make('description'),
-                TextInput::make('no_urut')
-                    ->numeric(),
-                Toggle::make('is_active')
-                    ->inline()
-                    ->default(true),
+                Section::make('Faculty Information')->schema([
+                    Select::make('category')
+                        ->options([
+                            'inapras' => 'inapras',
+                            'apras' => 'apras',
+                            'both' => 'both',
+                        ])
+                        ->searchable(),
+                    TextInput::make('name'),
+                    Select::make('country')
+                        ->options(collect($countries)->mapWithKeys(function ($country) {
+                            return [$country['name'] => $country['name']];
+                        })->all())
+                        ->searchable(),
+                    FileUpload::make('image')
+                        ->maxSize(3072)
+                        ->downloadable()
+                        ->reorderable()
+                        ->panelLayout('grid')
+                        ->image()
+                        ->imageEditor()
+                        ->directory('Faculty'),
+                    Textarea::make('description'),
+                    TextInput::make('no_urut')
+                        ->numeric(),
+                    Toggle::make('is_active')
+                        ->inline()
+                        ->default(true),
+                ])->columns(2),
+                Repeater::make('abstracts')
+                    ->relationship('submit_abstracts')
+                    ->schema([
+                        Section::make()
+                            ->schema([
+                                TextInput::make('title'),
+                                FileUpload::make('abstract')
+                                    ->label('Abstract File')
+                                    ->preserveFilenames()
+                                    ->acceptedFileTypes([
+                                        'application/pdf',
+                                        'application/msword',
+                                        'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+                                    ])
+                                    ->maxSize(3072)
+                                    ->downloadable()
+                                    ->directory('Abstracts'),
+                            ])->columns(2)
+                    ])->columnSpanFull(),
             ]);
     }
 
@@ -66,9 +96,14 @@ class FacultyResource extends Resource
                 ImageColumn::make('image'),
                 TextColumn::make('country')
                     ->searchable(),
-                TextColumn::make('schedules.topic_title')
-                    ->limit(40),
                 TextColumn::make('description'),
+                TextColumn::make('submit_abstracts.title')
+                    ->label('Abstracts')
+                    ->limit(40),
+                TextColumn::make('submit_abstracts.abstract')
+                    ->label('Abstract Files')
+                    ->limit(40),
+                TextColumn::make('schedules.topic_title'),
                 IconColumn::make('is_active')
                     ->boolean()
                     ->sortable()
