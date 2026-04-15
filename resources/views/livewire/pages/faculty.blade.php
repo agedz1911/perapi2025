@@ -61,8 +61,7 @@
                             </form>
                             <div class="flex items-center gap-3 pb-3">
                                 <img class="rounded-full bg-indigo-700/20 shadow w-20 object-cover"
-                                    src="{{$indo->image ? asset('storage/' . $indo->image) : "
-                                    assets/images/speaker.png"}}" alt="{{$indo->name}}">
+                                    src="{{$indo->image ? asset('storage/' . $indo->image) : asset('assets/images/speaker.png')}}" alt="{{$indo->name}}">
                                 <div>
                                     <p class="mb-0"><span
                                             class="text-amber-500 text-lg font-semibold">{{$indo->name}}</span>

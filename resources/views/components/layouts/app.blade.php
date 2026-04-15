@@ -22,7 +22,7 @@
 
 
     <!--FontAwesome CSS-->
-    <script src="https://kit.fontawesome.com/e9525cd488.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f662ae2afd.js" crossorigin="anonymous"></script>
     <!-- daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
