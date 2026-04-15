@@ -20,8 +20,8 @@
                     @foreach ($indofaculties as $indo)
                     <div class="card bg-base-100 shadow-sm ">
                         <figure class="hover:cursor-pointer" onclick="my_modal_{{$loop->index}}.showModal()">
-                            <img src="{{$indo->image ? asset('storage/' . $indo->image) : "
-                                assets/images/speaker.png"}}" alt="{{$indo->name}}"
+                            <img src="{{$indo->image ? asset('storage/' . $indo->image) : 
+                                asset('assets/images/speaker.png')}}" alt="{{$indo->name}}"
                                 class="w-full h-full max-h-72 object-cover rounded">
 
                         </figure>
