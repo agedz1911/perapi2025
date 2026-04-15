@@ -16,7 +16,94 @@
                 </label>
             </div>
             <div class="mt-10">
-                <!-- name of each tab group should be unique -->
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                    @foreach ($indofaculties as $indo)
+                    <div class="card bg-base-100 shadow-sm ">
+                        <figure class="hover:cursor-pointer" onclick="my_modal_{{$loop->index}}.showModal()">
+                            <img src="{{$indo->image ? asset('storage/' . $indo->image) : "
+                                assets/images/speaker.png"}}" alt="{{$indo->name}}"
+                                class="w-full h-full max-h-72 object-cover rounded">
+
+                        </figure>
+                        <div class="card-body pt-2">
+                            <h2 
+                                class="text-xl text-center font-semibold text-amber-500">
+                                {{$indo->name}}
+                            </h2>
+                            <p class="text-center">{{$indo->description}}</p>
+                            <div class="text-end">
+                                <button onclick="my_modal_{{$loop->index}}.showModal()" class="btn btn-sm btn-warning">
+                                    <i class=""></i> Schedule Details
+                                </button>
+                                {{-- <button class="btn btn-sm">Submit Abstract</button> --}}
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <dialog id="submit_{{$indo->id}}" class="modal">
+                        <div class="modal-box">
+                            <h3 class="text-lg font-bold">Hello!</h3>
+                            @livewire('section.submit-abstract')
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <button class="btn">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+
+
+                    <dialog id="my_modal_{{$loop->index}}" class="modal">
+                        <div class="modal-box w-10/12 max-w-5xl">
+                            <form method="dialog">
+                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                            </form>
+                            <div class="flex items-center gap-3 pb-3">
+                                <img class="rounded-full bg-indigo-700/20 shadow w-20 object-cover"
+                                    src="{{$indo->image ? asset('storage/' . $indo->image) : "
+                                    assets/images/speaker.png"}}" alt="{{$indo->name}}">
+                                <div>
+                                    <p class="mb-0"><span
+                                            class="text-amber-500 text-lg font-semibold">{{$indo->name}}</span>
+                                        <br>
+                                        {{$indo->country}}
+                                    </p>
+                                    <p class="text-sm text-gray-500">{{$indo->description}}</p>
+                                </div>
+                            </div>
+                            <p class="font-medium text-lg text-gray-700">Session</p>
+                            <div class="border-t pt-5">
+                                @foreach ($indo->schedules as $schedule)
+                                <div class="flex flex-wrap gap-5 text-green-600">
+                                    <p>{{\Carbon\Carbon::parse($schedule->sesi->date)->format('d
+                                        F Y')}}</p>
+                                    <p>{{$schedule->time_speaker}}</p>
+                                    <p>{{$schedule->sesi->room}}</p>
+                                </div>
+                                <p class="mb-1">{{$schedule->sesi->title_ses}}
+                                </p>
+                                <p class="text-gray-500 mb-5 border-b border-dashed border-gray-800 pb-3">
+                                    {{$schedule->topic_title}}
+                                </p>
+                                @endforeach
+                            </div>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <!-- if there is a button, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                    @endforeach
+                </div>
+                <div class="mt-5 border-t border-dashed pt-3">
+                    {{ $indofaculties->links() }}
+                </div>
+                <p class="text-gray-500 italic text-xs">*within confirmation</p>
+            </div>
+            {{-- <div class="mt-10">
                 <div class="tabs tabs-border justify-evenly">
                     <input type="radio" name="my_tabs_2"
                         class="tab uppercase tracking-wider  text-lg text-purple-700 hover:text-[#9E1F63]"
@@ -38,15 +125,27 @@
                                     </h2>
                                     <p class="text-center">{{$indo->description}}</p>
                                     <div class="text-end">
-                                        <button onclick="my_modal_{{$loop->index}}.showModal()" class="btn btn-sm btn-warning">
+                                        <button onclick="my_modal_{{$loop->index}}.showModal()"
+                                            class="btn btn-sm btn-warning">
                                             <i class=""></i> Schedule Details
                                         </button>
-                                        <button class="btn btn-sm">
-                                            <i class=""></i> Submit Abstract
-                                        </button>
+                                        <button class="btn btn-sm">Submit Abstract</button>
+
                                     </div>
                                 </div>
                             </div>
+
+                            <dialog id="submit_{{$indo->id}}" class="modal">
+                                <div class="modal-box">
+                                    <h3 class="text-lg font-bold">Hello!</h3>
+                                    @livewire('section.submit-abstract')
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            <button class="btn">Close</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
 
 
                             <dialog id="my_modal_{{$loop->index}}" class="modal">
@@ -104,7 +203,6 @@
                         class="tab uppercase tracking-wider  text-lg text-purple-700 hover:text-[#9E1F63]"
                         aria-label="International faculties" />
                     <div class="tab-content border-base-300 bg-purple-50 p-5 rounded-lg">
-                        {{-- @dd($indofaculties) --}}
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                             @foreach ($foreignfaculties as $foreign)
                             <div class="card bg-base-100 shadow-sm ">
@@ -163,7 +261,6 @@
                                     </div>
                                     <div class="modal-action">
                                         <form method="dialog">
-                                            <!-- if there is a button, it will close the modal -->
                                             <button class="btn">Close</button>
                                         </form>
                                     </div>
@@ -178,7 +275,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     </section>

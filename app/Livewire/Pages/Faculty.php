@@ -36,8 +36,8 @@ class Faculty extends Component
         //     });
 
         // $query = ModelsFaculty::where('is_active', true)->with('schedules');
-        $queryIndo = ModelsFaculty::where('is_active', true)->with('schedules')->where('country', 'Indonesia');
-        $queryForeign = ModelsFaculty::where('is_active', true)->with('schedules')->where('country', '!=', 'Indonesia');
+        $queryIndo = ModelsFaculty::where('is_active', true)->with('schedules')->whereIn('category', ['inapras','both' ]);
+        $queryForeign = ModelsFaculty::where('is_active', true)->with('schedules')->whereIn('category', ['apras','both' ]);
         if (strlen($this->searchTerm) >= 3) {
             $queryIndo->where(function ($q) {
                 $q->where('name', 'like', '%' . $this->searchTerm . '%');
@@ -50,11 +50,11 @@ class Faculty extends Component
         }
         $indofaculties = $queryIndo
             ->orderBy('name', 'asc')
-            ->paginate(10);
+            ->paginate(28);
 
         $foreignfaculties = $queryForeign
             ->orderBy('name', 'asc')
-            ->paginate(10);
+            ->paginate(28);
 
         return view('livewire.pages.faculty', ['indofaculties' => $indofaculties, 'foreignfaculties' => $foreignfaculties]);
     }
