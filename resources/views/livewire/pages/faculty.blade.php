@@ -22,7 +22,7 @@
                         <figure class="hover:cursor-pointer" onclick="my_modal_{{$loop->index}}.showModal()">
                             <img src="{{$indo->image ? asset('storage/' . $indo->image) : 
                                 asset('assets/images/speaker.png')}}" alt="{{$indo->name}}"
-                                class="w-full h-full max-h-72 object-cover rounded">
+                                class="w-full h-full max-h-80 object-cover rounded">
 
                         </figure>
                         <div class="card-body pt-2">
@@ -35,15 +35,15 @@
                                 <button onclick="my_modal_{{$loop->index}}.showModal()" class="btn btn-sm btn-warning">
                                     <i class=""></i> Schedule Details
                                 </button>
-                                {{-- <button class="btn btn-sm">Submit Abstract</button> --}}
+                                {{-- <button onclick="submit_{{$indo->id}}.showModal()" class="btn btn-sm">Submit Abstract</button> --}}
 
                             </div>
                         </div>
                     </div>
 
                     <dialog id="submit_{{$indo->id}}" class="modal">
-                        <div class="modal-box">
-                            <h3 class="text-lg font-bold">Hello!</h3>
+                        <div class="modal-box w-10/12 max-w-4xl">
+                            <h3 class="text-lg font-bold">{{$indo->name}}</h3>
                             @livewire('section.submit-abstract')
                             <div class="modal-action">
                                 <form method="dialog">

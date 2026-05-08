@@ -148,15 +148,14 @@
                                 <div
                                     class="w-full justify-center mb-2 lg:flex-row flex flex-col items-center lg:items-end gap-2">
                                     <div class="avatar">
-                                        <img src="{{asset('assets/images/teddy.jpg')}}" alt="Theddeus O.H Prasetyono"
+                                        <img src="{{asset('assets/images/bambang.jpg')}}" alt="Theddeus O.H Prasetyono"
                                             class="w-full max-w-52 shadow-lg rounded-lg ">
                                     </div>
                                     <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
                                         <div class="ps-4 border-s border-black   border-spacing-7">
-                                            <p class="text-black text-xs italic">" Chairperson The Inaugural Congress of
-                                                APRAS 2026, <br> Vice Chairperson, 29th InaPRAS 2026
+                                            <p class="text-black text-xs italic">" President of 29th of InapRAS 2026
                                                 "</p>
-                                            <h6 class="font-semibold text-black">Prof. Theddeus O.H Prasetyono, MD, PhD
+                                            <h6 class="font-semibold text-black">bambang wicaksono, MD
                                             </h6>
                                         </div>
                                     </div>
@@ -164,14 +163,14 @@
                                 <div
                                     class="w-full justify-center mb-2 lg:flex-row flex flex-col items-center lg:items-end gap-2">
                                     <div class="avatar">
-                                        <img src="{{asset('assets/images/bambang.jpg')}}" alt="Bambang Wicaksono, MD "
+                                        <img src="{{asset('assets/images/herman.jpg')}}" alt="Bambang Wicaksono, MD "
                                             class="w-full max-w-52 shadow-lg rounded-lg ">
                                     </div>
                                     <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
                                         <div class="ps-4 border-s border-black   border-spacing-7">
-                                            <p class="text-black text-xs italic">" Chairperson, 29th InaPRAS 2026
+                                            <p class="text-black text-xs italic">" Vice President of 29th of InapRAS 2026
                                                 "</p>
-                                            <h6 class="font-semibold text-black">Bambang Wicaksono, MD </h6>
+                                            <h6 class="font-semibold text-black">Herman Yosef Limpat W., MD </h6>
                                         </div>
                                     </div>
                                 </div>
@@ -183,7 +182,7 @@
                                     </div>
                                     <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
                                         <div class="ps-4 border-s border-black   border-spacing-7">
-                                            <p class="text-black text-xs italic">" President, InaPRAS
+                                            <p class="text-black text-xs italic">" President of InaPRAS
                                                 "</p>
                                             <h6 class="font-semibold text-black">Najatullah, MD </h6>
                                         </div>
@@ -230,15 +229,14 @@
                                 <div
                                     class="w-full justify-center mb-2 lg:flex-row flex flex-col items-center lg:items-end gap-2">
                                     <div class="avatar">
-                                        <img src="{{asset('assets/images/teddy.jpg')}}" alt="Theddeus O.H Prasetyono"
+                                        <img src="{{asset('assets/images/bambang.jpg')}}" alt="Theddeus O.H Prasetyono"
                                             class="w-full max-w-52 shadow-lg rounded-lg ">
                                     </div>
                                     <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
                                         <div class="ps-4 border-s border-black   border-spacing-7">
-                                            <p class="text-black text-xs italic">" Chairperson The Inaugural Congress of
-                                                APRAS 2026, <br> Vice Chairperson, 29th InaPRAS 2026
+                                            <p class="text-black text-xs italic">" President of 29th of InapRAS 2026
                                                 "</p>
-                                            <h6 class="font-semibold text-black">Prof. Theddeus O.H Prasetyono, MD, PhD
+                                            <h6 class="font-semibold text-black">Bambang Wicaksono, MD
                                             </h6>
                                         </div>
                                     </div>
@@ -246,14 +244,14 @@
                                 <div
                                     class="w-full justify-center mb-2 lg:flex-row flex flex-col items-center lg:items-end gap-2">
                                     <div class="avatar">
-                                        <img src="{{asset('assets/images/bambang.jpg')}}" alt="Bambang Wicaksono, MD "
+                                        <img src="{{asset('assets/images/herman.jpg')}}" alt="Bambang Wicaksono, MD "
                                             class="w-full max-w-52 shadow-lg rounded-lg ">
                                     </div>
                                     <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
                                         <div class="ps-4 border-s border-black   border-spacing-7">
-                                            <p class="text-black text-xs italic">" Chairperson, 29th InaPRAS 2026
+                                            <p class="text-black text-xs italic">" Vice President of 29th of InapRAS 2026
                                                 "</p>
-                                            <h6 class="font-semibold text-black">Bambang Wicaksono, MD </h6>
+                                            <h6 class="font-semibold text-black"> Herman Yosef Limpat W., MD</h6>
                                         </div>
                                     </div>
                                 </div>
