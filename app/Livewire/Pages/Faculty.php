@@ -36,7 +36,7 @@ class Faculty extends Component
         //     });
 
         // $query = ModelsFaculty::where('is_active', true)->with('schedules');
-        $queryIndo = ModelsFaculty::where('is_active', true)->with('schedules')->whereIn('category', ['inapras','both' ]);
+        $queryIndo = ModelsFaculty::where('is_active', true)->with('schedules')->with('submit_abstracts')->whereIn('category', ['inapras','both' ]);
         $queryForeign = ModelsFaculty::where('is_active', true)->with('schedules')->whereIn('category', ['apras','both' ]);
         if (strlen($this->searchTerm) >= 3) {
             $queryIndo->where(function ($q) {
