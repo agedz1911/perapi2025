@@ -24,7 +24,7 @@ class FormCoi extends Component
     public $have_speaker_honorarium = '';
     public $have_ownership = '';
 
-    public $captcha;
+    // public $captcha; // DIHAPUS
 
     // Aturan validasi
     protected $rules = [
@@ -68,28 +68,9 @@ class FormCoi extends Component
     // Metode untuk submit form
     public function save()
     {
-        // Validasi CAPTCHA manual menggunakan properti $this->captcha
-        if (!$this->captcha) {
-            $this->addError('captcha', 'Please complete the CAPTCHA.');
-            return;
-        }
+        // === CAPTCHA VALIDATION DIHAPUS ===
+        // Langsung validasi dan simpan
 
-        // Verifikasi dengan Google
-        $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
-            'secret' => env('RECAPTCHA_SECRET_KEY'),
-            'response' => $this->captcha,
-            'remoteip' => request()->ip(),
-        ]);
-
-        if (!$response->json()['success']) {
-            $this->addError('captcha', 'CAPTCHA verification failed. Please try again.');
-            // Reset CAPTCHA agar bisa dicoba lagi
-            $this->captcha = null;
-            $this->dispatch('reset-captcha'); // Dispatch event untuk reset widget
-            return;
-        }
-
-        // Jika CAPTCHA valid, lanjutkan validasi dan simpan
         $this->validate(); // Validasi field lainnya
 
         // Simpan ke database (sesuaikan dengan model Anda)
