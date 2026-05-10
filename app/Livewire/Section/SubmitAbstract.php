@@ -3,7 +3,7 @@
 namespace App\Livewire\Section;
 
 use App\Models\Faculty;
-use App\Models\submit_abstracts;
+use App\Models\Submit_Abstracts;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 

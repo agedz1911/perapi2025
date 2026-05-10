@@ -34,8 +34,13 @@
                                 <button onclick="my_modal_{{$loop->index}}.showModal()" class="btn btn-sm btn-warning">
                                     <i class=""></i> Schedule Details
                                 </button>
+                                @if ($indo->submit_abstracts()->count() > 0)
+
+                                @else
                                 <button onclick="submit_{{$indo->id}}.showModal()" class="btn btn-sm">Submit
                                     Abstract</button>
+                                @endif
+
                             </div>
                         </div>
                     </div>
