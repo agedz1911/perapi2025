@@ -18,7 +18,7 @@
                     @foreach ($uniqueLocals as $category)
                     <h2 class="uppercase font-semibold text-[#A93E89] mb-2 mt-5">{{$category}}</h2>
                     @if ($category === 'Symposium')
-                    <p class="text-gray-700 mb-2">Inaugural Congress of APRAS - 29<sup>th</sup> InaPRAS <br>
+                    <p class="text-gray-700 mb-2">Inaugural Congress of APRAS & 29<sup>th</sup> InaPRAS <br>
                         2 - 4 September 2026
                     </p>
                     @elseif ($category === 'InaPRAS only')
@@ -90,7 +90,7 @@
                     @foreach ($uniqueForeigns as $category)
                     <h2 class="uppercase font-semibold text-[#A93E89] mb-2 mt-5">{{$category}}</h2>
                     @if ($category === 'Symposium')
-                    <p class="text-gray-700 mb-2">Inaugural Congress of APRAS - 29<sup>th</sup> InaPRAS <br>
+                    <p class="text-gray-700 mb-2">Inaugural Congress of APRAS & 29<sup>th</sup> InaPRAS <br>
                         2 - 4 September 2026
                     </p>
                     @elseif ($category === 'InaPRAS only')
