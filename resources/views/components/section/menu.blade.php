@@ -37,7 +37,7 @@
                     at Glance <i class="fa-solid fa-angle-right"></i></a>
             </li>
             <li>
-                <a href="#" wire:navigate
+                <a href="{{route('scientific-schedule-inapras')}}" wire:navigate
                     class="{{ request()->is('inapras/scientific-schedule') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500">Scientific
                     Schedule <i class="fa-solid fa-angle-right"></i></a>
             </li>
