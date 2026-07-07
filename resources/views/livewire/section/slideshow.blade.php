@@ -42,9 +42,9 @@
                     <button
                         class="btn btn-warning text-white shadow-none rounded-lg btn-lg text-sm">Read
                         More <i class="fa-solid fa-angles-right text-xs"></i></button>
-                    <button 
+                    <a href="https://expo.virconex-id.com/registration/apras-inapras2026/index.php/auth_peserta"  
                         class="btn btn-warning btn-outline shadow-none rounded-lg btn-lg text-sm hover:text-white"><i
-                            class="fa-solid fa-pen-to-square"></i> Regiter Now </button>
+                            class="fa-solid fa-pen-to-square"></i> Register Now </a>
                 </div>
             </div>
         </div>
