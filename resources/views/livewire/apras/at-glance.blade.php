@@ -17,13 +17,12 @@
                 <div class="overflow-x-auto">
                     <table class="table">
                         <thead>
-                            <tr class="mb-2">
+                            <tr class="mb-2 text-center">
                                 <th style="width: 20%;">Pecatu Hall 1 & 2</th>
-                                <th style="width: 16%;">Mengwi 1 & 2</th>
-                                <th style="width: 16%;">Mengwi 3 & 5</th>
-                                <th style="width: 16%;">Mengwi 6</th>
-                                <th style="width: 16%;">Mengwi 7</th>
-                                <th style="width: 16%;">Mengwi 8</th>
+                                <th style="width: 20%;">Mengwi 1 & 2</th>
+                                <th style="width: 20%;">Mengwi 3 & 5</th>
+                                <th style="width: 20%;">Mengwi 6</th>
+                                <th style="width: 20%;">Mengwi 7</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -383,77 +382,7 @@
                                     </dialog>
                                     @endforeach
                                 </td>
-                                <td class="align-top">
-
-                                    @foreach ($dua as $mengwi8tgl2)
-                                    @if ($mengwi8tgl2->room == 'Mengwi 8')
-                                    <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
-                                        onclick="mengwi8tgl2{{$mengwi8tgl2->id}}.showModal()">
-                                        <div
-                                            class="border border-purple-500 bg-fuchsia-50 px-0 py-4 w-full rounded-md ">
-                                            <div class="badge badge-sm badge-warning mb-2">{{$mengwi8tgl2->category_sesi}}
-                                            </div>
-                                            <br>
-                                            {{$mengwi8tgl2->time}} <br>
-                                            {{$mengwi8tgl2->title_ses}}
-                                        </div>
-                                    </button>
-                                    @endif
-
-                                    <dialog id="mengwi8tgl2{{$mengwi8tgl2->id}}" class="modal">
-                                        <div class="modal-box w-11/12 max-w-5xl text-start">
-                                            <div class="flex justify-between mb-3 text-gray-700">
-                                                <div class="text-start">
-                                                    <h3 class="mb-0">Date: <span class="">
-                                                            {{\Carbon\Carbon::parse($mengwi8tgl2->date)->format('d
-                                                            F
-                                                            Y')}}</span></h3>
-                                                    <h3 class="mb-0">Time: <span class="">
-                                                            {{$mengwi8tgl2->time}}</span></h3>
-                                                </div>
-                                                <div>
-                                                    <p class="">Room :<span class="">
-                                                            {{$mengwi8tgl2->room}}
-                                                        </span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p class="mb-0 text-gray-700">Session : <span class="">
-                                                    {{$mengwi8tgl2->title_ses}}</span></p>
-                                            <p class="text-gray-700">Moderator : <span class="">
-                                                    {{$mengwi8tgl2->moderator}}
-                                                </span></p>
-                                            <div class="overflow-x-auto mt-5">
-                                                <table class="table text-gray-700">
-                                                    <!-- head -->
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="width: 18%">Time</th>
-                                                            <th>Topic</th>
-                                                            <th>Speaker</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        @foreach ($mengwi8tgl2->schedules as $schedule)
-                                                        <tr>
-                                                            <th scope="row">{{$schedule->time_speaker}}</th>
-                                                            <td>{{$schedule->topic_title}}</td>
-                                                            <td>{{$schedule->speaker}}</td>
-                                                        </tr>
-                                                        @endforeach
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="modal-action">
-                                                <form method="dialog">
-                                                    <!-- if there is a button in form, it will close the modal -->
-                                                    <button class="btn">Close</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </dialog>
-                                    @endforeach
-                                </td>
+                                
 
                             </tr>
                         </tbody>
@@ -468,13 +397,12 @@
                 <div class="overflow-x-auto">
                     <table class="table">
                         <thead>
-                            <tr class=" mb-2">
+                            <tr class="text-center mb-2">
                                 <th>Pecatu Hall 1 & 2</th>
                                 <th>Mengwi 1 & 2</th>
                                 <th>Mengwi 3 & 5</th>
                                 <th>Mengwi 6</th>
                                 <th>Mengwi 7</th>
-                                <th>Mengwi 8</th>
                                 <th>Pecatu Hall 3 & 5</th>
                                 <th>Legian 1</th>
                                 <th>Legian 2</th>
@@ -841,77 +769,7 @@
                                     </dialog>
                                     @endforeach
                                 </td>
-                                <td class="align-top">
-
-                                    @foreach ($tiga as $mengwi8tgl3)
-                                    @if ($mengwi8tgl3->room == 'Mengwi 8')
-                                    <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
-                                        onclick="mengwi8tgl3{{$mengwi8tgl3->id}}.showModal()">
-                                        <div
-                                            class="border border-purple-500 bg-fuchsia-50 px-0 py-4 w-full rounded-md ">
-                                            <div class="badge badge-sm badge-warning mb-2">{{$mengwi8tgl3->category_sesi}}
-                                            </div>
-                                            <br>
-                                            {{$mengwi8tgl3->time}} <br>
-                                            {{$mengwi8tgl3->title_ses}}
-                                        </div>
-                                    </button>
-                                    @endif
-
-                                    <dialog id="mengwi8tgl3{{$mengwi8tgl3->id}}" class="modal">
-                                        <div class="modal-box w-11/12 max-w-5xl text-start">
-                                            <div class="flex justify-between mb-3 text-gray-700">
-                                                <div class="text-start">
-                                                    <h3 class="mb-0">Date: <span class="">
-                                                            {{\Carbon\Carbon::parse($mengwi8tgl3->date)->format('d
-                                                            F
-                                                            Y')}}</span></h3>
-                                                    <h3 class="mb-0">Time: <span class="">
-                                                            {{$mengwi8tgl3->time}}</span></h3>
-                                                </div>
-                                                <div>
-                                                    <p class="">Room :<span class="">
-                                                            {{$mengwi8tgl3->room}}
-                                                        </span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p class="mb-0 text-gray-700">Session : <span class="">
-                                                    {{$mengwi8tgl3->title_ses}}</span></p>
-                                            <p class="text-gray-700">Moderator : <span class="">
-                                                    {{$mengwi8tgl3->moderator}}
-                                                </span></p>
-                                            <div class="overflow-x-auto mt-5">
-                                                <table class="table text-gray-700">
-                                                    <!-- head -->
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="width: 18%">Time</th>
-                                                            <th>Topic</th>
-                                                            <th>Speaker</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        @foreach ($mengwi8tgl3->schedules as $schedule)
-                                                        <tr>
-                                                            <th scope="row">{{$schedule->time_speaker}}</th>
-                                                            <td>{{$schedule->topic_title}}</td>
-                                                            <td>{{$schedule->speaker}}</td>
-                                                        </tr>
-                                                        @endforeach
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="modal-action">
-                                                <form method="dialog">
-                                                    <!-- if there is a button in form, it will close the modal -->
-                                                    <button class="btn">Close</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </dialog>
-                                    @endforeach
-                                </td>
+                                
                                 <td class="align-top">
 
                                     @foreach ($tiga as $pecatu3tgl3)
@@ -1732,19 +1590,11 @@
                 <div class="overflow-x-auto">
                     <table class="table">
                         <thead>
-                            <tr class=" mb-2">
+                            <tr class="text-center mb-2">
                                 <th>Mengwi 1 & 2</th>
                                 <th>Mengwi 3 & 5</th>
-                                <th>Mengwi 6 & 7</th>
-                                <th>Mengwi 8</th>
-                                <th>DAPS CLINIC</th>
-                                <th>room 1</th>
-                                <th>room 2</th>
-                                <th>room 3</th>
-                                <th>Bali
-                                    Interntaional Hospital
-                                    KEK</th>
-
+                                <th>DAPS CLINIC</th>                                
+                                <th colspan="3">The Solitaire Clinic (BIH Sanur)</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -1891,148 +1741,8 @@
                                     </dialog>
                                     @endforeach
                                 </td>
-                                <td class="align-top">
-
-                                    @foreach ($lima as $mengwi6tgl5)
-                                    @if ($mengwi6tgl5->room == 'Mengwi 6&7')
-                                    <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
-                                        onclick="mengwi6tgl5{{$mengwi6tgl5->id}}.showModal()">
-                                        <div
-                                            class="border border-purple-500 bg-fuchsia-50 px-0 py-4 w-full rounded-md ">
-                                            <div class="badge badge-sm badge-warning mb-2">{{$mengwi6tgl5->category_sesi}}
-                                            </div>
-                                            <br>
-                                            {{$mengwi6tgl5->time}} <br>
-                                            {{$mengwi6tgl5->title_ses}}
-                                        </div>
-                                    </button>
-                                    @endif
-
-                                    <dialog id="mengwi6tgl5{{$mengwi6tgl5->id}}" class="modal">
-                                        <div class="modal-box w-11/12 max-w-5xl text-start">
-                                            <div class="flex justify-between mb-3 text-gray-700">
-                                                <div class="text-start">
-                                                    <h3 class="mb-0">Date: <span class="">
-                                                            {{\Carbon\Carbon::parse($mengwi6tgl5->date)->format('d
-                                                            F
-                                                            Y')}}</span></h3>
-                                                    <h3 class="mb-0">Time: <span class="">
-                                                            {{$mengwi6tgl5->time}}</span></h3>
-                                                </div>
-                                                <div>
-                                                    <p class="">Room :<span class="">
-                                                            {{$mengwi6tgl5->room}}
-                                                        </span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p class="mb-0 text-gray-700">Session : <span class="">
-                                                    {{$mengwi6tgl5->title_ses}}</span></p>
-                                            <p class="text-gray-700">Moderator : <span class="">
-                                                    {{$mengwi6tgl5->moderator}}
-                                                </span></p>
-                                            <div class="overflow-x-auto mt-5">
-                                                <table class="table text-gray-700">
-                                                    <!-- head -->
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="width: 18%">Time</th>
-                                                            <th>Topic</th>
-                                                            <th>Speaker</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        @foreach ($mengwi6tgl5->schedules as $schedule)
-                                                        <tr>
-                                                            <th scope="row">{{$schedule->time_speaker}}</th>
-                                                            <td>{{$schedule->topic_title}}</td>
-                                                            <td>{{$schedule->speaker}}</td>
-                                                        </tr>
-                                                        @endforeach
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="modal-action">
-                                                <form method="dialog">
-                                                    <!-- if there is a button in form, it will close the modal -->
-                                                    <button class="btn">Close</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </dialog>
-                                    @endforeach
-                                </td>
-                                <td class="align-top">
-
-                                    @foreach ($lima as $mengwi8tgl5)
-                                    @if ($mengwi8tgl5->room == 'Mengwi 8')
-                                    <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
-                                        onclick="mengwi8tgl5{{$mengwi8tgl5->id}}.showModal()">
-                                        <div
-                                            class="border border-purple-500 bg-fuchsia-50 px-0 py-4 w-full rounded-md ">
-                                            <div class="badge badge-sm badge-warning mb-2">{{$mengwi8tgl5->category_sesi}}
-                                            </div>
-                                            <br>
-                                            {{$mengwi8tgl5->time}} <br>
-                                            {{$mengwi8tgl5->title_ses}}
-                                        </div>
-                                    </button>
-                                    @endif
-
-                                    <dialog id="mengwi8tgl5{{$mengwi8tgl5->id}}" class="modal">
-                                        <div class="modal-box w-11/12 max-w-5xl text-start">
-                                            <div class="flex justify-between mb-3 text-gray-700">
-                                                <div class="text-start">
-                                                    <h3 class="mb-0">Date: <span class="">
-                                                            {{\Carbon\Carbon::parse($mengwi8tgl5->date)->format('d
-                                                            F
-                                                            Y')}}</span></h3>
-                                                    <h3 class="mb-0">Time: <span class="">
-                                                            {{$mengwi8tgl5->time}}</span></h3>
-                                                </div>
-                                                <div>
-                                                    <p class="">Room :<span class="">
-                                                            {{$mengwi8tgl5->room}}
-                                                        </span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p class="mb-0 text-gray-700">Session : <span class="">
-                                                    {{$mengwi8tgl5->title_ses}}</span></p>
-                                            <p class="text-gray-700">Moderator : <span class="">
-                                                    {{$mengwi8tgl5->moderator}}
-                                                </span></p>
-                                            <div class="overflow-x-auto mt-5">
-                                                <table class="table text-gray-700">
-                                                    <!-- head -->
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="width: 18%">Time</th>
-                                                            <th>Topic</th>
-                                                            <th>Speaker</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        @foreach ($mengwi8tgl5->schedules as $schedule)
-                                                        <tr>
-                                                            <th scope="row">{{$schedule->time_speaker}}</th>
-                                                            <td>{{$schedule->topic_title}}</td>
-                                                            <td>{{$schedule->speaker}}</td>
-                                                        </tr>
-                                                        @endforeach
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="modal-action">
-                                                <form method="dialog">
-                                                    <!-- if there is a button in form, it will close the modal -->
-                                                    <button class="btn">Close</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </dialog>
-                                    @endforeach
-                                </td>
+                                
+                                
                                 <td class="align-top">
 
                                     @foreach ($lima as $dapstgl5)
@@ -2134,7 +1844,7 @@
                                                 </div>
                                                 <div>
                                                     <p class="">Room :<span class="">
-                                                            {{$room1tgl5->room}}
+                                                            {{$room1tgl5->room == 'room 1' ? 'Live Surgery 1' : $room1tgl5->room}}
                                                         </span>
                                                     </p>
                                                 </div>
@@ -2205,7 +1915,7 @@
                                                 </div>
                                                 <div>
                                                     <p class="">Room :<span class="">
-                                                            {{$room2tgl5->room}}
+                                                            {{$room2tgl5->room == 'room 2' ? 'Live Surgery 2' : $room2tgl5->room}}
                                                         </span>
                                                     </p>
                                                 </div>
@@ -2276,7 +1986,7 @@
                                                 </div>
                                                 <div>
                                                     <p class="">Room :<span class="">
-                                                            {{$room3tgl5->room}}
+                                                            {{$room3tgl5->room == 'room 3' ? 'Live Surgery 3' : $room3tgl5->room}}
                                                         </span>
                                                     </p>
                                                 </div>
@@ -2317,77 +2027,7 @@
                                     </dialog>
                                     @endforeach
                                 </td>
-                                <td class="align-top">
-
-                                    @foreach ($lima as $bihtgl5)
-                                    @if ($bihtgl5->room == 'Bali International Hospital')
-                                    <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
-                                        onclick="bihtgl5{{$bihtgl5->id}}.showModal()">
-                                        <div
-                                            class="border border-purple-500 bg-fuchsia-50 px-0 py-4 w-full rounded-md ">
-                                            <div class="badge badge-sm badge-warning mb-2">{{$bihtgl5->category_sesi}}
-                                            </div>
-                                            <br>
-                                            {{$bihtgl5->time}} <br>
-                                            {{$bihtgl5->title_ses}}
-                                        </div>
-                                    </button>
-                                    @endif
-
-                                    <dialog id="bihtgl5{{$bihtgl5->id}}" class="modal">
-                                        <div class="modal-box w-11/12 max-w-5xl text-start">
-                                            <div class="flex justify-between mb-3 text-gray-700">
-                                                <div class="text-start">
-                                                    <h3 class="mb-0">Date: <span class="">
-                                                            {{\Carbon\Carbon::parse($bihtgl5->date)->format('d
-                                                            F
-                                                            Y')}}</span></h3>
-                                                    <h3 class="mb-0">Time: <span class="">
-                                                            {{$bihtgl5->time}}</span></h3>
-                                                </div>
-                                                <div>
-                                                    <p class="">Room :<span class="">
-                                                            {{$bihtgl5->room}}
-                                                        </span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p class="mb-0 text-gray-700">Session : <span class="">
-                                                    {{$bihtgl5->title_ses}}</span></p>
-                                            <p class="text-gray-700">Moderator : <span class="">
-                                                    {{$bihtgl5->moderator}}
-                                                </span></p>
-                                            <div class="overflow-x-auto mt-5">
-                                                <table class="table text-gray-700">
-                                                    <!-- head -->
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="width: 18%">Time</th>
-                                                            <th>Topic</th>
-                                                            <th>Speaker</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        @foreach ($bihtgl5->schedules as $schedule)
-                                                        <tr>
-                                                            <th scope="row">{{$schedule->time_speaker}}</th>
-                                                            <td>{{$schedule->topic_title}}</td>
-                                                            <td>{{$schedule->speaker}}</td>
-                                                        </tr>
-                                                        @endforeach
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="modal-action">
-                                                <form method="dialog">
-                                                    <!-- if there is a button in form, it will close the modal -->
-                                                    <button class="btn">Close</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </dialog>
-                                    @endforeach
-                                </td>
+                                
 
                             </tr>
                         </tbody>
