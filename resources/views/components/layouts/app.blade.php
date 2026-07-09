@@ -32,6 +32,17 @@
 
     {{-- @vite(['resources/css/app.css','resources/js/app.js']) --}}
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJSCNFEWXC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FJSCNFEWXC');
+    </script>
+
+
 </head>
 
 <body>
@@ -41,7 +52,8 @@
         <x-section.footer />
     </div>
     <div class="fixed z-40 bottom-1/2 right-2">
-        <a href="https://apras2026bali.org/apras/home" class="flex rounded-full items-center btn-sm btn btn-warning hover:scale-105 transition-all duration-300 ease-in-out animate-pulse hover:animate-none">
+        <a href="https://apras2026bali.org/apras/home"
+            class="flex rounded-full items-center btn-sm btn btn-warning hover:scale-105 transition-all duration-300 ease-in-out animate-pulse hover:animate-none">
             <i class="fa fa-globe animate-bounce"></i>
             <!-- Text -->
             <span class="text-sm font-extrabold tracking-wide">
