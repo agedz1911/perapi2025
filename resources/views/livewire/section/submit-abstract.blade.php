@@ -64,22 +64,10 @@
                 <button type="button" class="btn text-white bg-purple-700 hover:bg-[#9E1F63]" wire:click="save">
                     <i class="fa fa-save"></i> Save
                 </button>
-                <button type="button" class="btn btn-error" wire:click="cancel">
+                <button type="button" class="btn btn-error" onclick="this.closest('dialog').close()">
                     <i class="fa fa-xmark"></i> Close
                 </button>
             </form>
         </div>
     </form>
 </div>
-
-<script>
-    document.addEventListener('livewire:initialized', () => {
-        @this.on('closeModal', () => {
-            // Tutup modal terdekat
-            const modal = document.querySelector('dialog[open]');
-            if (modal) {
-                modal.close();
-            }
-        });
-    });
-</script>

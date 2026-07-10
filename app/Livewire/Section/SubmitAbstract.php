@@ -163,9 +163,6 @@ class SubmitAbstract extends Component
             ]
         ];
         
-        // Emit event untuk menutup modal dan show feedback
-        $this->dispatch('closeModal');
-        
         // Flash message untuk notifikasi
         session()->flash('message', 'Abstract(s) submitted successfully!');
         
@@ -173,12 +170,6 @@ class SubmitAbstract extends Component
         $this->redirect(route('faculties-inapras'));
     }
     
-    public function cancel()
-    {
-        // Emit event untuk menutup modal
-        $this->dispatch('closeModal');
-    }
-
     public function render()
     {
         return view('livewire.section.submit-abstract');

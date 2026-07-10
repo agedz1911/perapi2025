@@ -19,7 +19,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
                     @foreach ($indofaculties as $indo)
                     <div class="card bg-base-100 shadow-sm ">
-                        <figure class="hover:cursor-pointer" onclick="my_modal_{{$loop->index}}.showModal()">
+                        <figure class="hover:cursor-pointer" onclick="document.getElementById('my_modal_{{$loop->index}}').showModal()">
                             <img src="{{$indo->image ? asset('storage/' . $indo->image) : 
                                 asset('assets/images/speaker.png')}}" alt="{{$indo->name}}"
                                 class="w-full h-full max-h-96 object-cover rounded">
@@ -31,11 +31,11 @@
                             </h2>
                             <p class="text-center">{{$indo->description}}</p>
                             <div class="text-end">
-                                <button onclick="my_modal_{{$loop->index}}.showModal()" class="btn btn-sm btn-warning">
+                                <button onclick="document.getElementById('my_modal_{{$loop->index}}').showModal()" class="btn btn-sm btn-warning">
                                     <i class=""></i> Schedule Details
                                 </button>
 
-                                <button onclick="submit_{{$indo->id}}.showModal()" class="btn btn-sm">Submit
+                                <button onclick="document.getElementById('submit_{{$indo->id}}').showModal()" class="btn btn-sm">Submit
                                     Abstract</button>
 
                             </div>
@@ -44,7 +44,7 @@
 
                     <dialog id="submit_{{$indo->id}}" class="modal">
                         <div class="modal-box w-10/12 max-w-4xl">
-                            @livewire('section.submit-abstract', ['facultyId' => $indo->id])
+                            @livewire('section.submit-abstract', ['facultyId' => $indo->id], key('submit-abstract-' . $indo->id))
                         </div>
                     </dialog>
 
