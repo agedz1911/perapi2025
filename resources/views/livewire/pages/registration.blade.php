@@ -292,11 +292,11 @@
                                     <span class="text-xl">USD {{$regForeign->early_bird_reg != 0 ?
                                         number_format($regForeign->early_bird_reg,
                                         0, ',', '.') : 'to be announce'}}</span>
-                                    @if ($regLocal->normal_reg != 0)
+                                    @if ($regForeign->normal_reg != 0)
                                     <div>
                                         <p>Resident / GP</p>
-                                        <span class="text-xl">USD {{$regLocal->normal_reg != 0 ?
-                                            number_format($regLocal->normal_reg,
+                                        <span class="text-xl">USD {{$regForeign->normal_reg != 0 ?
+                                            number_format($regForeign->normal_reg,
                                             0, ',', '.') : 'to be announce'}}</span>
                                     </div>
                                     @endif
