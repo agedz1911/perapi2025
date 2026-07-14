@@ -134,11 +134,22 @@
                         <div class="card w-full lg:w-96 bg-base-100 shadow-sm">
                             <div class="card-body">
                                 {{-- <span class="badge badge-xs badge-warning">{{$regLocal->title}}</span> --}}
+                                <h2 class="text-xl font-bold">{{$regLocal->title}}</h2>
                                 <div class="flex flex-wrap justify-between">
-                                    <h2 class="text-xl font-bold">{{$regLocal->title}}</h2>
-                                    <span class="text-xl">IDR {{$regLocal->early_bird_reg != 0 ?
-                                        number_format($regLocal->early_bird_reg,
-                                        0, ',', '.') : 'to be announce'}}</span>
+                                    <div>
+                                        <p>Specialist</p>
+                                        <span class="text-xl">IDR {{$regLocal->early_bird_reg != 0 ?
+                                            number_format($regLocal->early_bird_reg,
+                                            0, ',', '.') : 'to be announce'}}</span>
+                                    </div>
+                                    @if ($regLocal->normal_reg != 0)
+                                    <div>
+                                        <p>Resident / GP</p>
+                                        <span class="text-xl">IDR {{$regLocal->normal_reg != 0 ?
+                                            number_format($regLocal->normal_reg,
+                                            0, ',', '.') : 'to be announce'}}</span>
+                                    </div>
+                                    @endif
                                 </div>
                                 {!! str($regLocal->description)->markdown()->sanitizeHtml() !!}
                                 <div class="mt-6">
@@ -276,11 +287,19 @@
                         <div class="card w-full lg:w-96 bg-base-100 shadow-sm">
                             <div class="card-body">
                                 {{-- <span class="badge badge-xs badge-warning">{{$regForeign->title}}</span> --}}
+                                <h2 class="text-xl font-bold">{{$regForeign->title}}</h2>
                                 <div class="flex flex-wrap justify-between">
-                                    <h2 class="text-xl font-bold">{{$regForeign->title}}</h2>
-                                    <span class="text-xl">IDR {{$regForeign->early_bird_reg != 0 ?
+                                    <span class="text-xl">USD {{$regForeign->early_bird_reg != 0 ?
                                         number_format($regForeign->early_bird_reg,
                                         0, ',', '.') : 'to be announce'}}</span>
+                                    @if ($regLocal->normal_reg != 0)
+                                    <div>
+                                        <p>Resident / GP</p>
+                                        <span class="text-xl">USD {{$regLocal->normal_reg != 0 ?
+                                            number_format($regLocal->normal_reg,
+                                            0, ',', '.') : 'to be announce'}}</span>
+                                    </div>
+                                    @endif
                                 </div>
                                 {!! str($regForeign->description)->markdown()->sanitizeHtml() !!}
                                 <div class="mt-6">

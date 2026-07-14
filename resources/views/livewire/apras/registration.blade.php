@@ -9,7 +9,7 @@
     <section class="pt-10 pb-24 px-2 lg:px-5 bg-competition">
         <div class="pb-6 text-gray-500">
             {{-- <span class="bg-amber-100 text-amber-800 px-3 py-2 text-sm rounded-xl mb-3">Foreign
-                        Participants</span> --}}
+                Participants</span> --}}
             @foreach ($uniqueForeigns as $category)
             @if ($category === 'Symposium')
             <h2 class="uppercase font-semibold text-[#A93E89] mt-5">{{$category}}</h2>
@@ -125,11 +125,22 @@
                 <div class="card w-full lg:w-96 bg-base-100 shadow-sm">
                     <div class="card-body">
                         {{-- <span class="badge badge-xs badge-warning">{{$regForeign->title}}</span> --}}
+                        <h2 class="text-xl font-bold">{{$regForeign->title}}</h2>
                         <div class="flex flex-wrap justify-between">
-                            <h2 class="text-xl font-bold">{{$regForeign->title}}</h2>
-                            <span class="text-xl">IDR {{$regForeign->early_bird_reg != 0 ?
-                                        number_format($regForeign->early_bird_reg,
-                                        0, ',', '.') : 'to be announce'}}</span>
+                            <div>
+                                <p>Specialist</p>
+                                <span class="text-xl">USD {{$regForeign->early_bird_reg != 0 ?
+                                    number_format($regForeign->early_bird_reg,
+                                    0, ',', '.') : 'to be announce'}}</span>
+                            </div>
+                            @if ($regForeign->normal_reg != 0)
+                            <div>
+                                <p>Resident / GP</p>
+                                <span class="text-xl">USD {{$regForeign->normal_reg != 0 ?
+                                    number_format($regForeign->normal_reg,
+                                    0, ',', '.') : 'to be announce'}}</span>
+                            </div>
+                            @endif
                         </div>
                         {!! str($regForeign->description)->markdown()->sanitizeHtml() !!}
                         <div class="mt-6">
