@@ -11,16 +11,11 @@
             {{-- <span class="bg-amber-100 text-amber-800 px-3 py-2 text-sm rounded-xl mb-3">Foreign
                         Participants</span> --}}
             @foreach ($uniqueForeigns as $category)
-            <h2 class="uppercase font-semibold text-[#A93E89] mt-5">{{$category}}</h2>
             @if ($category === 'Symposium')
+            <h2 class="uppercase font-semibold text-[#A93E89] mt-5">{{$category}}</h2>
             <p class="text-gray-700 mb-2">Inaugural Congress of APRAS & 29<sup>th</sup> InaPRAS <br>
                 2 - 4 September 2026
             </p>
-            @elseif ($category === 'APRAS only')
-            <p class="text-gray-700 mb-2">Inaugural Congress of APRAS <br>
-                2 - 3 September 2026
-            </p>
-            @endif
             <div class="relative overflow-x-auto shadow sm:rounded-lg mt-5">
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
                     <thead class=" text-white uppercase text-center bg-[#A93E89] ">
@@ -69,6 +64,86 @@
                             class="fa-solid fa-list mx-3"></i>Register Now!</a>
                 </div>
             </div>
+            @elseif ($category === 'APRAS only')
+            <h2 class="uppercase font-semibold text-[#A93E89] mt-5">{{$category}}</h2>
+            <p class="text-gray-700 mb-2">Inaugural Congress of APRAS <br>
+                2 - 3 September 2026
+            </p>
+            <div class="relative overflow-x-auto shadow sm:rounded-lg mt-5">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
+                    <thead class=" text-white uppercase text-center bg-[#A93E89] ">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Category
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Early Bird Registration <br>
+                                up to 3 July 2026
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Late Registration <br>
+                                up to 1 September 2026
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Onsite Registration
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($regForeigns as $regForeign)
+                        @if ($regForeign->category_reg == $category)
+                        <tr class="bg-white border-b  border-gray-200 hover:bg-purple-50 ">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                {{$regForeign->title}}
+                            </th>
+                            <td class="px-6 py-4 text-center">
+                                USD {{$regForeign->early_bird_reg != 0 ? $regForeign->early_bird_reg : 'Free'}}
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                USD {{$regForeign->normal_reg != 0 ? $regForeign->normal_reg : 'Free'}}
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                USD {{$regForeign->onsite_reg != 0 ? $regForeign->onsite_reg : 'Free'}}
+                            </td>
+                        </tr>
+                        @endif
+                        @endforeach
+                    </tbody>
+                </table>
+                <div class="relative mt-2">
+                    <a href="https://expo.virconex-id.com/registration/apras-inapras2026"
+                        class="bg-amber-500 text-white hover:bg-purple-800 p-3 rounded-xl mb-3 float-end"><i
+                            class="fa-solid fa-list mx-3"></i>Register Now!</a>
+                </div>
+            </div>
+            @elseif ($category !== 'Symposium' && $category !== 'APRAS only')
+            <h2 class="uppercase font-semibold text-[#A93E89] mt-5">{{$category}}</h2>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+                @foreach ($regForeigns as $regForeign)
+                @if ($regForeign->category_reg == $category)
+                <div class="card w-full lg:w-96 bg-base-100 shadow-sm">
+                    <div class="card-body">
+                        {{-- <span class="badge badge-xs badge-warning">{{$regForeign->title}}</span> --}}
+                        <div class="flex flex-wrap justify-between">
+                            <h2 class="text-xl font-bold">{{$regForeign->title}}</h2>
+                            <span class="text-xl">IDR {{$regForeign->early_bird_reg != 0 ?
+                                        number_format($regForeign->early_bird_reg,
+                                        0, ',', '.') : 'to be announce'}}</span>
+                        </div>
+                        {!! str($regForeign->description)->markdown()->sanitizeHtml() !!}
+                        <div class="mt-6">
+                            <a href="https://expo.virconex-id.com/registration/apras-inapras2026"
+                                class="btn btn-warning rounded-xl mb-3 btn-block"><i
+                                    class="fa-solid fa-list mx-3"></i>Register Now!</a>
+                        </div>
+                    </div>
+                </div>
+                @endif
+                @endforeach
+            </div>
+            @endif
+
             @endforeach
         </div>
     </section>

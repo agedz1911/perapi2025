@@ -6,6 +6,7 @@ use App\Filament\Resources\RegistrationResource\Pages;
 use App\Filament\Resources\RegistrationResource\RelationManagers;
 use App\Models\Registration;
 use Filament\Forms;
+use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -47,6 +48,7 @@ class RegistrationResource extends Resource
                         'Master Class' => 'Master Class',
                         'APRAS only' => 'APRAS only',
                         'InaPRAS only' => 'InaPRAS only',
+                        'Workshop' => 'Workshop',
                     ])
                     ->native(false),
                 Select::make('wilayah_reg')
@@ -62,10 +64,11 @@ class RegistrationResource extends Resource
                     ->numeric(),
                 TextInput::make('onsite_reg')
                     ->numeric(),
-                Textarea::make('description'),
                 Toggle::make('is_Active')
                     ->default(true)
                     ->inline(),
+                MarkdownEditor::make('description')
+                    ->columnSpanFull()
             ]);
     }
 
@@ -74,16 +77,18 @@ class RegistrationResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('category_reg')
-->sortable(),
+                    ->sortable(),
                 TextColumn::make('wilayah_reg')
-->sortable(),
+                    ->sortable(),
                 TextColumn::make('title')
-->sortable()
+                    ->sortable()
                     ->searchable(),
                 TextColumn::make('early_bird_reg')
                     ->numeric(),
                 TextColumn::make('normal_reg')
                     ->numeric(),
+                TextColumn::make('description')
+                    ->limit(50),
                 IconColumn::make('is_Active')
                     ->boolean()
             ])

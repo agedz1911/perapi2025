@@ -14,6 +14,7 @@ class Registration extends Model
         'normal_reg',
         'onsite_reg',
         'is_Active',
-        'reg_for'
+        'reg_for',
+        'description',
     ];
 }
