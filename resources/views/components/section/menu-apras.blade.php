@@ -19,7 +19,7 @@
                     Committee <i class="fa-solid fa-angle-right"></i></a>
             </li>
             <li>
-                <a href="#" wire:navigate
+                <a href="{{route('faculties-apras')}}" wire:navigate
                     class="{{ request()->is('apras/faculties') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500 ">Faculties
                     <i class="fa-solid fa-angle-right"></i></a>
             </li>
@@ -37,7 +37,7 @@
                     at Glance <i class="fa-solid fa-angle-right"></i></a>
             </li>
             <li>
-                <a href="#" wire:navigate
+                <a href="{{route('scientific-schedule-apras')}}" wire:navigate
                     class="{{ request()->is('apras/scientific-schedule') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500">Scientific
                     Schedule <i class="fa-solid fa-angle-right"></i></a>
             </li>
@@ -59,7 +59,7 @@
             class="{{ request()->is('apras/submission') ? 'text-[#F9C20A]' : 'text-white' }} hover:text-amber-500 hover:underline">Submission
         </a>
     </li>
-    
+
     <div class="dropdown dropdown-hover">
         <div tabindex="0"
             class="{{ request()->is('apras/visiting')  || request()->is('apras/social-program')  ? 'text-[#F9C20A]' : 'text-white' }} hover:cursor-pointer hover:text-amber-500">
