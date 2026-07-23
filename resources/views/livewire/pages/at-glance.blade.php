@@ -18,11 +18,11 @@
                     <table class="table">
                         <thead>
                             <tr class="mb-2 text-center">
-                                <th style="width: 20%;">Pecatu Hall 1 & 2</th>
-                                <th style="width: 20%;">Mengwi 1 & 2</th>
-                                <th style="width: 20%;">Mengwi 3 & 5</th>
-                                <th style="width: 20%;">Mengwi 6</th>
-                                <th style="width: 20%;">Mengwi 7</th>
+                                <th style="width: 20%;"></th>
+                                <th style="width: 20%;"></th>
+                                <th style="width: 20%;"></th>
+                                <th style="width: 20%;"></th>
+                                <th style="width: 20%;"></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -39,7 +39,8 @@
                                             </div>
                                             <br>
                                             {{$pecatu1tgl2->time}} <br>
-                                            {{$pecatu1tgl2->title_ses}}
+                                            {{$pecatu1tgl2->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$pecatu1tgl2->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -101,7 +102,7 @@
                                 <td class="align-top">
 
                                     @foreach ($dua as $mengwi1tgl2)
-                                    @if ($mengwi1tgl2->room == 'Mengwi 1&2')
+                                    @if ($mengwi1tgl2->room == 'Mengwi 1&2' || $mengwi1tgl2->room == 'Mengwi 1')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
                                         onclick="mengwi1tgl2{{$mengwi1tgl2->id}}.showModal()">
                                         <div
@@ -110,7 +111,8 @@
                                             </div>
                                             <br>
                                             {{$mengwi1tgl2->time}} <br>
-                                            {{$mengwi1tgl2->title_ses}}
+                                            {{$mengwi1tgl2->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi1tgl2->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -172,7 +174,7 @@
                                 <td class="align-top">
 
                                     @foreach ($dua as $mengwi3tgl2)
-                                    @if ($mengwi3tgl2->room == 'Mengwi 3&5')
+                                    @if ($mengwi3tgl2->room == 'Mengwi 3&5' || $mengwi3tgl2->room == 'Mengwi 2')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
                                         onclick="mengwi3tgl2{{$mengwi3tgl2->id}}.showModal()">
                                         <div
@@ -181,7 +183,8 @@
                                             </div>
                                             <br>
                                             {{$mengwi3tgl2->time}} <br>
-                                            {{$mengwi3tgl2->title_ses}}
+                                            {{$mengwi3tgl2->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi3tgl2->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -243,7 +246,7 @@
                                 <td class="align-top">
 
                                     @foreach ($dua as $mengwi6tgl2)
-                                    @if ($mengwi6tgl2->room == 'Mengwi 6')
+                                    @if ($mengwi6tgl2->room == 'Mengwi 6' || $mengwi6tgl2->room == 'Mengwi 3')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
                                         onclick="mengwi6tgl2{{$mengwi6tgl2->id}}.showModal()">
                                         <div
@@ -252,7 +255,8 @@
                                             </div>
                                             <br>
                                             {{$mengwi6tgl2->time}} <br>
-                                            {{$mengwi6tgl2->title_ses}}
+                                            {{$mengwi6tgl2->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi6tgl2->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -323,7 +327,8 @@
                                             </div>
                                             <br>
                                             {{$mengwi7tgl2->time}} <br>
-                                            {{$mengwi7tgl2->title_ses}}
+                                            {{$mengwi7tgl2->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi7tgl2->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -398,18 +403,18 @@
                     <table class="table">
                         <thead>
                             <tr class="text-center mb-2">
-                                <th>Pecatu Hall 1 & 2</th>
-                                <th>Mengwi 1 & 2</th>
-                                <th>Mengwi 3 & 5</th>
-                                <th>Mengwi 6</th>
-                                <th>Mengwi 7</th>
-                                <th>Pecatu Hall 3 & 5</th>
-                                <th>Legian 1</th>
-                                <th>Legian 2</th>
-                                <th>Legian 3</th>
-                                <th>Legian 5</th>
-                                <th>Legian 6</th>
-                                <th>Legian 7</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -426,7 +431,8 @@
                                             </div>
                                             <br>
                                             {{$pecatu1tgl3->time}} <br>
-                                            {{$pecatu1tgl3->title_ses}}
+                                            {{$pecatu1tgl3->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$pecatu1tgl3->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -488,7 +494,7 @@
                                 <td class="align-top">
 
                                     @foreach ($tiga as $mengwi11tgl3)
-                                    @if ($mengwi11tgl3->room == 'Mengwi 1&2')
+                                    @if ($mengwi11tgl3->room == 'Mengwi 1&2' || $mengwi11tgl3->room == 'Mengwi 1')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
                                         onclick="mengwi11tgl3{{$mengwi11tgl3->id}}.showModal()">
                                         <div
@@ -497,7 +503,8 @@
                                             </div>
                                             <br>
                                             {{$mengwi11tgl3->time}} <br>
-                                            {{$mengwi11tgl3->title_ses}}
+                                            {{$mengwi11tgl3->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi11tgl3->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -559,7 +566,7 @@
                                 <td class="align-top">
 
                                     @foreach ($tiga as $mengwi3tgl3)
-                                    @if ($mengwi3tgl3->room == 'Mengwi 3&5')
+                                    @if ($mengwi3tgl3->room == 'Mengwi 3&5' || $mengwi3tgl3->room == 'Mengwi 2')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
                                         onclick="mengwi3tgl3{{$mengwi3tgl3->id}}.showModal()">
                                         <div
@@ -568,7 +575,8 @@
                                             </div>
                                             <br>
                                             {{$mengwi3tgl3->time}} <br>
-                                            {{$mengwi3tgl3->title_ses}}
+                                            {{$mengwi3tgl3->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi3tgl3->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -630,7 +638,7 @@
                                 <td class="align-top">
 
                                     @foreach ($tiga as $mengwi6tgl3)
-                                    @if ($mengwi6tgl3->room == 'Mengwi 6')
+                                    @if ($mengwi6tgl3->room == 'Mengwi 6' || $mengwi6tgl3->room == 'Mengwi 3')
                                     <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
                                         onclick="mengwi6tgl3{{$mengwi6tgl3->id}}.showModal()">
                                         <div
@@ -639,7 +647,8 @@
                                             </div>
                                             <br>
                                             {{$mengwi6tgl3->time}} <br>
-                                            {{$mengwi6tgl3->title_ses}}
+                                            {{$mengwi6tgl3->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi6tgl3->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -710,7 +719,8 @@
                                             </div>
                                             <br>
                                             {{$mengwi7tgl3->time}} <br>
-                                            {{$mengwi7tgl3->title_ses}}
+                                            {{$mengwi7tgl3->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi7tgl3->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -782,7 +792,8 @@
                                             </div>
                                             <br>
                                             {{$pecatu3tgl3->time}} <br>
-                                            {{$pecatu3tgl3->title_ses}}
+                                            {{$pecatu3tgl3->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$pecatu3tgl3->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -853,7 +864,8 @@
                                             </div>
                                             <br>
                                             {{$legian1tgl3->time}} <br>
-                                            {{$legian1tgl3->title_ses}}
+                                            {{$legian1tgl3->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$legian1tgl3->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -924,7 +936,8 @@
                                             </div>
                                             <br>
                                             {{$legian2tgl3->time}} <br>
-                                            {{$legian2tgl3->title_ses}}
+                                            {{$legian2tgl3->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$legian2tgl3->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -995,7 +1008,8 @@
                                             </div>
                                             <br>
                                             {{$legian3tgl3->time}} <br>
-                                            {{$legian3tgl3->title_ses}}
+                                            {{$legian3tgl3->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$legian3tgl3->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -1066,7 +1080,8 @@
                                             </div>
                                             <br>
                                             {{$legian5tgl3->time}} <br>
-                                            {{$legian5tgl3->title_ses}}
+                                            {{$legian5tgl3->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$legian5tgl3->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -1137,7 +1152,8 @@
                                             </div>
                                             <br>
                                             {{$legian6tgl3->time}} <br>
-                                            {{$legian6tgl3->title_ses}}
+                                            {{$legian6tgl3->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$legian6tgl3->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -1208,7 +1224,8 @@
                                             </div>
                                             <br>
                                             {{$legian7tgl3->time}} <br>
-                                            {{$legian7tgl3->title_ses}}
+                                            {{$legian7tgl3->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$legian7tgl3->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -1283,11 +1300,11 @@
                         <thead>
                             <tr class=" mb-2">
 
-                                <th>Pecatu Hall 3 & 5</th>
-                                <th>Mengwi 1 & 2</th>
-                                <th>Mengwi 3 & 5</th>
-                                <th>Mengwi 6 & 7</th>
-
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                
                             </tr>
                         </thead>
                         <tbody>
@@ -1304,7 +1321,8 @@
                                             </div>
                                             <br>
                                             {{$pecatu3tgl4->time}} <br>
-                                            {{$pecatu3tgl4->title_ses}}
+                                            {{$pecatu3tgl4->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$pecatu3tgl4->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -1375,7 +1393,8 @@
                                             </div>
                                             <br>
                                             {{$mengwi13tgl4->time}} <br>
-                                            {{$mengwi13tgl4->title_ses}}
+                                            {{$mengwi13tgl4->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi13tgl4->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -1446,7 +1465,8 @@
                                             </div>
                                             <br>
                                             {{$mengwi3tgl4->time}} <br>
-                                            {{$mengwi3tgl4->title_ses}}
+                                            {{$mengwi3tgl4->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi3tgl4->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -1517,7 +1537,8 @@
                                             </div>
                                             <br>
                                             {{$mengwi6tgl4->time}} <br>
-                                            {{$mengwi6tgl4->title_ses}}
+                                            {{$mengwi6tgl4->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi6tgl4->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -1591,10 +1612,11 @@
                     <table class="table">
                         <thead>
                             <tr class="text-center mb-2">
-                                <th>Mengwi 1 & 2</th>
-                                <th>Mengwi 3 & 5</th>
-                                <th>DAPS CLINIC</th>
-                                <th colspan="3">The Solitaire Clinic (BIH Sanur)</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th colspan="3"></th>
 
                             </tr>
                         </thead>
@@ -1612,7 +1634,8 @@
                                             </div>
                                             <br>
                                             {{$mengwi1tgl5->time}} <br>
-                                            {{$mengwi1tgl5->title_ses}}
+                                            {{$mengwi1tgl5->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi1tgl5->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -1683,7 +1706,8 @@
                                             </div>
                                             <br>
                                             {{$mengwi3tgl5->time}} <br>
-                                            {{$mengwi3tgl5->title_ses}}
+                                            {{$mengwi3tgl5->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi3tgl5->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -1742,6 +1766,78 @@
                                     </dialog>
                                     @endforeach
                                 </td>
+                                <td class="align-top">
+
+                                    @foreach ($lima as $mengwi6tgl5)
+                                    @if ($mengwi6tgl5->room == 'Mengwi 6&7')
+                                    <button class="hover:shadow-md hover:shadow-slate-300 block w-full my-1"
+                                        onclick="mengwi6tgl5{{$mengwi6tgl5->id}}.showModal()">
+                                        <div
+                                            class="border border-purple-500 bg-fuchsia-50 px-0 py-4 w-full rounded-md ">
+                                            <div class="badge badge-sm badge-warning mb-2">{{$mengwi6tgl5->category_sesi}}
+                                            </div>
+                                            <br>
+                                            {{$mengwi6tgl5->time}} <br>
+                                            {{$mengwi6tgl5->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$mengwi6tgl5->room}}</span>
+                                        </div>
+                                    </button>
+                                    @endif
+
+                                    <dialog id="mengwi6tgl5{{$mengwi6tgl5->id}}" class="modal">
+                                        <div class="modal-box w-11/12 max-w-5xl text-start">
+                                            <div class="flex justify-between mb-3 text-gray-700">
+                                                <div class="text-start">
+                                                    <h3 class="mb-0">Date: <span class="">
+                                                            {{\Carbon\Carbon::parse($mengwi6tgl5->date)->format('d
+                                                            F
+                                                            Y')}}</span></h3>
+                                                    <h3 class="mb-0">Time: <span class="">
+                                                            {{$mengwi6tgl5->time}}</span></h3>
+                                                </div>
+                                                <div>
+                                                    <p class="">Room :<span class="">
+                                                            {{$mengwi6tgl5->room}}
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0 text-gray-700">Session : <span class="">
+                                                    {{$mengwi6tgl5->title_ses}}</span></p>
+                                            <p class="text-gray-700">Moderator : <span class="">
+                                                    {{$mengwi6tgl5->moderator}}
+                                                </span></p>
+                                            <div class="overflow-x-auto mt-5">
+                                                <table class="table text-gray-700">
+                                                    <!-- head -->
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 18%">Time</th>
+                                                            <th>Topic</th>
+                                                            <th>Speaker</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @foreach ($mengwi6tgl5->schedules as $schedule)
+                                                        <tr>
+                                                            <th scope="row">{{$schedule->time_speaker}}</th>
+                                                            <td>{{$schedule->topic_title}}</td>
+                                                            <td>{{$schedule->speaker}}</td>
+                                                        </tr>
+                                                        @endforeach
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="modal-action">
+                                                <form method="dialog">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn">Close</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </dialog>
+                                    @endforeach
+                                </td>
                                 
                                 <td class="align-top">
 
@@ -1755,7 +1851,8 @@
                                             </div>
                                             <br>
                                             {{$dapstgl5->time}} <br>
-                                            {{$dapstgl5->title_ses}}
+                                            {{$dapstgl5->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$dapstgl5->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -1826,7 +1923,8 @@
                                             </div>
                                             <br>
                                             {{$room1tgl5->time}} <br>
-                                            {{$room1tgl5->title_ses}}
+                                            {{$room1tgl5->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$room1tgl5->room == 'room 1' ? 'Live Surgery 1' : $room1tgl5->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -1897,7 +1995,8 @@
                                             </div>
                                             <br>
                                             {{$room2tgl5->time}} <br>
-                                            {{$room2tgl5->title_ses}}
+                                            {{$room2tgl5->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$room2tgl5->room == 'room 2' ? 'Live Surgery 2' : $room2tgl5->room}}</span>
                                         </div>
                                     </button>
                                     @endif
@@ -1968,7 +2067,8 @@
                                             </div>
                                             <br>
                                             {{$room3tgl5->time}} <br>
-                                            {{$room3tgl5->title_ses}}
+                                            {{$room3tgl5->title_ses}} <br>
+                                            <span class="text-xs text-gray-600">{{$room3tgl5->room == 'room 3' ? 'Live Surgery 3' : $room3tgl5->room}}</span>
                                         </div>
                                     </button>
                                     @endif
