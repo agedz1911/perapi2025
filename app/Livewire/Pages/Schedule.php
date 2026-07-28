@@ -13,6 +13,7 @@ class Schedule extends Component
     public $search;
     public $category;
     public $date;
+    public $congress;
 
     public function resetDate()
     {
@@ -21,6 +22,11 @@ class Schedule extends Component
     public function resetCategory()
     {
         $this->category = null;
+    }
+
+    public function resetCongress()
+    {
+        $this->congress = null;
     }
 
     public function render()
@@ -41,13 +47,18 @@ class Schedule extends Component
             ->when($this->date, function ($query, $date) {
                 return $query->where('date', $date);
             })
+            ->when($this->congress, function ($query, $congress) {
+                return $query->where('congress_for', $congress);
+            })
             ->get();
         $uniqCategories = $atglances->pluck('category_sesi')->unique();
         $uniqDates = $atglances->pluck('date')->unique()->sort();
+        $uniqCongress = $atglances->pluck('congress_for')->unique()->sort();
         return view('livewire.pages.schedule', [
             'atglances' => $atglances,
             'uniqCategories' => $uniqCategories,
             'uniqDates' => $uniqDates,
+            'uniqCongress' => $uniqCongress,
         ]);
     }
 

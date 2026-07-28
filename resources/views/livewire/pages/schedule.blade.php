@@ -30,6 +30,20 @@
                         <div class="my-auto">
                             <h2 class="card-title">Filter</h2>
                             <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
+                                <legend class="fieldset-legend">Congress</legend>
+                                <div class="flex items-center">
+                                    <select wire:model.live='congress' class="select flex-grow">
+                                        <option value="0">Choose a Congress</option>
+                                        @foreach ($uniqCongress as $congress)
+                                        <option value="{{ $congress }}">{{ $congress }}</option>
+                                        @endforeach
+                                    </select>
+                                    @if($congress)
+                                    <button wire:click="resetCongress" class="btn btn-xs btn-error ml-2">X</button>
+                                    @endif
+                                </div>
+                            </fieldset>
+                            <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
                                 <legend class="fieldset-legend">Date</legend>
                                 <div class="flex items-center">
                                     <select wire:model.live='date' class="select flex-grow">
@@ -66,6 +80,20 @@
             <div class="card hidden lg:block lg:w-1/4 bg-base-100 order-1 lg:order-2 shadow-sm">
                 <div class="card-body">
                     <h2 class="card-title">Filter</h2>
+                    <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
+                        <legend class="fieldset-legend">Congress</legend>
+                        <div class="flex items-center">
+                            <select wire:model.live='congress' class="select flex-grow">
+                                <option value="0">Choose a Congress</option>
+                                @foreach ($uniqCongress as $congress)
+                                        <option value="{{ $congress }}">{{ $congress }}</option>
+                                        @endforeach
+                            </select>
+                            @if($congress)
+                            <button wire:click="resetCongress" class="btn btn-xs btn-error ml-2">X</button>
+                            @endif
+                        </div>
+                    </fieldset>
                     <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
                         <legend class="fieldset-legend">Date</legend>
                         <div class="flex items-center">
@@ -106,10 +134,13 @@
                 </div>
                 @foreach ($uniqCategories as $item)
                 @if (
-                !($date == '2025-07-30' && ($item == 'Symposium' || $item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster' || $item == 'Master Class' || $item == 'Video Parade')) &&
-                !($date == '2025-07-31' && ($item == 'Workshop' || $item == 'Master Class' || $item == 'Video Parade')) &&
+                !($date == '2025-07-30' && ($item == 'Symposium' || $item == 'Free Paper' || $item == 'Research
+                Proposal' || $item == 'E-Poster' || $item == 'Master Class' || $item == 'Video Parade')) &&
+                !($date == '2025-07-31' && ($item == 'Workshop' || $item == 'Master Class' || $item == 'Video Parade'))
+                &&
                 !($date == '2025-08-01' && ($item == 'Workshop' || $item == 'Research Proposal')) &&
-                !($date == '2025-08-02' && ($item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster' || $item == 'Master Class'))
+                !($date == '2025-08-02' && ($item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster'
+                || $item == 'Master Class'))
                 )
                 <p class="font-semibold tracking-wider my-5"><i
                         class="fa fa-angle-right text-sm text-purple-700 font-semibold"></i> {{$item}}</p>
