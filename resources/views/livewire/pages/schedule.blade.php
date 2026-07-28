@@ -132,22 +132,11 @@
                         {{\Carbon\Carbon::parse($date)->format('l, d F')}}
                     </h2>
                 </div>
-                @foreach ($uniqCategories as $item)
-                @if (
-                !($date == '2025-07-30' && ($item == 'Symposium' || $item == 'Free Paper' || $item == 'Research
-                Proposal' || $item == 'E-Poster' || $item == 'Master Class' || $item == 'Video Parade')) &&
-                !($date == '2025-07-31' && ($item == 'Workshop' || $item == 'Master Class' || $item == 'Video Parade'))
-                &&
-                !($date == '2025-08-01' && ($item == 'Workshop' || $item == 'Research Proposal')) &&
-                !($date == '2025-08-02' && ($item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster'
-                || $item == 'Master Class'))
-                )
+                @php($dateGroups = $scheduleGroups->get($date, collect()))
+                @foreach ($dateGroups as $item => $sessions)
                 <p class="font-semibold tracking-wider my-5"><i
                         class="fa fa-angle-right text-sm text-purple-700 font-semibold"></i> {{$item}}</p>
-                @endif
-                @foreach ($atglances as $atglance)
-                @if ($atglance->category_sesi == $item && $atglance->date == $date)
-
+                @foreach ($sessions as $atglance)
                 <div class="collapse bg-base-100 border border-base-300">
                     <input type="radio" name="my-accordion-1" />
                     <div class="collapse-title font-semibold">{{$atglance->title_ses}} - <span class="text-xs"><i
@@ -162,7 +151,6 @@
                                         class="fa fa-map-marker text-[#9E1F63]"></i> {{$atglance->room}}</p>
                             </div>
                             <div>
-                                {{-- {{$atglance->category_sesi}} --}}
                                 <p class="font-semibold">Moderator: <span class="font-normal">
                                         {{$atglance->moderator}}</span></p>
                                 <p class="font-semibold">Panelists: <br> <span class="font-normal">
@@ -189,7 +177,6 @@
                         </div>
                     </div>
                 </div>
-                @endif
                 @endforeach
                 @endforeach
                 @endforeach

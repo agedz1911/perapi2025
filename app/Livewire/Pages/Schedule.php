@@ -3,7 +3,6 @@
 namespace App\Livewire\Pages;
 
 use App\Models\ScheduleSession;
-use Illuminate\Support\Facades\Log;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
@@ -31,16 +30,44 @@ class Schedule extends Component
 
     public function render()
     {
-        $atglances = ScheduleSession::with('schedules')
-            ->where(function ($query) {
-                $query->where('title_ses', 'like', '%' . $this->search . '%')
-                    ->orWhere('room', 'like', '%' . $this->search . '%')
-                    ->orWhereHas('schedules', function ($query) {
-                        $query->where('topic_title', 'like', '%' . $this->search . '%')
-                            ->orWhere('speaker', 'like', '%' . $this->search . '%');
-                    });
-            })
+        $search = trim((string) $this->search);
 
+        $atglancesQuery = ScheduleSession::query()
+            ->select([
+                'id',
+                'category_sesi',
+                'title_ses',
+                'date',
+                'time',
+                'room',
+                'moderator',
+                'panelist',
+                'congress_for',
+            ])
+            ->with([
+                'schedules' => function ($query) {
+                    $query->select([
+                        'id',
+                        'sesi_id',
+                        'time_speaker',
+                        'topic_title',
+                        'speaker',
+                    ])->orderBy('time_speaker');
+                },
+            ]);
+
+        if ($search !== '') {
+            $atglancesQuery->where(function ($query) use ($search) {
+                $query->where('title_ses', 'like', '%' . $search . '%')
+                    ->orWhere('room', 'like', '%' . $search . '%')
+                    ->orWhereHas('schedules', function ($query) use ($search) {
+                        $query->where('topic_title', 'like', '%' . $search . '%')
+                            ->orWhere('speaker', 'like', '%' . $search . '%');
+                    });
+            });
+        }
+
+        $atglances = $atglancesQuery
             ->when($this->category, function ($query, $category) {
                 return $query->where('category_sesi', $category);
             })
@@ -50,16 +77,43 @@ class Schedule extends Component
             ->when($this->congress, function ($query, $congress) {
                 return $query->where('congress_for', $congress);
             })
+            ->orderBy('date')
+            ->orderBy('time')
             ->get();
-        $uniqCategories = $atglances->pluck('category_sesi')->unique();
-        $uniqDates = $atglances->pluck('date')->unique()->sort();
-        $uniqCongress = $atglances->pluck('congress_for')->unique()->sort();
+
+        $scheduleGroups = $atglances
+            ->groupBy('date')
+            ->map(function ($sessionsByDate, $date) {
+                return $sessionsByDate
+                    ->groupBy('category_sesi')
+                    ->filter(function ($sessions, $category) use ($date) {
+                        return ! $this->shouldHideCategoryForDate($date, $category);
+                    });
+            });
+
+        $uniqCategories = $atglances->pluck('category_sesi')->filter()->unique()->values();
+        $uniqDates = $atglances->pluck('date')->filter()->unique()->sort()->values();
+        $uniqCongress = $atglances->pluck('congress_for')->filter()->unique()->sort()->values();
+
         return view('livewire.pages.schedule', [
             'atglances' => $atglances,
+            'scheduleGroups' => $scheduleGroups,
             'uniqCategories' => $uniqCategories,
             'uniqDates' => $uniqDates,
             'uniqCongress' => $uniqCongress,
         ]);
+    }
+
+    private function shouldHideCategoryForDate(string $date, string $category): bool
+    {
+        $hiddenCategoriesByDate = [
+            '2026-09-02' => ['Workshop', 'Research Proposal', 'E-Poster', 'Video Parade'],
+            '2026-09-03' => ['Workshop', 'Master Class', 'Video Parade'],
+            '2026-09-04' => ['Free Paper', 'Research Proposal', 'Master Class', 'Workshop'],
+            '2026-09-05' => ['Free Paper', 'Research Proposal', 'E-Poster', 'Master Class', 'Symposium'],
+        ];
+
+        return in_array($category, $hiddenCategoriesByDate[$date] ?? [], true);
     }
 
     // public function updateSelectedDates($date)

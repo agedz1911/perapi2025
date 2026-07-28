@@ -9,7 +9,7 @@
     <div class="px-5 lg:px-10 mt-10">
         <label class="input input-lg w-full">
             <i class="fa fa-search opacity-45 text-sm"></i>
-            <input wire:model.live='search' type="text" class="grow" placeholder="Search Topic, Speaker, Room" />
+            <input wire:model.live.debounce.400ms='search' type="text" class="grow" placeholder="Search Topic, Speaker, Room" />
         </label>
     </div>
 
@@ -30,17 +30,16 @@
                         <div class="my-auto">
                             <h2 class="card-title">Filter</h2>
                             <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
-                                <legend class="fieldset-legend">Date</legend>
+                                <legend class="fieldset-legend">Congress</legend>
                                 <div class="flex items-center">
-                                    <select wire:model.live='date' class="select flex-grow">
-                                        <option value="0">Choose a date</option>
-                                        @foreach ($uniqDates as $date)
-                                        <option value="{{ $date }}">{{ \Carbon\Carbon::parse($date)->format('d F Y') }}
-                                        </option>
+                                    <select wire:model.live='congressFor' class="select flex-grow">
+                                        <option value="">Choose type Congress</option>
+                                        @foreach ($uniqCongressFors as $type)
+                                        <option value="{{ $type }}">{{ $type }}</option>
                                         @endforeach
                                     </select>
-                                    @if($date)
-                                    <button wire:click="resetDate" class="btn btn-xs btn-error ml-2">X</button>
+                                    @if($congressFor)
+                                    <button wire:click="resetCongressFor" class="btn btn-xs btn-error ml-2">X</button>
                                     @endif
                                 </div>
                             </fieldset>
@@ -48,7 +47,7 @@
                                 <legend class="fieldset-legend">Session</legend>
                                 <div class="flex items-center">
                                     <select wire:model.live='category' class="select flex-grow">
-                                        <option value="0">Choose a Session</option>
+                                        <option value="">Choose a Session</option>
                                         @foreach ($uniqCategories as $item)
                                         <option value="{{ $item }}">{{ $item }}</option>
                                         @endforeach
@@ -67,16 +66,16 @@
                 <div class="card-body">
                     <h2 class="card-title">Filter</h2>
                     <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
-                        <legend class="fieldset-legend">Date</legend>
+                        <legend class="fieldset-legend">Congress</legend>
                         <div class="flex items-center">
-                            <select wire:model.live='date' class="select flex-grow">
-                                <option value="0">Choose a date</option>
-                                @foreach ($uniqDates as $date)
-                                <option value="{{ $date }}">{{ \Carbon\Carbon::parse($date)->format('d F Y') }}</option>
+                            <select wire:model.live='congressFor' class="select flex-grow">
+                                <option value="">Choose type Congress</option>
+                                @foreach ($uniqCongressFors as $type)
+                                <option value="{{ $type }}">{{ $type }}</option>
                                 @endforeach
                             </select>
-                            @if($date)
-                            <button wire:click="resetDate" class="btn btn-xs btn-error ml-2">X</button>
+                            @if($congressFor)
+                            <button wire:click="resetCongressFor" class="btn btn-xs btn-error ml-2">X</button>
                             @endif
                         </div>
                     </fieldset>
@@ -84,7 +83,7 @@
                         <legend class="fieldset-legend">Session</legend>
                         <div class="flex items-center">
                             <select wire:model.live='category' class="select flex-grow">
-                                <option value="0">Choose a Session</option>
+                                <option value="">Choose a Session</option>
                                 @foreach ($uniqCategories as $item)
                                 <option value="{{ $item }}">{{ $item }}</option>
                                 @endforeach
@@ -98,25 +97,16 @@
             </div>
 
             <div class="w-full lg:w-3/4 order-2 lg:order-1">
-                @foreach ($uniqDates as $date)
+                @forelse ($sessionsByDate as $date => $sessionsByCategory)
                 <div class="text-center lg:text-start border-t border-dashed pt-2">
                     <h2 class="text-lg font-semibold uppercase text-[#92278F] tracking-wider">
                         {{\Carbon\Carbon::parse($date)->format('l, d F')}}
                     </h2>
                 </div>
-                @foreach ($uniqCategories as $item)
-                @if (
-                !($date == '2025-07-30' && ($item == 'Symposium' || $item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster' || $item == 'Master Class' || $item == 'Video Parade')) &&
-                !($date == '2025-07-31' && ($item == 'Workshop' || $item == 'Master Class' || $item == 'Video Parade')) &&
-                !($date == '2025-08-01' && ($item == 'Workshop' || $item == 'Research Proposal')) &&
-                !($date == '2025-08-02' && ($item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster' || $item == 'Master Class'))
-                )
+                @foreach ($sessionsByCategory as $item => $sessions)
                 <p class="font-semibold tracking-wider my-5"><i
                         class="fa fa-angle-right text-sm text-purple-700 font-semibold"></i> {{$item}}</p>
-                @endif
-                @foreach ($atglances as $atglance)
-                @if ($atglance->category_sesi == $item && $atglance->date == $date)
-
+                @foreach ($sessions as $atglance)
                 <div class="collapse bg-base-100 border border-base-300">
                     <input type="radio" name="my-accordion-1" />
                     <div class="collapse-title font-semibold">{{$atglance->title_ses}} - <span class="text-xs"><i
@@ -129,6 +119,7 @@
                                 </p>
                                 <p class="mb-2"><i class="fa fa-clock text-[#9E1F63]"></i> {{$atglance->time}} | <i
                                         class="fa fa-map-marker text-[#9E1F63]"></i> {{$atglance->room}}</p>
+                                <p>{{$atglance->congress_for}}</p>
                             </div>
                             <div>
                                 {{-- {{$atglance->category_sesi}} --}}
@@ -158,10 +149,13 @@
                         </div>
                     </div>
                 </div>
-                @endif
                 @endforeach
                 @endforeach
-                @endforeach
+                @empty
+                <div class="border border-dashed border-base-300 rounded-xl p-6 text-center text-gray-500">
+                    No schedule found for current filter.
+                </div>
+                @endforelse
             </div>
         </div>
         <div class="mt-10">
