@@ -44,6 +44,21 @@
                                 </div>
                             </fieldset>
                             <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
+                                <legend class="fieldset-legend">Date</legend>
+                                <div class="flex items-center">
+                                    <select wire:model.live='date' class="select flex-grow">
+                                        <option value="0">Choose a date</option>
+                                        @foreach ($uniqDates as $date)
+                                        <option value="{{ $date }}">{{ \Carbon\Carbon::parse($date)->format('d F Y') }}
+                                        </option>
+                                        @endforeach
+                                    </select>
+                                    @if($date)
+                                    <button wire:click="resetDate" class="btn btn-xs btn-error ml-2">X</button>
+                                    @endif
+                                </div>
+                            </fieldset>
+                            <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
                                 <legend class="fieldset-legend">Session</legend>
                                 <div class="flex items-center">
                                     <select wire:model.live='category' class="select flex-grow">
@@ -76,6 +91,20 @@
                             </select>
                             @if($congressFor)
                             <button wire:click="resetCongressFor" class="btn btn-xs btn-error ml-2">X</button>
+                            @endif
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
+                        <legend class="fieldset-legend">Date</legend>
+                        <div class="flex items-center">
+                            <select wire:model.live='date' class="select flex-grow">
+                                <option value="0">Choose a date</option>
+                                @foreach ($uniqDates as $date)
+                                <option value="{{ $date }}">{{ \Carbon\Carbon::parse($date)->format('d F Y') }}</option>
+                                @endforeach
+                            </select>
+                            @if($date)
+                            <button wire:click="resetDate" class="btn btn-xs btn-error ml-2">X</button>
                             @endif
                         </div>
                     </fieldset>
