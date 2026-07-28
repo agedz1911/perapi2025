@@ -108,8 +108,8 @@ class Schedule extends Component
     {
         $hiddenCategoriesByDate = [
             '2026-09-02' => ['Workshop', 'Research Proposal', 'E-Poster', 'Video Parade'],
-            '2026-09-03' => ['Workshop', 'Master Class', 'Video Parade'],
-            '2026-09-04' => ['Free Paper', 'Research Proposal', 'Master Class', 'Workshop'],
+            '2026-09-03' => ['Workshop', 'Video Parade'],
+            '2026-09-04' => ['Free Paper', 'Research Proposal', 'Workshop'],
             '2026-09-05' => ['Free Paper', 'Research Proposal', 'E-Poster', 'Master Class', 'Symposium'],
         ];
 
