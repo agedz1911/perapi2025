@@ -58,6 +58,7 @@ class ScheduleSessionResource extends Resource
                         'Mengwi 1' => 'Mengwi 1',
                         'Mengwi 2' => 'Mengwi 2',
                         'Mengwi 3' => 'Mengwi 3',
+                        'Mengwi 5' => 'Mengwi 5',
                         'Mengwi 6' => 'Mengwi 6',
                         'Mengwi 7' => 'Mengwi 7',
                         'Mengwi 8' => 'Mengwi 8',
