@@ -76,6 +76,11 @@ class ScheduleSessionResource extends Resource
                     ->native(false),
                 TextInput::make('moderator'),
                 Textarea::make('panelist'),
+                Select::make('congress_for')
+                ->options([
+                    'APRAS' => 'APRAS',
+                    "INAPRAS" => "INAPRAS",
+                ])
             ]);
     }
 
@@ -83,6 +88,9 @@ class ScheduleSessionResource extends Resource
     {
         return $table
             ->columns([
+                TextColumn::make('congress_for')
+                    ->searchable()
+                    ->sortable(),
                 TextColumn::make('room')
                     ->searchable()
                     ->sortable(),
