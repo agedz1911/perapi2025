@@ -37,7 +37,11 @@ class ScheduleResource extends Resource
                 Select::make('sesi_id')
                     ->label('Session Title')
                     ->options(ScheduleSession::all()->mapWithKeys(function ($session) {
-                        return [$session->id => $session->title_ses . ' - ' . \Carbon\Carbon::parse($session->date)->format('d F')];
+                        $formattedDate = $session->date
+                            ? \Carbon\Carbon::parse($session->date)->format('d F')
+                            : '-';
+
+                        return [$session->id => $session->title_ses . ' - ' . $formattedDate];
                     }))
                     ->searchable(),
                 Select::make('faculty_id')
@@ -62,7 +66,13 @@ class ScheduleResource extends Resource
                 TextColumn::make('sesi.title_ses')
                     ->searchable()
                     ->sortable()
-                    ->description(fn($record) => \Carbon\Carbon::parse($record->sesi->date)->format('d F')),
+                    ->description(function ($record) {
+                        $date = $record->sesi?->date;
+
+                        return $date
+                            ? \Carbon\Carbon::parse($date)->format('d F')
+                            : '-';
+                    }),
                 TextColumn::make('faculties.name')
                     ->limit(20)
             ])
