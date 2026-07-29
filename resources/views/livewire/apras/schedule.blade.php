@@ -9,7 +9,8 @@
     <div class="px-5 lg:px-10 mt-10">
         <label class="input input-lg w-full">
             <i class="fa fa-search opacity-45 text-sm"></i>
-            <input wire:model.live.debounce.400ms='search' type="text" class="grow" placeholder="Search Topic, Speaker, Room" />
+            <input wire:model.live.debounce.400ms='search' type="text" class="grow"
+                placeholder="Search Topic, Speaker, Room" />
         </label>
     </div>
 
@@ -139,7 +140,13 @@
                 <div class="collapse bg-base-100 border border-base-300">
                     <input type="radio" name="my-accordion-1" />
                     <div class="collapse-title font-semibold">{{$atglance->title_ses}} - <span class="text-xs"><i
-                                class="fa fa-map-marker text-[#9E1F63]"></i> {{$atglance->room}} </span></div>
+                                class="fa fa-map-marker text-[#9E1F63]"></i>
+                            @if ($atglance->room == 'room 1' || $atglance->room == 'room 2' || $atglance->room == 'room
+                            3')
+                            The Solitaire Clinic, Bali
+                            @else
+                            {{$atglance->room}}
+                            @endif </span></div>
                     <div class="collapse-content text-sm">
                         <div class="flex flex-wrap justify-between gap-4 items-start">
                             <div>
@@ -147,8 +154,15 @@
                                     <span class="font-semibold">Session:</span> {{$atglance->title_ses}}
                                 </p>
                                 <p class="mb-2"><i class="fa fa-clock text-[#9E1F63]"></i> {{$atglance->time}} | <i
-                                        class="fa fa-map-marker text-[#9E1F63]"></i> {{$atglance->room}}</p>
-                                <p>{{$atglance->congress_for}}</p>
+                                        class="fa fa-map-marker text-[#9E1F63]"></i>
+                                    @if ($atglance->room == 'room 1' || $atglance->room == 'room 2' || $atglance->room
+                                    == 'room 3')
+                                    The Solitaire Clinic, Bali
+                                    @else
+                                    {{$atglance->room}}
+                                    @endif
+                                </p>
+
                             </div>
                             <div>
                                 {{-- {{$atglance->category_sesi}} --}}
