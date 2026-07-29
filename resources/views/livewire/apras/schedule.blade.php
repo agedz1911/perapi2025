@@ -141,8 +141,7 @@
                     <input type="radio" name="my-accordion-1" />
                     <div class="collapse-title font-semibold">{{$atglance->title_ses}} - <span class="text-xs"><i
                                 class="fa fa-map-marker text-[#9E1F63]"></i>
-                            @if ($atglance->room == 'room 1' || $atglance->room == 'room 2' || $atglance->room == 'room
-                            3')
+                            @if ($atglance->room == 'room 1' || $atglance->room == 'room 2' || $atglance->room == 'room 3')
                             The Solitaire Clinic, Bali
                             @else
                             {{$atglance->room}}
