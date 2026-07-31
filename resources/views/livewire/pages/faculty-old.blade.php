@@ -69,14 +69,21 @@
                             <p class="font-medium text-lg text-gray-700">Session</p>
                             <div class="border-t pt-5">
                                 @foreach ($indo->schedules as $schedule)
+                                @php
+                                    $session = $schedule->sesi;
+                                @endphp
                                 <div class="flex flex-wrap gap-5 text-green-600">
-                                    <p>{{\Carbon\Carbon::parse($schedule->sesi->date)->format('d
-                                        F Y')}}</p>
+                                    <p>
+                                        @if ($session && $session->date)
+                                            {{ \Carbon\Carbon::parse($session->date)->format('d F Y') }}
+                                        @else
+                                            -
+                                        @endif
+                                    </p>
                                     <p>{{$schedule->time_speaker}}</p>
-                                    <p>{{$schedule->sesi->room}}</p>
+                                    <p>{{ $session?->room ?? '-' }}</p>
                                 </div>
-                                <p class="mb-1">{{$schedule->sesi->title_ses}}
-                                </p>
+                                <p class="mb-1">{{ $session?->title_ses ?? 'Session details not available' }}</p>
                                 <p class="text-gray-500 mb-5 border-b border-dashed border-gray-800 pb-3">
                                     {{$schedule->topic_title}}
                                 </p>
@@ -164,14 +171,21 @@
                                     <p class="font-medium text-lg text-gray-700">Session</p>
                                     <div class="border-t pt-5">
                                         @foreach ($indo->schedules as $schedule)
+                                        @php
+                                            $session = $schedule->sesi;
+                                        @endphp
                                         <div class="flex flex-wrap gap-5 text-green-600">
-                                            <p>{{\Carbon\Carbon::parse($schedule->sesi->date)->format('d
-                                                F Y')}}</p>
+                                            <p>
+                                                @if ($session && $session->date)
+                                                    {{ \Carbon\Carbon::parse($session->date)->format('d F Y') }}
+                                                @else
+                                                    -
+                                                @endif
+                                            </p>
                                             <p>{{$schedule->time_speaker}}</p>
-                                            <p>{{$schedule->sesi->room}}</p>
+                                            <p>{{ $session?->room ?? '-' }}</p>
                                         </div>
-                                        <p class="mb-1">{{$schedule->sesi->title_ses}}
-                                        </p>
+                                        <p class="mb-1">{{ $session?->title_ses ?? 'Session details not available' }}</p>
                                         <p class="text-gray-500 mb-5 border-b border-dashed border-gray-800 pb-3">
                                             {{$schedule->topic_title}}
                                         </p>
@@ -240,14 +254,21 @@
                                     <p class="font-medium text-lg text-gray-700">Session</p>
                                     <div class="border-t pt-5">
                                         @foreach ($foreign->schedules as $schedule)
+                                        @php
+                                            $session = $schedule->sesi;
+                                        @endphp
                                         <div class="flex flex-wrap gap-5 text-green-600">
-                                            <p>{{\Carbon\Carbon::parse($schedule->sesi->date)->format('d
-                                                F Y')}}</p>
+                                            <p>
+                                                @if ($session && $session->date)
+                                                    {{ \Carbon\Carbon::parse($session->date)->format('d F Y') }}
+                                                @else
+                                                    -
+                                                @endif
+                                            </p>
                                             <p>{{$schedule->time_speaker}}</p>
-                                            <p>{{$schedule->sesi->room}}</p>
+                                            <p>{{ $session?->room ?? '-' }}</p>
                                         </div>
-                                        <p class="mb-1">{{$schedule->sesi->title_ses}}
-                                        </p>
+                                        <p class="mb-1">{{ $session?->title_ses ?? 'Session details not available' }}</p>
                                         <p class="text-gray-500 mb-5 border-b border-dashed border-gray-800 pb-3">
                                             {{$schedule->topic_title}}
                                         </p>
