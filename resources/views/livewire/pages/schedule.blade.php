@@ -80,9 +80,9 @@
                 <details class="dropdown block lg:hidden dropdown-end">
                     <summary class="btn m-1 text-xs">Download Schedule<i class="fa fa-angle-down text-xs"></i></summary>
                     <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                        <li><a href="download/all-schedule.pdf" target="_blank">All Schedule</a></li>
-                        <li><a href="download/schedule-apras.pdf" target="_blank">Schedule APRAS</a></li>
-                        <li><a href="download/schedule-inapras.pdf" target="_blank">Schedule InaPRAS</a></li>
+                        <li><a href="inapras/download/all-schedule.pdf" target="_blank">All Schedule</a></li>
+                        <li><a href="inapras/download/schedule-apras.pdf" target="_blank">Schedule APRAS</a></li>
+                        <li><a href="inapras/download/schedule-inapras.pdf" target="_blank">Schedule InaPRAS</a></li>
                     </ul>
                 </details>
             </div>
@@ -96,9 +96,9 @@
                             <details class="dropdown w-full">
                                 <summary class="btn btn- w-full m-1 text-xs">Download Schedule <i class="fa fa-angle-down text-xs"></i></summary>
                                 <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                                    <li><a href="download/all-schedule.pdf" target="_blank">All Schedule</a></li>
-                                    <li><a href="download/schedule-apras.pdf" target="_blank">Schedule APRAS</a></li>
-                                    <li><a href="download/schedule-inapras.pdf" target="_blank">Schedule InaPRAS</a></li>
+                                    <li><a href="inapras/download/all-schedule.pdf" target="_blank">All Schedule</a></li>
+                                    <li><a href="inapras/download/schedule-apras.pdf" target="_blank">Schedule APRAS</a></li>
+                                    <li><a href="inapras/download/schedule-inapras.pdf" target="_blank">Schedule InaPRAS</a></li>
                                 </ul>
                             </details>
                         </div>

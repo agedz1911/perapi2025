@@ -16,70 +16,93 @@
 
     <section class="pt-10 pb-24 px-2 lg:px-5">
         <div class="flex flex-col lg:flex-row justify-between gap-4">
-            <div class="drawer drawer-end block lg:hidden z-30">
-                <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-                <div class="drawer-content">
-                    <!-- Page content here -->
-                    <label for="my-drawer-4"
-                        class="drawer-button btn bg-purple-700 hover:bg-indigo-600 text-white rounded-lg px-3"><i
-                            class="fa-solid fa-filter"></i> Filter</label>
-                </div>
-                <div class="drawer-side">
-                    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
-                    <div class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-                        <!-- Sidebar content here -->
-                        <div class="my-auto">
-                            <h2 class="card-title">Filter</h2>
-                            <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
-                                <legend class="fieldset-legend">Congress</legend>
-                                <div class="flex items-center">
-                                    <select wire:model.live='congressFor' class="select flex-grow">
-                                        <option value="">Choose type Congress</option>
-                                        @foreach ($uniqCongressFors as $type)
-                                        <option value="{{ $type }}">{{ $type }}</option>
-                                        @endforeach
-                                    </select>
-                                    @if($congressFor)
-                                    <button wire:click="resetCongressFor" class="btn btn-xs btn-error ml-2">X</button>
-                                    @endif
-                                </div>
-                            </fieldset>
-                            <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
-                                <legend class="fieldset-legend">Date</legend>
-                                <div class="flex items-center">
-                                    <select wire:model.live='date' class="select flex-grow">
-                                        <option value="0">Choose a date</option>
-                                        @foreach ($uniqDates as $date)
-                                        <option value="{{ $date }}">{{ \Carbon\Carbon::parse($date)->format('d F Y') }}
-                                        </option>
-                                        @endforeach
-                                    </select>
-                                    @if($date)
-                                    <button wire:click="resetDate" class="btn btn-xs btn-error ml-2">X</button>
-                                    @endif
-                                </div>
-                            </fieldset>
-                            <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
-                                <legend class="fieldset-legend">Session</legend>
-                                <div class="flex items-center">
-                                    <select wire:model.live='category' class="select flex-grow">
-                                        <option value="">Choose a Session</option>
-                                        @foreach ($uniqCategories as $item)
-                                        <option value="{{ $item }}">{{ $item }}</option>
-                                        @endforeach
-                                    </select>
-                                    @if($category)
-                                    <button wire:click="resetCategory" class="btn btn-xs btn-error ml-2">X</button>
-                                    @endif
-                                </div>
-                            </fieldset>
+            <div class="flex justify-between">
+                <div class="drawer drawer-end block lg:hidden z-30">
+                    <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+                        <!-- Page content here -->
+                        <label for="my-drawer-4"
+                            class="drawer-button btn bg-purple-700 hover:bg-indigo-600 text-white rounded-lg px-3"><i
+                                class="fa-solid fa-filter"></i> Filter</label>
+                    </div>
+                    <div class="drawer-side">
+                        <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+                        <div class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+                            <!-- Sidebar content here -->
+                            <div class="my-auto">
+                                <h2 class="card-title">Filter</h2>
+                                <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
+                                    <legend class="fieldset-legend">Congress</legend>
+                                    <div class="flex items-center">
+                                        <select wire:model.live='congressFor' class="select flex-grow">
+                                            <option value="">Choose type Congress</option>
+                                            @foreach ($uniqCongressFors as $type)
+                                            <option value="{{ $type }}">{{ $type }}</option>
+                                            @endforeach
+                                        </select>
+                                        @if($congressFor)
+                                        <button wire:click="resetCongressFor" class="btn btn-xs btn-error ml-2">X</button>
+                                        @endif
+                                    </div>
+                                </fieldset>
+                                <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
+                                    <legend class="fieldset-legend">Date</legend>
+                                    <div class="flex items-center">
+                                        <select wire:model.live='date' class="select flex-grow">
+                                            <option value="0">Choose a date</option>
+                                            @foreach ($uniqDates as $date)
+                                            <option value="{{ $date }}">{{ \Carbon\Carbon::parse($date)->format('d F Y') }}
+                                            </option>
+                                            @endforeach
+                                        </select>
+                                        @if($date)
+                                        <button wire:click="resetDate" class="btn btn-xs btn-error ml-2">X</button>
+                                        @endif
+                                    </div>
+                                </fieldset>
+                                <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
+                                    <legend class="fieldset-legend">Session</legend>
+                                    <div class="flex items-center">
+                                        <select wire:model.live='category' class="select flex-grow">
+                                            <option value="">Choose a Session</option>
+                                            @foreach ($uniqCategories as $item)
+                                            <option value="{{ $item }}">{{ $item }}</option>
+                                            @endforeach
+                                        </select>
+                                        @if($category)
+                                        <button wire:click="resetCategory" class="btn btn-xs btn-error ml-2">X</button>
+                                        @endif
+                                    </div>
+                                </fieldset>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <details class="dropdown block lg:hidden dropdown-end">
+                    <summary class="btn m-1 text-xs">Download Schedule<i class="fa fa-angle-down text-xs"></i></summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                        <li><a href="apras/download/all-schedule.pdf" target="_blank">All Schedule</a></li>
+                        <li><a href="apras/download/schedule-apras.pdf" target="_blank">Schedule APRAS</a></li>
+                        <li><a href="apras/download/schedule-inapras.pdf" target="_blank">Schedule InaPRAS</a></li>
+                    </ul>
+                </details>
             </div>
 
             <div class="card hidden lg:block lg:w-1/4 bg-base-100 order-1 lg:order-2 shadow-sm">
                 <div class="card-body">
+                    <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
+                        <legend class="fieldset-legend">Download</legend>
+                        <div class="flex items-center">
+                            <details class="dropdown w-full">
+                                <summary class="btn btn- w-full m-1 text-xs">Download Schedule <i class="fa fa-angle-down text-xs"></i></summary>
+                                <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                                    <li><a href="inapras/download/all-schedule.pdf" target="_blank">All Schedule</a></li>
+                                    <li><a href="inapras/download/schedule-apras.pdf" target="_blank">Schedule APRAS</a></li>
+                                    <li><a href="inapras/download/schedule-inapras.pdf" target="_blank">Schedule InaPRAS</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                    </fieldset>
                     <h2 class="card-title">Filter</h2>
                     <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
                         <legend class="fieldset-legend">Congress</legend>
