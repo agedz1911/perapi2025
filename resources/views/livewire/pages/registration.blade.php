@@ -144,7 +144,7 @@
                                     </div>
                                     @if ($regLocal->normal_reg != 0)
                                     <div>
-                                        <p>Resident / GP</p>
+                                        <p>Resident</p>
                                         <span class="text-xl">IDR {{$regLocal->normal_reg != 0 ?
                                             number_format($regLocal->normal_reg,
                                             0, ',', '.') : 'to be announce'}}</span>
@@ -294,7 +294,7 @@
                                         0, ',', '.') : 'to be announce'}}</span>
                                     @if ($regForeign->normal_reg != 0)
                                     <div>
-                                        <p>Resident / GP</p>
+                                        <p>Resident</p>
                                         <span class="text-xl">USD {{$regForeign->normal_reg != 0 ?
                                             number_format($regForeign->normal_reg,
                                             0, ',', '.') : 'to be announce'}}</span>
