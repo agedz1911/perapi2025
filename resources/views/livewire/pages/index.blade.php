@@ -19,7 +19,7 @@
                             </div>
                             <div>
                                 <h1 class="text-2xl text-white lg:text-3xl font-semibold text-center lg:text-start">
-                                    (Asia Pacific Federation of Plastic Reconstructive and Aesthetic Surgery)
+                                    (Asian Federation of Plastic Reconstructive and Aesthetic Surgery Societies)
                                 </h1>
                                 <p class="text-[#F9C20A] mt-4 text-center lg:text-start">
                                     September 2 - 3, 2026
