@@ -31,7 +31,7 @@
                             <!-- Sidebar content here -->
                             <div class="my-auto">
                                 <h2 class="card-title">Filter</h2>
-                                <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
+                                {{-- <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
                                     <legend class="fieldset-legend">Congress</legend>
                                     <div class="flex items-center">
                                         <select wire:model.live='congressFor' class="select flex-grow">
@@ -44,7 +44,7 @@
                                         <button wire:click="resetCongressFor" class="btn btn-xs btn-error ml-2">X</button>
                                         @endif
                                     </div>
-                                </fieldset>
+                                </fieldset> --}}
                                 <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
                                     <legend class="fieldset-legend">Date</legend>
                                     <div class="flex items-center">

@@ -44,6 +44,7 @@ class Schedule extends Component
                 'panelist',
                 'congress_for',
             ])
+            ->where('congress_for', 'INAPRAS')
             ->with([
                 'schedules' => function ($query) {
                     $query->select([

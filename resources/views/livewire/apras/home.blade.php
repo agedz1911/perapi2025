@@ -32,7 +32,8 @@
                                         {{$hero->subtitle}}
                                     </h1>
                                     <p class="italic my-2 text-center lg:text-start text-white text-lg">
-                                        {{$hero->theme_event}}</p>
+                                        {{$hero->theme_event}}
+                                    </p>
                                     <p class="text-[#F9C20A] mt-4 text-center lg:text-start">
                                         {{$hero->date_event}} <br> {{$hero->venue}}
                                     </p>
@@ -46,7 +47,7 @@
                     <div class="mt-10 flex justify-center gap-4 lg:justify-start">
                         <button class="btn btn-warning text-white shadow-none rounded-lg btn-lg text-sm">Read
                             More <i class="fa-solid fa-angles-right text-xs"></i></button>
-                        <a href="https://expo.virconex-id.com/registration/apras-inapras2026/index.php/auth_peserta" 
+                        <a href="https://expo.virconex-id.com/registration/apras-inapras2026/index.php/auth_peserta"
                             class="btn btn-warning btn-outline shadow-none rounded-lg btn-lg text-sm hover:text-white"><i
                                 class="fa-solid fa-pen-to-square"></i> Register Now </a>
                     </div>
@@ -140,9 +141,186 @@
         </div>
     </section>
 
-    <section class="text-white feature relative z-0 start-0 py-28">
-        <div class="absolute inset-0 bg-gradient-to-b from-[#7D3E7E]/50 to-[#3C194F]/50"></div>
-        <div class="relative">
+    <section class="text-white feature relative z-0 start-0 py-28 ">
+        {{-- <div class="absolute inset-0 bg-gradient-to-b from-[#7D3E7E]/50 to-[#3C194F]/50"></div> --}}
+        <div class="mx-auto flex max-w-8xl flex-col gap-12 px-5 sm:px-8 lg:gap-20 lg:px-12">
+
+            <article class="grid overflow-hidden border bg-white/80 rounded-lg lg:grid-cols-12">
+                <div class="relative p-7 sm:p-10 lg:col-span-7 lg:p-14 ">
+                    <div class="absolute left-0 top-10 hidden h-20 w-1 bg-[#f6c945] lg:block"></div>
+                    <p class="mb-5 font-bold text-xs md:text-base uppercase tracking-[0.18em] text-warning">A message
+                        from the President, APRAS & Inaugural Congress of APRAS 2026
+                    </p>
+                    <div class="h-px w-14 bg-slate-600"></div>
+                    <div
+                        class="welcome-message-copy mt-8 text-justify text-[15px] leading-8 text-slate-600 sm:text-base sm:leading-8">
+                        <span class="mb-10">Dear Esteemed Colleagues, Honored Guests, and Friends,</span><br>
+                        <span>
+                            It is my utmost honor and pleasure to extend a warm welcome to all of you to the Inaugural
+                            Congress of Asian Federation of Plastic, Reconstructive and Aesthetic Surgery Societies
+                            (APRAS)
+                            2026, held in the breathtaking island of Bali, Indonesia on 2nd to 3rd September 2026 at
+                            BNDCC2,
+                            Nusa Dua, Bali, Indonesia
+
+                            The establishment of APRAS marks a historic milestone in our collective commitment to
+                            advancing
+                            surgical excellence, innovation, and unity across the Asia-Pacific region. Under our
+                            congress
+                            theme, "Building Competence, Shaping Excellence," this inaugural gathering serves as a
+                            premier
+                            platform to bridge surgical expertise, foster collaborative research, and elevate standard
+                            patient care in reconstructive microsurgery.
+
+                            We have designed an extraordinary scientific and cultural program that reflects the
+                            diversity,
+                            passion, and brilliance of our member societies. As we gather at the Bali Nusa Dua
+                            Convention
+                            Center, I invite each of you to actively engage in discussions, forge long-lasting
+                            international
+                            partnerships, and experience the warm hospitality that Bali is renowned for.
+
+                            Thank you for being a part of this landmark event. Together, let us shape the future of
+                            Plastic,
+                            Reconstructive and Aesthetic Surgery Asia-Pacific.</span><br>
+
+                        Warmest regards,
+
+                    </div>
+                </div>
+
+                <aside class="relative overflow-hidden bg-[#7D3E7E] p-7 text-white sm:p-10 lg:col-span-5 lg:p-12 ">
+                    <div class="absolute inset-0 bg-[linear-gradient(145deg,rgba(176, 12, 221, 0.55),transparent_58%)]">
+                    </div>
+                    <div class="relative flex h-full flex-col justify-center gap-8">
+
+
+                        <div class="flex items-center gap-5">
+                            <img src="{{asset('assets/images/teddy.jpg')}}" alt="image"
+                                class="md:h-40 md:w-40 h-24 w-24 shrink-0  border-4 border-warning object-cover rounded-md shadow-xl sm:h-40 sm:w-40">
+                            <div class="min-w-0">
+                                <p class="text-sm leading-6 text-violet-50">President, APRAS & Inaugural Congress of
+                                    APRAS
+                                    2026</p>
+                                <h3 class="mt-2 text-lg font-bold leading-tight text-white sm:text-xl">Prof. Theddeus
+                                    O.H. Prasetyono</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+            </article>
+            <article class="grid overflow-hidden border bg-white/80 rounded-lg lg:grid-cols-12">
+                <div class="relative p-7 sm:p-10 lg:col-span-7 lg:p-14 lg:order-2">
+                    <div class="absolute left-0 top-10 hidden h-20 w-1 bg-[#f6c945] lg:block"></div>
+                    <p class="mb-5 font-bold text-xs md:text-base uppercase tracking-[0.18em] text-warning">A message
+                        from the Scientific Chair, APRAS 2026
+                    </p>
+                    <div class="h-px w-14 bg-slate-600"></div>
+                    <div
+                        class="welcome-message-copy mt-8 text-justify text-[15px] leading-8 text-slate-600 sm:text-base sm:leading-8">
+                        <span class="mb-10">Dear Delegates, Distinguished Speakers, and Colleagues,</span><br>
+                        <span>
+                            It is a distinct privilege to welcome you to the scientific program of the Inaugural
+                            Congress of APRAS 2026.
+
+                            In line with our core theme, "Building Competence, Shaping Excellence," the Scientific
+                            Committee has curated a comprehensive and cutting-edge curriculum tailored for both seasoned
+                            experts and young surgeons. Featuring global keynotes, instructional courses, interactive
+                            panel debates, and free paper presentations, our program addresses the latest breakthroughs,
+                            surgical techniques, and emerging trends in microsurgical reconstruction.
+
+                            This congress is meticulously structured to stimulate dynamic exchange and critical
+                            thinking. We encourage all participants to contribute their insights, share innovative
+                            clinical practices, and engage with our distinguished international faculty.
+
+                            We trust that this scientific journey will enrich your knowledge, inspire your clinical
+                            practice, and spark new research collaborations across borders.
+
+                            Welcome to Bali, and we look forward to an intellectually stimulating meeting!</span>
+                        <br>
+                        Sincerely,
+
+                    </div>
+                </div>
+
+                <aside
+                    class="relative overflow-hidden bg-[#7D3E7E] p-7 text-white sm:p-10 lg:col-span-5 lg:p-12 lg:order-1">
+                    <div class="absolute inset-0 bg-[linear-gradient(145deg,rgba(176, 12, 221, 0.55),transparent_58%)]">
+                    </div>
+                    <div class="relative flex h-full flex-col justify-center gap-8">
+
+
+                        <div class="flex items-center gap-5">
+                            <img src="{{asset('assets/images/irena.jpg')}}" alt="image"
+                                class="md:h-40 md:w-40 h-24 w-24 shrink-0  border-4 border-warning object-cover rounded-md shadow-xl sm:h-40 sm:w-40">
+                            <div class="min-w-0">
+                                <p class="text-sm leading-6 text-violet-50">Scientific Chair, APRAS 2026
+                                    2026</p>
+                                <h3 class="mt-2 text-lg font-bold leading-tight text-white sm:text-xl">Ira Sakura Rini,
+                                    MD</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+            </article>
+
+            <article class="grid overflow-hidden border bg-white/80 rounded-lg lg:grid-cols-12">
+                <div class="relative p-7 sm:p-10 lg:col-span-7 lg:p-14 ">
+                    <div class="absolute left-0 top-10 hidden h-20 w-1 bg-[#f6c945] lg:block"></div>
+                    <p class="mb-5 font-bold text-xs md:text-base uppercase tracking-[0.18em] text-warning">A message
+                        from the President, InaPRAS
+                    </p>
+                    <div class="h-px w-14 bg-slate-600"></div>
+                    <div
+                        class="welcome-message-copy mt-8 text-justify text-[15px] leading-8 text-slate-600 sm:text-base sm:leading-8">
+                        <span class="mb-10">Dear Colleagues, Distinguished Faculty, and Guests,</span><br>
+                        <span>
+                            On behalf of the Indonesian Society of Plastic Reconstructive and Aesthetic Surgeons
+                            (InaPRAS), it is my grand privilege to welcome you all to Bali for the Inaugural Congress of
+                            APRAS 2026, held alongside our 29th Annual Scientific Meeting of InaPRAS.
+
+                            InaPRAS is deeply honored to serve as the host society for this momentous occasion. Bringing
+                            together surgical leaders and delegates from across the Asia-Pacific to our home country is
+                            both a pride and a commitment to nurturing regional solidarity and professional growth.
+
+                            Parallel with our national theme, "Competence with Confidence," this joint meeting
+                            highlights the importance of mastering core surgical skills while pushing the boundaries of
+                            aesthetic and reconstructive excellence. Beyond the academic exchanges, we are excited to
+                            host you at our social events, including PERAPI Night, where you can unwind and immerse
+                            yourselves in the rich heritage and warmth of Balinese culture.
+
+                            We hope this congress proves to be a memorable blend of inspiring academic insights and
+                            unforgettable camaraderie. Welcome to Bali!
+
+                        </span><br>
+
+                        Warm regards,
+
+                    </div>
+                </div>
+
+                <aside class="relative overflow-hidden bg-[#7D3E7E] p-7 text-white sm:p-10 lg:col-span-5 lg:p-12 ">
+                    <div class="absolute inset-0 bg-[linear-gradient(145deg,rgba(176, 12, 221, 0.55),transparent_58%)]">
+                    </div>
+                    <div class="relative flex h-full flex-col justify-center gap-8">
+                        <div class="flex items-center gap-5">
+                            <img src="{{asset('assets/images/najat.jpg')}}" alt="image"
+                                class="md:h-40 md:w-40 h-24 w-24 shrink-0  border-4 border-warning object-cover rounded-md shadow-xl sm:h-40 sm:w-40">
+                            <div class="min-w-0">
+                                <p class="text-sm leading-6 text-violet-50">President, InaPRAS </p>
+                                <h3 class="mt-2 text-lg font-bold leading-tight text-white sm:text-xl">Najatullah, MD
+                                </h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+            </article>
+
+        </div>
+        <div class="relative mt-5 lg:mt-10">
             <div class="w-full max-w-6xl mx-auto border-b border-white border-opacity-35">
                 <div class="mb-16">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -181,97 +359,6 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-10 mb-6 px-4">
-                @if ($welcomeMessages->count() > 0)
-                <h2 class="text-4xl text-center mb-5 text-white font-semibold uppercase">Welcome <span
-                        class="text-[#F9C20A]">message
-                    </span></h2>
-                @endif
-                @foreach ($welcomeMessages as $welcomeMessage)
-                @if ($loop->even)
-                <div class="card shadow-lg bg-transparent border border-white border-opacity-25 w-full mb-5">
-                    <div class="card-body">
-
-                        <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-stretch">
-                            <div class="order-2 lg:order-1 p-2">
-                                <div
-                                    class="w-full justify-center lg:flex-row flex flex-col items-center lg:items-end gap-2">
-                                    <div class="avatar">
-                                        <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
-                                            assets/images/speaker.png"}}" alt="{{$welcomeMessage->name}}"
-                                            class="w-full max-w-52 shadow-lg rounded-lg ">
-                                    </div>
-                                    <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
-                                        <div class="ps-4 border-s border-black border-spacing-7">
-                                            <p class="text-black text-xs italic">" {{$welcomeMessage->title}}
-                                                "</p>
-                                            <h6 class="font-semibold text-black">{{$welcomeMessage->name}}</h6>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="order-1 lg:order-2 p-2 ">
-                                <div class="flex flex-col ">
-                                    <div class="pr-2">
-                                        <div class="pb-4  text-justify flex flex-col gap-2 text-gray-300">
-                                            <div class="">
-                                                {!! str($welcomeMessage->description)->markdown()->sanitizeHtml() !!}
-                                            </div>
-                                            <a class="hover:underline hover:text-primary" href="/welcome-messages"
-                                                wire:navigate>Read More...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @else
-                {{-- <div class="card shadow-lg bg-transparent border border-white border-opacity-25 w-full mb-5">
-                    <div class="card-body">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-stretch">
-                            <div class="order-2 lg:order-2 p-2">
-                                <div
-                                    class="w-full justify-center lg:flex-row flex flex-col items-center lg:items-end gap-2">
-                                    <div class="avatar">
-                                        <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
-                                            ../assets/images/speaker.png"}}" alt="{{$welcomeMessage->name}}"
-                                            class="w-full max-w-52 shadow-lg rounded-lg ">
-                                    </div>
-                                    <div class="p-4 rounded-lg bg-[#F9C20A] w-full max-w-sm">
-                                        <div class="ps-4 border-s border-black   border-spacing-7">
-                                            <p class="text-black text-xs italic">" {{$welcomeMessage->title}}
-                                                "</p>
-                                            <h6 class="font-semibold text-black">{{$welcomeMessage->name}}</h6>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="order-1 lg:order-1 p-2 ">
-                                <div class="flex flex-col ">
-                                    <div class="pr-2">
-                                        <div class="pb-4  text-justify flex flex-col gap-2 text-gray-300">
-                                            <div class="">
-                                                {!! str($welcomeMessage->description)->markdown()->sanitizeHtml() !!}
-                                            </div>
-                                            <a class="hover:underline hover:text-warning" href="/welcome-messages"
-                                                wire:navigate>Read More...</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-                @endif
-                @endforeach
-            </div>
-            {{-- <div class="flex justify-center">
-                <a href="/welcome-messages" wire:navigate class="btn btn-primary rounded-lg">Read All Welcome Message <i
-                        class="fa fa-angles-right"></i></a>
-            </div> --}}
         </div>
     </section>
 
@@ -344,7 +431,7 @@
         const currentTime = new Date();
 
         // Set new date 30 days from now
-        const targetTime = new Date(2026, 9, 2, 8, 0, 0);
+        const targetTime = new Date(2026, 8, 2, 8, 0, 0);
 
         // Update countdown time
         function updateCountdown() {
