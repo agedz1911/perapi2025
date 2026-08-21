@@ -31,11 +31,11 @@
             class="{{ request()->is('apras/program-at-glance') || request()->is('apras/scientific-schedule') ? 'text-[#F9C20A]' : 'text-white' }} hover:cursor-pointer hover:text-amber-500">
             Scientific Program <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
-            {{-- <li>
+            <li>
                 <a href="{{route('program-at-glance-apras')}}" wire:navigate
                     class="{{ request()->is('apras/program-at-glance') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500">Program
                     at Glance <i class="fa-solid fa-angle-right"></i></a>
-            </li> --}}
+            </li>
             <li>
                 <a href="{{route('scientific-schedule-apras')}}" wire:navigate
                     class="{{ request()->is('apras/scientific-schedule') ? 'text-[#F9C20A]' : '' }} justify-between hover:text-amber-500">Program
