@@ -78,10 +78,13 @@ class ScheduleSessionResource extends Resource
                 TextInput::make('moderator'),
                 Textarea::make('panelist'),
                 Select::make('congress_for')
-                ->options([
-                    'APRAS' => 'APRAS',
-                    "INAPRAS" => "INAPRAS",
-                ])
+                    ->options([
+                        'APRAS' => 'APRAS',
+                        "INAPRAS" => "INAPRAS",
+                    ]),
+                TextInput::make('no_urut')
+                    ->label('No Urut')
+                    ->numeric(),
             ]);
     }
 

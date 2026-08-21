@@ -19,6 +19,7 @@ class ScheduleSession extends Model
         'moderator',
         'panelist',
         'congress_for',
+        'no_urut',
     ];
     
 
