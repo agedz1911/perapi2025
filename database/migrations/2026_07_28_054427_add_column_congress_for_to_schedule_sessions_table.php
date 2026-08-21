@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('schedule_sessions', function (Blueprint $table) {
-            $table->string('congress_for')->nullable()->after('panelist');
-        });
+        if (!Schema::hasColumn('schedule_sessions', 'congress_for')) {
+            Schema::table('schedule_sessions', function (Blueprint $table) {
+                $table->string('congress_for')->nullable()->after('panelist');
+            });
+        }
     }
 
     /**
