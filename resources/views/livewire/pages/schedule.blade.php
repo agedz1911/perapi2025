@@ -81,7 +81,6 @@
                     <summary class="btn m-1 text-xs">Download Schedule<i class="fa fa-angle-down text-xs"></i></summary>
                     <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                         <li><a href="{{ asset('download/all-schedule.pdf') }}" target="_blank">All Schedule</a></li>
-                        <li><a href="{{ asset('download/schedule-apras.pdf') }}" target="_blank">Schedule APRAS</a></li>
                         <li><a href="{{ asset('download/schedule-inapras.pdf') }}" target="_blank">Schedule InaPRAS</a></li>
                     </ul>
                 </details>
@@ -97,14 +96,13 @@
                                 <summary class="btn btn- w-full m-1 text-xs">Download Schedule <i class="fa fa-angle-down text-xs"></i></summary>
                                 <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                                     <li><a href="{{ asset('download/all-schedule.pdf') }}" target="_blank">All Schedule</a></li>
-                                    <li><a href="{{ asset('download/schedule-apras.pdf') }}" target="_blank">Schedule APRAS</a></li>
                                     <li><a href="{{ asset('download/schedule-inapras.pdf') }}" target="_blank">Schedule InaPRAS</a></li>
                                 </ul>
                             </details>
                         </div>
                     </fieldset>
                     <h2 class="card-title">Filter</h2>
-                    <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
+                    {{-- <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
                         <legend class="fieldset-legend">Congress</legend>
                         <div class="flex items-center">
                             <select wire:model.live='congress' class="select flex-grow">
@@ -117,7 +115,7 @@
                             <button wire:click="resetCongress" class="btn btn-xs btn-error ml-2">X</button>
                             @endif
                         </div>
-                    </fieldset>
+                    </fieldset> --}}
                     <fieldset class="fieldset p-4 bg-base-100 border border-base-300 rounded-box w-64">
                         <legend class="fieldset-legend">Date</legend>
                         <div class="flex items-center">

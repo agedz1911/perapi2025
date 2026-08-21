@@ -11,22 +11,64 @@ use Livewire\Component;
 #[Layout('components.layouts.apras')]
 class AtGlance extends Component
 {
-    public $atglances;
-    public $dua;
-    public $tiga;
-    public $empat;
-    public $lima;
+    private const DAYS = [
+        '2026-09-02' => [
+            'label' => '2 September',
+            'rooms' => ['Pecatu 1&2', 'Mengwi 1', 'Mengwi 2', 'Mengwi 3', 'Mengwi 5', 'Mengwi 6', 'Mengwi 7'],
+        ],
+        '2026-09-03' => [
+            'label' => '3 September',
+            'rooms' => ['Pecatu 1&2', 'Mengwi 1', 'Mengwi 2', 'Mengwi 3', 'Mengwi 5', 'Mengwi 6', 'Mengwi 7'],
+        ],
+    ];
 
-    public function mount()
+    public $search = '';
+    public $atglances;
+    public $tiga;
+    public $dua;
+    // public $lima;
+    // public $tiga;
+
+    public function resetSearch()
     {
-        $this->atglances = ScheduleSession::all();
-        $this->dua = $this->atglances->where('date', '2026-09-02')->sortBy('no_urut');
-        $this->tiga = $this->atglances->where('date', '2026-09-03')->sortBy('no_urut');
-        $this->empat = $this->atglances->where('date', '2026-09-04')->sortBy('no_urut');
-        $this->lima = $this->atglances->where('date', '2026-09-05')->sortBy('no_urut');
+        $this->search = '';
     }
+
     public function render()
     {
-        return view('livewire.apras.at-glance');
+        $this->atglances = ScheduleSession::query()
+            ->select([
+                'id',
+                'category_sesi',
+                'title_ses',
+                'date',
+                'time',
+                'room',
+                'moderator',
+                'no_urut',
+            ])
+            ->with('schedules:id,sesi_id,time_speaker,topic_title,speaker')
+            ->when(trim($this->search) !== '', function ($query) {
+                $search = trim($this->search);
+
+                $query->where(function ($query) use ($search) {
+                    $query->where('title_ses', 'like', '%' . $search . '%')
+                        ->orWhere('room', 'like', '%' . $search . '%');
+                });
+            })
+            ->orderBy('date')
+            ->orderBy('no_urut')
+            ->get();
+
+        $sessionsByDate = $this->atglances->groupBy('date');
+        $this->tiga = $sessionsByDate->get('2026-09-03', collect());
+        $this->dua = $sessionsByDate->get('2026-09-02', collect());
+
+        $days = collect(self::DAYS)->map(function (array $day, string $date) use ($sessionsByDate) {
+            $day['sessionsByRoom'] = $sessionsByDate->get($date, collect())->groupBy('room');
+
+            return $day;
+        });
+        return view('livewire.apras.at-glance', compact('days'));
     }
 }
