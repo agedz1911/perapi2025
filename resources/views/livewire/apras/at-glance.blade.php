@@ -18,7 +18,7 @@
             </button>
             @endif
         </label>
-        <a target="_blank" href="assets/download/schedule-apras.pdf" class="btn btn-warning rounded-lg"><i
+        <a target="_blank" href="{{ asset('download/schedule-apras.pdf') }}" class="btn btn-warning rounded-lg"><i
                 class="fa fa-download"></i> Download PDF Schedule</a>
     </div>
 
