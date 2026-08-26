@@ -18,7 +18,7 @@ class AtGlance extends Component
         ],
         '2026-09-03' => [
             'label' => '3 September',
-            'rooms' => ['Pecatu 1&2', 'Mengwi 1', 'Mengwi 2', 'Mengwi 3', 'Mengwi 5', 'Mengwi 6', 'Mengwi 7', 'Mengwi 1&2', 'Mengwi 6&7'],
+            'rooms' => ['Pecatu 1&2', 'Mengwi 1', 'Mengwi 2', 'Mengwi 3', 'Mengwi 5', 'Mengwi 6', 'Mengwi 7', 'Mengwi 1&2', 'Mengwi 3&5', 'Mengwi 6&7'],
         ],
     ];
 
