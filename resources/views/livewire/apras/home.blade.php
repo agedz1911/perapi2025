@@ -252,7 +252,7 @@
 
 
                         <div class="flex items-center gap-5">
-                            <img src="{{asset('assets/images/irena.jpg')}}" alt="image"
+                            <img src="{{asset('assets/images/irena_.jpg')}}" alt="image"
                                 class="md:h-40 md:w-40 h-24 w-24 shrink-0  border-4 border-warning object-cover rounded-md shadow-xl sm:h-40 sm:w-40">
                             <div class="min-w-0">
                                 <p class="text-sm leading-6 text-violet-50">Scientific Chair, APRAS 2026
